@@ -1,0 +1,52 @@
+# backend:
+#   name: github
+#   branch: master
+#   repo: BrettBlox/GB_Bowlworks
+backend:
+  name: git-gateway
+
+publish_mode: editorial_workflow
+
+# media_library:
+#   name: uploadcare
+#   config:
+#     publicKey: 62a4f79e1201a3baf4ee
+#     mulitple: true
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dy6lb8vna
+    api_key: 567216352827144
+    multiple: true
+
+media_folder: 'src/images/posts'
+public_folder: 'images/posts'
+collections:
+  - name: 'posts'
+    label: 'Post'
+    folder: 'src/posts'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'URL Path example: /postName', name: 'slug', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+  - name: 'inventory'
+    label: 'Current Inventory'
+    folder: 'src/store'
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - {
+          label: 'URL Path example: /productName',
+          name: 'slug',
+          widget: 'string',
+        }
+      - { label: 'ID', name: 'id', widget: 'number' }
+      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date Added', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }

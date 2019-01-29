@@ -1,0 +1,63 @@
+aside ul {
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+  list-style: none;
+}
+
+aside ul a {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold !important;
+}
+
+aside {
+  margin: 30px;
+  padding: 20px;
+  font-family: 'Cinzel';
+  background-color: #dddfd4;
+  box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
+  border-radius: 4px;
+}
+
+aside ul a {
+  font: 300 20px 'Cinzel', sans-serif;
+  background-color: hsl(0, 100%, 18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #d7a150,
+    #d7a150 50%,
+    hsl(0, 100%, 18%) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+
+aside ul a:hover {
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 0%;
+}
+
+/***********LESS THAN 1000PX DO THIS*****************/
+@media only screen and (max-width: 1000px) {
+  aside ul a {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  aside ul {
+    width: 100%;
+  }
+}
+
+/***********LESS THAN 1000PX DO THIS*****************/
+@media only screen and (max-width: 1000px) {
+  aside ul a {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  aside ul {
+    width: 100%;
+  }
+}

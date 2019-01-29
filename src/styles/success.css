@@ -1,0 +1,63 @@
+.successWrapper {
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  font-family: 'Cinzel', serif;
+}
+
+.success {
+  box-shadow: 10px 13px 20px rgba(25, 17, 34, 2);
+  border-radius: 4px;
+  grid-column: 1 / -1;
+  background-color: #dddfd4;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 50px 50px;
+}
+
+.success button {
+  background-color: #3fb0ac;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #949494;
+  width: 100%;
+  height: auto;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+}
+
+.home {
+  color: #fff;
+}
+
+#successLink {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: hsl(0, 100%, 18%);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .success {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .success {
+    width: 200px;
+  }
+}
