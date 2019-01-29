@@ -33,7 +33,7 @@ const Inventory = () => (
     query={STORE_QUERY}
     render={({ store }) =>
       store.edges.map(({ node }) => (
-        <>
+        <div key={ node.frontmatter.id }>
           <Helmet
             htmlAttributes={{ lang: 'en' }}
             link={[
@@ -41,8 +41,8 @@ const Inventory = () => (
                 href:
                   'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
                 rel: 'stylesheet',
-                type: 'text/css'
-              }
+                type: 'text/css',
+              },
             ]}
             script={[
               {
@@ -51,29 +51,27 @@ const Inventory = () => (
                 id: 'snipcart',
                 'data-api-key':
                   'NTY3MDBmMTctMzkyMy00MGExLWJhNzQtN2YzMTYxODUzYmQ2NjM2ODQwNTIzODg1MTYwNjg4',
-                src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js'
+                src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
               },
               {
                 type: 'text/javascript',
                 src:
-                  'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'
-              }
+                  'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+              },
             ]}
           />
-          <article key={node.frontmatter.slug} className='inventory'>
-            <img src={node.frontmatter.image} alt='bowl' />
-            <Link className='listingLink' to={`/store${node.frontmatter.slug}`}>
+          <article className="inventory">
+            <img src={node.frontmatter.image} alt="bowl" />
+            <Link className="listingLink" to={`/store${node.frontmatter.slug}`}>
               <h2>{node.frontmatter.title}</h2>
-              {/* <br /> */}
-              {/* <p>See More</p> */}
             </Link>
-            <div className='priceWrapper'>
+            <div className="priceWrapper">
               <h3>{`$${node.frontmatter.price}.00`}</h3>
             </div>
 
             <a
-              href='#'
-              className='snipcart-add-item buyBtn'
+              href="#"
+              className="snipcart-add-item buyBtn"
               data-item-id={node.frontmatter.id}
               data-item-price={node.frontmatter.price}
               data-item-image={node.frontmatter.image}
@@ -81,11 +79,12 @@ const Inventory = () => (
               data-item-description={node.frontmatter.description}
               data-item-url={
                 'http://snipcart-gatsby.netlify.com' + node.frontmatter.slug
-              }>
-              <button className='buy'>BUY NOW</button>
+              }
+            >
+              <button className="buy">BUY NOW</button>
             </a>
           </article>
-        </>
+        </div>
       ))
     }
   />

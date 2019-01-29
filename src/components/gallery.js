@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CloudinaryContext, Transformation, Image } from 'cloudinary-react'
+// import { CloudinaryContext, Transformation, Image } from 'cloudinary-react'
 import Spinner from './spinner'
 import Lightbox from 'react-images'
 
@@ -12,7 +12,7 @@ class Gallery extends Component {
       viewportWidth: 0,
       loading: true,
       lightboxIsOpen: false,
-      currentImage: 0
+      currentImage: 0,
     }
   }
 
@@ -24,28 +24,28 @@ class Gallery extends Component {
     event.preventDefault()
     this.setState({
       currentImage: index,
-      lightboxIsOpen: true
+      lightboxIsOpen: true,
     })
   }
   closeLightbox = () => {
     this.setState({
       currentImage: 0,
-      lightboxIsOpen: false
+      lightboxIsOpen: false,
     })
   }
   gotoPrevious = () => {
     this.setState({
-      currentImage: this.state.currentImage - 1
+      currentImage: this.state.currentImage - 1,
     })
   }
   gotoNext = () => {
     this.setState({
-      currentImage: this.state.currentImage + 1
+      currentImage: this.state.currentImage + 1,
     })
   }
   gotoImage = index => {
     this.setState({
-      currentImage: index
+      currentImage: index,
     })
   }
   handleClickImage = () => {
@@ -61,10 +61,9 @@ class Gallery extends Component {
         'https://res.cloudinary.com/dy6lb8vna/image/list/bowlworks.json'
       )
       const gallery = await res.json()
-      console.log(gallery.resources)
       this.setState({
         gallery: gallery.resources,
-        loading: false
+        loading: false,
       })
     } catch (e) {
       console.log(e)
@@ -110,45 +109,33 @@ class Gallery extends Component {
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
 
     const wideView = (
-      <CloudinaryContext cloudName='dy6lb8vna' className='grid-wrapper'>
+      <div className="grid-wrapper">
         {sortedGallery.map((data, i) => {
           return (
-            <div className='zone' key={data.public_id}>
-              <div className='box'>
+            <div className="zone" key={data.src}>
+              <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
-                  <Image publicId={data.public_id}>
-                    <Transformation
-                      background='#173e43'
-                      dpr='auto'
-                      responsive_placeholder='GB Bowlworks'
-                    />
-                  </Image>
+                  <img src={data.src} alt="wooden bowl" />
                 </a>
               </div>
             </div>
           )
         })}
-      </CloudinaryContext>
+      </div>
     )
 
     const mobileView = (
-      <CloudinaryContext cloudName='dy6lb8vna' className='grid-wrapper'>
+      <div className="grid-wrapper">
         {this.state.gallery.map(data => {
           return (
-            <div className='zone' key={data.public_id}>
-              <div className='box'>
-                <Image publicId={data.public_id}>
-                  <Transformation
-                    background='#173e43'
-                    dpr='auto'
-                    responsive_placeholder='GB Bowlworks'
-                  />
-                </Image>
+            <div className="zone" key={data.src}>
+              <div className="box">
+                <img src={data.src} alt="wooden bowl" />
               </div>
             </div>
           )
         })}
-      </CloudinaryContext>
+      </div>
     )
 
     return (
