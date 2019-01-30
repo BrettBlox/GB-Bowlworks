@@ -53,6 +53,10 @@
   text-decoration: none !important;
 }
 
+.inventory > a {
+  text-decoration: none;
+}
+
 .inventory > .listingLink h2:hover {
   transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
