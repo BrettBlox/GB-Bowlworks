@@ -1,9 +1,8 @@
 ---
 slug: /1816
 id: '1816'
-price: '375'
-image:
-  - >-
+price: 375
+image: >-
     https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276582/GB%20Bowlworks%20Gallery/IMG_1696a.jpg
 title: Aztec Vase
 date: 2019-01-30T00:50:16.973Z
