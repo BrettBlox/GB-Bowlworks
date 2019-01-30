@@ -45,7 +45,7 @@ collections:
           widget: 'string',
         }
       - { label: 'ID', name: 'id', widget: 'number' }
-      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: 'Price', name: 'price', widget: 'number', valueType: 'int' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Date Added', name: 'date', widget: 'datetime' }
