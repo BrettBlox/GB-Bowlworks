@@ -1,19 +1,17 @@
 ---
 slug: /Shop-Redo
-date: 2018-02-01T11:05:11.297Z
+date: 2018-01-01T11:05:00.000Z
 title: Shop Remodel
 ---
 I've had two shops in my woodworking life, one that was too big, 700 square feet, (I can't believe anyone could have a shop TOO big!)...
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548846775/other/shopinside2.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548848808/other/DSC03520.jpg)
 
 ... and one that was too small, 100 square feet. 
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548846944/other/DSC_0008.jpg)
 
  My small shop, being my most recent, was super cozy...but cramped.  For six years my woodworking world existed in that 100 square feet.  Amazingly, I got a lot accomplished there.  I learned how to be more organized...everything had to have its place.
-
-
 
 In late 2017, I had my son home for a few weeks over the holidays and decided to put him to work and remodel and expand to a whopping 200 square feet, doubling my shop space.  We did some framing and dry wall work, some electrical, some painting, and ended up with a really nice shop. 
 
