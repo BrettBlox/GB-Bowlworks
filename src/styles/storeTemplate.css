@@ -10,7 +10,7 @@
   background-color: #dddfd4;
 }
 
-.store-item-content > h1 {
+.store-item-content .store-item > h1 {
   margin: 0;
 }
 
@@ -34,6 +34,7 @@ p {
   padding-bottom: 0;
   padding-top: 0;
   /* align-items: flex-end */
+  margin-top: 0;
 }
 
 .store-item-image > img {

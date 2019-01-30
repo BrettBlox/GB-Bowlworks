@@ -68,7 +68,6 @@ const Inventory = () => (
             <div className="priceWrapper">
               <h3>{`$${node.frontmatter.price}.00`}</h3>
             </div>
-
             <a
               href="#"
               className="snipcart-add-item buyBtn"
