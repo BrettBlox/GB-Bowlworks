@@ -14,12 +14,12 @@ const STORE_QUERY = graphql`
       edges {
         node {
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            id
-            title
-            image
             slug
+            id
             price
+            image
+            title
+            date(formatString: "MMMM DD, YYYY")
             description
           }
         }
@@ -33,7 +33,7 @@ const Inventory = () => (
     query={STORE_QUERY}
     render={({ store }) =>
       store.edges.map(({ node }) => (
-        <div key={ node.frontmatter.id }>
+        <div key={node.frontmatter.id}>
           <Helmet
             htmlAttributes={{ lang: 'en' }}
             link={[
