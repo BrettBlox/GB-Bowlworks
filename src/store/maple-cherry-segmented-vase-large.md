@@ -5,7 +5,7 @@ price: 395
 image: >-
 
 https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276578/GB%20Bowlworks%20Gallery/DSC_1963a.jpg
-title: Maple & Cherry Segmented Vase&nbsp;(Large)
+title: Maple & Cherry Segmented Vase (Large)
 date: 2019-01-30T00:58:44.029Z
 description: >-
   A large Cherry and Maple vase consisting of 388 individual segments of wood.
