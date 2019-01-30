@@ -1,9 +1,9 @@
 ---
 slug: /1812
 id: '1812'
-price: 244
+price: 275
 image: >-
-    https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276581/GB%20Bowlworks%20Gallery/DSC_2916a.jpg
+  https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276581/GB%20Bowlworks%20Gallery/DSC_2916a.jpg
 title: Aztec Decorative Segmented Bowl
 date: 2019-01-30T00:57:07.414Z
 description: >-
