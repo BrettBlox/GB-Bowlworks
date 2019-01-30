@@ -15,7 +15,6 @@
   border-radius: 4px;
   display: grid;
   height: 100%;
-  position: relative;
 }
 
 .inventory > a > button {
