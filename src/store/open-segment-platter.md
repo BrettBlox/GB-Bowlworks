@@ -1,6 +1,6 @@
 ---
-slug: /item2
-id: 2
+slug: /1826
+id: '1826'
 price: 275
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276876/GB%20Bowlworks%20Gallery/IMG_3048a.jpg
