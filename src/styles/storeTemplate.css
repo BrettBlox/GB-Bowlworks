@@ -81,7 +81,8 @@ p {
     font-size: 1rem;
   }
   .store-item-content .store-item > h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    margin-top: 20px;
   }
   .store-item-content .store-item {
     padding: 0px;
