@@ -18,7 +18,6 @@ media_library:
   config:
     cloud_name: dy6lb8vna
     api_key: 567216352827144
-    multiple: true
 
 media_folder: 'src/images/posts'
 public_folder: 'images/posts'
@@ -44,7 +43,7 @@ collections:
           name: 'slug',
           widget: 'string',
         }
-      - { label: 'ID', name: 'id', widget: 'string'}
+      - { label: 'ID', name: 'id', widget: 'string' }
       - { label: 'Price', name: 'price', widget: 'number', valueType: 'int' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Title', name: 'title', widget: 'string' }
