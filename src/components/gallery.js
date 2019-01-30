@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 // import { CloudinaryContext, Transformation, Image } from 'cloudinary-react'
 import Spinner from './spinner'
 import Lightbox from 'react-images'
 
 import '../styles/gallery.css'
-class Gallery extends Component {
+class Gallery extends PureComponent {
   constructor(props) {
     super(props)
     this.state = {

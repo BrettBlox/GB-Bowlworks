@@ -5,6 +5,7 @@
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
   font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 .success {
@@ -38,15 +39,32 @@
 }
 
 #successLink {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
-button:hover {
+#successLink {
+  text-align: left;
+  font: 700 25px 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #d7a150,
+    #d7a150 50%,
+    hsl(0, 100%, 18%) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  text-decoration: underline;
+  text-decoration-color: hsl(0, 100%, 18%);
 }
 
-h1 {
+#successLink:hover {
+  transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 0%;
+}
+
+.successWrapper h1 {
   font-size: 2.5rem;
 }
 

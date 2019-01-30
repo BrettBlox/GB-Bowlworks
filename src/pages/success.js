@@ -11,9 +11,9 @@ import '../styles/success.css'
 
 const Success = () => (
   <>
-    <div className='site'>
+    <div className="site">
       <SEO
-        title='home'
+        title="home"
         keywords={[
           `about`,
           `woodworking`,
@@ -29,20 +29,21 @@ const Success = () => (
           `art`,
           `craft`,
           `handmade`,
-          `etsy`
+          `etsy`,
         ]}
       />
       <Header />
-      <div className='successWrapper'>
-        <div className='success'>
+      <div className="successWrapper">
+        <div className="success">
           <h1>Success!</h1>
           <hr />
           <h2>
             Thank you for your message!
+            <br />
             <br /> I will get back to you as soon as possible.
           </h2>
           <br />
-          <Link id='successLink' to='/' type='button'>
+          <Link id="successLink" to="/" type="button">
             BACK TO HOME PAGE
           </Link>
         </div>
