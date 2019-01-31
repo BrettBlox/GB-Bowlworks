@@ -4,7 +4,7 @@
   padding: 30px;
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   font-family: 'Cinzel', serif;
   margin: 30px;
   background-color: #dddfd4;
@@ -81,6 +81,7 @@ p {
 
 @media only screen and (max-width: 450px) {
   .storeWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     padding: 20px;
   }
   .store-item-content .store-item > h3,
