@@ -9,7 +9,7 @@ const STORE_QUERY = graphql`
     store: allMarkdownRemark(
       filter: { fileAbsolutePath: { glob: "**/src/store/*.md" } }
       limit: 30
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: DESC, fields: [frontmatter___id] }
     ) {
       edges {
         node {
