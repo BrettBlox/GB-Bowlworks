@@ -84,6 +84,9 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     padding: 20px;
   }
+  .body img {
+    width: 100%
+  }
   .store-item-content .store-item > h3,
   h4,
   p {
