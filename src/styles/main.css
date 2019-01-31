@@ -34,7 +34,7 @@
   font-weight: bold;
   padding-left: 30px;
   padding-right: 30px;
-  
+  font-family: 'Quattrocento', serif;
 }
 
 @media only screen and (max-width: 650px) {

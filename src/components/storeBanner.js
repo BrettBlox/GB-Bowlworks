@@ -4,7 +4,7 @@ import '../styles/main.css'
 
 const storeBanner = () => (
   <div className='cover'>
-    <div className='card description'>
+    <div className='description'>
       <h1>CURRENT INVENTORY</h1>
       <hr />
       <p>

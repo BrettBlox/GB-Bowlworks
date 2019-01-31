@@ -4,6 +4,9 @@ body {
   font-family: 'Cinzel', sans-serif;
   margin: 0 auto;
   background-color: #173e43;
+  > p {
+    font-family: 'Quattrocento', serif;
+  }
 }
 
 .site {
