@@ -11,6 +11,7 @@
 }
 
 .body img {
+  display: inline-block;
   width: 200px;
   height: auto;
   border-radius: 4px;
