@@ -3,8 +3,6 @@ slug: /first-post
 date: '2018-10-15'
 title: That Old Pecan Stump
 ---
-# Christmas 1968
-
 In 1968 my mom received this pecan stump/stool from her brother as a Christmas gift.
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_734/v1/other/photo_12.jpg)
