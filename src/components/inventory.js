@@ -74,7 +74,7 @@ const Inventory = () => (
               data-item-price={node.frontmatter.price}
               data-item-image={node.frontmatter.image}
               data-item-name={node.frontmatter.title}
-              data-item-description={node.frontmatter.description}
+              data-item-description={node.frontmatter.body}
               data-item-url={
                 'http://snipcart-gatsby.netlify.com' + node.frontmatter.slug
               }
