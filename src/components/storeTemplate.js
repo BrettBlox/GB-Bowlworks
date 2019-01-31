@@ -50,7 +50,7 @@ export default function Template({
               <h1>{frontmatter.title}</h1>
               <h2>{`$${frontmatter.price}.00`}</h2>
               {/* <h4>{frontmatter.description}</h4> */}
-              <div dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="body" dangerouslySetInnerHTML={{ __html: html }} />
               <a
                 href='#'
                 className='snipcart-add-item buyBtn'
