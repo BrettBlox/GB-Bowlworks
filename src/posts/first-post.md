@@ -11,13 +11,13 @@ In 1968 my mom received this pecan stump/stool from her brother as a Christmas g
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_649/v1/other/photo_13.jpg)
 
-For 45 years it sat in my parents den. In 2013 she asked if I wanted it, which I did. I knew it was pecan but had no idea how beautiful the wood grain was. I cut into it and found some amazing spalting but lots of cracks and splits and pith. 
+For 45 years it sat in my parents den. In 2013 she asked if I wanted it, which I did. I knew it was pecan but had no idea how beautiful the wood grain was. I cut into it and found some amazing spalting but lots of cracks, splits and pith. 
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_677/v1/other/photo_14.jpg)
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548468228/other/IMG_1251.jpg)
 
-Each bowl had some cracks that I cleaned up with a Dremel and then added some turquoise inlay in.
+I was able to find enough decent wood to make two bowls.  Each bowl had some cracks that I cleaned up and then filled with some turquoise inlay.
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_677/v1/other/IMG_1275.jpg)
 
