@@ -95,24 +95,24 @@ class Gallery extends PureComponent {
     let col2 = []
     let col3 = []
     let col4 = []
+    let col5 = []
     for (let i = 0; i < gallerySort.length; i++) {
-      if (i < 45 && i % 4 === 0) {
+      if (i % 4 === 0 && col1.length < 11) {
         col1.push(gallerySort[i])
-      } else if (i < 45 && i % 4 === 1) {
+      } else if (i % 4 === 1) {
         col2.push(gallerySort[i])
-      } else if (i < 45 && i % 4 === 2) {
+      } else if (i % 4 === 2) {
         col3.push(gallerySort[i])
-      } else {
+      } else if (i % 4 === 3) {
         col4.push(gallerySort[i])
       }
     }
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
-
     const wideView = (
       <div className="grid-wrapper">
         {sortedGallery.map((data, i) => {
           return (
-            <div className="zone" key={data.src}>
+            <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
                   <img src={data.src} alt="wooden bowl" />
