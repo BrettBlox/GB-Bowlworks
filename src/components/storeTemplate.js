@@ -49,7 +49,7 @@ export default function Template({
             <div className='store-item'>
               <h1>{frontmatter.title}</h1>
               <h2>{`$${frontmatter.price}.00`}</h2>
-              <h4>{frontmatter.description}</h4>
+              {/* <h4>{frontmatter.description}</h4> */}
               <div dangerouslySetInnerHTML={{ __html: html }} />
               <a
                 href='#'
@@ -58,7 +58,7 @@ export default function Template({
                 data-item-price={frontmatter.price}
                 data-item-image={frontmatter.image}
                 data-item-name={frontmatter.title}
-                data-item-description={frontmatter.description}
+                data-item-description={frontmatter.body}
                 data-item-url={
                   'http://snipcart-gatsby.netlify.com' + frontmatter.slug
                 }>
@@ -84,7 +84,6 @@ export const inventoryQuery = graphql`
         image
         slug
         price
-        description
       }
     }
   }
