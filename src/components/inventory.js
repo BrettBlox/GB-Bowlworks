@@ -20,7 +20,6 @@ const STORE_QUERY = graphql`
             image
             title
             date(formatString: "MMMM DD, YYYY")
-            description
           }
         }
       }
