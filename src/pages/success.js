@@ -13,7 +13,7 @@ const Success = () => (
   <>
     <div className="site">
       <SEO
-        title="home"
+        title="success"
         keywords={[
           `about`,
           `woodworking`,
