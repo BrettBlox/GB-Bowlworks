@@ -77,6 +77,7 @@ const Inventory = () => (
               data-item-description={node.frontmatter.body}
               data-item-url={
                 'https://brave-mestorf-252306.netlify.com' +
+                '/store' +
                 node.frontmatter.slug
               }
             >
