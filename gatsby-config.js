@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `GB Bowlworks`,
+    siteUrl: `https://www.gbbowlworks.com`,
     description: `Segmented wooden bowls made in Jenks, OK`,
     author: `Brett Bloxom`,
   },
