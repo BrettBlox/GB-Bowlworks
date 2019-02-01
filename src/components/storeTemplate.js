@@ -62,7 +62,7 @@ export default function Template({
                 data-item-name={frontmatter.title}
                 data-item-description={frontmatter.body}
                 data-item-url={
-                  'http://snipcart-gatsby.netlify.com' + frontmatter.slug
+                  'https://brave-mestorf-252306.netlify.com' + frontmatter.slug
                 }
               >
                 <button className="buy">BUY NOW</button>

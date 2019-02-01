@@ -76,7 +76,8 @@ const Inventory = () => (
               data-item-name={node.frontmatter.title}
               data-item-description={node.frontmatter.body}
               data-item-url={
-                'http://snipcart-gatsby.netlify.com' + node.frontmatter.slug
+                'https://brave-mestorf-252306.netlify.com' +
+                node.frontmatter.slug
               }
             >
               <button className="buy">BUY NOW</button>
