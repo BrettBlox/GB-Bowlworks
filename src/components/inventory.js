@@ -72,7 +72,7 @@ const Inventory = () => (
               className="snipcart-add-item buyBtn"
               data-item-id={node.frontmatter.id}
               data-item-price={node.frontmatter.price}
-              data-item-image={node.frontmatter.image}
+              data-item-image={node.frontmatter.image[0]}
               data-item-name={node.frontmatter.title}
               data-item-description={node.frontmatter.body}
               data-item-url={
