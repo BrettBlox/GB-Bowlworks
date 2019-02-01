@@ -60,7 +60,7 @@ const Inventory = () => (
             ]}
           />
           <article className="inventory">
-            <img src={node.frontmatter.image} alt="bowl" />
+            <img src={node.frontmatter.image[0]} alt="bowl" />
             <Link className="listingLink" to={`/store${node.frontmatter.slug}`}>
               <h2>{node.frontmatter.title}</h2>
             </Link>
