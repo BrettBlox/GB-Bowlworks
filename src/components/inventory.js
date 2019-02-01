@@ -49,7 +49,7 @@ const Inventory = () => (
                 url: '',
                 id: 'snipcart',
                 'data-api-key':
-                  'NTY3MDBmMTctMzkyMy00MGExLWJhNzQtN2YzMTYxODUzYmQ2NjM2ODQwNTIzODg1MTYwNjg4',
+                  'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
                 src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
               },
               {

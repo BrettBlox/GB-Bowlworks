@@ -8,7 +8,7 @@ import Footer from './footer'
 import '../styles/storeTemplate.css'
 
 export default function Template({
-  data // this prop will be injected by the GraphQL query below.
+  data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
@@ -20,8 +20,8 @@ export default function Template({
           {
             href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
             rel: 'stylesheet',
-            type: 'text/css'
-          }
+            type: 'text/css',
+          },
         ]}
         script={[
           {
@@ -29,31 +29,33 @@ export default function Template({
             url: '',
             id: 'snipcart',
             'data-api-key':
-              'NTY3MDBmMTctMzkyMy00MGExLWJhNzQtN2YzMTYxODUzYmQ2NjM2ODQwNTIzODg1MTYwNjg4',
-            src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js'
+              'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
+            src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
           },
           {
             type: 'text/javascript',
             src:
-              'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'
-          }
+              'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+          },
         ]}
       />
-      <div className='site'>
+      <div className="site">
         <Header />
-        <div className='storeWrapper'>
-          <div className='store-item-image'>
-            <img src={frontmatter.image} alt='store-item' />
+        <div className="storeWrapper">
+          <div className="store-item-image">
+            <img src={frontmatter.image} alt="store-item" />
           </div>
-          <div className='store-item-content'>
-            <div className='store-item'>
+          <div className="store-item-content">
+            <div className="store-item">
               <h1>{frontmatter.title}</h1>
               <h2>{`$${frontmatter.price}.00`}</h2>
-              {/* <h4>{frontmatter.description}</h4> */}
-              <div className="body" dangerouslySetInnerHTML={{ __html: html }} />
+              <div
+                className="body"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
               <a
-                href='#'
-                className='snipcart-add-item buyBtn'
+                href="#"
+                className="snipcart-add-item buyBtn"
                 data-item-id={frontmatter.id}
                 data-item-price={frontmatter.price}
                 data-item-image={frontmatter.image}
@@ -61,8 +63,9 @@ export default function Template({
                 data-item-description={frontmatter.body}
                 data-item-url={
                   'http://snipcart-gatsby.netlify.com' + frontmatter.slug
-                }>
-                <button className='buy'>BUY NOW</button>
+                }
+              >
+                <button className="buy">BUY NOW</button>
               </a>
             </div>
           </div>
