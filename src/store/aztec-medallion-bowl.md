@@ -1,7 +1,7 @@
 ---
 slug: /1902
 id: '1902'
-price: 3
+price: 10
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1548905382/GB%20Bowlworks%20Gallery/1902d.jpg
 title: Aztec Medallion Bowl
