@@ -23,7 +23,7 @@ Next, I needed to mount the drum into an enclosure. I was still thinking it woul
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548416866/other/IMG_9603.jpg)
 
-I added the switch, a 4" dust port for attaching to the main dust system, a laminate top so the workpiece would easily slide while sanding, a coat of black paint, some 120 sandpaper and WALA.
+I added the switch, a 4" dust port for attaching to the main dust system, a laminate top so the workpiece would easily slide while sanding, a coat of black paint, some 120 sandpaper and voila!
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/a_auto_right/v1/other/E9881D6B-8B80-4D54-8718-A060CE20F376.jpg)
 
