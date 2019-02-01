@@ -62,7 +62,7 @@ export default function Template({
                 data-item-name={frontmatter.title}
                 data-item-description={frontmatter.body}
                 data-item-url={
-                  'https://brave-mestorf-252306.netlify.com' +
+                  'https://gbbowlworks.com' +
                   '/store' +
                   frontmatter.slug
                 }
