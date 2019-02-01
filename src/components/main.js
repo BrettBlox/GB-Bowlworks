@@ -11,8 +11,9 @@ const Main = () => (
         This site showcases unique handmade wooden bowls made in Oklahoma. The
         gallery below has a few of the past and present pieces out of my studio.
         Current inventory is available for purchase on the Store page.
-        Questions? Free free to send a message on the Contact page. I'm also on
-        Instagram. Thanks for stopping by!
+        Questions? Free free to send a message on the Contact page. I'm also
+        on&nbsp;<a href="https://www.instagram.com/gbbowlworks/">Instagram</a>.
+        Thanks for stopping by!
         <br />
         <br />
         -Greg
