@@ -18,7 +18,7 @@ media_library:
   config:
     cloud_name: dy6lb8vna
     api_key: 567216352827144
-    mulitple: true
+    # mulitple: true
 
 media_folder: 'src/images/posts'
 public_folder: 'images/posts'
