@@ -3,7 +3,7 @@ slug: /1901
 id: '1901'
 price: 450
 image: >-
-  http://res.cloudinary.com/dy6lb8vna/image/upload/b_rgb:173e43,dpr_auto/v1/GB%20Bowlworks%20Gallery/DSC_3211a.jpg
+  https://res.cloudinary.com/dy6lb8vna/image/upload/b_rgb:173e43,dpr_auto/v1/GB%20Bowlworks%20Gallery/DSC_3211a.jpg
 title: Quilted Walnut Canister
 date: 2018-02-01T06:00:00.000Z
 ---
