@@ -7,6 +7,8 @@ I've had two shops in my woodworking life, one that was too big, 700 square feet
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548848808/other/DSC03520.jpg)
 
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1549112844/other/DSC01541.jpg)
+
 ... and one that was too small, 100 square feet. 
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548846944/other/DSC_0008.jpg)
