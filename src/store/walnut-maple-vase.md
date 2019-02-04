@@ -8,3 +8,5 @@ title: Walnut & Maple Vase
 date: 2019-01-30T00:48:23.242Z
 ---
 Just completed, a large Maple & Walnut vase composed of 312 individual segments. This piece is 12" in max diameter and 10" in height. Great contrasting combo of woods!
+
+![Walnut & Maple Vase](https://res.cloudinary.com/dy6lb8vna/image/upload/v1549252422/GB%20Bowlworks%20Gallery/IMG_1763.jpg)
