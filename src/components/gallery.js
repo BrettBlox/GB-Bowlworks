@@ -63,7 +63,7 @@ class Gallery extends PureComponent {
       const gallery = await res.json()
       this.setState({
         gallery: gallery.resources,
-        loading: false,
+        // loading: false,
       })
     } catch (e) {
       console.log(e)
@@ -71,6 +71,7 @@ class Gallery extends PureComponent {
     //add window resize event listener
     window.addEventListener('resize', this.updateWidth)
     this.updateWidth()
+    this.spinnerTimeout()
   }
 
   //set state as viewPort width changes.
@@ -78,6 +79,17 @@ class Gallery extends PureComponent {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWidth)
+  }
+
+  spinnerTimeout = () => {
+    setTimeout(
+      function() {
+        this.setState({
+          loading: false,
+        })
+      }.bind(this),
+      1000
+    )
   }
 
   render() {
