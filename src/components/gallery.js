@@ -63,7 +63,7 @@ class Gallery extends PureComponent {
       const gallery = await res.json()
       this.setState({
         gallery: gallery.resources,
-        // loading: false,
+        loading: false,
       })
     } catch (e) {
       console.log(e)
@@ -71,7 +71,7 @@ class Gallery extends PureComponent {
     //add window resize event listener
     window.addEventListener('resize', this.updateWidth)
     this.updateWidth()
-    this.spinnerTimeout()
+    // this.spinnerTimeout()
   }
 
   //set state as viewPort width changes.
@@ -81,16 +81,16 @@ class Gallery extends PureComponent {
     window.removeEventListener('resize', this.updateWidth)
   }
 
-  spinnerTimeout = () => {
-    setTimeout(
-      function() {
-        this.setState({
-          loading: false,
-        })
-      }.bind(this),
-      1000
-    )
-  }
+  // spinnerTimeout = () => {
+  //   setTimeout(
+  //     function() {
+  //       this.setState({
+  //         loading: false,
+  //       })
+  //     }.bind(this),
+  //     1000
+  //   )
+  // }
 
   render() {
     //add src property to each element in sortedGallery array for Lightbox
@@ -107,7 +107,6 @@ class Gallery extends PureComponent {
     let col2 = []
     let col3 = []
     let col4 = []
-    let col5 = []
     for (let i = 0; i < gallerySort.length; i++) {
       if (i % 4 === 0 && col1.length < 12) {
         col1.push(gallerySort[i])
