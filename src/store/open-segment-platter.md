@@ -1,7 +1,7 @@
 ---
 slug: /1926
 id: '1826'
-price: 275
+price: 195
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276876/GB%20Bowlworks%20Gallery/IMG_3048a.jpg
 title: Open Segment Platter
