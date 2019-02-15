@@ -1,7 +1,7 @@
 ---
 slug: /1817
 id: '1817'
-price: 315
+price: 230
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276582/GB%20Bowlworks%20Gallery/IMG_1783a.jpg
 title: Walnut & Maple Vase
