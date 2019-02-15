@@ -1,7 +1,7 @@
 ---
 slug: /1802
 id: '1802'
-price: 175
+price: 110
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276578/GB%20Bowlworks%20Gallery/DSC_1966a.jpg
 title: Maple & Cherry Segmented Bowl
