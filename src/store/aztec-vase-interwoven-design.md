@@ -1,7 +1,7 @@
 ---
 slug: /1813
 id: '1813'
-price: 295
+price: 220
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276581/GB%20Bowlworks%20Gallery/IMG_1393a.jpg
 title: Aztec Vase (Interwoven Design)
