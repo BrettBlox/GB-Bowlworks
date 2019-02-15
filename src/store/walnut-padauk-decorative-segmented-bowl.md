@@ -1,7 +1,7 @@
 ---
 slug: /1814
 id: '1814'
-price: 125
+price: 85
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1548276581/GB%20Bowlworks%20Gallery/DSC_3075a.jpg
 title: Walnut & Padauk Decorative Segmented Bowl
