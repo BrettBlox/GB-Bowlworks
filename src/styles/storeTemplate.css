@@ -68,11 +68,13 @@ p {
   height: 50px;
   font-family: 'Cinzel', serif;
   font-size: 20px;
+  transition: all .3s;
 }
 
 .store-item-content .store-item > a > button:hover {
   background-color: hsl(0, 100%, 18%);
   cursor: pointer;
+  transform: translateY(-3px);
 }
 
 /******************************************************************
