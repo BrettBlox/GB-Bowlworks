@@ -68,7 +68,6 @@
 *************************************************************/
 #header {
   padding: 28px 20px;
-  z-index: 2000;
 }
 
 #header .menu-icon {
@@ -213,9 +212,10 @@
     flex-direction: column;
     background-color: #3fb0ac;
     background-image: none;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
   }
 
   #header > .menu {
