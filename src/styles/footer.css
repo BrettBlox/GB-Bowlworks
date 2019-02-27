@@ -23,9 +23,16 @@
 }
 
 .footer__copyright {
-    color: #3fb0ac;
-    text-align: center;
-    margin-top: 6rem;
+  color: #3fb0ac;
+  text-align: center;
+  margin-top: 6rem;
+  max-width: 50vw;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footItem {

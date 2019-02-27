@@ -64,7 +64,7 @@ const Footer = () => (
       </div>
       <div className="copyright">
         <p className="footer__copyright">
-          &copy;2019 GB Bowlworks
+          &copy;2019 GB Bowlworks, LLC. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with prior written permission of GB Bowlworks, LLC.
           </p>
       </div>
     </footer>
