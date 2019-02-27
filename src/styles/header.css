@@ -42,7 +42,7 @@
 }
 
 .navLink {
-  font: 700 3rem 'Cinzel', sans-serif;
+  font: 700 2.5rem 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -173,10 +173,6 @@
   #mainLogo > img {
     width: 250px;
   }
-
-  .navLink {
-    font: 300 2.5rem 'Cinzel', sans-serif;
-  }
 }
 
 /*************LESS THAN 1020PX DO THIS*******************/
@@ -203,9 +199,6 @@
 @media only screen and (max-width: 710px) {
   #mainLogo > img {
     width: 100px;
-  }
-  .navLink {
-    font: 300 1.5rem 'Cinzel', sans-serif;
   }
 }
 
