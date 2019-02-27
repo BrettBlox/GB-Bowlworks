@@ -130,11 +130,11 @@
 }
 
 #header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
+  transform: rotate(-135deg);
 }
 
 #header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
+  transform: rotate(135deg);
 }
 
 #header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
