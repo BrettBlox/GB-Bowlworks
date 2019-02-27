@@ -66,12 +66,14 @@
 /*************************************************************
 ***HAMBURGER DROPDOWN MENU ************************
 *************************************************************/
+#header {
+  padding: 28px 20px;
+}
+
 #header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  padding: 28px 20px;
   position: relative;
-  user-select: none;
 }
 
 #header .menu-icon .navicon {
@@ -84,7 +86,7 @@
   margin: 0;
   margin-left: 0;
   transition: background 0.2s ease-out;
-  width: 26px;
+  width: 30px;
 }
 
 #header .menu-icon .navicon:before,
@@ -141,7 +143,7 @@
 }
 
 #header .menu a {
-  font: 300 25px 'Cinzel', sans-serif;
+  font: 300 2rem 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -206,13 +208,16 @@
 /***********LESS THAN 610PX DO THIS*****************/
 @media only screen and (max-width: 610px) {
   #header {
+    display: flex;
+    flex-direction: column;
     background-color: #3fb0ac;
     position: sticky;
     top: 0;
+    margin: 0 auto;
   }
 
   #header > .menu {
-    padding-left: 27px;
+    /* padding-left: 27px; */
     list-style: none;
   }
 
@@ -231,7 +236,7 @@
   }
 
   #logo2 {
-    width: 47px;
+    width: 3rem;
   }
 }
 
