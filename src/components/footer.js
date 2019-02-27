@@ -42,7 +42,7 @@ const Footer = () => (
             </Link>
           </li>
           <li className="footItem">
-            <Link className="footLink" to="/contact">
+            <Link className="footLink" to="/">
               FAQ
             </Link>
           </li>
