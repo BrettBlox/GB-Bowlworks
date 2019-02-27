@@ -213,12 +213,12 @@
     background-color: #3fb0ac;
     position: sticky;
     top: 0;
-    margin: 0 auto;
   }
 
   #header > .menu {
-    /* padding-left: 27px; */
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   #header .navLink {
