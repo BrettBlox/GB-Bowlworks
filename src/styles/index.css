@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento');
+
 body {
   font-family: 'Cinzel', sans-serif;
   margin: 0 auto;
   background-color: #173e43;
-  > p {
-    font-family: 'Quattrocento', serif;
-  }
+}
+
+body > p {
+  font-family: 'Quattrocento', serif;
 }
 
 .site {

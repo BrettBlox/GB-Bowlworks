@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
-/* COLORS */
-/*  */
-
 /**********************************************************
 **MAIN HEADER CONTAINER************************************
 **********************************************************/
@@ -45,7 +42,7 @@
 }
 
 .navLink {
-  font: 300 40px 'Cinzel', sans-serif;
+  font: 300 3rem 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,7 +54,7 @@
   );
   background-size: 200% 100%;
   background-position: 100%;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .navLink:hover {
@@ -82,10 +79,10 @@
   display: block;
   height: 2px;
   position: fixed;
-  top: 0;
-  left: 0;
-  margin: 8%;
-  margin-left: 5%;
+  top: 1.7rem;
+  left: 1.7rem;
+  margin: 0;
+  margin-left: 0;
   transition: background 0.2s ease-out;
   width: 26px;
 }
@@ -94,7 +91,7 @@
 #header .menu-icon .navicon:after {
   background: #333;
   content: '';
-  display: inline-block;
+  display: block;
   height: 100%;
   position: absolute;
   z-index: -1;
@@ -103,11 +100,11 @@
 }
 
 #header .menu-icon .navicon:before {
-  top: 5px;
+  top: 7px;
 }
 
 #header .menu-icon .navicon:after {
-  top: -5px;
+  top: -7px;
 }
 
 #header .menu-btn {
@@ -165,41 +162,44 @@
 /******************************************************************
 ***MEDIA QUERIES **************************************************
 ******************************************************************/
-/*************LESS THAN 1050PX DO THIS*******************/
-@media only screen and (max-width: 1050px) {
+/*************LESS THAN 1080PX DO THIS*******************/
+@media only screen and (max-width: 1180px) {
   #mainLogo > img {
     width: 250px;
   }
 
   .navLink {
-    font: 300 35px 'Cinzel', sans-serif;
+    font: 300 2.5rem 'Cinzel', sans-serif;
   }
 }
 
-/*************LESS THAN 920PX DO THIS*******************/
-@media only screen and (max-width: 920px) {
+/*************LESS THAN 1020PX DO THIS*******************/
+@media only screen and (max-width: 1020px) {
   #mainLogo > img {
     width: 200px;
   }
   .navLink {
-    font: 300 30px 'Cinzel', sans-serif;
+    font: 300 2rem 'Cinzel', sans-serif;
   }
 }
 
-/*************LESS THAN 780PX DO THIS*******************/
-@media only screen and (max-width: 780px) {
- #mainLogo > img {
+/*************LESS THAN 860PX DO THIS*******************/
+@media only screen and (max-width: 860px) {
+  #mainLogo > img {
     width: 150px;
   }
   .navLink {
-    font: 300 25px 'Cinzel', sans-serif;
+    font: 300 1.7rem 'Cinzel', sans-serif;
   }
 }
 
-/*************LESS THAN 650PX DO THIS*******************/
-@media only screen and (max-width: 650px) {
+/*************LESS THAN 710PX DO THIS*******************/
+@media only screen and (max-width: 710px) {
   #mainLogo > img {
     width: 100px;
+  }
+  .navLink {
+    font: 300 1.5rem 'Cinzel', sans-serif;
   }
 }
 
@@ -226,14 +226,12 @@
 
   #mainLogo2 {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.25rem;
+    right: 1rem;
   }
 
   #logo2 {
     width: 47px;
-    margin-top: 5px;
-    margin-right: 16px;
   }
 }
 
