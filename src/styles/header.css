@@ -70,6 +70,10 @@
   padding: 28px 20px;
 }
 
+#header > .menu > li {
+  padding: .7rem;
+}
+
 #header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -143,7 +147,7 @@
 }
 
 #header .menu a {
-  font: 300 2rem 'Cinzel', sans-serif;
+  font: 700 2rem 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -221,7 +225,7 @@
   #header > .menu {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
   }
 
   #header .navLink {
