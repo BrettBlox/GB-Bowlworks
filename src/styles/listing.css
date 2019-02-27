@@ -13,7 +13,6 @@
 
 .listing > .read-more {
   text-align: left;
-  text-decoration: underline;
   font: 700 20px 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
@@ -26,35 +25,28 @@
   );
   background-size: 200% 100%;
   background-position: 100%;
-  transition: all .3s;  
+  transition: all 0.3s;
+  text-decoration-color: hsl(0, 100%, 18%);
+  transition: all 0.2s;
 }
 
-article > .read-more:hover {
-  transition: all 2s cubic-bezier(0, 0, 0.23, 1);
+.listing > .read-more:hover {
   background-position: 0%;
   transform: translateY(-3px);
 }
 
-article p {
+.listing p {
   text-align: left;
   margin: 0;
   padding: 0;
   font-size: 1.3rem;
 }
-.
 
-article > .read-more {
-  text-decoration: underline;
-  text-decoration-color: hsl(0, 100%, 18%);
-  transition: all .2s;
-}
-
-article > .listingLink {
+.listing .listingLink {
   text-decoration: none;
 }
 
-article > .listingLink > h2 {
-  text-decoration: none;
+.listing .listingLink h2 {
   margin-bottom: 0;
   text-align: left;
   font: 700 35px 'Cinzel', sans-serif;
@@ -69,11 +61,10 @@ article > .listingLink > h2 {
   );
   background-size: 200% 100%;
   background-position: 100%;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-article > a > h2:hover {
-  transition: all 0.7s cubic-bezier(0, 0, 0.23, 1);
+.listing > a > h2:hover {
   background-position: 0%;
   transform: translateY(-3px);
 }

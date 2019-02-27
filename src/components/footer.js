@@ -13,7 +13,6 @@ const Footer = () => (
         <a href="/">
           <img id="footLogo" src={whiteLogo} alt="GB Bowlworks Logo" />
         </a>
-        {/* <h1 className="footTitle">GB BOWLWORKS</h1> */}
       </div>
       <div className="footer__container">
         <ul className="foot-nav">
@@ -48,15 +47,6 @@ const Footer = () => (
             </Link>
           </li>
         </ul>
-        <div className="copyright">
-          <p className="footer__copyright">
-            Built by Brett Bloxom for GB Bowlworks. Copyright &copy;2019 by
-            Brett Bloxom. You are 100% allowed to use this webpage for both
-            personal and commercial use, but NOT to claim it as your own design.
-            A credit to the original author, Brett Bloxom, is of course highly
-            appreciated!
-          </p>
-        </div>
       </div>
       <div className="social">
         <a
@@ -71,6 +61,11 @@ const Footer = () => (
             src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Etsy_logo_lg_rgb.png"
           />
         </a>
+      </div>
+      <div className="copyright">
+        <p className="footer__copyright">
+          &copy;2019 GB Bowlworks
+          </p>
       </div>
     </footer>
   </div>

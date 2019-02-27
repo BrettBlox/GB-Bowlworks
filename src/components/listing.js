@@ -36,7 +36,7 @@ const Listing = () => (
           <p>{node.frontmatter.date}</p>
           <p>{node.excerpt}</p>
           <Link className='read-more' to={`/posts${node.frontmatter.slug}`}>
-            Read More
+            Read More &rarr;
           </Link>
         </article>
       ))

@@ -13,12 +13,8 @@
   margin: 0 auto;
   padding-left: 9vw;
   padding-right: 9vw;
-  background-color: #3fb0ac;
-    background-image: linear-gradient(
-      to top,
-      #173e43,
-      #3fb0ac 50%
-    );
+  /* background-color: #3fb0ac; */
+  background-image: linear-gradient(to top, #173e43, #3fb0ac 70%);
 }
 
 #secondLogo {
@@ -220,6 +216,7 @@
     background-image: none;
     position: sticky;
     top: 0;
+    left: 0;
   }
 
   #header > .menu {
