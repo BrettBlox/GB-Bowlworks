@@ -13,6 +13,7 @@
 
 .listing > .read-more {
   text-align: left;
+  text-decoration: underline;
   font: 700 20px 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
@@ -25,11 +26,13 @@
   );
   background-size: 200% 100%;
   background-position: 100%;
+  transition: all .3s;  
 }
 
 article > .read-more:hover {
   transition: all 2s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
+  transform: translateY(-3px);
 }
 
 article p {
@@ -40,16 +43,17 @@ article p {
 }
 .
 
-article .read-more {
+article > .read-more {
   text-decoration: underline;
   text-decoration-color: hsl(0, 100%, 18%);
+  transition: all .2s;
 }
 
-article a {
+article > .listingLink {
   text-decoration: none;
 }
 
-article > a > h2 {
+article > .listingLink > h2 {
   text-decoration: none;
   margin-bottom: 0;
   text-align: left;
@@ -65,9 +69,11 @@ article > a > h2 {
   );
   background-size: 200% 100%;
   background-position: 100%;
+  transition: all .3s;
 }
 
 article > a > h2:hover {
   transition: all 0.7s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
+  transform: translateY(-3px);
 }
