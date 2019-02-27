@@ -13,7 +13,6 @@
   margin: 0 auto;
   padding-left: 9vw;
   padding-right: 9vw;
-  /* background-color: #3fb0ac; */
   background-image: linear-gradient(to top, #173e43, #3fb0ac 70%);
 }
 
@@ -43,7 +42,7 @@
 }
 
 .navLink {
-  font: 300 3rem 'Cinzel', sans-serif;
+  font: 700 3rem 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,7 +60,7 @@
 .navLink:hover {
   transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
 }
 
 /*************************************************************
