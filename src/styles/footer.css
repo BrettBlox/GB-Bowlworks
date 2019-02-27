@@ -1,33 +1,46 @@
 .footer {
-  background-color: hsl(0, 100%, 18%);
-  position: sticky;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
+  background-image: linear-gradient(to bottom, #173e43, hsl(0, 100%, 18%) 70%);
+  padding: 6rem;
 }
 
-.footer > ul {
-  display: flex;
-  flex-flow: row wrap;
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40vw, auto));
+  grid-auto-rows: auto;
+  justify-content: space-evenly;
+}
+
+.footer__container > .foot-nav {
+  border-top: 1px solid #d7a150;
   list-style: none;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0;
+  text-align: center;
+  width: 40vw;
+  margin: 3rem;
+  padding-left: 0;
 }
 
-li {
-  padding: 0.5em;
+.copyright {
+  list-style: none;
+  text-align: center;
+  width: 40vw;
+  border-top: 1px solid #d7a150;
+  margin: 3rem;
+  padding-right: 0;
+  color: #3fb0ac;
+}
+
+.footItem {
+  display: inline-block;
   transition: all 0.3s;
 }
 
-li:hover {
-  transform: translateY(-3px);
+.footItem:hover {
+  transform: translateY(-3px) scale(1.1);
 }
 
 .footLink {
   text-align: center;
-  font: 300 35px 'Cinzel', sans-serif;
+  font: 700 1.5rem 'Cinzel', sans-serif;
   background-color: #3fb0ac;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -39,6 +52,9 @@ li:hover {
   );
   background-size: 200% 100%;
   background-position: 100%;
+  display: inline-block;
+  padding: 1em;
+  transition: all 0.3s;
 }
 
 .footLink:hover {
@@ -46,9 +62,14 @@ li:hover {
   background-position: 0%;
 }
 
+.footer__logo {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+
 #footLogo {
-  width: 120px;
-  margin: 1rem;
+  width: 15rem;
 }
 
 #footLogo:hover {
@@ -67,14 +88,30 @@ li:hover {
   }
 }
 
+.social {
+  text-align: center;
+}
+
+.etsyLogo {
+  width: 6rem;
+  transition: all 0.3s;
+}
+
+.etsyLogo:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
 #instagramColorLink {
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #igImageColor {
-  width: 46px;
+  width: 3em;
+  transition: all 0.3s;
+}
+
+#igImageColor:hover {
+  transform: translateY(-3px) scale(1.1);
 }
 
 @media only screen and (max-width: 975px) {
@@ -98,7 +135,7 @@ li:hover {
     font-weight: bold;
   }
   #footLogo {
-    display: none;
+    width: 120px;
   }
 }
 

@@ -14,6 +14,11 @@
   padding-left: 9vw;
   padding-right: 9vw;
   background-color: #3fb0ac;
+    background-image: linear-gradient(
+      to top,
+      #173e43,
+      #3fb0ac 50%
+    );
 }
 
 #secondLogo {
@@ -68,6 +73,7 @@
 *************************************************************/
 #header {
   padding: 28px 20px;
+  z-index: 2000;
 }
 
 #header .menu-icon {
@@ -211,6 +217,7 @@
     display: flex;
     flex-direction: column;
     background-color: #3fb0ac;
+    background-image: none;
     position: sticky;
     top: 0;
   }
