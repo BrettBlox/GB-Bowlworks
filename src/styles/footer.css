@@ -17,6 +17,11 @@
 
 li {
   padding: 0.5em;
+  transition: all 0.3s;
+}
+
+li:hover {
+  transform: translateY(-3px);
 }
 
 .footLink {

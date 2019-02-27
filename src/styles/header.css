@@ -57,11 +57,13 @@
   );
   background-size: 200% 100%;
   background-position: 100%;
+  transition: all .3s;
 }
 
 .navLink:hover {
   transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
+  transform: translateY(-3px);
 }
 
 /*************************************************************

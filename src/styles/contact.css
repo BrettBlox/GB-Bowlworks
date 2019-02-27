@@ -87,10 +87,12 @@ textarea {
   height: auto;
   font-family: 'Cinzel', serif;
   font-size: 20px;
+  transition: all .3s;
 }
 
 button:hover {
   background-color: hsl(0, 100%, 18%);
+  transform: translateY(-3px);
 }
 
 @media only screen and (max-width: 650px) {

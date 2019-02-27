@@ -29,11 +29,14 @@
   font-size: 20px;
   margin: 0 auto;
   color: #fff;
+  transition: all 0.3s;
 }
 
 .inventory > a > button:hover {
   background-color: hsl(0, 100%, 18%);
   cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
 .inventory > .listingLink h2 {
   text-align: left;
