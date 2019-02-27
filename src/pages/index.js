@@ -10,9 +10,9 @@ import '../styles/index.css'
 
 const IndexPage = () => (
   <>
-    <div className='site'>
+    <div className="site">
       <SEO
-        title='home'
+        title="home"
         keywords={[
           `about`,
           `woodworking`,
@@ -28,14 +28,14 @@ const IndexPage = () => (
           `art`,
           `craft`,
           `handmade`,
-          `etsy`
+          `etsy`,
         ]}
       />
       <Header />
       <Main />
       <Gallery />
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 

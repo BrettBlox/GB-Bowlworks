@@ -48,8 +48,8 @@ const Success = () => (
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 

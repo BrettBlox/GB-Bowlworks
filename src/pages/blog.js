@@ -11,9 +11,9 @@ import '../styles/blog.css'
 
 const Blog = () => (
   <>
-    <div className='site'>
+    <div className="site">
       <SEO
-        title='blog'
+        title="blog"
         keywords={[
           `about`,
           `woodworking`,
@@ -29,20 +29,20 @@ const Blog = () => (
           `art`,
           `craft`,
           `handmade`,
-          `etsy`
+          `etsy`,
         ]}
       />
       <Header />
-      <div className='blogWrapper'>
-        <div className='listingWrapper'>
+      <div className="blogWrapper">
+        <div className="listingWrapper">
           <Listing />
         </div>
-        <div className='archiveWrapper'>
+        <div className="archiveWrapper">
           <Archive />
         </div>
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 

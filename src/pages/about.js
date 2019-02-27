@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SEO from '../components/seo'
@@ -8,12 +7,11 @@ import SEO from '../components/seo'
 import '../styles/about.css'
 import '../styles/index.css'
 
-
 const AboutPage = () => (
   <>
-    <div className='site'>
+    <div className="site">
       <SEO
-        title='about'
+        title="about"
         keywords={[
           `about`,
           `woodworking`,
@@ -29,17 +27,17 @@ const AboutPage = () => (
           `art`,
           `craft`,
           `handmade`,
-          `etsy`
+          `etsy`,
         ]}
       />
       <Header />
-      <div className='aboutWrapper'>
-        <div className='about'>
+      <div className="aboutWrapper">
+        <div className="about">
           <h1>ABOUT GB BOWLWORKS</h1>
           <hr />
           <img
             src={require('../images/greg/gregandjasper.jpg')}
-            alt='Greg Bloxom'
+            alt="Greg Bloxom"
           />
           <p>
             I love woodworking. I love the satisfaction I get from making things
@@ -104,8 +102,8 @@ const AboutPage = () => (
           </p>
         </div>
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 

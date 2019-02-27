@@ -10,9 +10,9 @@ import '../styles/index.css'
 
 const Store = () => (
   <>
-    <div className='site'>
+    <div className="site">
       <SEO
-        title='store'
+        title="store"
         keywords={[
           `about`,
           `woodworking`,
@@ -28,16 +28,16 @@ const Store = () => (
           `art`,
           `craft`,
           `handmade`,
-          `etsy`
+          `etsy`,
         ]}
       />
       <Header />
       <StoreBanner />
-      <div className='inventoryWrapper'>
+      <div className="inventoryWrapper">
         <Inventory />
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 
