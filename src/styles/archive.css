@@ -21,7 +21,7 @@ aside {
 }
 
 aside ul a {
-  font: 300 20px 'Cinzel', sans-serif;
+  font: 300 1.5rem 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -33,11 +33,13 @@ aside ul a {
   );
   background-size: 200% 100%;
   background-position: 100%;
+  padding: .8rem;
+  transition: all .3s;
 }
 
 aside ul a:hover {
-  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
+  transform: translateY(-3px) scale(1.1);
 }
 
 /***********LESS THAN 1000PX DO THIS*****************/
