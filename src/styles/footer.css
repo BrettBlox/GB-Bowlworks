@@ -2,6 +2,7 @@
   background-image: linear-gradient(to bottom, #173e43, hsl(0, 100%, 18%) 70%);
   padding: 8rem;
   padding-bottom: 6rem;
+  margin-top: 4rem;
 }
 
 .footer__container {
@@ -127,6 +128,7 @@
     text-align: center;
     justify-content: center;
     padding: 3rem;
+    margin-top: 0;
   }
   .footer__logo {
     margin-bottom: 0;

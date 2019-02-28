@@ -44,7 +44,7 @@ const Success = () => (
           </h2>
           <br />
           <Link id="successLink" to="/" type="button">
-            BACK TO HOME PAGE
+            BACK TO HOME PAGE &rarr;
           </Link>
         </div>
       </div>

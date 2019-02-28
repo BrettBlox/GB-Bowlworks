@@ -26,6 +26,7 @@
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s;
+  text-decoration: none;
   text-decoration-color: hsl(0, 100%, 18%);
   transition: all 0.2s;
 }

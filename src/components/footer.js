@@ -55,9 +55,9 @@ const Footer = () => (
         >
           <img id="igImageColor" src={igColor} alt="Instagram Logo" />
         </a>
-        <a class="etsy" href="https://www.etsy.com/shop/GBBowlworks">
+        <a className="etsy" href="https://www.etsy.com/shop/GBBowlworks">
           <img
-            class="etsyLogo"
+            className="etsyLogo"
             src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Etsy_logo_lg_rgb.png"
           />
         </a>
