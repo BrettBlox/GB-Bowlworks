@@ -10,12 +10,23 @@
   background-color: #dddfd4;
 }
 
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .body img {
-  display: inline-block;
+  margin: 0 1rem;
   width: 200px;
   height: auto;
   border-radius: 4px;
   box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
+  transition: all 0.3s;
+}
+
+.body img:hover {
+  transform: scale(1.5);
 }
 
 .store-item-content .store-item > h1 {
@@ -37,11 +48,9 @@ p {
 .store-item-content .store-item {
   border-radius: 4px;
   padding: 30px;
-  /* margin-top: 0; */
   display: grid;
   padding-bottom: 0;
   padding-top: 0;
-  /* align-items: flex-end */
   margin-top: 0;
 }
 
@@ -68,7 +77,7 @@ p {
   height: 50px;
   font-family: 'Cinzel', serif;
   font-size: 20px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .store-item-content .store-item > a > button:hover {
@@ -87,7 +96,8 @@ p {
     padding: 20px;
   }
   .body img {
-    width: 100%
+    width: 100%;
+    margin: 0 auto;
   }
   .store-item-content .store-item > h3,
   h4,

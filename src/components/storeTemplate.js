@@ -62,9 +62,7 @@ export default function Template({
                 data-item-name={frontmatter.title}
                 data-item-description={frontmatter.body}
                 data-item-url={
-                  'https://gbbowlworks.com' +
-                  '/store' +
-                  frontmatter.slug
+                  'https://gbbowlworks.com' + '/store' + frontmatter.slug
                 }
               >
                 <button className="buy">BUY NOW</button>
