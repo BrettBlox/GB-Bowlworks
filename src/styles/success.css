@@ -71,16 +71,16 @@
   .success {
     width: 70vw;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .success {
-    width: 80vw;
-  }
   .successWrapper .success > h1 {
     font-size: 2rem;
   }
   #successLink {
     font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .success {
+    width: 80vw;
   }
 }
