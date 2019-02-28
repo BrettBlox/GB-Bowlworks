@@ -20,24 +20,16 @@
   padding: 20px 50px 50px;
 }
 
-.success button {
-  background-color: #3fb0ac;
-  border-radius: 5px;
-  border: none;
-  padding: 10px 25px;
-  color: #fff;
-  text-shadow: 1px 1px 1px #949494;
-  width: 100%;
-  height: auto;
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
+.success__link {
+  transition: all .3s;
 }
 
-.home {
-  color: #fff;
+.success__link:hover {
+  transform: translateY(-3px);
 }
 
 #successLink {
+  margin: 10px 10px;
   font: 700 1.7rem 'Cinzel', sans-serif;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
@@ -52,10 +44,10 @@
   background-position: 100%;
   text-decoration: none;
   text-decoration-color: hsl(0, 100%, 18%);
+  transition: all .3s;
 }
 
 #successLink:hover {
-  transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
 }
 

@@ -43,9 +43,11 @@ const Success = () => (
             <br /> I will get back to you as soon as possible.
           </h2>
           <br />
-          <Link id="successLink" to="/" type="button">
-            BACK TO HOME PAGE &rarr;
-          </Link>
+          <div className="success__link">
+            <Link id="successLink" to="/" type="button">
+              BACK TO HOME PAGE &rarr;
+            </Link>
+          </div>
         </div>
       </div>
       <Footer />
