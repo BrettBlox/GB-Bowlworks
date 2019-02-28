@@ -1,5 +1,5 @@
 ---
-slug: /1926
+slug: /1826
 id: '1826'
 price: 195
 image: >-
