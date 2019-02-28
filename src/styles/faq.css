@@ -1,0 +1,28 @@
+.faq {
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.faq__box {
+  box-shadow: 10px 13px 20px rgba(25, 17, 34, 2);
+  border-radius: 4px;
+  grid-column: 1 / -1;
+  background-color: #dddfd4;
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 50px 50px;
+}
+
+
+.faq h1 {
+  font-size: 2rem;
+  color: hsl(0, 100%, 18%);
+}
