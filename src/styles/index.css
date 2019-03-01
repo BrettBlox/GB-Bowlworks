@@ -11,6 +11,10 @@ body > p {
   font-family: 'Quattrocento', serif;
 }
 
+body a {
+  text-decoration: none;
+}
+
 .site {
   min-height: 100vh;
 }
