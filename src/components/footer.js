@@ -42,7 +42,7 @@ const Footer = () => (
             </Link>
           </li>
           <li className="footItem">
-            <Link className="footLink" to="/">
+            <Link className="footLink" to="/faq">
               FAQ
             </Link>
           </li>
@@ -64,8 +64,10 @@ const Footer = () => (
       </div>
       <div className="copyright">
         <p className="footer__copyright">
-          &copy;2019 GB Bowlworks. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with prior written permission of GB Bowlworks.
-          </p>
+          &copy;2019 GB Bowlworks. The material on this site may not be
+          reproduced, distributed, transmitted, cached or otherwise used, except
+          with prior written permission of GB Bowlworks.
+        </p>
       </div>
     </footer>
   </div>

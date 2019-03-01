@@ -15,7 +15,7 @@
   text-align: center !important;
   font-family: 'Cinzel';
   background-color: #dddfd4;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);  
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
 
@@ -23,9 +23,9 @@
   grid-column: 1 / -1;
 }
 
-.cover > h1 {
-  width: 100%;
-  text-align: center;
+.description > h1 {
+  color: hsl(0, 100%, 18%);
+  font-size: 2.25rem;
 }
 
 .cover p {
@@ -54,7 +54,7 @@
 }
 
 .cover a:hover {
-  transition: all .5s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
   background-position: 0%;
 }
 
