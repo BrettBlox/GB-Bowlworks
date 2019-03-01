@@ -16,7 +16,7 @@ aside {
   padding: 20px;
   font-family: 'Cinzel';
   background-color: #dddfd4;
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);  
   border-radius: 4px;
 }
 

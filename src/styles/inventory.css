@@ -7,18 +7,30 @@
 }
 
 .inventory {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
   padding-top: 0;
   font-family: 'Cinzel';
   background-color: #dddfd4;
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   display: grid;
   height: 100%;
 }
 
+.inventory h3 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.inventory > a {
+  align-self: flex-end;
+}
+
 .inventory > a > button {
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+
   background-color: #3fb0ac;
   border-radius: 5px;
   border: none;
@@ -36,8 +48,9 @@
   background-color: hsl(0, 100%, 18%);
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
 }
+
 .inventory > .listingLink h2 {
   text-align: left;
   font: 700 30px 'Cinzel', sans-serif;
@@ -68,11 +81,11 @@
 .inventory > img {
   margin: 0 auto;
   margin-top: 30px;
-  border: 1px solid;
+  /* border: 1px solid; */
   height: 300px;
   max-width: 100%;
   border-radius: 4px;
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.6);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 800px) {
@@ -89,7 +102,7 @@
   }
   .inventory img {
     border-radius: 4px;
-    box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.6);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     max-width: 100%;
     height: auto;
   }
