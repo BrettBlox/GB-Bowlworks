@@ -38,8 +38,8 @@
 }
 
 .cover a {
+  display: inline-block;
   text-align: left;
-  /* font: 700 20px 'Cinzel', sans-serif; */
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,10 +51,11 @@
   );
   background-size: 200% 100%;
   background-position: 100%;
+  transition: all 0.3s;
 }
 
 .cover a:hover {
-  transition: all 0.5s cubic-bezier(0, 0, 0.23, 1);
+  transform: skew(-15deg);
   background-position: 0%;
 }
 

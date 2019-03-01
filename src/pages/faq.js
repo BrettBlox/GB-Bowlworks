@@ -174,7 +174,7 @@ const Success = () => (
             <h3 className="questions">Q: More questions?</h3>
             <br />
             <p className="answer">
-              A: Send me a message through the Contact option here on this site
+              A: Send me a message through the <Link to="/contact" className="contactLink">contact page</Link>  here 
               and I’ll be glad to answer your questions.
             </p>
           </div>
