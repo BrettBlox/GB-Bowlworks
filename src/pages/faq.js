@@ -56,10 +56,10 @@ const Success = () => (
             </h3>
             <br />
             <p className="answer">
-              A: Depending on the complexity of the design and number of segments
-              involved, these vessels can take from a couple of days for a piece
-              with as few 100 to 200 segments, all the way up to five or six
-              days for a piece with 1500 segments and more.{' '}
+              A: Depending on the complexity of the design and number of
+              segments involved, these vessels can take from a couple of days
+              for a piece with as few 100 to 200 segments, all the way up to
+              five or six days for a piece with 1500 segments and more.{' '}
             </p>
             <br />
 
@@ -159,7 +159,7 @@ const Success = () => (
             </h3>
             <br />
             <p className="answer">
-              A: Decorative bowls look great as a table centerpieces, on your
+              A: Decorative bowls look great as a table centerpiece, on your
               fireplace mantel or on a bookshelf. Decorative vessels and bowls
               are suitable to hold dry foods like whole fruits, nuts, or
               packaged candies, etc. Food-safe bowls are suitable for such

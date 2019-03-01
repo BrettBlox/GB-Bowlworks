@@ -35,3 +35,10 @@
 .answer {
   color: black;
 }
+
+@media only screen and (max-width: 550px) {
+  .faq__box {
+    padding: 20px;
+    width: 80vw
+  }
+}
