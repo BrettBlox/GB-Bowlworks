@@ -69,3 +69,9 @@
   background-position: 0%;
   transform: translateY(-3px);
 }
+
+@media only screen and (max-width: 550px) {
+  .listing {
+    margin: 30px 20px
+  }
+}

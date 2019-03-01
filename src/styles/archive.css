@@ -52,14 +52,3 @@ aside ul a:hover {
     width: 100%;
   }
 }
-
-/***********LESS THAN 1000PX DO THIS*****************/
-@media only screen and (max-width: 1000px) {
-  aside ul a {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  aside ul {
-    width: 100%;
-  }
-}

@@ -14,3 +14,9 @@ body > p {
 .site {
   min-height: 100vh;
 }
+
+@media only screen and (max-width: 610px) {
+  .site {
+    padding-top: 50px;
+  }
+}
