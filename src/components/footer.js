@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import darkLogo from '../images/logos/dark-alt-logo.png'
 import whiteLogo from '../images/logos/white-logo.png'
 import igColor from '../images/logos/ig-colorful.png'
 import '../styles/footer.css'
@@ -59,6 +58,7 @@ const Footer = () => (
           <img
             className="etsyLogo"
             src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Etsy_logo_lg_rgb.png"
+            alt="Etsy Logo"
           />
         </a>
       </div>
