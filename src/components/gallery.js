@@ -71,7 +71,6 @@ class Gallery extends PureComponent {
     //add window resize event listener
     window.addEventListener('resize', this.updateWidth)
     this.updateWidth()
-    // this.spinnerTimeout()
   }
 
   //set state as viewPort width changes.
@@ -80,17 +79,6 @@ class Gallery extends PureComponent {
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWidth)
   }
-
-  // spinnerTimeout = () => {
-  //   setTimeout(
-  //     function() {
-  //       this.setState({
-  //         loading: false,
-  //       })
-  //     }.bind(this),
-  //     1000
-  //   )
-  // }
 
   render() {
     //add src property to each element in sortedGallery array for Lightbox
@@ -108,11 +96,11 @@ class Gallery extends PureComponent {
     let col3 = []
     let col4 = []
     for (let i = 0; i < gallerySort.length; i++) {
-      if (i % 4 === 0 && col1.length < 12) {
+      if (i % 4 === 0 && col1.length < 11) {
         col1.push(gallerySort[i])
       } else if (i % 4 === 1 && col2.length < 12) {
         col2.push(gallerySort[i])
-      } else if (i % 4 === 2 && col3.length < 11) {
+      } else if (i % 4 === 2 && col3.length < 12) {
         col3.push(gallerySort[i])
       } else if (i % 4 === 3 && col4.length < 11) {
         col4.push(gallerySort[i])
