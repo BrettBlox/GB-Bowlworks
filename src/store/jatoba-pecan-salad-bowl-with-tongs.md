@@ -7,6 +7,4 @@ image: >-
 title: Jatoba & Pecan Salad Bowl with Tongs
 date: 2019-01-30T00:09:51.748Z
 ---
-Custom salad bowl with matching tongs made from 144 segments of Pecan and Jatoba, 12" in diameter, 5.5" in height, finished with a food-safe oil and wax. A beautiful bowl that will last a lifetime and be a nice touch when adding a salad to your 
-
-meal!
+Custom salad bowl with matching tongs made from 144 segments of Pecan and Jatoba, 12" in diameter, 5.5" in height, finished with a food-safe oil and wax. A beautiful bowl that will last a lifetime and be a nice touch when adding a salad to your meal!
