@@ -82,28 +82,25 @@ class Gallery extends PureComponent {
 
   render() {
     //add src property to each element in sortedGallery array for Lightbox
-    for (let i = 0; i < this.state.gallery.length; i++) {
-      this.state.gallery[
-        i
-      ].src = `https://res.cloudinary.com/dy6lb8vna/image/upload/${
-        this.state.gallery[i].public_id
-      }.jpg`
-    }
+    const gallerySrc = this.state.gallery.map(obj => ({
+      ...obj, src: `https://res.cloudinary.com/dy6lb8vna/image/upload/${
+        obj.public_id
+        }.jpg`
+    }))
 
-    const gallerySort = [...this.state.gallery]
     let col1 = []
     let col2 = []
     let col3 = []
     let col4 = []
-    for (let i = 0; i < gallerySort.length; i++) {
+    for (let i = 0; i < gallerySrc.length; i++) {
       if (i % 4 === 0 && col1.length < 11) {
-        col1.push(gallerySort[i])
+        col1.push(gallerySrc[i])
       } else if (i % 4 === 1 && col2.length < 12) {
-        col2.push(gallerySort[i])
+        col2.push(gallerySrc[i])
       } else if (i % 4 === 2 && col3.length < 12) {
-        col3.push(gallerySort[i])
+        col3.push(gallerySrc[i])
       } else if (i % 4 === 3 && col4.length < 11) {
-        col4.push(gallerySort[i])
+        col4.push(gallerySrc[i])
       }
     }
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
@@ -125,7 +122,7 @@ class Gallery extends PureComponent {
 
     const mobileView = (
       <div className="grid-wrapper">
-        {this.state.gallery.map(data => {
+        {gallerySrc.map(data => {
           return (
             <div className="zone" key={data.src}>
               <div className="box">
