@@ -7,12 +7,6 @@ backend:
 
 publish_mode: editorial_workflow
 
-# media_library:
-#   name: uploadcare
-#   config:
-#     publicKey: 62a4f79e1201a3baf4ee
-#     mulitple: true
-
 media_library:
   name: cloudinary
   config:

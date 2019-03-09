@@ -63,14 +63,20 @@ class Gallery extends PureComponent {
       const gallery = await res.json()
       this.setState({
         gallery: gallery.resources,
-        loading: false,
       })
     } catch (e) {
       console.log(e)
     }
+
     //add window resize event listener
     window.addEventListener('resize', this.updateWidth)
     this.updateWidth()
+  }
+
+  handleImageLoad = () => {
+    this.setState({
+      loading: false,
+    })
   }
 
   //set state as viewPort width changes.
@@ -83,9 +89,10 @@ class Gallery extends PureComponent {
   render() {
     //add src property to each element in sortedGallery array for Lightbox
     const gallerySrc = this.state.gallery.map(obj => ({
-      ...obj, src: `https://res.cloudinary.com/dy6lb8vna/image/upload/${
+      ...obj,
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/${
         obj.public_id
-        }.jpg`
+      }.jpg`,
     }))
 
     let col1 = []
@@ -111,7 +118,11 @@ class Gallery extends PureComponent {
             <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
-                  <img src={data.src} alt="wooden bowl" />
+                  <img
+                    src={data.src}
+                    onLoad={this.handleImageLoad()}
+                    alt="wooden bowl"
+                  />
                 </a>
               </div>
             </div>
@@ -146,9 +157,9 @@ class Gallery extends PureComponent {
           onClose={this.closeLightbox}
           preventScroll={this.props.preventScroll}
         />
-        {this.state.viewportWidth > 500 && !this.state.loading ? (
+        {this.state.viewportWidth > 500 && this.state.loading === false ? (
           wideView
-        ) : this.state.viewportWidth < 500 && !this.state.loading ? (
+        ) : this.state.viewportWidth < 500 && this.state.loading === false ? (
           mobileView
         ) : (
           <Spinner />
