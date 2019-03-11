@@ -73,10 +73,8 @@ class Gallery extends PureComponent {
     this.updateWidth()
   }
 
-  handleImageLoad = () => {
-    this.setState({
-      loading: false,
-    })
+  handleImageLoad() {
+    this.setState({ loading: false })
   }
 
   //set state as viewPort width changes.
@@ -120,7 +118,7 @@ class Gallery extends PureComponent {
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
                   <img
                     src={data.src}
-                    onLoad={this.handleImageLoad()}
+                    onLoad={this.handleImageLoad.apply(this)}
                     alt="wooden bowl"
                   />
                 </a>
