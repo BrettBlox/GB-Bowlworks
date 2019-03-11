@@ -130,7 +130,7 @@ class Gallery extends PureComponent {
   }
 
   render() {
-    //WIDE VIEW USES SORTED GALLERY
+    //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT 
     const wideView = (
       <div className="grid-wrapper">
         {this.state.sortedGallery.map((data, i) => {
@@ -147,7 +147,7 @@ class Gallery extends PureComponent {
       </div>
     )
 
-    //MOBILE VIEW USES UNSORTED GALLERY
+    //MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
     const mobileView = (
       <div className="grid-wrapper">
         {this.state.gallery.map((data, i) => {
