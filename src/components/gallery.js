@@ -9,6 +9,7 @@ class Gallery extends PureComponent {
     super(props)
     this.state = {
       gallery: [],
+      sortedGallery: [],
       viewportWidth: 0,
       loading: true,
       lightboxIsOpen: false,
@@ -19,7 +20,6 @@ class Gallery extends PureComponent {
   /***********************************************
    *****Methods For Lightbox Gallery**************
    ***********************************************/
-
   openLightbox = (index, event) => {
     event.preventDefault()
     this.setState({
@@ -52,10 +52,11 @@ class Gallery extends PureComponent {
     if (this.state.currentImage === this.props.images.length - 1) return
     this.gotoNext()
   }
-  /*************************************************************** */
+  /***************************************************************
+   ***************************************************************/
 
   async componentDidMount() {
-    // Request for images tagged bowlworks
+    // REQUEST FOR ALL CLOUDINARY IMAGES TAGGED "BOWLWORKS"
     try {
       const res = await fetch(
         'https://res.cloudinary.com/dy6lb8vna/image/list/bowlworks.json'
@@ -68,24 +69,17 @@ class Gallery extends PureComponent {
       console.log(e)
     }
 
-    //add window resize event listener
+    this.addSrc()
+    this.imageSort()
+    this.onImageLoad()
+
+    //ADD WINDOW RESIZE EVENT LISTENER
     window.addEventListener('resize', this.updateWidth)
     this.updateWidth()
   }
 
-  handleImageLoad() {
-    this.setState({ loading: false })
-  }
-
-  //set state as viewPort width changes.
-  updateWidth = () => this.setState({ viewportWidth: window.innerWidth })
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWidth)
-  }
-
-  render() {
-    //add src property to each element in sortedGallery array for Lightbox
+  // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
+  addSrc = () => {
     const gallerySrc = this.state.gallery.map(obj => ({
       ...obj,
       src: `https://res.cloudinary.com/dy6lb8vna/image/upload/${
@@ -93,34 +87,58 @@ class Gallery extends PureComponent {
       }.jpg`,
     }))
 
+    this.setState({
+      gallery: gallerySrc,
+    })
+  }
+
+  // SORTS IMAGES FOR MASONRY LAYOUT ON WIDE SCREENS
+  imageSort = () => {
+    const gallery = [...this.state.gallery]
     let col1 = []
     let col2 = []
     let col3 = []
     let col4 = []
-    for (let i = 0; i < gallerySrc.length; i++) {
+    for (let i = 0; i < gallery.length; i++) {
       if (i % 4 === 0 && col1.length < 11) {
-        col1.push(gallerySrc[i])
+        col1.push(gallery[i])
       } else if (i % 4 === 1 && col2.length < 12) {
-        col2.push(gallerySrc[i])
+        col2.push(gallery[i])
       } else if (i % 4 === 2 && col3.length < 12) {
-        col3.push(gallerySrc[i])
+        col3.push(gallery[i])
       } else if (i % 4 === 3 && col4.length < 11) {
-        col4.push(gallerySrc[i])
+        col4.push(gallery[i])
       }
     }
-    const sortedGallery = [...col1, ...col2, ...col3, ...col4]
+    this.setState({
+      sortedGallery: [...col1, ...col2, ...col3, ...col4],
+    })
+  }
+
+  //REMOVE LOADING SPINNER ONCE IMAGES HAVE FINISHED
+  onImageLoad() {
+    this.setState({
+      loading: false,
+    })
+  }
+
+  //SET STATE AS VW CHANGES
+  updateWidth = () => this.setState({ viewportWidth: window.innerWidth })
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWidth)
+  }
+
+  render() {
+    //WIDE VIEW USES SORTED GALLERY
     const wideView = (
       <div className="grid-wrapper">
-        {sortedGallery.map((data, i) => {
+        {this.state.sortedGallery.map((data, i) => {
           return (
             <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
-                  <img
-                    src={data.src}
-                    onLoad={this.handleImageLoad.apply(this)}
-                    alt="wooden bowl"
-                  />
+                  <img src={data.src} alt="wooden bowl" />
                 </a>
               </div>
             </div>
@@ -129,11 +147,12 @@ class Gallery extends PureComponent {
       </div>
     )
 
+    //MOBILE VIEW USES UNSORTED GALLERY
     const mobileView = (
       <div className="grid-wrapper">
-        {gallerySrc.map(data => {
+        {this.state.gallery.map((data, i) => {
           return (
-            <div className="zone" key={data.src}>
+            <div className="zone" key={Math.random(i)}>
               <div className="box">
                 <img src={data.src} alt="wooden bowl" />
               </div>
@@ -147,7 +166,7 @@ class Gallery extends PureComponent {
       <>
         <Lightbox
           currentImage={this.state.currentImage}
-          images={sortedGallery}
+          images={this.state.sortedGallery}
           isOpen={this.state.lightboxIsOpen}
           onClickImage={this.handleClickImage}
           onClickNext={this.gotoNext}
