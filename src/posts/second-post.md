@@ -17,7 +17,7 @@ Next, I needed to mount the drum into an enclosure. I was still thinking it woul
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548416864/other/IMG_9592.jpg)
 
-...and soon realized this thing was HEAVY and would be too much machine as a benchtop, so I gave it some legs, moved the motor underneath and out of the way, and made it a stationary machine.  I attached the drum to the motor via an adjustable link v-belt which help it run whisper quiet.
+...and soon realized this thing was HEAVY and would be too much machine as a benchtop, so I gave it some legs, moved the motor underneath and out of the way, and made it a stationary machine.  I attached the drum to the motor via an adjustable link v-belt.
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548416866/other/IMG_9603.jpg)
 
