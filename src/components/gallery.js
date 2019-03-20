@@ -100,13 +100,15 @@ class Gallery extends PureComponent {
     let col3 = []
     let col4 = []
     for (let i = 0; i < gallery.length; i++) {
+      //one less than gallery.length / 4
       if (i % 4 === 0 && col1.length < 13) {
         col1.push(gallery[i])
-      } else if (i % 4 === 1 && col2.length < 13) {
+      //gallery.length / 4
+      } else if (i % 4 === 1 && col2.length < 14) {
         col2.push(gallery[i])
-      } else if (i % 4 === 2 && col3.length < 12) {
+      } else if (i % 4 === 2 && col3.length < 14) {
         col3.push(gallery[i])
-      } else if (i % 4 === 3 && col4.length < 12 ) {
+      } else if (i % 4 === 3 && col4.length < 14) {
         col4.push(gallery[i])
       }
     }
