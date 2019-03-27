@@ -1,7 +1,7 @@
 ---
 slug: /1903
 id: '1903'
-price: 395
+price: 265
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1550150608/GB%20Bowlworks%20Gallery/1903a.jpg
 title: 'Aztec Slant (#1903)'
