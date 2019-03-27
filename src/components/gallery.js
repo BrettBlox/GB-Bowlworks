@@ -99,22 +99,21 @@ class Gallery extends PureComponent {
     let col2 = []
     let col3 = []
     let col4 = []
+
     for (let i = 0; i < gallery.length; i++) {
-      //one less than gallery.length / 4
-      if (i % 4 === 0 && col1.length < 13) {
+      if (i % 4 === 0) {
         col1.push(gallery[i])
-      //gallery.length / 4
-      } else if (i % 4 === 1 && col2.length < 14) {
+      } else if (i % 4 === 1) {
         col2.push(gallery[i])
-      } else if (i % 4 === 2 && col3.length < 14) {
+      } else if (i % 4 === 2 && col4.length < 14) {
         col3.push(gallery[i])
-      } else if (i % 4 === 3 && col4.length < 14) {
+      } else {
         col4.push(gallery[i])
       }
     }
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
     this.setState({
-      sortedGallery
+      sortedGallery,
     })
   }
 
@@ -133,7 +132,7 @@ class Gallery extends PureComponent {
   }
 
   render() {
-    //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT 
+    //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
     const wideView = (
       <div className="grid-wrapper">
         {this.state.sortedGallery.map((data, i) => {
