@@ -1,7 +1,7 @@
 ---
 slug: /1906
 id: '1906'
-price: 795
+price: 530
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1552688692/GB%20Bowlworks%20Gallery/1906a.jpg
 title: 'Aztec Arrowhead (#1906)'
