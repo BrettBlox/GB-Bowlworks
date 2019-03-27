@@ -1,7 +1,7 @@
 ---
 slug: /1907
 id: '1907'
-price: 175
+price: 145
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1553046185/GB%20Bowlworks%20Gallery/1907a.jpg
 title: 'Open Segment Bowl (Interwoven) (#1907)'
