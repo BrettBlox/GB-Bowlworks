@@ -112,13 +112,14 @@ class Gallery extends PureComponent {
         col4.push(gallery[i])
       }
     }
+    const sortedGallery = [...col1, ...col2, ...col3, ...col4]
     this.setState({
-      sortedGallery: [...col1, ...col2, ...col3, ...col4],
+      sortedGallery
     })
   }
 
   //REMOVE LOADING SPINNER ONCE IMAGES HAVE FINISHED
-  onImageLoad() {
+  onImageLoad = () => {
     this.setState({
       loading: false,
     })
