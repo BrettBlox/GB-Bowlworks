@@ -168,7 +168,7 @@ class Gallery extends PureComponent {
       <>
         <Lightbox
           currentImage={this.state.currentImage}
-          images={this.state.gallery}
+          images={this.state.sortedGallery}
           isOpen={this.state.lightboxIsOpen}
           onClickImage={this.handleClickImage}
           onClickNext={this.gotoNext}
