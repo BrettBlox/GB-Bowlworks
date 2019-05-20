@@ -95,19 +95,20 @@ class Gallery extends PureComponent {
   // SORTS IMAGES FOR MASONRY LAYOUT ON WIDE SCREENS
   imageSort = () => {
     const gallery = [...this.state.gallery]
+    console.log(gallery)
     let col1 = []
     let col2 = []
     let col3 = []
     let col4 = []
 
     for (let i = 0; i < gallery.length; i++) {
-      if (i % 4 === 0) {
+      if (i % 4 === 0 && col1.length < 14) {
         col1.push(gallery[i])
-      } else if (i % 4 === 1) {
+      } else if (i % 4 === 1 && col2.length < 16) {
         col2.push(gallery[i])
-      } else if (i % 4 === 2) {
+      } else if (i % 4 === 2 && col3.length < 16) {
         col3.push(gallery[i])
-      } else if (i % 4 === 3 && col3.length < 15) {
+      } else if (i % 4 === 3 && col4.length < 16) {
         col4.push(gallery[i])
       }
     }
