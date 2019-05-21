@@ -36,16 +36,16 @@ const Event = () => (
               {allMarkdownRemark.edges.map(edge => (
                 <>
                   <li className="eventItem">
-                    <h3 className="eventTitle">{edge.node.frontmatter.date}</h3>
+                    <h3 className="eventInfo">{edge.node.frontmatter.date}</h3>
                     <h3
-                      className="eventTitle title"
+                      className="eventTitle"
                       key={edge.node.frontmatter.title}
                     >
-                      <a target="_blank" href={edge.node.frontmatter.url}>
+                      <a class="eventLink" target="_blank" href={edge.node.frontmatter.url}>
                         {edge.node.frontmatter.title}
-                      </a>
+                      </a>&rarr;
                     </h3>
-                    <h3 className="eventTitle">
+                    <h3 className="eventInfo">
                       {edge.node.frontmatter.location}
                     </h3>
                   </li>
