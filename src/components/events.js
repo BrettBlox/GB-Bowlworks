@@ -31,13 +31,13 @@ const Event = () => (
       <>
         <div className="events cover">
           <div className="events card description">
-            <h2>Upcoming Events</h2>
+            <h2>2019 Events</h2>
             <hr />
             <ul className="eventList">
               {allMarkdownRemark.edges.map(edge => (
                 <li className="eventItem" style={{ display: 'flex' }}>
                   <h3 className="eventTitle">{edge.node.frontmatter.date}</h3>
-                  <h3 className="eventTitle" key={edge.node.frontmatter.title}>
+                  <h3 className="eventTitle title" key={edge.node.frontmatter.title}>
                     <a target="_blank" href={edge.node.frontmatter.url}>
                       {edge.node.frontmatter.title}
                     </a>

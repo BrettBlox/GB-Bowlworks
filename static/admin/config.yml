@@ -51,5 +51,5 @@ collections:
     fields:
       - { label: 'Event Title', name: 'title', widget: 'string' }
       - { label: 'Event URL', name: 'url' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Date', name: 'date', widget: 'date' }
       - { label: 'Location', name: 'location', widget: 'string' }
