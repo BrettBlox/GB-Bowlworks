@@ -50,6 +50,6 @@ collections:
     create: true
     fields:
       - { label: 'Event Title', name: 'title', widget: 'string' }
-      - { label: 'Event URL', name: 'url', widget: 'string' }
+      - { label: 'Event URL', name: 'url' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Location', name: 'location', widget: 'string' }

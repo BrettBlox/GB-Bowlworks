@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+/* .events {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 750px;
+} */
+
+.events > h2 {
+  text-align: center;
+  color: hsl(0, 100%, 18%);
+  font-size: 2.25rem;
+}
+
+.eventList {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: disc;
+}
+
+.eventTitle {
+  padding: 10px;
+}
