@@ -7,8 +7,7 @@ const EVENTS_QUERY = graphql`
   query upcomingEvents {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { glob: "**/src/events/*.md" } }
-      limit: 5
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: ASC, fields: [frontmatter___date] }
     ) {
       edges {
         node {
@@ -35,17 +34,23 @@ const Event = () => (
             <hr />
             <ul className="eventList">
               {allMarkdownRemark.edges.map(edge => (
-                <li className="eventItem" style={{ display: 'flex' }}>
-                  <h3 className="eventTitle">{edge.node.frontmatter.date}</h3>
-                  <h3 className="eventTitle title" key={edge.node.frontmatter.title}>
-                    <a target="_blank" href={edge.node.frontmatter.url}>
-                      {edge.node.frontmatter.title}
-                    </a>
-                  </h3>
-                  <h3 className="eventTitle">
-                    {edge.node.frontmatter.location}
-                  </h3>
-                </li>
+                <>
+                  <li className="eventItem">
+                    <h3 className="eventTitle">{edge.node.frontmatter.date}</h3>
+                    <h3
+                      className="eventTitle title"
+                      key={edge.node.frontmatter.title}
+                    >
+                      <a target="_blank" href={edge.node.frontmatter.url}>
+                        {edge.node.frontmatter.title}
+                      </a>
+                    </h3>
+                    <h3 className="eventTitle">
+                      {edge.node.frontmatter.location}
+                    </h3>
+                  </li>
+                  <hr />
+                </>
               ))}
             </ul>
           </div>

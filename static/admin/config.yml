@@ -45,7 +45,7 @@ collections:
       - { label: 'Date Added', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'body', widget: 'markdown' }
   - name: 'events'
-    label: 'Upcoming Events'
+    label: 'Upcoming Event'
     folder: 'src/events'
     create: true
     fields:

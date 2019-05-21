@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
-/* .events {
-    padding: 1rem;
-    margin: 0 auto;
-    width: 750px;
-} */
-
 .events > h2 {
   text-align: center;
   color: hsl(0, 100%, 18%);
@@ -13,12 +7,20 @@
 }
 
 .eventList {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  list-style-type: disc;
+  margin: 0 auto;
+  width: 40vw;
+  padding: 1rem;
 }
 
-.eventTitle {
-  padding: 10px;
+.eventItem {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid hsl(0, 100%, 18%); */
+}
+
+@media only screen and (max-width: 650px) {
+  .eventList {
+    width: auto;
+  }
 }
