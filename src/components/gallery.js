@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-// import { CloudinaryContext, Transformation, Image } from 'cloudinary-react'
 import Spinner from './spinner'
 import Lightbox from 'react-images'
 
@@ -14,6 +13,8 @@ class Gallery extends PureComponent {
       loading: true,
       lightboxIsOpen: false,
       currentImage: 0,
+      galleryDisplay: 'none',
+      spinnerDisplay: 'block',
     }
   }
 
@@ -55,6 +56,16 @@ class Gallery extends PureComponent {
   /***************************************************************
    ***************************************************************/
 
+  //timeout to let image sorting happen while not visible
+  timeOut = () => {
+    setTimeout(() => {
+      this.setState({
+        galleryDisplay: 'block',
+        spinnerDisplay: 'none',
+      })
+    }, 4000)
+  }
+
   async componentDidMount() {
     // REQUEST FOR ALL CLOUDINARY IMAGES TAGGED "BOWLWORKS"
     try {
@@ -72,6 +83,7 @@ class Gallery extends PureComponent {
     this.addSrc()
     this.imageSort()
     this.onImageLoad()
+    this.timeOut()
 
     //ADD WINDOW RESIZE EVENT LISTENER
     window.addEventListener('resize', this.updateWidth)
@@ -133,9 +145,15 @@ class Gallery extends PureComponent {
   }
 
   render() {
+    const galleryStyle = {
+      display: this.state.galleryDisplay,
+    }
+    const spinnerStyle = {
+      display: this.state.spinnerDisplay,
+    }
     //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
     const wideView = (
-      <div className="grid-wrapper">
+      <div className="grid-wrapper" style={galleryStyle}>
         {this.state.sortedGallery.map((data, i) => {
           return (
             <div className="zone" key={i}>
@@ -177,12 +195,13 @@ class Gallery extends PureComponent {
           onClose={this.closeLightbox}
           preventScroll={this.props.preventScroll}
         />
-        {this.state.viewportWidth > 500 && this.state.loading === false ? (
+        {this.state.viewportWidth > 500 &&
+        this.state.spinnerDisplay === 'none' ? (
           wideView
         ) : this.state.viewportWidth < 500 && this.state.loading === false ? (
           mobileView
         ) : (
-          <Spinner />
+          <Spinner stylez={spinnerStyle} />
         )}
       </>
     )

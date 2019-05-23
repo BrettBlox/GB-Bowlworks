@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/spinner.css'
 
-const spinner = () => (
-  <div className='lds-roller'>
+const spinner = (props) => (
+  <div className="lds-roller" style={props.stylez}>
     <div />
     <div />
     <div />
