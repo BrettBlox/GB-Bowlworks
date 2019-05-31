@@ -7,6 +7,14 @@ import Footer from './footer'
 
 import '../styles/storeTemplate.css'
 
+const checkSold = title => {
+  const checkedTitle = title
+    .toLowerCase()
+    .split(' ')
+    .includes('(sold)')
+  return checkedTitle
+}
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -65,7 +73,23 @@ export default function Template({
                   'https://gbbowlworks.com' + '/store' + frontmatter.slug
                 }
               >
-                <button className="buy">BUY NOW</button>
+                <button
+                  className="buy"
+                  disabled={checkSold(frontmatter.title)}
+                  style={
+                    checkSold(frontmatter.title)
+                      ? {
+                        backgroundColor: 'slategray',
+                          transition: 'none',
+                          transform: 'none',
+                          boxShadow: 'none',
+                          cursor: 'auto',
+                        }
+                      : null
+                  }
+                >
+                  {checkSold(frontmatter.title) ? 'SOLD' : 'BUY NOW'}
+                </button>
               </a>
             </div>
           </div>

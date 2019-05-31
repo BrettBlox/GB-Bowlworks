@@ -27,6 +27,14 @@ const STORE_QUERY = graphql`
   }
 `
 
+const checkSold = title => {
+  const checkedTitle = title
+    .toLowerCase()
+    .split(' ')
+    .includes('(sold)')
+  return checkedTitle
+}
+
 const Inventory = () => (
   <StaticQuery
     query={STORE_QUERY}
@@ -76,12 +84,26 @@ const Inventory = () => (
               data-item-name={node.frontmatter.title}
               data-item-description={node.frontmatter.body}
               data-item-url={
-                'https://gbbowlworks.com' +
-                '/store' +
-                node.frontmatter.slug
+                'https://gbbowlworks.com' + '/store' + node.frontmatter.slug
               }
             >
-              <button className="buy">BUY NOW</button>
+              <button
+                className="buy"
+                disabled={checkSold(node.frontmatter.title)}
+                style={
+                  checkSold(node.frontmatter.title)
+                    ? {
+                        backgroundColor: 'slategrey',
+                        transition: 'none',
+                        transform: 'none',
+                        boxShadow: 'none',
+                        cursor: 'auto',
+                      }
+                    : null
+                }
+              >
+                {checkSold(node.frontmatter.title) ? 'SOLD' : 'BUY NOW'}
+              </button>
             </a>
           </article>
         </div>
