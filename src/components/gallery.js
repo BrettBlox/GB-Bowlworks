@@ -94,7 +94,7 @@ class Gallery extends PureComponent {
   addSrc = () => {
     const gallerySrc = this.state.gallery.map(obj => ({
       ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_scale/${
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/${
         obj.public_id
       }.jpg`,
     }))
@@ -195,8 +195,7 @@ class Gallery extends PureComponent {
           onClose={this.closeLightbox}
           preventScroll={this.props.preventScroll}
         />
-        {this.state.viewportWidth > 500 &&
-        this.state.loading === false ? (
+        {this.state.viewportWidth > 500 && this.state.loading === false ? (
           wideView
         ) : this.state.viewportWidth < 500 && this.state.loading === false ? (
           mobileView
