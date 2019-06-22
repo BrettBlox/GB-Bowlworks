@@ -13,8 +13,8 @@ class Gallery extends PureComponent {
       loading: true,
       lightboxIsOpen: false,
       currentImage: 0,
-      galleryDisplay: 'none',
-      spinnerDisplay: 'block',
+      // galleryDisplay: 'none',
+      // spinnerDisplay: 'block',
     }
   }
 
@@ -57,14 +57,14 @@ class Gallery extends PureComponent {
    ***************************************************************/
 
   //timeout to let image sorting happen while not visible
-  timeOut = () => {
-    setTimeout(() => {
-      this.setState({
-        galleryDisplay: 'block',
-        spinnerDisplay: 'none',
-      })
-    }, 4000)
-  }
+  // timeOut = () => {
+  //   setTimeout(() => {
+  //     this.setState({
+  //       galleryDisplay: 'block',
+  //       spinnerDisplay: 'none',
+  //     })
+  //   }, 4000)
+  // }
 
   async componentDidMount() {
     // REQUEST FOR ALL CLOUDINARY IMAGES TAGGED "BOWLWORKS"
@@ -83,7 +83,7 @@ class Gallery extends PureComponent {
     this.addSrc()
     this.imageSort()
     this.onImageLoad()
-    this.timeOut()
+    // this.timeOut()
 
     //ADD WINDOW RESIZE EVENT LISTENER
     window.addEventListener('resize', this.updateWidth)
@@ -94,7 +94,7 @@ class Gallery extends PureComponent {
   addSrc = () => {
     const gallerySrc = this.state.gallery.map(obj => ({
       ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/${
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_scale/${
         obj.public_id
       }.jpg`,
     }))
@@ -196,7 +196,7 @@ class Gallery extends PureComponent {
           preventScroll={this.props.preventScroll}
         />
         {this.state.viewportWidth > 500 &&
-        this.state.spinnerDisplay === 'none' ? (
+        this.state.loading === false ? (
           wideView
         ) : this.state.viewportWidth < 500 && this.state.loading === false ? (
           mobileView
