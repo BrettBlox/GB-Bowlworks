@@ -14,7 +14,7 @@ For 45 years it sat in my parents den. In 2013 she asked if I wanted it, which I
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_677/v1/other/photo_14.jpg)
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548468228/other/IMG_1251.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548468228/other/IMG_1251.jpg)
 
 I was able to find enough decent wood to make two bowls. Each bowl had some cracks that I cleaned up and then filled with some turquoise inlay.
 

@@ -9,21 +9,21 @@ I started with a 5/8 steel shaft 36" long, then cut a series of MDF disks and gl
 
 ![]()
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548416222/other/IMG_9562.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416222/other/IMG_9562.jpg)
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548416224/other/IMG_9575.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416224/other/IMG_9575.jpg)
 
 Next, I needed to mount the drum into an enclosure. I was still thinking it would be a benchtop machine at this point, so I mounted the motor to the box...
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548416864/other/IMG_9592.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416864/other/IMG_9592.jpg)
 
 ...and soon realized this thing was HEAVY and would be too much machine as a benchtop, so I gave it some legs, moved the motor underneath and out of the way, and made it a stationary machine.  I attached the drum to the motor via an adjustable link v-belt.
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1548416866/other/IMG_9603.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416866/other/IMG_9603.jpg)
 
 After I was happy with the layout of everything, I then carefully sanded the drum so that it was uniformly round.  I added a switch, a 4" dust port for attaching to the main dust system and a laminate top so the workpiece would easily slide while sanding.  Lastly, I attached some adhesive-backed Velcro to the drum followed by some 3-inch Velcro-backed 120 grit sandpaper.  I painted the machine a matte black...and voila!
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/a_auto_right/v1/other/E9881D6B-8B80-4D54-8718-A060CE20F376.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1/other/E9881D6B-8B80-4D54-8718-A060CE20F376.jpg)
 
 I've been using this machine for over a year now on probably 20 different projects. It has worked like a charm. I've replaced the sandpaper about four times in the year and have switched to 100 grit instead of 120. Thanks to the attached dust collection, there is NO dust in my shop from this machine. I'm able to sand a segmented ring in just a few passes. For efficient production of a segmented vessel, this machine has simplified one very big step in the process.
 
