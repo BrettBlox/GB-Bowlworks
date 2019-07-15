@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import whiteLogo from '../images/logos/white-logo.png'
 import igColor from '../images/logos/ig-colorful.png'
+import etsyLogo from '../images/logos/Etsy_logo_lg_rgb.png'
 import '../styles/footer.css'
 
 const Footer = () => (
@@ -57,7 +58,7 @@ const Footer = () => (
         <a className="etsy" href="https://www.etsy.com/shop/GBBowlworks">
           <img
             className="etsyLogo"
-            src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Etsy_logo_lg_rgb.png"
+            src={etsyLogo}
             alt="Etsy Logo"
           />
         </a>
