@@ -94,7 +94,7 @@ class Gallery extends PureComponent {
   addSrc = () => {
     const gallerySrc = this.state.gallery.map(obj => ({
       ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/${
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto/${
         obj.public_id
       }.jpg`,
     }))
