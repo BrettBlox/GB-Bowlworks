@@ -107,7 +107,6 @@ class Gallery extends PureComponent {
   // SORTS IMAGES FOR MASONRY LAYOUT ON WIDE SCREENS
   imageSort = () => {
     const gallery = [...this.state.gallery]
-    console.log(gallery)
     let col1 = []
     let col2 = []
     let col3 = []
