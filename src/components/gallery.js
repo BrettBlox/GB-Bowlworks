@@ -94,7 +94,7 @@ class Gallery extends PureComponent {
   addSrc = () => {
     const gallerySrc = this.state.gallery.map(obj => ({
       ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_auto,f_auto/${
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto/${
         obj.public_id
       }.jpg`,
     }))
@@ -154,13 +154,15 @@ class Gallery extends PureComponent {
     const wideView = (
       <div className="grid-wrapper" style={galleryStyle}>
         {this.state.sortedGallery.map((data, i) => {
-          return <div className="zone" key={i}>
+          return (
+            <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
                   <img src={data.src} alt="wooden bowl" />
                 </a>
               </div>
             </div>
+          )
         })}
       </div>
     )
