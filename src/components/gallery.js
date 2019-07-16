@@ -94,7 +94,7 @@ class Gallery extends PureComponent {
   addSrc = () => {
     const gallerySrc = this.state.gallery.map(obj => ({
       ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_auto,c_scale,f_auto/${
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_auto,f_auto,q_auto/${
         obj.public_id
       }.jpg`,
     }))
@@ -157,7 +157,7 @@ class Gallery extends PureComponent {
           return <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
-                  <img src={data.src} alt="wooden bowl" class="cld-responsive" />
+                  <img src={data.src} alt="wooden bowl" />
                 </a>
               </div>
             </div>
