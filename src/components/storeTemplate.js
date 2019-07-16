@@ -27,7 +27,8 @@ export default function Template({
         link={[
           {
             href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-            rel: 'stylesheet',
+            rel: 'preload',
+            as: 'style',
             type: 'text/css',
           },
         ]}
