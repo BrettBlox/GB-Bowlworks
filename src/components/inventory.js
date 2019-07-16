@@ -47,8 +47,7 @@ const Inventory = () => (
               {
                 href:
                   'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-                rel: 'preload',
-                as: 'style',
+                rel: 'stylesheet',
                 type: 'text/css',
               },
             ]}
