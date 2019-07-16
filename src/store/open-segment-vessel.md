@@ -3,7 +3,7 @@ slug: /1825
 id: '1825'
 price: 435
 image: >-
-  https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit/v1548276582/GB%20Bowlworks%20Gallery/IMG_2950a.jpg
+  https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1548276582/GB%20Bowlworks%20Gallery/IMG_2950a.jpg
 title: 'Open Segment Aztec Vase (#1825)'
 date: 2019-01-25T23:13:04.486Z
 ---
