@@ -157,7 +157,7 @@ class Gallery extends PureComponent {
           return <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
-                  <img src={data.src} alt="wooden bowl" className="cld-responsive" />
+                  <img src={data.src} alt="wooden bowl" />
                 </a>
               </div>
             </div>
