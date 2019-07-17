@@ -8,6 +8,7 @@ class Gallery extends PureComponent {
     super(props)
     this.state = {
       gallery: [],
+      mobileGallery: [],
       sortedGallery: [],
       viewportWidth: 0,
       loading: true,
@@ -98,9 +99,16 @@ class Gallery extends PureComponent {
         obj.public_id
       }.jpg`,
     }))
+    const mobileGallerySrc = this.state.gallery.map(obj => ({
+      ...obj,
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${
+        obj.public_id
+      }.jpg`,
+    }))
 
     this.setState({
       gallery: gallerySrc,
+      mobileGallery: mobileGallerySrc
     })
   }
 
@@ -170,7 +178,7 @@ class Gallery extends PureComponent {
     //MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
     const mobileView = (
       <div className="grid-wrapper">
-        {this.state.gallery.map((data, i) => {
+        {this.state.mobileGallery.map((data, i) => {
           return (
             <div className="zone" key={Math.random(i)}>
               <div className="box">
