@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import Logo from '../images/logos/main_logo.png'
 
 import '../styles/header.css'
 
@@ -13,7 +12,11 @@ const Header = () => (
       BLOG
     </Link>
     <Link id="mainLogo" to="/">
-      <img id="logo" src={Logo} alt="GB Bowlworks Logo" />
+      <img
+        id="logo"
+        src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png`}
+        alt="GB Bowlworks Logo"
+      />
     </Link>
     <Link className="navLink" to="/store">
       STORE
@@ -26,7 +29,11 @@ const Header = () => (
       <span className="navicon" />
     </label>
     <Link id="mainLogo2" to="/">
-      <img id="logo2" src={Logo} alt="GB Bowlworks Logo" />
+      <img
+        id="logo2"
+        src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png`}
+        alt="GB Bowlworks Logo"
+      />
     </Link>
     <ul className="menu">
       <li>

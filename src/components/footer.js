@@ -11,7 +11,11 @@ const Footer = () => (
     <footer className="footer">
       <div className="footer__logo">
         <a href="/">
-          <img id="footLogo" src={whiteLogo} alt="GB Bowlworks Logo" />
+          <img
+            id="footLogo"
+            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png`}
+            alt="GB Bowlworks Logo"
+          />
         </a>
       </div>
       <div className="footer__container">
@@ -53,12 +57,16 @@ const Footer = () => (
           id="instagramColorLink"
           href="https://www.instagram.com/gbbowlworks/"
         >
-          <img id="igImageColor" src={igColor} alt="Instagram Logo" />
+          <img
+            id="igImageColor"
+            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png`}
+            alt="Instagram Logo"
+          />
         </a>
         <a className="etsy" href="https://www.etsy.com/shop/GBBowlworks">
           <img
             className="etsyLogo"
-            src={etsyLogo}
+            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png`}
             alt="Etsy Logo"
           />
         </a>
