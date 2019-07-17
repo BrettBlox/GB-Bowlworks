@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import LazyImage from './LazyImage.js'
+
 import whiteLogo from '../images/logos/white-logo.png'
 import igColor from '../images/logos/ig-colorful.png'
 import etsyLogo from '../images/logos/Etsy_logo_lg_rgb.png'
@@ -11,7 +13,7 @@ const Footer = () => (
     <footer className="footer">
       <div className="footer__logo">
         <a href="/">
-          <img id="footLogo" src={whiteLogo} alt="GB Bowlworks Logo" />
+          <LazyImage id="footLogo" src={whiteLogo} alt="GB Bowlworks Logo" />
         </a>
       </div>
       <div className="footer__container">
@@ -53,10 +55,10 @@ const Footer = () => (
           id="instagramColorLink"
           href="https://www.instagram.com/gbbowlworks/"
         >
-          <img id="igImageColor" src={igColor} alt="Instagram Logo" />
+          <LazyImage id="igImageColor" src={igColor} alt="Instagram Logo" />
         </a>
         <a className="etsy" href="https://www.etsy.com/shop/GBBowlworks">
-          <img
+          <LazyImage
             className="etsyLogo"
             src={etsyLogo}
             alt="Etsy Logo"

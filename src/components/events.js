@@ -41,7 +41,7 @@ const Event = () => (
                       className="eventTitle"
                       key={edge.node.frontmatter.title}
                     >
-                      <a class="eventLink" target="_blank" href={edge.node.frontmatter.url}>
+                      <a className="eventLink" target="_blank" href={edge.node.frontmatter.url}>
                         {edge.node.frontmatter.title}
                       </a>&rarr;
                     </h3>
