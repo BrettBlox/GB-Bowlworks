@@ -1,7 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import Logo from '../images/logos/main_logo.png'
-import LazyImage from './LazyImage'
 
 import '../styles/header.css'
 
@@ -27,7 +26,7 @@ const Header = () => (
       <span className="navicon" />
     </label>
     <Link id="mainLogo2" to="/">
-      <LazyImage id="logo2" src={Logo} alt="GB Bowlworks Logo" />
+      <img id="logo2" src={Logo} alt="GB Bowlworks Logo" />
     </Link>
     <ul className="menu">
       <li>

@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import Spinner from './spinner'
 import Lightbox from 'react-images'
-import LazyImage from './LazyImage'
 
 import '../styles/gallery.css'
 class Gallery extends PureComponent {
@@ -175,7 +174,7 @@ class Gallery extends PureComponent {
           return (
             <div className="zone" key={Math.random(i)}>
               <div className="box">
-                <LazyImage src={data.src} alt="Hand Turned Wooden Bowl" />
+                <img src={data.src} alt="Hand Turned Wooden Bowl" />
               </div>
             </div>
           )
