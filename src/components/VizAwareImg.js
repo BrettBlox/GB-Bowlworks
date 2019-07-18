@@ -14,11 +14,7 @@ class VizAwareImg extends Component {
         }}
       >
         <img
-          src={this.props.src}
-          style={{
-            opacity: this.state.imgViz ? 1 : 0.25,
-            transition: 'opacity 500ms linear'
-          }}
+          src={this.props.source}
         />
       </VizSensor>
     );

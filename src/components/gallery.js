@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import Spinner from './spinner'
-import VizAwareImg from './VizAwareImg'
 import Lightbox from 'react-images'
 
 import '../styles/gallery.css'
@@ -156,7 +155,7 @@ class Gallery extends PureComponent {
             <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
-                  <VizAwareImg src={data.src} alt="Hand turned wooden bowls" />
+                  <img src={data.src} alt="Hand turned wooden bowls" />
                 </a>
               </div>
             </div>
@@ -172,7 +171,7 @@ class Gallery extends PureComponent {
           return (
             <div className="zone" key={Math.random(i)}>
               <div className="box">
-                <VizAwareImg src={data.src} alt="Hand Turned Wooden Bowl" />
+                <img src={data.src} alt="Hand Turned Wooden Bowl" />
               </div>
             </div>
           )
