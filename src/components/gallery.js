@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import Spinner from './spinner'
+import VizAwareImg from './VizAwareImg'
 import Lightbox from 'react-images'
 
 import '../styles/gallery.css'
@@ -56,17 +57,6 @@ class Gallery extends PureComponent {
   }
   /***************************************************************
    ***************************************************************/
-
-  //timeout to let image sorting happen while not visible
-  // timeOut = () => {
-  //   setTimeout(() => {
-  //     this.setState({
-  //       galleryDisplay: 'block',
-  //       spinnerDisplay: 'none',
-  //     })
-  //   }, 4000)
-  // }
-
   async componentDidMount() {
     // REQUEST FOR ALL CLOUDINARY IMAGES TAGGED "BOWLWORKS"
     try {
@@ -166,7 +156,7 @@ class Gallery extends PureComponent {
             <div className="zone" key={i}>
               <div className="box">
                 <a onClick={e => this.openLightbox(i, e)} href={data.src}>
-                  <img src={data.src} alt="Hand turned wooden bowls" />
+                  <VizAwareImg src={data.src} alt="Hand turned wooden bowls" />
                 </a>
               </div>
             </div>
@@ -182,7 +172,7 @@ class Gallery extends PureComponent {
           return (
             <div className="zone" key={Math.random(i)}>
               <div className="box">
-                <img src={data.src} alt="Hand Turned Wooden Bowl" />
+                <VizAwareImg src={data.src} alt="Hand Turned Wooden Bowl" />
               </div>
             </div>
           )

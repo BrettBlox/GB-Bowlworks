@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import whiteLogo from '../images/logos/white-logo.png'
-import igColor from '../images/logos/ig-colorful.png'
-import etsyLogo from '../images/logos/Etsy_logo_lg_rgb.png'
+
 import '../styles/footer.css'
 
 const Footer = () => (
