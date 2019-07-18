@@ -14,8 +14,6 @@ class Gallery extends PureComponent {
       loading: true,
       lightboxIsOpen: false,
       currentImage: 0,
-      // galleryDisplay: 'none',
-      // spinnerDisplay: 'block',
     }
   }
 
@@ -73,7 +71,6 @@ class Gallery extends PureComponent {
     this.addSrc()
     this.imageSort()
     this.onImageLoad()
-    // this.timeOut()
 
     //ADD WINDOW RESIZE EVENT LISTENER
     window.addEventListener('resize', this.updateWidth)
