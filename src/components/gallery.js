@@ -9,7 +9,9 @@ class Gallery extends PureComponent {
     this.state = {
       gallery: [],
       mobileGallery: [],
+      lightboxGallery: [],
       sortedGallery: [],
+      sortedLightboxGallery: [],
       viewportWidth: 0,
       loading: true,
       lightboxIsOpen: false,
@@ -69,7 +71,8 @@ class Gallery extends PureComponent {
     }
 
     this.addSrc()
-    this.imageSort()
+    this.gallerySort()
+    this.lightboxSort()
     this.onImageLoad()
 
     //ADD WINDOW RESIZE EVENT LISTENER
@@ -81,7 +84,7 @@ class Gallery extends PureComponent {
   addSrc = () => {
     const gallerySrc = this.state.gallery.map(obj => ({
       ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${
         obj.public_id
       }.jpg`,
     }))
@@ -91,15 +94,22 @@ class Gallery extends PureComponent {
         obj.public_id
       }.jpg`,
     }))
+    const lightboxGallerySrc = this.state.gallery.map(obj => ({
+      ...obj,
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
+        obj.public_id
+      }.jpg`,
+    })) 
 
     this.setState({
       gallery: gallerySrc,
-      mobileGallery: mobileGallerySrc
+      mobileGallery: mobileGallerySrc,
+      lightboxGallery: lightboxGallerySrc
     })
   }
 
   // SORTS IMAGES FOR MASONRY LAYOUT ON WIDE SCREENS
-  imageSort = () => {
+  gallerySort = () => {
     const gallery = [...this.state.gallery]
     let col1 = []
     let col2 = []
@@ -120,6 +130,30 @@ class Gallery extends PureComponent {
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
     this.setState({
       sortedGallery,
+    })
+  }
+
+  lightboxSort = () => {
+    const lightboxGallery = [...this.state.lightboxGallery]
+    let col1 = []
+    let col2 = []
+    let col3 = []
+    let col4 = []
+
+    for (let i = 0; i < lightboxGallery.length; i++) {
+      if (i % 4 === 0 && col1.length < 13) {
+        col1.push(lightboxGallery[i])
+      } else if (i % 4 === 1) {
+        col2.push(lightboxGallery[i])
+      } else if (i % 4 === 2) {
+        col3.push(lightboxGallery[i])
+      } else if (i % 4 === 3) {
+        col4.push(lightboxGallery[i])
+      }
+    }
+    const sortedLightboxGallery = [...col1, ...col2, ...col3, ...col4]
+    this.setState({
+      sortedLightboxGallery
     })
   }
 
@@ -151,7 +185,7 @@ class Gallery extends PureComponent {
           return (
             <div className="zone" key={i}>
               <div className="box">
-                <a onClick={e => this.openLightbox(i, e)} href={data.src}>
+                <a onClick={e => this.openLightbox(i, e)} href={this.state.sortedLightboxGallery[i]}>
                   <img src={data.src} alt="Hand turned wooden bowls" />
                 </a>
               </div>
@@ -180,7 +214,7 @@ class Gallery extends PureComponent {
       <>
         <Lightbox
           currentImage={this.state.currentImage}
-          images={this.state.sortedGallery}
+          images={this.state.sortedLightboxGallery}
           isOpen={this.state.lightboxIsOpen}
           onClickImage={this.handleClickImage}
           onClickNext={this.gotoNext}
