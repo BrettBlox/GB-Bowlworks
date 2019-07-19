@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import Spinner from './spinner'
 import Lightbox from 'react-images'
+import LazyLoad from 'react-lazyload';
 
 import '../styles/gallery.css'
 class Gallery extends PureComponent {
@@ -202,7 +203,9 @@ class Gallery extends PureComponent {
           return (
             <div className="zone" key={Math.random(i)}>
               <div className="box">
+              <LazyLoad offset={100}>
                 <img src={data.src} alt="Hand Turned Wooden Bowl" />
+              </LazyLoad>
               </div>
             </div>
           )

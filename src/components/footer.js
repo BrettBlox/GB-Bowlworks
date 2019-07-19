@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import LazyLoad from 'react-lazyload'
 
 import '../styles/footer.css'
 
@@ -8,11 +9,13 @@ const Footer = () => (
     <footer className="footer">
       <div className="footer__logo">
         <a href="/">
-          <img
-            id="footLogo"
-            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png`}
-            alt="GB Bowlworks Logo"
-          />
+          <LazyLoad offset={100}>
+            <img
+              id="footLogo"
+              src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png`}
+              alt="GB Bowlworks Logo"
+            />
+          </LazyLoad>
         </a>
       </div>
       <div className="footer__container">
@@ -54,18 +57,22 @@ const Footer = () => (
           id="instagramColorLink"
           href="https://www.instagram.com/gbbowlworks/"
         >
-          <img
-            id="igImageColor"
-            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png`}
-            alt="Instagram Logo"
-          />
+          <LazyLoad offset={100}>
+            <img
+              id="igImageColor"
+              src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png`}
+              alt="Instagram Logo"
+            />
+          </LazyLoad>
         </a>
         <a className="etsy" href="https://www.etsy.com/shop/GBBowlworks">
-          <img
-            className="etsyLogo"
-            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png`}
-            alt="Etsy Logo"
-          />
+          <LazyLoad offset={100}>
+            <img
+              className="etsyLogo"
+              src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png`}
+              alt="Etsy Logo"
+            />
+          </LazyLoad>
         </a>
       </div>
       <div className="copyright">
