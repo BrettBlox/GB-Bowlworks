@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import LazyLoad from 'react-lazyload'
 
 import '../styles/inventory.css'
 
@@ -72,7 +73,9 @@ const Inventory = () => (
             ]}
           />
           <article className="inventory">
-            <img src={node.frontmatter.image} alt="bowl" />
+            <LazyLoad offset={100}>
+              <img src={node.frontmatter.image} alt="bowl" />
+            </LazyLoad>
             <Link className="listingLink" to={`/store${node.frontmatter.slug}`}>
               <h2>{node.frontmatter.title}</h2>
             </Link>
