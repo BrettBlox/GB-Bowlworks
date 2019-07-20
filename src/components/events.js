@@ -34,23 +34,25 @@ const Event = () => (
             <hr />
             <ul className="eventList">
               {allMarkdownRemark.edges.map(edge => (
-                <>
-                  <li className="eventItem">
+                <div key={edge.node.frontmatter.title}>
+                  <li className="eventItem" >
                     <h3 className="eventInfo">{edge.node.frontmatter.date}</h3>
-                    <h3
-                      className="eventTitle"
-                      key={edge.node.frontmatter.title}
-                    >
-                      <a className="eventLink" target="_blank" href={edge.node.frontmatter.url}>
+                    <h3 className="eventTitle">
+                      <a
+                        className="eventLink"
+                        target="_blank"
+                        href={edge.node.frontmatter.url}
+                      >
                         {edge.node.frontmatter.title}
-                      </a>&rarr;
+                      </a>
+                      &rarr;
                     </h3>
                     <h3 className="eventInfo">
                       {edge.node.frontmatter.location}
                     </h3>
                   </li>
                   <hr />
-                </>
+                </div>
               ))}
             </ul>
           </div>
