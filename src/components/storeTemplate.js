@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import LazyLoad from 'react-lazyload'
 
 import Header from './header'
 import Footer from './footer'
@@ -39,11 +40,15 @@ export default function Template({
             'data-api-key':
               'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
             src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
+            async: true,
+            defer: true,
           },
           {
             type: 'text/javascript',
             src:
               'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+            async: true,
+            defer: true,
           },
         ]}
       />
@@ -51,7 +56,9 @@ export default function Template({
         <Header />
         <div className="storeWrapper">
           <div className="store-item-image">
-            <img src={frontmatter.image} alt="store-item" />
+            <LazyLoad offset={100}>
+              <img src={frontmatter.image} alt="store-item" />
+            </LazyLoad>
           </div>
           <div className="store-item-content">
             <div className="store-item">
@@ -79,7 +86,7 @@ export default function Template({
                   style={
                     checkSold(frontmatter.title)
                       ? {
-                        backgroundColor: 'slategray',
+                          backgroundColor: 'slategray',
                           transition: 'none',
                           transform: 'none',
                           boxShadow: 'none',
