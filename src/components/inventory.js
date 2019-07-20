@@ -59,11 +59,15 @@ const Inventory = () => (
                 'data-api-key':
                   'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
                 src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
+                async: true,
+                defer: true,
               },
               {
                 type: 'text/javascript',
                 src:
                   'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+                async: true,
+                defer: true,
               },
             ]}
           />
