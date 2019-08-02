@@ -87,20 +87,20 @@ class Gallery extends PureComponent {
       ...obj,
       src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${
         obj.public_id
-      }.jpg`,
+        }.jpg`,
     }))
     const mobileGallerySrc = this.state.gallery.map(obj => ({
       ...obj,
       src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${
         obj.public_id
-      }.jpg`,
+        }.jpg`,
     }))
     const lightboxGallerySrc = this.state.gallery.map(obj => ({
       ...obj,
       src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
         obj.public_id
-      }.jpg`,
-    })) 
+        }.jpg`,
+    }))
 
     this.setState({
       gallery: gallerySrc,
@@ -117,8 +117,8 @@ class Gallery extends PureComponent {
     let col3 = []
     let col4 = []
 
-    for (let i = 0; i < gallery.length; i++) {
-      if (i % 4 === 0 && col1.length < 13) {
+    for (let i = 0; i < Math.floor(gallery.length / 4) * 4; i++) {
+      if (i % 4 === 0 ) {
         col1.push(gallery[i])
       } else if (i % 4 === 1) {
         col2.push(gallery[i])
@@ -128,6 +128,7 @@ class Gallery extends PureComponent {
         col4.push(gallery[i])
       }
     }
+    col3 = col3.slice(0, col3.length - 2)
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
     this.setState({
       sortedGallery,
@@ -141,8 +142,8 @@ class Gallery extends PureComponent {
     let col3 = []
     let col4 = []
 
-    for (let i = 0; i < lightboxGallery.length; i++) {
-      if (i % 4 === 0 && col1.length < 13) {
+    for (let i = 0; i < Math.floor(lightboxGallery.length / 4) * 4; i++) {
+      if (i % 4 === 0 ) {
         col1.push(lightboxGallery[i])
       } else if (i % 4 === 1) {
         col2.push(lightboxGallery[i])
@@ -152,9 +153,10 @@ class Gallery extends PureComponent {
         col4.push(lightboxGallery[i])
       }
     }
+    col3 = col3.slice(0, col3.length - 2)
     const sortedLightboxGallery = [...col1, ...col2, ...col3, ...col4]
     this.setState({
-      sortedLightboxGallery
+      sortedLightboxGallery,
     })
   }
 
@@ -203,9 +205,9 @@ class Gallery extends PureComponent {
           return (
             <div className="zone" key={Math.random(i)}>
               <div className="box">
-              <LazyLoad offset={100}>
-                <img src={data.src} alt="Hand Turned Wooden Bowl" />
-              </LazyLoad>
+                <LazyLoad offset={100}>
+                  <img src={data.src} alt="Hand Turned Wooden Bowl" />
+                </LazyLoad>
               </div>
             </div>
           )
@@ -230,8 +232,8 @@ class Gallery extends PureComponent {
         ) : this.state.viewportWidth < 500 && this.state.loading === false ? (
           mobileView
         ) : (
-          <Spinner stylez={spinnerStyle} />
-        )}
+              <Spinner stylez={spinnerStyle} />
+            )}
       </>
     )
   }
