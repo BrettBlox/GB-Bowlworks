@@ -13,11 +13,11 @@ I started with a 5/8 steel shaft 36" long, then cut a series of MDF disks and gl
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416224/other/IMG_9575.jpg)
 
-Next, I needed to mount the drum into an enclosure. I was still thinking it would be a benchtop machine at this point, so I mounted the motor to the box...
+Next, I needed to mount the drum into an enclosure. I was still thinking it would be a benchtop machine at this point, so I mounted the 1/2 HP/1800 RPM motor to the box...
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416864/other/IMG_9592.jpg)
 
-...and soon realized this thing was HEAVY and would be too much machine as a benchtop, so I gave it some legs, moved the motor underneath and out of the way, and made it a stationary machine.  I attached the drum to the motor via an adjustable link v-belt.
+...and soon realized this thing was HEAVY and would be too much machine as a benchtop, so I gave it some legs, moved the motor underneath and out of the way, and made it a stationary machine.  I attached the drum to the motor via an adjustable link v-belt on 2" pulleys.
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416866/other/IMG_9603.jpg)
 
