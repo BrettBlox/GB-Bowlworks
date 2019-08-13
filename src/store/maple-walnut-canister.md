@@ -1,7 +1,7 @@
 ---
 slug: /1806
 id: '1806'
-price: 170
+price: 375
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1548276579/GB%20Bowlworks%20Gallery/DSC_2074a.jpg
 title: 'Maple & Walnut Canister (#1806)'
