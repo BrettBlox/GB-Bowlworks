@@ -1,7 +1,7 @@
 ---
 slug: /1908
 id: '1908'
-price: 480
+price: 395
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1553652578/GB%20Bowlworks%20Gallery/1908b.jpg
 title: 'Crisscross Vase (#1908)'
