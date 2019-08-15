@@ -117,8 +117,8 @@ class Gallery extends PureComponent {
     let col3 = []
     let col4 = []
 
-    for (let i = 0; i < Math.floor(gallery.length / 4) * 4; i++) {
-      if (i % 4 === 0 ) {
+    for (let i = 0; i < gallery.length; i++) {
+      if (i % 4 === 0) {
         col1.push(gallery[i])
       } else if (i % 4 === 1) {
         col2.push(gallery[i])
@@ -128,7 +128,8 @@ class Gallery extends PureComponent {
         col4.push(gallery[i])
       }
     }
-    col3 = col3.slice(0, col3.length - 2)
+    col2 = col2.slice(0, col2.length - 2)
+    col3 = col3.slice(0, col3.length - 1)
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
     this.setState({
       sortedGallery,
@@ -143,7 +144,7 @@ class Gallery extends PureComponent {
     let col4 = []
 
     for (let i = 0; i < Math.floor(lightboxGallery.length / 4) * 4; i++) {
-      if (i % 4 === 0 ) {
+      if (i % 4 === 0) {
         col1.push(lightboxGallery[i])
       } else if (i % 4 === 1) {
         col2.push(lightboxGallery[i])
