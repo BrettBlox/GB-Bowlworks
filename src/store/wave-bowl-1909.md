@@ -1,16 +1,12 @@
 ---
-slug: /1909
-id: '1909'
+slug: /1913
+id: '1913'
 price: 125
 image: >-
-  https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1555378077/GB%20Bowlworks%20Gallery/1909b.jpg
-title: Wave Bowl (SOLD)
+  https://res.cloudinary.com/dy6lb8vna/image/upload/v1565866798/GB%20Bowlworks%20Gallery/1913a.jpg
+title: 'Wave Bowl (#1913)'
 date: 2019-04-16T01:28:33.719Z
 ---
-A smaller bowl, 4" in height and 8" in diameter, composed of four species of hardwood - Wenge, Maple, Padauk and Cherry.  The rim of Wenge has some interesting sap wood in places (the lighter portions) that help give this little bowl a lot of character.
+A smaller bowl, 3.5" in height and 7.5" in diameter, composed of four species of hardwood - Wenge, Maple, Purpleheart and Cherry.  
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_350,c_fit,f_auto/v1555378077/GB%20Bowlworks%20Gallery/1909c.jpg)
-
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_350,c_fit,f_auto/v1555378376/GB%20Bowlworks%20Gallery/IMG_4270.jpg)
-
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_350,c_fit,f_auto/v1555378420/GB%20Bowlworks%20Gallery/IMG_4271.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1565867284/GB%20Bowlworks%20Gallery/1913b.jpg)
