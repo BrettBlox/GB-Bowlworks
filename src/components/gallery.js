@@ -127,7 +127,7 @@ class Gallery extends PureComponent {
       1100: 3,
       700: 2,
     };
-    
+
     //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
     const wideView = (
       <Masonry breakpointCols={myBreakpointsAndCols}>
