@@ -23,11 +23,12 @@
   padding-bottom: 10px;
 }
 
-.box > img {
+.box img {
   width: 100%;
   border-radius: 4px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
+
 
 @media only screen and (max-width: 500px) {
   .grid-wrapper {
@@ -37,7 +38,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 
-  .box > img {
+  .box img {
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     width: 100%;
