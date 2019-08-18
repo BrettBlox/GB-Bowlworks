@@ -12,6 +12,7 @@ class Gallery extends PureComponent {
     this.state = {
       gallery: [],
       mobileGallery: [],
+      lightboxGallery: [],
       viewportWidth: 0,
       loading: true,
       lightboxIsOpen: false,
@@ -92,10 +93,17 @@ class Gallery extends PureComponent {
         obj.public_id
         }.jpg`,
     }))
+    const lightboxGallerySrc = this.state.gallery.map(obj => ({
+      ...obj,
+      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
+        obj.public_id
+        }.jpg`,
+    }))
 
     this.setState({
       gallery: gallerySrc,
       mobileGallery: mobileGallerySrc,
+      lightboxGallery: lightboxGallerySrc
     })
   }
 
@@ -121,7 +129,7 @@ class Gallery extends PureComponent {
       500: 1
     };
     const spinnerStyle = {
-      
+
     }
     //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
     const wideView = (
