@@ -137,7 +137,7 @@ class Gallery extends PureComponent {
         {this.state.gallery.map((data, i) => {
           return (
             <div className="box" key={i}>
-              <a onClick={e => this.openLightbox(i, e)} href={this.state.gallery[i]}>
+              <a onClick={e => this.openLightbox(i, e)} href={this.state.lightboxGallery[i]}>
                 <img src={data.src} alt="Hand turned wooden bowls" />
               </a>
             </div>
@@ -167,7 +167,7 @@ class Gallery extends PureComponent {
       <>
         <Lightbox
           currentImage={this.state.currentImage}
-          images={this.state.gallery}
+          images={this.state.lightboxGallery}
           isOpen={this.state.lightboxIsOpen}
           onClickImage={this.handleClickImage}
           onClickNext={this.gotoNext}
