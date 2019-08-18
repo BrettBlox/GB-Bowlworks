@@ -126,11 +126,8 @@ class Gallery extends PureComponent {
       default: 4,
       1100: 3,
       700: 2,
-      500: 1
     };
-    const spinnerStyle = {
-
-    }
+    
     //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
     const wideView = (
       <Masonry breakpointCols={myBreakpointsAndCols}>
@@ -175,12 +172,12 @@ class Gallery extends PureComponent {
           onClose={this.closeLightbox}
           preventScroll={this.props.preventScroll}
         />
-        {this.state.viewportWidth > 500 && this.state.loading === false ? (
+        {this.state.viewportWidth > 501 && this.state.loading === false ? (
           wideView
-        ) : this.state.viewportWidth < 500 && this.state.loading === false ? (
+        ) : this.state.viewportWidth < 501 && this.state.loading === false ? (
           mobileView
         ) : (
-              <Spinner stylez={spinnerStyle} />
+              <Spinner />
             )}
       </>
     )

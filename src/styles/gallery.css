@@ -8,6 +8,7 @@
   margin: 0 auto;
   padding: 10px;
 }
+
 .my-masonry-grid_column {
   padding: 10px; /* gutter size */
   background-clip: padding-box;
@@ -32,13 +33,6 @@
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-@media only screen and (max-width: 900px) {
-  .grid-wrapper {
-    padding-top: 0;
-    padding: 25px;
-  }
 }
 
 @media only screen and (max-width: 500px) {
