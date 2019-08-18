@@ -128,10 +128,10 @@ class Gallery extends PureComponent {
         col4.push(gallery[i])
       }
     }
-    col1 = col1.slice(0, col1.length - 3)
-    col2 = col2.slice(0, col2.length - 2)
-    col3 = col3.slice(0, col3.length - 4)
-    col4 = col4.slice(0, col4.length - 3)
+    // col1 = col1.slice(0, col1.length - 3)
+    // col2 = col2.slice(0, col2.length - 2)
+    // col3 = col3.slice(0, col3.length - 4)
+    // col4 = col4.slice(0, col4.length - 3)
 
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
 
@@ -158,10 +158,10 @@ class Gallery extends PureComponent {
         col4.push(lightboxGallery[i])
       }
     }
-    col1 = col1.slice(0, col1.length - 3)
-    col2 = col2.slice(0, col2.length - 2)
-    col3 = col3.slice(0, col3.length - 4)
-    col4 = col4.slice(0, col4.length - 3)
+    // col1 = col1.slice(0, col1.length - 3)
+    // col2 = col2.slice(0, col2.length - 2)
+    // col3 = col3.slice(0, col3.length - 4)
+    // col4 = col4.slice(0, col4.length - 3)
 
     const sortedLightboxGallery = [...col1, ...col2, ...col3, ...col4]
 
