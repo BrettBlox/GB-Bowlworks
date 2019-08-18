@@ -2,8 +2,10 @@ import React, { PureComponent } from 'react'
 import Spinner from './spinner'
 import Lightbox from 'react-images'
 import LazyLoad from 'react-lazyload';
+import Masonry from 'react-masonry-css'
 
 import '../styles/gallery.css'
+
 class Gallery extends PureComponent {
   constructor(props) {
     super(props)
@@ -11,8 +13,6 @@ class Gallery extends PureComponent {
       gallery: [],
       mobileGallery: [],
       lightboxGallery: [],
-      sortedGallery: [],
-      sortedLightboxGallery: [],
       viewportWidth: 0,
       loading: true,
       lightboxIsOpen: false,
@@ -72,8 +72,6 @@ class Gallery extends PureComponent {
     }
 
     this.addSrc()
-    this.gallerySort()
-    this.lightboxSort()
     this.onImageLoad()
 
     //ADD WINDOW RESIZE EVENT LISTENER
@@ -109,67 +107,6 @@ class Gallery extends PureComponent {
     })
   }
 
-  // SORTS IMAGES FOR MASONRY LAYOUT ON WIDE SCREENS
-  gallerySort = () => {
-    const gallery = [...this.state.gallery]
-    let col1 = []
-    let col2 = []
-    let col3 = []
-    let col4 = []
-
-    for (let i = 0; i < gallery.length; i++) {
-      if ((i + 1) % 4 === 1) {
-        col1.push(gallery[i])
-      } else if ((i + 1) % 4 === 2) {
-        col2.push(gallery[i])
-      } else if ((i + 1) % 4 === 3) {
-        col3.push(gallery[i])
-      } else if ((i + 1) % 4 === 0) {
-        col4.push(gallery[i])
-      }
-    }
-    // col1 = col1.slice(0, col1.length - 3)
-    // col2 = col2.slice(0, col2.length - 2)
-    // col3 = col3.slice(0, col3.length - 1)
-    // col4 = col4.slice(0, col4.length - 1)
-
-    const sortedGallery = [...col1, ...col2, ...col3, ...col4]
-
-    this.setState({
-      sortedGallery,
-    })
-  }
-
-  lightboxSort = () => {
-    const lightboxGallery = [...this.state.lightboxGallery]
-    let col1 = []
-    let col2 = []
-    let col3 = []
-    let col4 = []
-
-    for (let i = 0; i < lightboxGallery.length; i++) {
-      if ((i + 1) % 4 === 1) {
-        col1.push(lightboxGallery[i])
-      } else if ((i + 1) % 4 === 2) {
-        col2.push(lightboxGallery[i])
-      } else if ((i + 1) % 4 === 3) {
-        col3.push(lightboxGallery[i])
-      } else if ((i + 1) % 4 === 0) {
-        col4.push(lightboxGallery[i])
-      }
-    }
-    // col1 = col1.slice(0, col1.length - 3)
-    // col2 = col2.slice(0, col2.length - 2)
-    // col3 = col3.slice(0, col3.length - 4)
-    // col4 = col4.slice(0, col4.length - 3)
-
-    const sortedLightboxGallery = [...col1, ...col2, ...col3, ...col4]
-
-    this.setState({
-      sortedLightboxGallery,
-    })
-  }
-
   //REMOVE LOADING SPINNER ONCE IMAGES HAVE FINISHED
   onImageLoad = () => {
     this.setState({
@@ -185,27 +122,25 @@ class Gallery extends PureComponent {
   }
 
   render() {
-    const galleryStyle = {
-      display: this.state.galleryDisplay,
-    }
-    const spinnerStyle = {
-      display: this.state.spinnerDisplay,
-    }
+    const myBreakpointsAndCols = {
+      default: 4,
+      1100: 3,
+      700: 2,
+    };
+    
     //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
     const wideView = (
-      <div className="grid-wrapper" style={galleryStyle}>
-        {this.state.sortedGallery.map((data, i) => {
+      <Masonry breakpointCols={myBreakpointsAndCols}>
+        {this.state.gallery.map((data, i) => {
           return (
-            <div className="zone" key={i}>
-              <div className="box">
-                <a onClick={e => this.openLightbox(i, e)} href={this.state.sortedLightboxGallery[i]}>
-                  <img src={data.src} alt="Hand turned wooden bowls" />
-                </a>
-              </div>
+            <div className="box" key={i}>
+              <a onClick={e => this.openLightbox(i, e)} href={this.state.lightboxGallery[i]}>
+                <img src={data.src} alt="Hand turned wooden bowls" />
+              </a>
             </div>
           )
         })}
-      </div>
+      </Masonry>
     )
 
     //MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
@@ -229,7 +164,7 @@ class Gallery extends PureComponent {
       <>
         <Lightbox
           currentImage={this.state.currentImage}
-          images={this.state.sortedLightboxGallery}
+          images={this.state.lightboxGallery}
           isOpen={this.state.lightboxIsOpen}
           onClickImage={this.handleClickImage}
           onClickNext={this.gotoNext}
@@ -237,12 +172,12 @@ class Gallery extends PureComponent {
           onClose={this.closeLightbox}
           preventScroll={this.props.preventScroll}
         />
-        {this.state.viewportWidth > 500 && this.state.loading === false ? (
+        {this.state.viewportWidth > 501 && this.state.loading === false ? (
           wideView
-        ) : this.state.viewportWidth < 500 && this.state.loading === false ? (
+        ) : this.state.viewportWidth < 501 && this.state.loading === false ? (
           mobileView
         ) : (
-              <Spinner stylez={spinnerStyle} />
+              <Spinner />
             )}
       </>
     )
