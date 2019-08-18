@@ -118,13 +118,13 @@ class Gallery extends PureComponent {
     let col4 = []
 
     for (let i = 0; i < gallery.length; i++) {
-      if (i % 4 === 0) {
+      if ((i + 1) % 4 === 1) {
         col1.push(gallery[i])
-      } else if (i % 4 === 1) {
+      } else if ((i + 1) % 4 === 2) {
         col2.push(gallery[i])
-      } else if (i % 4 === 2) {
+      } else if ((i + 1) % 4 === 3) {
         col3.push(gallery[i])
-      } else if (i % 4 === 3) {
+      } else if ((i + 1) % 4 === 0) {
         col4.push(gallery[i])
       }
     }
@@ -134,6 +134,7 @@ class Gallery extends PureComponent {
     col4 = col4.slice(0, col4.length - 3)
 
     const sortedGallery = [...col1, ...col2, ...col3, ...col4]
+
     this.setState({
       sortedGallery,
     })
@@ -146,19 +147,24 @@ class Gallery extends PureComponent {
     let col3 = []
     let col4 = []
 
-    for (let i = 0; i < Math.floor(lightboxGallery.length / 4) * 4; i++) {
-      if (i % 4 === 0) {
+    for (let i = 0; i < lightboxGallery.length; i++) {
+      if ((i + 1) % 4 === 1) {
         col1.push(lightboxGallery[i])
-      } else if (i % 4 === 1) {
+      } else if ((i + 1) % 4 === 2) {
         col2.push(lightboxGallery[i])
-      } else if (i % 4 === 2) {
+      } else if ((i + 1) % 4 === 3) {
         col3.push(lightboxGallery[i])
-      } else if (i % 4 === 3) {
+      } else if ((i + 1) % 4 === 0) {
         col4.push(lightboxGallery[i])
       }
     }
-    col3 = col3.slice(0, col3.length - 2)
+    col1 = col1.slice(0, col1.length - 3)
+    col2 = col2.slice(0, col2.length - 2)
+    col3 = col3.slice(0, col3.length - 4)
+    col4 = col4.slice(0, col4.length - 3)
+
     const sortedLightboxGallery = [...col1, ...col2, ...col3, ...col4]
+
     this.setState({
       sortedLightboxGallery,
     })
