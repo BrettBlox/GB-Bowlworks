@@ -3,7 +3,7 @@ slug: /1918
 id: '1918'
 price: 135
 image: >-
-  https://res.cloudinary.com/dy6lb8vna/image/upload/v1566960957/GB%20Bowlworks%20Gallery/1919a.jpg
+  https://res.cloudinary.com/dy6lb8vna/image/upload/v1567648331/GB%20Bowlworks%20Gallery/1918e.jpg
 title: 'Cherry & Maple Salad Bowl (#1918)'
 date: 2019-08-28T02:56:29.940Z
 ---
