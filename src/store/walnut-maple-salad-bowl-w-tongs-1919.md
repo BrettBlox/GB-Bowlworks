@@ -1,7 +1,7 @@
 ---
 slug: /1919
 id: '1919'
-price: 165
+price: 150
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1567685016/GB%20Bowlworks%20Gallery/1919_b.jpg
 title: 'Walnut & Maple Salad Bowl w/Tongs (#1919)'
