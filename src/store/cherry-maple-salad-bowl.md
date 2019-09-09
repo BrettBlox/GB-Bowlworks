@@ -1,7 +1,7 @@
 ---
 slug: /1918
 id: '1918'
-price: 150
+price: 165
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1567648331/GB%20Bowlworks%20Gallery/1918e.jpg
 title: 'Cherry & Maple Salad Bowl w/Tongs (#1918)'
