@@ -1,7 +1,7 @@
 ---
 slug: /1911
 id: '1911'
-price: 150
+price: 165
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1565832311/GB%20Bowlworks%20Gallery/1917a.jpg
 title: 'Spalted Cherry Salad Bowl & Tongs (#1911)'
