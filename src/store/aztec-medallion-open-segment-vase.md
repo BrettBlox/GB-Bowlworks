@@ -1,7 +1,7 @@
 ---
 slug: /1905
 id: '1905'
-price: 195
+price: 165
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1552008963/GB%20Bowlworks%20Gallery/1905a.jpg
 title: 'Aztec Medallion Open Segment Vase (#1905)'
