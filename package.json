@@ -23,8 +23,7 @@
     "react-helmet": "^5.2.1",
     "react-images": "^0.5.19",
     "react-lazyload": "^2.6.2",
-    "react-masonry-css": "^1.0.12",
-    "uploadcare-widget": "^3.7.7"
+    "react-masonry-css": "^1.0.12"
   },
   "keywords": [
     "gatsby"
