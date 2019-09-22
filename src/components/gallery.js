@@ -1,10 +1,113 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent, useState, useEffect } from 'react'
+import useWindowSize from '../hooks/useWindowSize'
+import useFetch from '../hooks/useFetch'
+
 import Spinner from './spinner'
 import Lightbox from 'react-images'
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazyload'
 import Masonry from 'react-masonry-css'
 
 import '../styles/gallery.css'
+
+const myBreakpointsAndCols = {
+  default: 4,
+  1100: 3,
+  700: 2,
+}
+
+function hooksGallery(props) {
+  const [gallery, setGallery] = useState([])
+  const [mobileGallery, setMobileGallery] = useState([])
+  const [lightboxGallery, setlightboxGallery] = useState([])
+  const [viewportWidth, setviewportWidth] = useState(0)
+  const [loading, setLoading] = useState(true)
+  const [lightboxIsOpen, setlightboxIsOpen] = useState(false)
+  const [currentImage, setCurrentImage] = useState(0)
+
+  /***********************************************
+   *****Methods For Lightbox Gallery**************
+   ***********************************************/
+  const openLightbox = (index, event) => {
+    event.preventDefault()
+    setCurrentImage(index)
+    setlightboxIsOpen(true)
+  }
+  const closeLightbox = () => {
+    setCurrentImage(0)
+    setlightboxIsOpen(false)
+  }
+  const gotoPrevious = () => {
+    setCurrentImage(currentImage - 1)
+  }
+  const gotoNext = () => {
+    setCurrentImage(currentImage + 1)
+  }
+  const gotoImage = index => {
+    setCurrentImage(index)
+  }
+  const handleClickImage = () => {
+    if (currentImage === props.images.length - 1) return
+    gotoNext()
+  }
+  /***************************************************************
+   ***************************************************************/
+
+  //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
+  const wideView = (
+    <Masonry breakpointCols={myBreakpointsAndCols}>
+      {this.state.gallery.map((data, i) => {
+        return (
+          <div className="box" key={i}>
+            <a
+              onClick={e => this.openLightbox(i, e)}
+              href={this.state.lightboxGallery[i]}
+            >
+              <img src={data.src} alt="Hand turned wooden bowls" />
+            </a>
+          </div>
+        )
+      })}
+    </Masonry>
+  )
+
+  //MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
+  const mobileView = (
+    <div className="grid-wrapper">
+      {mobileGallery.map((data, i) => {
+        return (
+          <div className="zone" key={Math.random(i)}>
+            <div className="box">
+              <LazyLoad offset={100}>
+                <img src={data.src} alt="Hand Turned Wooden Bowl" />
+              </LazyLoad>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  )
+  return (
+    <>
+      <Lightbox
+        currentImage={currentImage}
+        images={lightboxGallery}
+        isOpen={lightboxIsOpen}
+        onClickImage={handleClickImage}
+        onClickNext={gotoNext}
+        onClickPrev={gotoPrevious}
+        onClose={closeLightbox}
+        preventScroll={props.preventScroll}
+      />
+      {viewportWidth > 501 && loading === false ? (
+        wideView
+      ) : viewportWidth < 501 && loading === false ? (
+        mobileView
+      ) : (
+        <Spinner />
+      )}
+    </>
+  )
+}
 
 class Gallery extends PureComponent {
   constructor(props) {
@@ -85,25 +188,25 @@ class Gallery extends PureComponent {
       ...obj,
       src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${
         obj.public_id
-        }.jpg`,
+      }.jpg`,
     }))
     const mobileGallerySrc = this.state.gallery.map(obj => ({
       ...obj,
       src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${
         obj.public_id
-        }.jpg`,
+      }.jpg`,
     }))
     const lightboxGallerySrc = this.state.gallery.map(obj => ({
       ...obj,
       src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
         obj.public_id
-        }.jpg`,
+      }.jpg`,
     }))
 
     this.setState({
       gallery: gallerySrc,
       mobileGallery: mobileGallerySrc,
-      lightboxGallery: lightboxGallerySrc
+      lightboxGallery: lightboxGallerySrc,
     })
   }
 
@@ -126,7 +229,7 @@ class Gallery extends PureComponent {
       default: 4,
       1100: 3,
       700: 2,
-    };
+    }
 
     //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
     const wideView = (
@@ -134,7 +237,10 @@ class Gallery extends PureComponent {
         {this.state.gallery.map((data, i) => {
           return (
             <div className="box" key={i}>
-              <a onClick={e => this.openLightbox(i, e)} href={this.state.lightboxGallery[i]}>
+              <a
+                onClick={e => this.openLightbox(i, e)}
+                href={this.state.lightboxGallery[i]}
+              >
                 <img src={data.src} alt="Hand turned wooden bowls" />
               </a>
             </div>
@@ -177,8 +283,8 @@ class Gallery extends PureComponent {
         ) : this.state.viewportWidth < 501 && this.state.loading === false ? (
           mobileView
         ) : (
-              <Spinner />
-            )}
+          <Spinner />
+        )}
       </>
     )
   }
