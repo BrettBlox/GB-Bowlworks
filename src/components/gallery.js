@@ -18,7 +18,7 @@ export default function Gallery(props) {
   const [error, setError] = useState(true)
 
   //Fetch images from cloudinary
-  React.useEffect(
+  useEffect(
     () => {
       setLoading(true)
 
