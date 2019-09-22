@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cloudinary-react": "^1.1.4",
+    "cms": "^1.8.1",
     "gatsby": "^2.15.20",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-manifest": "^2.2.18",
@@ -16,6 +17,7 @@
     "gatsby-source-filesystem": "^2.1.26",
     "gatsby-transformer-remark": "^2.6.24",
     "gatsby-transformer-sharp": "^2.2.16",
+    "netlify": "^2.4.8",
     "netlify-cms-app": "^2.9.7",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
