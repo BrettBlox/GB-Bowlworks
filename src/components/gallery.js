@@ -1,6 +1,4 @@
-import React, { PureComponent, useState, useEffect } from 'react'
-import useWindowSize from '../hooks/useWindowSize'
-import useFetch from '../hooks/useFetch'
+import React, { useState, useEffect } from 'react'
 
 import Spinner from './spinner'
 import Lightbox from 'react-images'
@@ -9,24 +7,58 @@ import Masonry from 'react-masonry-css'
 
 import '../styles/gallery.css'
 
-const myBreakpointsAndCols = {
-  default: 4,
-  1100: 3,
-  700: 2,
-}
-
-function hooksGallery(props) {
+export default function Gallery(props) {
   const [gallery, setGallery] = useState([])
   const [mobileGallery, setMobileGallery] = useState([])
-  const [lightboxGallery, setlightboxGallery] = useState([])
-  const [viewportWidth, setviewportWidth] = useState(0)
-  const [loading, setLoading] = useState(true)
+  const [lightboxGallery, setLightboxGallery] = useState([])
+  const [windowSize, setWindowSize] = useState(getSize)
   const [lightboxIsOpen, setlightboxIsOpen] = useState(false)
   const [currentImage, setCurrentImage] = useState(0)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(true)
 
-  /***********************************************
-   *****Methods For Lightbox Gallery**************
-   ***********************************************/
+  //Fetch images from cloudinary
+  React.useEffect(
+    () => {
+      setLoading(true)
+
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          addSrc(
+            data.resources,
+            setGallery,
+            setMobileGallery,
+            setLightboxGallery
+          )
+          setError(null)
+          setLoading(false)
+        })
+        .catch(e => {
+          console.warn(e.message)
+          setError('Error fetching data. Try again.')
+          setLoading(false)
+        })
+      setLoading(false)
+    },
+    [] // Empty dependency array ensures that effect is only run on mount and unmount
+  )
+
+  //Setup window resize listener
+  useEffect(() => {
+    if (!isClient) {
+      return false
+    }
+
+    function handleResize() {
+      setWindowSize(getSize())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, []) // Empty dependency array ensures that effect is only run on mount and unmount
+
+  //Lightbox gallery functions
   const openLightbox = (index, event) => {
     event.preventDefault()
     setCurrentImage(index)
@@ -49,20 +81,15 @@ function hooksGallery(props) {
     if (currentImage === props.images.length - 1) return
     gotoNext()
   }
-  /***************************************************************
-   ***************************************************************/
 
-  //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
+  // WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
   const wideView = (
     <Masonry breakpointCols={myBreakpointsAndCols}>
-      {this.state.gallery.map((data, i) => {
+      {gallery.map((image, i) => {
         return (
           <div className="box" key={i}>
-            <a
-              onClick={e => this.openLightbox(i, e)}
-              href={this.state.lightboxGallery[i]}
-            >
-              <img src={data.src} alt="Hand turned wooden bowls" />
+            <a onClick={e => openLightbox(i, e)} href={lightboxGallery[i]}>
+              <img src={image.src} alt="Hand turned wooden bowls" />
             </a>
           </div>
         )
@@ -70,15 +97,15 @@ function hooksGallery(props) {
     </Masonry>
   )
 
-  //MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
+  // MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
   const mobileView = (
     <div className="grid-wrapper">
-      {mobileGallery.map((data, i) => {
+      {mobileGallery.map((image, i) => {
         return (
           <div className="zone" key={Math.random(i)}>
             <div className="box">
               <LazyLoad offset={100}>
-                <img src={data.src} alt="Hand Turned Wooden Bowl" />
+                <img src={image.src} alt="Hand Turned Wooden Bowl" />
               </LazyLoad>
             </div>
           </div>
@@ -86,6 +113,7 @@ function hooksGallery(props) {
       })}
     </div>
   )
+
   return (
     <>
       <Lightbox
@@ -98,9 +126,9 @@ function hooksGallery(props) {
         onClose={closeLightbox}
         preventScroll={props.preventScroll}
       />
-      {viewportWidth > 501 && loading === false ? (
+      {windowSize.width > 501 && loading === false ? (
         wideView
-      ) : viewportWidth < 501 && loading === false ? (
+      ) : windowSize.width < 501 && loading === false ? (
         mobileView
       ) : (
         <Spinner />
@@ -109,185 +137,45 @@ function hooksGallery(props) {
   )
 }
 
-class Gallery extends PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      gallery: [],
-      mobileGallery: [],
-      lightboxGallery: [],
-      viewportWidth: 0,
-      loading: true,
-      lightboxIsOpen: false,
-      currentImage: 0,
-    }
-  }
+// Cloudinary
+const url = `https://res.cloudinary.com/dy6lb8vna/image/list/bowlworks.json`
 
-  /***********************************************
-   *****Methods For Lightbox Gallery**************
-   ***********************************************/
-  openLightbox = (index, event) => {
-    event.preventDefault()
-    this.setState({
-      currentImage: index,
-      lightboxIsOpen: true,
-    })
-  }
-  closeLightbox = () => {
-    this.setState({
-      currentImage: 0,
-      lightboxIsOpen: false,
-    })
-  }
-  gotoPrevious = () => {
-    this.setState({
-      currentImage: this.state.currentImage - 1,
-    })
-  }
-  gotoNext = () => {
-    this.setState({
-      currentImage: this.state.currentImage + 1,
-    })
-  }
-  gotoImage = index => {
-    this.setState({
-      currentImage: index,
-    })
-  }
-  handleClickImage = () => {
-    if (this.state.currentImage === this.props.images.length - 1) return
-    this.gotoNext()
-  }
-  /***************************************************************
-   ***************************************************************/
-  async componentDidMount() {
-    // REQUEST FOR ALL CLOUDINARY IMAGES TAGGED "BOWLWORKS"
-    try {
-      const res = await fetch(
-        'https://res.cloudinary.com/dy6lb8vna/image/list/bowlworks.json'
-      )
-      const gallery = await res.json()
-      this.setState({
-        gallery: gallery.resources,
-      })
-    } catch (e) {
-      console.log(e)
-    }
+// ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
+const addSrc = (data, main, mobile, lightbox) => {
+  const gallerySrc = data.map(obj => ({
+    ...obj,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${
+      obj.public_id
+    }.jpg`,
+  }))
+  const mobileGallerySrc = data.map(obj => ({
+    ...obj,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${
+      obj.public_id
+    }.jpg`,
+  }))
+  const lightboxGallerySrc = data.map(obj => ({
+    ...obj,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
+      obj.public_id
+    }.jpg`,
+  }))
+  main(gallerySrc)
+  mobile(mobileGallerySrc)
+  lightbox(lightboxGallerySrc)
+}
 
-    this.addSrc()
-    this.onImageLoad()
+const isClient = typeof window === 'object'
 
-    //ADD WINDOW RESIZE EVENT LISTENER
-    window.addEventListener('resize', this.updateWidth)
-    this.updateWidth()
-  }
-
-  // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
-  addSrc = () => {
-    const gallerySrc = this.state.gallery.map(obj => ({
-      ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${
-        obj.public_id
-      }.jpg`,
-    }))
-    const mobileGallerySrc = this.state.gallery.map(obj => ({
-      ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${
-        obj.public_id
-      }.jpg`,
-    }))
-    const lightboxGallerySrc = this.state.gallery.map(obj => ({
-      ...obj,
-      src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
-        obj.public_id
-      }.jpg`,
-    }))
-
-    this.setState({
-      gallery: gallerySrc,
-      mobileGallery: mobileGallerySrc,
-      lightboxGallery: lightboxGallerySrc,
-    })
-  }
-
-  //REMOVE LOADING SPINNER ONCE IMAGES HAVE FINISHED
-  onImageLoad = () => {
-    this.setState({
-      loading: false,
-    })
-  }
-
-  //SET STATE AS VW CHANGES
-  updateWidth = () => this.setState({ viewportWidth: window.innerWidth })
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWidth)
-  }
-
-  render() {
-    const myBreakpointsAndCols = {
-      default: 4,
-      1100: 3,
-      700: 2,
-    }
-
-    //WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
-    const wideView = (
-      <Masonry breakpointCols={myBreakpointsAndCols}>
-        {this.state.gallery.map((data, i) => {
-          return (
-            <div className="box" key={i}>
-              <a
-                onClick={e => this.openLightbox(i, e)}
-                href={this.state.lightboxGallery[i]}
-              >
-                <img src={data.src} alt="Hand turned wooden bowls" />
-              </a>
-            </div>
-          )
-        })}
-      </Masonry>
-    )
-
-    //MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
-    const mobileView = (
-      <div className="grid-wrapper">
-        {this.state.mobileGallery.map((data, i) => {
-          return (
-            <div className="zone" key={Math.random(i)}>
-              <div className="box">
-                <LazyLoad offset={100}>
-                  <img src={data.src} alt="Hand Turned Wooden Bowl" />
-                </LazyLoad>
-              </div>
-            </div>
-          )
-        })}
-      </div>
-    )
-
-    return (
-      <>
-        <Lightbox
-          currentImage={this.state.currentImage}
-          images={this.state.lightboxGallery}
-          isOpen={this.state.lightboxIsOpen}
-          onClickImage={this.handleClickImage}
-          onClickNext={this.gotoNext}
-          onClickPrev={this.gotoPrevious}
-          onClose={this.closeLightbox}
-          preventScroll={this.props.preventScroll}
-        />
-        {this.state.viewportWidth > 501 && this.state.loading === false ? (
-          wideView
-        ) : this.state.viewportWidth < 501 && this.state.loading === false ? (
-          mobileView
-        ) : (
-          <Spinner />
-        )}
-      </>
-    )
+function getSize() {
+  return {
+    width: isClient ? window.innerWidth : undefined,
+    height: isClient ? window.innerHeight : undefined,
   }
 }
 
-export default Gallery
+const myBreakpointsAndCols = {
+  default: 4,
+  1100: 3,
+  700: 2,
+}
