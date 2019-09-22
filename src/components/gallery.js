@@ -137,7 +137,7 @@ export default function Gallery(props) {
   )
 }
 
-// Cloudinary
+// Cloudinary api
 const url = `https://res.cloudinary.com/dy6lb8vna/image/list/bowlworks.json`
 
 // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
