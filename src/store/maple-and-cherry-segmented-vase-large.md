@@ -1,7 +1,7 @@
 ---
 slug: /1801
 id: '1801'
-price: 345
+price: 475
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1548276578/GB%20Bowlworks%20Gallery/DSC_1963a.jpg
 title: 'Maple and Cherry Segmented Vase Large (#1801)'
