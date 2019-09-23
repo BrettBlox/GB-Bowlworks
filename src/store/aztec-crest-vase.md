@@ -1,7 +1,7 @@
 ---
 slug: /1910
 id: '1910'
-price: 995
+price: 1295
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1558206617/GB%20Bowlworks%20Gallery/1910a.jpg
 title: 'Aztec Crest Vase (#1910)'
