@@ -15,8 +15,8 @@ media_library:
     api_key: 567216352827144
     # mulitple: true
 
-media_folder: 'src/images/posts'
-public_folder: 'images/posts'
+media_folder: 'src/images'
+public_folder: 'images'
 collections:
   - name: 'posts'
     label: 'Post'
