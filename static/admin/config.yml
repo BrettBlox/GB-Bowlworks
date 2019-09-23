@@ -4,6 +4,7 @@
 #   repo: BrettBlox/GB_Bowlworks
 backend:
   name: git-gateway
+  branch: master
 
 # publish_mode: editorial_workflow
 
