@@ -62,7 +62,7 @@ module.exports = {
       resolve: `gatsby-source-cloudinary`,
       options: {
         cloudName: 'dy6lb8vna',
-        apiKey: '496439931267955',
+        apiKey: '241846326259277',
         apiSecret: 'H5IWOSEuoO7E7MU669zatAs4Kb4',
         resourceType: 'image',
         tags: `true`,
