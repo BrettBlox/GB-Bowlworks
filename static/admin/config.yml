@@ -12,7 +12,7 @@ media_library:
   name: cloudinary
   config:
     cloud_name: dy6lb8vna
-    api_key: 567216352827144
+    api_key: 241846326259277
     # mulitple: true
 
 media_folder: 'src/images'
