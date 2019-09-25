@@ -1,12 +1,9 @@
 {
   "dependencies": {
-    "cloudinary-react": "^1.1.4",
-    "cms": "^1.8.1",
     "gatsby": "^2.15.20",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-manifest": "^2.2.18",
     "gatsby-plugin-netlify-cms": "^4.1.18",
-    "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-plugin-sitemap": "^2.2.14",
