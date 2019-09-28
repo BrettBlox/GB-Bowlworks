@@ -8,15 +8,16 @@ backend:
 
 # publish_mode: editorial_workflow
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dy6lb8vna
-    api_key: 241846326259277
-    # mulitple: true
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: dy6lb8vna
+#     api_key: 241846326259277
+#     # mulitple: true
 
 media_folder: 'src/images'
 public_folder: 'images'
+
 collections:
   - name: 'posts'
     label: 'Post'
