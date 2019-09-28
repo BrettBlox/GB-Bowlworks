@@ -26,9 +26,28 @@
 .box img {
   width: 100%;
   border-radius: 4px;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.5) 6px 8px 20px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotate3d(0, 0, 0, 0deg) scale(1);
+  transition: all 0.3s ease 0s;
+}
+.box img:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 10px 14px 20px;
+  animation: 1s ease 0s 1 normal forwards running grow;
 }
 
+@keyframes grow {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg) scale(1);
+  }
+  16% {
+    transform: rotate3d(-0.5, -1, 0, 15deg) scale(1.01);
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 0deg) scale(1.05);
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .grid-wrapper {
