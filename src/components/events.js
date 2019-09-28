@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
 import '../styles/events.css'
 
@@ -35,7 +35,7 @@ const Event = () => (
             <ul className="eventList">
               {allMarkdownRemark.edges.map(edge => (
                 <div key={edge.node.frontmatter.title}>
-                  <li className="eventItem" >
+                  <li className="eventItem">
                     <h3 className="eventInfo">{edge.node.frontmatter.date}</h3>
                     <h3 className="eventTitle">
                       <a
