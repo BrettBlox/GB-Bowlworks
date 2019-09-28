@@ -5,13 +5,6 @@ CMS.registerMediaLibrary(cloudinary)
 
 CMS.init({
   config: {
-    // load_config_file: false,
-    // backend: {
-    //   name: 'github',
-    //   repo: 'your/repo',
-    //   branch: 'master',
-    //   squash_merges: true, // @NOTE Beta feature
-    // },
     media_library: {
       name: 'cloudinary',
       config: {
