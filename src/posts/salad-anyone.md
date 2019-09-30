@@ -3,8 +3,6 @@ slug: /salad-bowl
 date: 2018-02-01T06:00:00.000Z
 title: Salad Anyone!
 ---
-![](/images/1919-a-.jpg)
-
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1568165731/GB%20Bowlworks%20Gallery/1920a.jpg)
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1567685016/GB%20Bowlworks%20Gallery/1919_b.jpg)
