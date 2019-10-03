@@ -3,7 +3,7 @@ slug: /Holy Wood
 date: 2019-10-03T20:44:19.147Z
 title: Holy Wood!
 ---
-Back a couple of years ago one of my uncles called and said their church was replacing their old worn oak pews with new ones and he asked if I'd be interested in any of the remnants.  OF COURSE I WAS!  He showed up with a small pickup load of it.  It's rock-hard oak, fully cured, with a teflon coat of finish, and definitely heard more sermons, funerals, weddings, and gospel than I've ever experienced!  I made a test bowl just to make sure it would cut/turn/sand to my liking.  I dubbed it Broadway Baptist Oak" in honor of my uncle's church.
+Back about four years ago one of my uncles called and said their church was replacing their old worn oak pews with new ones and he asked if I'd be interested in any of the remnants.  OF COURSE I WAS!  He showed up with a small pickup load of it.  It's rock-hard oak, fully cured, with a teflon coat of finish, and definitely heard more sermons, funerals, weddings, and gospel than I've ever experienced!  I made a test bowl just to make sure it would cut/turn/sand to my liking.  I dubbed it "Broadway Baptist Oak" in honor of my uncle and his service as a beloved administrator in that church.
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1570136433/GB%20Bowlworks%20Gallery/IMG_6001_1.jpg)
 
