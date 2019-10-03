@@ -1,7 +1,7 @@
 ---
 slug: /1917
 id: '1917'
-price: 145
+price: 225
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1566155773/GB%20Bowlworks%20Gallery/1918a.jpg
 title: 'Aztec Arrows (Open) (#1917)'
