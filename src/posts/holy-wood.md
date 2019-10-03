@@ -15,7 +15,7 @@ I ended up turning a few small segmented bowls with it and they turned out prett
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1570136798/GB%20Bowlworks%20Gallery/IMG_6600.jpg)
 
-I recently needed to make a new table saw insert and was looking around the shop for the right piece of hardwood and thought I'd use a little holy wood for it!  Turned out just right.
+I recently needed to make a new table saw insert and was looking around the shop for the right piece of hardwood and thought I'd use a little holy wood for it!  Turned out just right.  I'm positive that old Jet table saw is running smoother and cutting faster now!!
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/r_3/a_0/v1570136950/GB%20Bowlworks%20Gallery/20191003_180458047_iOS.jpg)
 
