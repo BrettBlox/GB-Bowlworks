@@ -11,10 +11,7 @@ import '../styles/gallery.css'
 export default function Gallery(props) {
   const [gallery, setGallery] = useState([])
   const [mobileGallery, setMobileGallery] = useState([])
-  // const [open, setOpen] = useState([])
-  // const [closed, setClosed] = useState([])
-  // const [urns, setUrns] = useState([])
-  // const [category, setCategory] = useState('all')
+  const [filter, setFilter] = useState(`bowlworks`)
   const [lightboxGallery, setLightboxGallery] = useState([])
   const [windowSize, setWindowSize] = useState(getSize)
   const [lightboxIsOpen, setlightboxIsOpen] = useState(false)
@@ -27,10 +24,12 @@ export default function Gallery(props) {
     () => {
       setLoading(true)
 
+      // Cloudinary api
+      const url = `https://res.cloudinary.com/dy6lb8vna/image/list/${filter}.json`
+
       fetch(url)
         .then(res => res.json())
         .then(data => {
-          console.log(data.resources)
           addSrc(
             data.resources,
             setGallery,
@@ -47,7 +46,7 @@ export default function Gallery(props) {
         })
       setLoading(false)
     },
-    [] // Empty dependency array ensures that effect is only run on mount and unmount
+    [filter] // Empty dependency array ensures that effect is only run on mount and unmount
   )
 
   //Setup window resize listener
@@ -88,10 +87,14 @@ export default function Gallery(props) {
     gotoNext()
   }
 
+  const handleFilter = currentFilter => {
+    setFilter(currentFilter)
+  }
+
   // WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
   const wideView = (
     <>
-      <Filter filters={filters} />
+      <Filter filters={filters} handleFilter={handleFilter} filter={filter} />
       <Masonry breakpointCols={myBreakpointsAndCols}>
         {gallery.map((image, i) => {
           return (
@@ -154,9 +157,6 @@ const filters = {
   urn: `urn`,
   salad: `salad`,
 }
-
-// Cloudinary api
-const url = `https://res.cloudinary.com/dy6lb8vna/image/list/${filters.open}.json`
 
 // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
 const addSrc = (data, main, mobile, lightbox) => {

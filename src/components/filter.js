@@ -2,25 +2,29 @@ import React, { useState } from 'react'
 
 import '../styles/filter.css'
 
-const Filter = ({ filters }) => {
-  const [filter, setFilter] = useState(``)
+const Filter = ({ filters, handleFilter, filter }) => {
+  function handleClick(e) {
+    handleFilter(e.target.dataset.filter)
+  }
+
   return (
     <div className="filters-container">
       <h2 className="gallery-title">Gallery</h2>
       <div className="filters">
         {Object.keys(filters).map(tag => {
-          const currentFilter = filters[tag]
+          console.log(tag)
+          const currentFilter = tag
+          const filterText = filters[tag]
           return (
             <span
               key={`filter-${currentFilter}`}
               className={
                 currentFilter === filter ? `filter filter--active` : `filter`
               }
-              onClick={() => {
-                setFilter(currentFilter)
-              }}
+              data-filter={currentFilter}
+              onClick={handleClick}
             >
-              {currentFilter}
+              {filterText}
             </span>
           )
         })}
