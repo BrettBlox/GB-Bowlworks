@@ -1,0 +1,64 @@
+.filters-container {
+  background-image: radial-gradient(hsl(0, 100%, 18%), #173e43);
+  padding: 0 20px;
+}
+
+.gallery-title {
+  text-align: center;
+  color: #3fb0ac;
+  font-size: 2.25rem;
+  margin-bottom: 0;
+}
+
+.filters {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.filter {
+  background-color: #3fb0ac;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#d7a150, #d7a150);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  padding: 0.3rem 0;
+  margin: 0 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+}
+.filter:hover {
+  background-size: 100% 100%;
+}
+.filter--active {
+  transform: translateY(-3px) scale(1.2);
+  background-color: #d7a150;
+}
+.filter:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.filter:hover:after {
+  width: 100%;
+  background: #d7a150;
+}
+.filter--active:after {
+  border-bottom: 1px solid #d7a150;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+}

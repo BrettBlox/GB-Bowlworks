@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import Spinner from './spinner'
+import Filter from './filter'
 import Lightbox from 'react-images'
 import LazyLoad from 'react-lazyload'
 import Masonry from 'react-masonry-css'
@@ -10,6 +11,10 @@ import '../styles/gallery.css'
 export default function Gallery(props) {
   const [gallery, setGallery] = useState([])
   const [mobileGallery, setMobileGallery] = useState([])
+  // const [open, setOpen] = useState([])
+  // const [closed, setClosed] = useState([])
+  // const [urns, setUrns] = useState([])
+  // const [category, setCategory] = useState('all')
   const [lightboxGallery, setLightboxGallery] = useState([])
   const [windowSize, setWindowSize] = useState(getSize)
   const [lightboxIsOpen, setlightboxIsOpen] = useState(false)
@@ -25,6 +30,7 @@ export default function Gallery(props) {
       fetch(url)
         .then(res => res.json())
         .then(data => {
+          console.log(data.resources)
           addSrc(
             data.resources,
             setGallery,
@@ -84,17 +90,20 @@ export default function Gallery(props) {
 
   // WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
   const wideView = (
-    <Masonry breakpointCols={myBreakpointsAndCols}>
-      {gallery.map((image, i) => {
-        return (
-          <div className="box" key={i}>
-            <a onClick={e => openLightbox(i, e)} href={lightboxGallery[i]}>
-              <img src={image.src} alt="Hand turned wooden bowls" />
-            </a>
-          </div>
-        )
-      })}
-    </Masonry>
+    <>
+      <Filter filters={filters} />
+      <Masonry breakpointCols={myBreakpointsAndCols}>
+        {gallery.map((image, i) => {
+          return (
+            <div className="box" key={i}>
+              <a onClick={e => openLightbox(i, e)} href={lightboxGallery[i]}>
+                <img src={image.src} alt="Hand turned wooden bowls" />
+              </a>
+            </div>
+          )
+        })}
+      </Masonry>
+    </>
   )
 
   // MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
@@ -137,28 +146,31 @@ export default function Gallery(props) {
   )
 }
 
+// Bowl categories for filtering gallery
+const filters = {
+  bowlworks: `all`,
+  open: `open`,
+  closed: `closed`,
+  urn: `urn`,
+  salad: `salad`,
+}
+
 // Cloudinary api
-const url = `https://res.cloudinary.com/dy6lb8vna/image/list/bowlworks.json`
+const url = `https://res.cloudinary.com/dy6lb8vna/image/list/${filters.open}.json`
 
 // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
 const addSrc = (data, main, mobile, lightbox) => {
   const gallerySrc = data.map(obj => ({
     ...obj,
-    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${
-      obj.public_id
-    }.jpg`,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
   }))
   const mobileGallerySrc = data.map(obj => ({
     ...obj,
-    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${
-      obj.public_id
-    }.jpg`,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
   }))
   const lightboxGallerySrc = data.map(obj => ({
     ...obj,
-    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${
-      obj.public_id
-    }.jpg`,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
   }))
   main(gallerySrc)
   mobile(mobileGallerySrc)
