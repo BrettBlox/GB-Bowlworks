@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import '../styles/filter.css'
 
 const Filter = ({ filters, handleFilter, filter }) => {
-    
   function handleClick(e) {
     handleFilter(e.target.dataset.filter)
   }

@@ -5,10 +5,13 @@ import '../styles/header.css'
 
 const Header = () => (
   <div id="header">
-    <Link to="/about" className="navLink">
+    <Link to="/" className="navLink" activeClassName="navLink--active">
+      Galleries
+    </Link>
+    <Link to="/about" className="navLink" activeClassName="navLink--active">
       ABOUT
     </Link>
-    <Link className="navLink" to="/blog">
+    <Link className="navLink" to="/blog" activeClassName="navLink--active">
       BLOG
     </Link>
     <Link id="mainLogo" to="/">
@@ -18,11 +21,14 @@ const Header = () => (
         alt="GB Bowlworks Logo"
       />
     </Link>
-    <Link className="navLink" to="/store">
+    <Link className="navLink" to="/store" activeClassName="navLink--active">
       STORE
     </Link>
-    <Link className="navLink" to="/contact">
+    <Link className="navLink" to="/contact" activeClassName="navLink--active">
       CONTACT
+    </Link>
+    <Link to="/faq" className="navLink" activeClassName="navLink--active">
+      FAQ
     </Link>
     <input className="menu-btn" type="checkbox" id="menu-btn" />
     <label className="menu-icon" htmlFor="menu-btn">
