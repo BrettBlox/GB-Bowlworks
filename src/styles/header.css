@@ -273,10 +273,3 @@
     display: none;
   }
 }
-
-/***********LESS THAN 350PX DO THIS ** Iphone 5 *****************/
-@media only screen and (max-width: 340px) {
-  #header > .menu {
-    list-style: none;
-  }
-}
