@@ -116,9 +116,7 @@ export default function Gallery(props) {
         return (
           <div className="zone" key={Math.random(i)}>
             <div className="box">
-              <LazyLoad offset={100}>
-                <img src={image.src} alt="Hand Turned Wooden Bowl" />
-              </LazyLoad>
+              <img src={image.src} alt="Hand Turned Wooden Bowl" />
             </div>
           </div>
         )
