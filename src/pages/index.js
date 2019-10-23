@@ -34,7 +34,7 @@ const IndexPage = () => (
       />
       <Header />
       <Main />
-      <Events />
+      {/* <Events /> */}
       <Gallery />
       <Footer />
     </div>
