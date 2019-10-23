@@ -1,6 +1,7 @@
 .filters-container {
   background-image: radial-gradient(hsl(0, 100%, 18%), #173e43);
-  padding: 0 20px;
+  padding: 2rem;
+  margin: 0 20px;
 }
 
 .gallery-title {
