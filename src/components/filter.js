@@ -9,7 +9,7 @@ const Filter = ({ filters, handleFilter, filter }) => {
 
   return (
     <div className="filters-container">
-      <h2 className="gallery-title">Gallery</h2>
+      <h2 className="gallery-title">Galleries</h2>
       <div className="filters">
         {Object.keys(filters).map(tag => {
           console.log(tag)

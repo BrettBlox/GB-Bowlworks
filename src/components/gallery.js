@@ -152,8 +152,8 @@ export default function Gallery(props) {
 // Bowl categories for filtering gallery
 const filters = {
   bowlworks: `all`,
-  open: `open`,
-  closed: `closed`,
+  open: `open form`,
+  closed: `closed form`,
   urn: `urn`,
   salad: `salad`,
 }

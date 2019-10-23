@@ -5,9 +5,6 @@ import '../styles/header.css'
 
 const Header = () => (
   <div id="header">
-    <Link to="/" className="navLink" activeClassName="navLink--active">
-      Galleries
-    </Link>
     <Link to="/about" className="navLink" activeClassName="navLink--active">
       ABOUT
     </Link>
@@ -26,9 +23,6 @@ const Header = () => (
     </Link>
     <Link className="navLink" to="/contact" activeClassName="navLink--active">
       CONTACT
-    </Link>
-    <Link to="/faq" className="navLink" activeClassName="navLink--active">
-      FAQ
     </Link>
     <input className="menu-btn" type="checkbox" id="menu-btn" />
     <label className="menu-icon" htmlFor="menu-btn">
