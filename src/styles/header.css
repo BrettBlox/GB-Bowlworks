@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
-
 /**********************************************************
 **MAIN HEADER CONTAINER************************************
 **********************************************************/
 #header {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding-left: 9vw;
-  padding-right: 9vw;
   background-image: linear-gradient(to top, #173e43, #3fb0ac 70%);
 }
 
@@ -44,25 +39,54 @@
 
 .navLink {
   font: 700 2.5rem 'Cinzel', sans-serif;
+  background-size: 200% 100%;
+  background-position: 100%;
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    #d7a150,
-    #d7a150 50%,
-    hsl(0, 100%, 18%) 50%
-  );
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: all 0.3s;
+  background-image: linear-gradient(#d7a150, #d7a150);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .navLink:hover {
-  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
-  background-position: 0%;
-  transform: translateY(-3px) scale(1.1);
+  background-size: 100% 100%;
+  transform: translateY(-3px) scale(1.2);
 }
+
+/* .navLink:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+} */
+
+/* .navLink:hover:after {
+  width: 60%;
+  background: #d7a150;
+} */
+
+.navLink--active {
+  transform: translateY(-3px) scale(1.1);
+  background-color: #d7a150;
+}
+
+/* .navLink--active:after {
+  border-bottom: 1px solid #d7a150;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 60%;
+  bottom: 0;
+  margin: 0 auto;
+} */
 
 /*************************************************************
 ***HAMBURGER DROPDOWN MENU ************************
@@ -72,7 +96,7 @@
 }
 
 #header > .menu > li {
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
 #header .menu-icon {
@@ -87,7 +111,7 @@
   height: 2px;
   position: fixed;
   top: 1.7rem;
-  left: 1.7rem;
+  left: 20px;
   margin: 0;
   margin-left: 0;
   transition: background 0.2s ease-out;
@@ -152,18 +176,6 @@
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    #d7a150,
-    #d7a150 50%,
-    hsl(0, 100%, 18%) 50%
-  );
-  background-size: 200% 100%;
-  background-position: 100%;
-}
-#header .menu a:hover {
-  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
-  background-position: 0%;
 }
 
 /******************************************************************
@@ -214,13 +226,14 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
   }
 
   #header > .menu {
     list-style: none;
     margin: 0;
-    padding: 1rem;
+    padding: 2rem 4rem 0 1rem;
   }
 
   #header .navLink {
@@ -260,13 +273,5 @@
 
   #mainLogo2 {
     display: none;
-  }
-}
-
-/***********LESS THAN 350PX DO THIS ** Iphone 5 *****************/
-@media only screen and (max-width: 340px) {
-  #header > .menu {
-    padding-left: 0px;
-    list-style: none;
   }
 }

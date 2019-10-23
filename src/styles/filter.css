@@ -1,0 +1,94 @@
+.gallery-title {
+  text-align: center;
+  color: hsl(0, 100%, 18%);
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.filter {
+  background-color: hsl(0, 100%, 18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#d7a150, #d7a150);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  padding: 0.3rem 0;
+  margin: 0 2rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: all 0.5s ease;
+}
+.filter:hover {
+  background-size: 100% 100%;
+}
+.filter--active {
+  transform: translateY(-3px) scale(1.2);
+  background-color: #d7a150;
+}
+.filter:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.filter:hover:after {
+  width: 100%;
+  background: #d7a150;
+}
+.filter--active:after {
+  border-bottom: 1px solid #d7a150;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 981px) {
+  .filter {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 919px) {
+  .filter {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 857px) {
+  .filters {
+    flex-direction: column;
+    padding: 0;
+  }
+  .filter {
+    font-size: 1.6rem;
+    padding-top: 20px;
+  }
+  .filter:hover:after {
+    width: 20%;
+    background: #d7a150;
+  }
+  .filter--active:after {
+    border-bottom: 1px solid #d7a150;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 20%;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
