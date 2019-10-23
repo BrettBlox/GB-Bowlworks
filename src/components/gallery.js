@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import Spinner from './spinner'
 import Filter from './filter'
 import Lightbox from 'react-images'
-import LazyLoad from 'react-lazyload'
 import Masonry from 'react-masonry-css'
 
 import '../styles/gallery.css'
