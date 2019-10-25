@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import '../styles/main.css'
 
@@ -9,7 +10,7 @@ const Main = () => (
       <hr />
       <p>
         GB Bowlworks, LLC, is a woodturning business based in Oklahoma, owned
-        and operated by me, Greg Bloxom. Most of the bowls and vessels that I
+        and operated by me, <Link to="/about">Greg Bloxom</Link>. Most of the bowls and vessels that I
         make are segmented, meaning, rather than turned from one large piece of
         wood, mine are made from many "segments." These individual segments are
         then glued together to form rings with varying diameters which are then
