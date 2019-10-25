@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
-
 .cover {
   text-align: center;
   padding-top: 30px;
@@ -31,6 +30,7 @@
 
 .cover p {
   text-align: center;
+  line-height: 1.4;
   font-size: 1.3rem;
   font-weight: bold;
   padding-left: 30px;
