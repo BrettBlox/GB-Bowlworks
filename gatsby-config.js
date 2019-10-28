@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-stripe',
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
