@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
@@ -63,7 +63,7 @@ const About = styled.div`
 `
 
 const AboutPage = () => (
-  <Layout>
+  <Layout title="About">
       <AboutWrapper>
         <About>
           <h1>ABOUT GB BOWLWORKS</h1>
