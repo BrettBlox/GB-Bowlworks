@@ -5,8 +5,6 @@ import Layout from '../components/layout'
 import Archive from '../components/archive'
 import Listing from '../components/listing'
 
-import '../styles/blog.css'
-
 const BlogWrapper = styled.div`
   display: grid;
   grid-template-columns: 3fr 1fr;
