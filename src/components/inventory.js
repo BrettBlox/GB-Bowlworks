@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 

@@ -1,44 +1,25 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import SEO from '../components/seo'
+import Layout from '../components/layout'
 import Inventory from '../components/inventory'
 import StoreBanner from '../components/storeBanner'
 
-import '../styles/index.css'
+const InventoryWrapper = styled.div`
+  margin: 20px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+  font-family: 'Cinzel', serif;
+`
 
 const Store = () => (
-  <>
-    <div className="site">
-      <SEO
-        title="store"
-        keywords={[
-          `about`,
-          `woodworking`,
-          `jenks`,
-          `oklahoma`,
-          `fine woodworking`,
-          `woodturning`,
-          `woodworker`,
-          `craftsmanship`,
-          `art`,
-          `semengted`,
-          `wood`,
-          `art`,
-          `craft`,
-          `handmade`,
-          `etsy`,
-        ]}
-      />
-      <Header />
-      <StoreBanner />
-      <div className="inventoryWrapper">
-        <Inventory />
-      </div>
-      <Footer />
-    </div>
-  </>
+  <Layout title="Store">
+    <StoreBanner />
+    <InventoryWrapper>
+      <Inventory />
+    </InventoryWrapper>
+  </Layout>
 )
 
 export default Store
