@@ -3,7 +3,7 @@ import SEO from '../components/seo'
 
 import Header from '../components/header'
 import Main from '../components/main'
-import Events from '../components/events'
+// import Events from '../components/events'
 import Gallery from '../components/gallery'
 import Footer from '../components/footer'
 
