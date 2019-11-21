@@ -1,11 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import SEO from '../components/seo'
-
-import '../styles/index.css'
+import Layout from '../components/layout'
 
 const AboutWrapper = styled.div`
   padding: 30px;
@@ -67,29 +63,7 @@ const About = styled.div`
 `
 
 const AboutPage = () => (
-  <>
-    <div className="site">
-      <SEO
-        title="about"
-        keywords={[
-          `about`,
-          `woodworking`,
-          `jenks`,
-          `oklahoma`,
-          `fine woodworking`,
-          `woodturning`,
-          `woodworker`,
-          `craftsmanship`,
-          `art`,
-          `semengted`,
-          `wood`,
-          `art`,
-          `craft`,
-          `handmade`,
-          `etsy`,
-        ]}
-      />
-      <Header />
+  <Layout>
       <AboutWrapper>
         <About>
           <h1>ABOUT GB BOWLWORKS</h1>
@@ -161,9 +135,7 @@ const AboutPage = () => (
           </p>
         </About>
       </AboutWrapper>
-      <Footer />
-    </div>
-  </>
+  </Layout>
 )
 
 export default AboutPage
