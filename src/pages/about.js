@@ -1,11 +1,70 @@
 import React from 'react'
+import styled, { ThemeProvider } from "styled-components";
 
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SEO from '../components/seo'
 
-import '../styles/about.css'
 import '../styles/index.css'
+
+const AboutWrapper = styled.div`
+  padding: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  font-family: 'Cinzel', serif;
+
+  @media only screen and (max-width: 550px) {
+    padding: 30px 20px;
+  }
+`
+
+const About = styled.div`
+  padding: 30px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  grid-column: 1 / -1;
+  background-color: #dddfd4;
+
+  img {
+    margin-right: 20px;
+    float: left;
+    border-radius: 4px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: auto;
+
+    @media only screen and (max-width: 950px) {
+      display: block;
+      width: 100%;
+      height: auto;
+      float: none;
+      margin: 0 auto;
+      margin-bottom: 1.3rem;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: hsl(0, 100%, 18%);
+    font-size: 2.25rem;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+  }
+
+  p {
+    line-height: 1.4;
+    font-size: 1.3rem;
+    font-family: 'Quattrocento', serif;
+
+    @media only screen and (max-width: 550px) {
+      line-height: 1.2;
+    }
+  }
+`
 
 const AboutPage = () => (
   <>
@@ -31,8 +90,8 @@ const AboutPage = () => (
         ]}
       />
       <Header />
-      <div className="aboutWrapper">
-        <div className="about">
+      <AboutWrapper>
+        <About>
           <h1>ABOUT GB BOWLWORKS</h1>
           <hr />
           <img
@@ -100,8 +159,8 @@ const AboutPage = () => (
             <br />
             Greg
           </p>
-        </div>
-      </div>
+        </About>
+      </AboutWrapper>
       <Footer />
     </div>
   </>
