@@ -9,7 +9,7 @@ const BlogWrapper = styled.div`
   display: grid;
   grid-template-columns: 3fr 1fr;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     grid-template-columns: auto;
 
     .archiveWrapper {
