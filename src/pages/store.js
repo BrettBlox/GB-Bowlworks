@@ -11,6 +11,22 @@ const InventoryWrapper = styled.div`
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(400px, auto));
   font-family: 'Cinzel', serif;
+
+  @media only screen and (max-width: 800px) {
+    margin: 0 auto;
+    grid-gap: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+  }
+
+  @media only screen and (max-width: 450px) {
+    margin: 0 auto;
+    grid-gap: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  }
 `
 
 const Store = () => (

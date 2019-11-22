@@ -4,7 +4,101 @@ import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
-import '../styles/inventory.css'
+const InventoryList = styled.article`
+  padding: 30px;
+  padding-top: 0;
+  background-color: #dddfd4;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  display: grid;
+  height: 100%;
+  box-sizing: border-box;
+
+  img {
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 300px;
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+
+    @media only screen and (max-width: 800px) {
+      border-radius: 4px;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  a {
+    align-self: flex-end;
+    text-decoration: none;
+
+    button {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      background-color: #3fb0ac;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 25px;
+      width: 100%;
+      height: 50px;
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      margin: 0 auto;
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: hsl(0, 100%, 18%);
+        cursor: pointer;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+`
+
+const ListingLink = styled(Link)`
+  h2 {
+    text-align: left;
+    font: 700 30px 'Cinzel', sans-serif;
+    background-color: hsl(0, 100%, 18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      #d7a150,
+      #d7a150 50%,
+      hsl(0, 100%, 18%) 50%
+    );
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+      background-position: 0%;
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
+  }
+`
+
+const PriceWrapper = styled.div`
+  @media only screen and (max-width: 800px) {
+      margin-bottom: 0;
+      padding: 0;
+  }
+
+  @media only screen and (max-width: 450px) {
+      margin-bottom: 5px;
+      padding: 0;
+  }
+`
 
 const STORE_QUERY = graphql`
   query StoreInventory {
@@ -42,7 +136,7 @@ const Inventory = () => (
     query={STORE_QUERY}
     render={({ store }) =>
       store.edges.map(({ node }) => (
-        <div key={node.frontmatter.id}>
+        <PriceWrapper key={node.frontmatter.id}>
           <Helmet
             htmlAttributes={{ lang: 'en' }}
             link={[
@@ -73,16 +167,16 @@ const Inventory = () => (
               },
             ]}
           />
-          <article className="inventory">
+          <InventoryList>
             <LazyLoad offset={100}>
               <img src={node.frontmatter.image} alt="bowl" />
             </LazyLoad>
-            <Link className="listingLink" to={`/store${node.frontmatter.slug}`}>
+            <ListingLink to={`/store${node.frontmatter.slug}`}>
               <h2>{node.frontmatter.title}</h2>
-            </Link>
-            <div className="priceWrapper">
+            </ListingLink>
+            <PriceWrapper>
               <h3>{`$${node.frontmatter.price}.00`}</h3>
-            </div>
+            </PriceWrapper>
             <a
               href="#"
               className="snipcart-add-item buyBtn"
@@ -113,7 +207,7 @@ const Inventory = () => (
                 {checkSold(node.frontmatter.title) ? 'SOLD' : 'BUY NOW'}
               </button>
             </a>
-          </article>
+          </InventoryList>
         </div>
       ))
     }
