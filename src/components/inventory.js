@@ -136,7 +136,7 @@ const Inventory = () => (
     query={STORE_QUERY}
     render={({ store }) =>
       store.edges.map(({ node }) => (
-        <PriceWrapper key={node.frontmatter.id}>
+        <div key={node.frontmatter.id}>
           <Helmet
             htmlAttributes={{ lang: 'en' }}
             link={[
