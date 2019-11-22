@@ -23,11 +23,35 @@ const Description = styled.div`
   h1 {
     color: hsl(0, 100%, 18%);
     font-size: 2.25rem;
+
+    @media only screen and (max-width: 650px) {
+      font-size: 2.25rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Quattrocento', serif;
+
+    @media only screen and (max-width: 650px) {
+      line-height: 1.2;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 `
 
 const storeBanner = () => (
-  <div className="cover">
+  <Cover>
     <Description>
       <h1>CURRENT INVENTORY</h1>
       <hr />
@@ -38,7 +62,7 @@ const storeBanner = () => (
         something just for you.
       </p>
     </Description>
-  </div>
+  </Cover>
 )
 
 export default storeBanner
