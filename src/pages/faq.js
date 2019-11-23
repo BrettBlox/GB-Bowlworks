@@ -79,7 +79,7 @@ const ContactLink = styled(Link)`
   }
 `
 
-const Faq = () => (
+const FAQ = () => (
   <Layout title="FAQ">
     <Faq>
       <FaqBox>
@@ -222,4 +222,4 @@ const Faq = () => (
   </Layout>
 )
 
-export default Faq
+export default FAQ
