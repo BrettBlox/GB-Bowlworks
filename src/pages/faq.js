@@ -79,7 +79,7 @@ const ContactLink = styled(Link)`
   }
 `
 
-const Success = () => (
+const Faq = () => (
   <Layout title="FAQ">
     <Faq>
       <FaqBox>
@@ -213,8 +213,8 @@ const Success = () => (
           <br />
           <p>
             A: Send me a message through the{' '}
-            <ContactLink to="/contact">contact page</ContactLink>
-            {' '}here and I’ll be glad to answer your questions.
+            <ContactLink to="/contact">contact page</ContactLink> here and I’ll
+            be glad to answer your questions.
           </p>
         </div>
       </FaqBox>
@@ -222,4 +222,4 @@ const Success = () => (
   </Layout>
 )
 
-export default Success
+export default Faq
