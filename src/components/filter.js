@@ -132,7 +132,6 @@ const Filter = ({ filters, handleFilter, filter }) => {
         <hr />
         <Filters>
           {Object.keys(filters).map(tag => {
-            console.log(tag)
             const currentFilter = tag
             const filterText = filters[tag]
             return currentFilter === filter ? (
