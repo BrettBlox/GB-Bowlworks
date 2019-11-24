@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { navigateTo } from 'gatsby-link'
 import styled from 'styled-components'
 
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 const ContactWrapper = styled.div`
   margin: 0 auto;
