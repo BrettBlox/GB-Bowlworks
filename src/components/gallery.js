@@ -151,7 +151,7 @@ const filters = {
   bowlworks: `all`,
   open: `open form`,
   closed: `closed form`,
-  urn: `urn`,
+  lidded: `lidded`,
   salad: `salad`,
 }
 
