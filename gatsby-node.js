@@ -7,9 +7,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        posts: allMarkdownRemark(
-          filter: { fileAbsolutePath: { glob: "**/src/posts/*.md" } }
-        ) {
+        posts: allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/posts/*.md" } }) {
           edges {
             node {
               frontmatter {
@@ -18,9 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        store: allMarkdownRemark(
-          filter: { fileAbsolutePath: { glob: "**/src/store/*.md" } }
-        ) {
+        store: allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/store/*.md" } }) {
           edges {
             node {
               frontmatter {
@@ -34,7 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
       if (results.errors) {
         Promise.reject(results.errors)
       }
-      //create blog post pages
+      // create blog post pages
       results.data.posts.edges.forEach(({ node }) => {
         createPage({
           path: `/posts${node.frontmatter.slug}`,

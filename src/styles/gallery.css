@@ -1,19 +1,21 @@
 .my-masonry-grid {
   background-color: #173e43;
   display: flex;
-  margin-left: -30px; /* gutter size offset */
+  margin-left: -30px;
+  /* gutter size offset */
   width: auto;
   margin: 0 auto;
   padding: 10px;
 }
 
 .my-masonry-grid_column {
-  padding: 10px; /* gutter size */
+  padding: 10px;
+  /* gutter size */
   padding-top: 20px;
   background-clip: padding-box;
 }
 
-.my-masonry-grid_column > .box {
+.my-masonry-grid_column>.box {
   background-color: #173e43;
   display: inline-block;
   margin: 0 auto;
@@ -41,9 +43,11 @@
   0% {
     transform: rotate3d(0, 0, 0, 0deg) scale(1);
   }
+
   16% {
     transform: rotate3d(-0.5, -1, 0, 15deg) scale(1.01);
   }
+
   100% {
     transform: rotate3d(0, 0, 0, 0deg) scale(1.05);
   }

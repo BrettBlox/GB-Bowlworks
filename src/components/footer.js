@@ -84,12 +84,7 @@ const FootLink = styled(Link)`
   background-color: #3fb0ac;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    #d7a150 50%,
-    #d7a150 50%,
-    #3fb0ac 50%
-  );
+  background-image: linear-gradient(to right, #d7a150 50%, #d7a150 50%, #3fb0ac 50%);
   background-size: 200% 100%;
   background-position: 100%;
   display: inline-block;
@@ -154,7 +149,7 @@ const Footer = () => (
       <a href="/">
         <LazyLoad offset={100}>
           <img
-            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png`}
+            src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png"
             alt="GB Bowlworks Logo"
           />
         </LazyLoad>
@@ -186,7 +181,7 @@ const Footer = () => (
       <Ig href="https://www.instagram.com/gbbowlworks/">
         <LazyLoad offset={100}>
           <img
-            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png`}
+            src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png"
             alt="Instagram Logo"
           />
         </LazyLoad>
@@ -194,7 +189,7 @@ const Footer = () => (
       <Etsy href="https://www.etsy.com/shop/GBBowlworks">
         <LazyLoad offset={100}>
           <img
-            src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png`}
+            src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png"
             alt="Etsy Logo"
           />
         </LazyLoad>
@@ -202,9 +197,8 @@ const Footer = () => (
     </Social>
     <Copyright>
       <p>
-        &copy;2019 GB Bowlworks, LLC. The material on this site may not be
-        reproduced, distributed, transmitted, cached or otherwise used, except
-        with prior written permission of GB Bowlworks, LLC.
+        &copy;2019 GB Bowlworks, LLC. The material on this site may not be reproduced, distributed, transmitted, cached
+        or otherwise used, except with prior written permission of GB Bowlworks, LLC.
       </p>
     </Copyright>
   </FooterWrapper>

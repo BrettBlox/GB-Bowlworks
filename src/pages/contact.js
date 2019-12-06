@@ -114,7 +114,7 @@ const ContactForm = styled.div`
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map(key => `${encodeURIComponent(key)  }=${  encodeURIComponent(data[key])}`)
     .join('&')
 }
 
@@ -172,20 +172,11 @@ export default function Contact() {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <input
-              type="hidden"
-              name="bot-field"
-              onChange={handleInputChange}
-            />
+            <input type="hidden" name="bot-field" onChange={handleInputChange} />
             <label htmlFor="name">
               Name:
               <br />
-              <input
-                type="text"
-                name="name"
-                required
-                onChange={handleInputChange}
-              />
+              <input type="text" name="name" required onChange={handleInputChange} />
             </label>
             <br />
             <label htmlFor="email">

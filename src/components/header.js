@@ -14,7 +14,7 @@ const Header = () => (
     <Link id="mainLogo" to="/">
       <img
         id="logo"
-        src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png`}
+        src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png"
         alt="GB Bowlworks Logo"
       />
     </Link>
@@ -31,7 +31,7 @@ const Header = () => (
     <Link id="mainLogo2" to="/">
       <img
         id="logo2"
-        src={`https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png`}
+        src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png"
         alt="GB Bowlworks Logo"
       />
     </Link>

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 
-import Spinner from './spinner'
-import Filter from './filter'
 import Lightbox from 'react-images'
 import Masonry from 'react-masonry-css'
+import Spinner from './spinner'
+import Filter from './filter'
 
 import '../styles/gallery.css'
 
@@ -18,7 +18,7 @@ export default function Gallery(props) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(true)
 
-  //Fetch images from cloudinary
+  // Fetch images from cloudinary
   useEffect(
     () => {
       setLoading(true)
@@ -29,12 +29,7 @@ export default function Gallery(props) {
       fetch(url)
         .then(res => res.json())
         .then(data => {
-          addSrc(
-            data.resources,
-            setGallery,
-            setMobileGallery,
-            setLightboxGallery
-          )
+          addSrc(data.resources, setGallery, setMobileGallery, setLightboxGallery)
           setError(null)
           setLoading(false)
         })
@@ -48,7 +43,7 @@ export default function Gallery(props) {
     [filter] // Empty dependency array ensures that effect is only run on mount and unmount
   )
 
-  //Setup window resize listener
+  // Setup window resize listener
   useEffect(() => {
     if (!isClient) {
       return false
@@ -62,7 +57,7 @@ export default function Gallery(props) {
     return () => window.removeEventListener('resize', handleResize)
   }, []) // Empty dependency array ensures that effect is only run on mount and unmount
 
-  //Lightbox gallery functions
+  // Lightbox gallery functions
   const openLightbox = (index, event) => {
     event.preventDefault()
     setCurrentImage(index)
@@ -95,15 +90,13 @@ export default function Gallery(props) {
     <>
       <Filter filters={filters} handleFilter={handleFilter} filter={filter} />
       <Masonry breakpointCols={myBreakpointsAndCols}>
-        {gallery.map((image, i) => {
-          return (
-            <div className="box" key={i}>
-              <a onClick={e => openLightbox(i, e)} href={lightboxGallery[i]}>
-                <img src={image.src} alt="Hand turned wooden bowls" />
-              </a>
-            </div>
-          )
-        })}
+        {gallery.map((image, i) => (
+          <div className="box" key={i}>
+            <a onClick={e => openLightbox(i, e)} href={lightboxGallery[i]}>
+              <img src={image.src} alt="Hand turned wooden bowls" />
+            </a>
+          </div>
+        ))}
       </Masonry>
     </>
   )
@@ -111,15 +104,13 @@ export default function Gallery(props) {
   // MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
   const mobileView = (
     <div className="grid-wrapper">
-      {mobileGallery.map((image, i) => {
-        return (
-          <div className="zone" key={Math.random(i)}>
-            <div className="box">
-              <img src={image.src} alt="Hand Turned Wooden Bowl" />
-            </div>
+      {mobileGallery.map((image, i) => (
+        <div className="zone" key={Math.random(i)}>
+          <div className="box">
+            <img src={image.src} alt="Hand Turned Wooden Bowl" />
           </div>
-        )
-      })}
+        </div>
+      ))}
     </div>
   )
 
