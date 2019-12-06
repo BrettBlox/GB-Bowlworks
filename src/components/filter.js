@@ -135,19 +135,11 @@ const Filter = ({ filters, handleFilter, filter }) => {
             const currentFilter = tag
             const filterText = filters[tag]
             return currentFilter === filter ? (
-              <FilterActive
-                key={`filter-${currentFilter}`}
-                data-filter={currentFilter}
-                onClick={handleClick}
-              >
+              <FilterActive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
                 {filterText}
               </FilterActive>
             ) : (
-              <FilterInactive
-                key={`filter-${currentFilter}`}
-                data-filter={currentFilter}
-                onClick={handleClick}
-              >
+              <FilterInactive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
                 {filterText}
               </FilterInactive>
             )

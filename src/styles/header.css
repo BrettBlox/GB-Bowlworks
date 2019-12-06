@@ -16,7 +16,7 @@
   display: none;
 }
 
-#mainLogo > img {
+#mainLogo>img {
   width: 250px;
 }
 
@@ -95,7 +95,7 @@
   padding: 28px 20px;
 }
 
-#header > .menu > li {
+#header>.menu>li {
   padding: 0.7rem;
 }
 
@@ -142,32 +142,32 @@
   display: none;
 }
 
-#header .menu-btn:checked ~ .menu {
+#header .menu-btn:checked~.menu {
   max-height: 100%;
 }
 
-#header .menu-btn ~ .menu {
+#header .menu-btn~.menu {
   display: none;
 }
 
-#header .menu-btn:checked ~ .menu {
+#header .menu-btn:checked~.menu {
   display: block;
 }
 
-#header .menu-btn:checked ~ .menu-icon .navicon {
+#header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-#header .menu-btn:checked ~ .menu-icon .navicon:before {
+#header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-135deg);
 }
 
-#header .menu-btn:checked ~ .menu-icon .navicon:after {
+#header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(135deg);
 }
 
-#header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-#header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+#header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+#header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -183,16 +183,17 @@
 ******************************************************************/
 /*************LESS THAN 1080PX DO THIS*******************/
 @media only screen and (max-width: 1180px) {
-  #mainLogo > img {
+  #mainLogo>img {
     width: 250px;
   }
 }
 
 /*************LESS THAN 1020PX DO THIS*******************/
 @media only screen and (max-width: 1020px) {
-  #mainLogo > img {
+  #mainLogo>img {
     width: 200px;
   }
+
   .navLink {
     font: 300 2rem 'Cinzel', sans-serif;
   }
@@ -200,9 +201,10 @@
 
 /*************LESS THAN 860PX DO THIS*******************/
 @media only screen and (max-width: 860px) {
-  #mainLogo > img {
+  #mainLogo>img {
     width: 150px;
   }
+
   .navLink {
     font: 300 1.7rem 'Cinzel', sans-serif;
   }
@@ -210,7 +212,7 @@
 
 /*************LESS THAN 710PX DO THIS*******************/
 @media only screen and (max-width: 710px) {
-  #mainLogo > img {
+  #mainLogo>img {
     width: 100px;
   }
 }
@@ -230,7 +232,7 @@
     width: 100%;
   }
 
-  #header > .menu {
+  #header>.menu {
     list-style: none;
     margin: 0;
     padding: 2rem 4rem 0 1rem;
@@ -257,12 +259,12 @@
 
 /************MORE THAN 611PX DO THIS*****************/
 @media only screen and (min-width: 611px) {
-  #header > .menu {
+  #header>.menu {
     display: none;
     list-style: none;
   }
 
-  #header .menu > li,
+  #header .menu>li,
   .resLink {
     display: none;
   }

@@ -5,7 +5,6 @@ import Main from '../components/main'
 // import Events from '../components/events'
 import Gallery from '../components/gallery'
 
-
 const IndexPage = () => (
   <Layout title="Home">
     <Main />

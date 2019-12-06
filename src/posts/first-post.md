@@ -26,7 +26,6 @@ I completed the turning and applied a few coats of friction polish.
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_800/v1/other/DSC_1002.jpg)
 
-\
 I gave the bowls to my mom and uncle. Sometimes you never know what’s under that bark!
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_800/v1/other/IMG_1302.jpg)

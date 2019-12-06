@@ -23,12 +23,7 @@ const ArchiveWrapper = styled.aside`
       background-color: hsl(0, 100%, 18%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(
-        to right,
-        #d7a150,
-        #d7a150 50%,
-        hsl(0, 100%, 18%) 50%
-      );
+      background-image: linear-gradient(to right, #d7a150, #d7a150 50%, hsl(0, 100%, 18%) 50%);
       background-size: 200% 100%;
       background-position: 100%;
       padding: 0.8rem;
@@ -76,9 +71,7 @@ const Archive = () => (
         <ul className="archiveList">
           {allMarkdownRemark.edges.map(edge => (
             <li key={edge.node.frontmatter.slug}>
-              <Link to={`/posts${edge.node.frontmatter.slug}`}>
-                {edge.node.frontmatter.title}
-              </Link>
+              <Link to={`/posts${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</Link>
             </li>
           ))}
         </ul>

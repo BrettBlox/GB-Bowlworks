@@ -35,12 +35,7 @@ const ListingLink = styled(Link)`
     background-color: hsl(0, 100%, 18%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(
-      to right,
-      #d7a150,
-      #d7a150 50%,
-      hsl(0, 100%, 18%) 50%
-    );
+    background-image: linear-gradient(to right, #d7a150, #d7a150 50%, hsl(0, 100%, 18%) 50%);
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;
@@ -58,12 +53,7 @@ const ReadMore = styled(Link)`
   background-color: hsl(0, 100%, 18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    #d7a150,
-    #d7a150 50%,
-    hsl(0, 100%, 18%) 50%
-  );
+  background-image: linear-gradient(to right, #d7a150, #d7a150 50%, hsl(0, 100%, 18%) 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s;
@@ -109,9 +99,7 @@ const Listing = () => (
           </ListingLink>
           <p>{node.frontmatter.date}</p>
           <p>{node.excerpt}</p>
-          <ReadMore to={`/posts${node.frontmatter.slug}`}>
-            Read More &rarr;
-          </ReadMore>
+          <ReadMore to={`/posts${node.frontmatter.slug}`}>Read More &rarr;</ReadMore>
         </ListingWrapper>
       ))
     }
