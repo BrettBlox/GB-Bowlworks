@@ -1,11 +1,54 @@
 import React, { useState, useEffect } from 'react'
-
 import Lightbox from 'react-images'
 import Masonry from 'react-masonry-css'
+
 import Spinner from './spinner'
 import Filter from './filter'
 
 import '../styles/gallery.css'
+
+// Bowl categories for filtering gallery
+const filters = {
+  bowlworks: `all`,
+  open: `open form`,
+  closed: `closed form`,
+  lidded: `lidded`,
+  salad: `salad`,
+}
+
+// ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
+const addSrc = (data, main, mobile, lightbox) => {
+  const gallerySrc = data.map(obj => ({
+    ...obj,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
+  }))
+  const mobileGallerySrc = data.map(obj => ({
+    ...obj,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
+  }))
+  const lightboxGallerySrc = data.map(obj => ({
+    ...obj,
+    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
+  }))
+  main(gallerySrc)
+  mobile(mobileGallerySrc)
+  lightbox(lightboxGallerySrc)
+}
+
+const isClient = typeof window === 'object'
+
+function getSize() {
+  return {
+    width: isClient ? window.innerWidth : undefined,
+    height: isClient ? window.innerHeight : undefined,
+  }
+}
+
+const myBreakpointsAndCols = {
+  default: 4,
+  1100: 3,
+  700: 2,
+}
 
 export default function Gallery(props) {
   const [gallery, setGallery] = useState([])
@@ -114,6 +157,18 @@ export default function Gallery(props) {
     </div>
   )
 
+  const viewWidth = () => {
+    let view
+    if (windowSize.width > 501 && loading === false) {
+      view = wideView
+    } else if (windowSize.width < 501 && loading === false) {
+      view = mobileView
+    } else {
+      view = <Spinner />
+    }
+    return view
+  }
+
   return (
     <>
       <Lightbox
@@ -126,56 +181,8 @@ export default function Gallery(props) {
         onClose={closeLightbox}
         preventScroll={props.preventScroll}
       />
-      {windowSize.width > 501 && loading === false ? (
-        wideView
-      ) : windowSize.width < 501 && loading === false ? (
-        mobileView
-      ) : (
-        <Spinner />
-      )}
+      {/* {viewWidth()} */}
+      <Spinner />
     </>
   )
-}
-
-// Bowl categories for filtering gallery
-const filters = {
-  bowlworks: `all`,
-  open: `open form`,
-  closed: `closed form`,
-  lidded: `lidded`,
-  salad: `salad`,
-}
-
-// ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
-const addSrc = (data, main, mobile, lightbox) => {
-  const gallerySrc = data.map(obj => ({
-    ...obj,
-    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_455,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
-  }))
-  const mobileGallerySrc = data.map(obj => ({
-    ...obj,
-    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_500,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
-  }))
-  const lightboxGallerySrc = data.map(obj => ({
-    ...obj,
-    src: `https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit,f_auto,q_auto/${obj.public_id}.jpg`,
-  }))
-  main(gallerySrc)
-  mobile(mobileGallerySrc)
-  lightbox(lightboxGallerySrc)
-}
-
-const isClient = typeof window === 'object'
-
-function getSize() {
-  return {
-    width: isClient ? window.innerWidth : undefined,
-    height: isClient ? window.innerHeight : undefined,
-  }
-}
-
-const myBreakpointsAndCols = {
-  default: 4,
-  1100: 3,
-  700: 2,
 }
