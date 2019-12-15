@@ -181,8 +181,7 @@ export default function Gallery(props) {
         onClose={closeLightbox}
         preventScroll={props.preventScroll}
       />
-      {/* {viewWidth()} */}
-      <Spinner />
+      {viewWidth()}
     </>
   )
 }
