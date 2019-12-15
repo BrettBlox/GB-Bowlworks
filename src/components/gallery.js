@@ -182,7 +182,6 @@ export default function Gallery(props) {
         preventScroll={props.preventScroll}
       />
       {viewWidth()}
-      <Spinner />
     </>
   )
 }
