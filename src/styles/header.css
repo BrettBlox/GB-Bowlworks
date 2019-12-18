@@ -42,8 +42,8 @@
   background-size: 200% 100%;
   background-position: 100%;
   background-color: hsl(0, 100%, 18%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   background-image: linear-gradient(#d7a150, #d7a150);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -57,36 +57,35 @@
   transform: translateY(-3px) scale(1.2);
 }
 
-/* .navLink:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 1px;
-  width: 0px;
-  background: transparent;
-  transition: width 0.5s ease, background-color 0.5s ease;
-} */
+.navLink:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d7a150;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
 
-/* .navLink:hover:after {
-  width: 60%;
-  background: #d7a150;
-} */
+.navLink:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 .navLink--active {
   transform: translateY(-3px) scale(1.1);
   background-color: #d7a150;
 }
 
-/* .navLink--active:after {
-  border-bottom: 1px solid #d7a150;
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 60%;
-  bottom: 0;
-  margin: 0 auto;
-} */
+.navLink--active:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 /*************************************************************
 ***HAMBURGER DROPDOWN MENU ************************
