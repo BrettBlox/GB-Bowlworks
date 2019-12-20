@@ -4,65 +4,65 @@ import React from 'react'
 import '../styles/header.css'
 
 const Header = () => (
-  <div id="header">
-    <Link to="/about" className="navLink" activeClassName="navLink--active">
+  <div id='header'>
+    <Link to='/about' className='navLink' activeClassName='navLink--active'>
       ABOUT
     </Link>
-    <Link className="navLink" to="/blog" activeClassName="navLink--active">
+    <Link className='navLink' to='/blog' activeClassName='navLink--active'>
       BLOG
     </Link>
-    <Link id="mainLogo" to="/">
+    <Link id='mainLogo' to='/'>
       <img
-        id="logo"
-        src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png"
-        alt="GB Bowlworks Logo"
+        id='logo'
+        src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png'
+        alt='GB Bowlworks Logo'
       />
     </Link>
-    <Link className="navLink" to="/store" activeClassName="navLink--active">
+    <Link className='navLink' to='/store' activeClassName='navLink--active'>
       STORE
     </Link>
-    <Link className="navLink" to="/contact" activeClassName="navLink--active">
+    <Link className='navLink' to='/contact' activeClassName='navLink--active'>
       CONTACT
     </Link>
-    <input className="menu-btn" type="checkbox" id="menu-btn" />
-    <label className="menu-icon" htmlFor="menu-btn">
-      <span className="navicon" />
+    <input className='menu-btn' type='checkbox' id='menu-btn' />
+    <label className='menu-icon' htmlFor='menu-btn'>
+      <span className='navicon' />
     </label>
-    <Link id="mainLogo2" to="/">
+    <Link id='mainLogo2' to='/'>
       <img
-        id="logo2"
-        src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png"
-        alt="GB Bowlworks Logo"
+        id='logo2'
+        src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png'
+        alt='GB Bowlworks Logo'
       />
     </Link>
-    <ul className="menu">
+    <ul className='menu'>
       <li>
-        <Link className="resLink" to="/">
+        <Link className='resLink' to='/'>
           HOME
         </Link>
       </li>
       <li>
-        <Link className="resLink" to="/about">
+        <Link className='resLink' to='/about'>
           ABOUT
         </Link>
       </li>
       <li>
-        <Link className="resLink" to="/blog">
+        <Link className='resLink' to='/blog'>
           BLOG
         </Link>
       </li>
       <li>
-        <Link className="resLink" to="/store">
+        <Link className='resLink' to='/store'>
           STORE
         </Link>
       </li>
       <li>
-        <Link className="resLink" to="/contact">
+        <Link className='resLink' to='/contact'>
           CONTACT
         </Link>
       </li>
       <li>
-        <Link className="resLink" to="/faq">
+        <Link className='resLink' to='/faq'>
           FAQ
         </Link>
       </li>

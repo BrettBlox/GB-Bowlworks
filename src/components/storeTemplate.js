@@ -149,7 +149,7 @@ export default function Template({
       <StoreWrapper>
         <StoreItemImage>
           <LazyLoad offset={100}>
-            <img src={frontmatter.image} alt="store-item" />
+            <img src={frontmatter.image} alt='store-item' />
           </LazyLoad>
         </StoreItemImage>
         <StoreItemContent>
@@ -158,18 +158,18 @@ export default function Template({
             <h2>{`$${frontmatter.price}.00`}</h2>
             <Body dangerouslySetInnerHTML={{ __html: html }} />
             <a
-              href="#"
-              className="snipcart-add-item buyBtn"
+              href='#'
+              className='snipcart-add-item buyBtn'
               data-item-id={frontmatter.id}
               data-item-price={frontmatter.price}
               data-item-image={frontmatter.image}
               data-item-name={frontmatter.title}
               data-item-description={frontmatter.body}
-              data-item-url={`${'https://gbbowlworks.com' + '/store'}${  frontmatter.slug}`}
+              data-item-url={`${'https://gbbowlworks.com' + '/store'}${frontmatter.slug}`}
             >
               <button
-                type="button"
-                className="buy"
+                type='button'
+                className='buy'
                 disabled={checkSold(frontmatter.title)}
                 style={
                   checkSold(frontmatter.title)

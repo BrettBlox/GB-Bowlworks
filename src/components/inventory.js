@@ -161,7 +161,7 @@ const Inventory = () => (
           />
           <InventoryList>
             <LazyLoad offset={100}>
-              <img src={node.frontmatter.image} alt="bowl" />
+              <img src={node.frontmatter.image} alt='bowl' />
             </LazyLoad>
             <ListingLink to={`/store${node.frontmatter.slug}`}>
               <h2>{node.frontmatter.title}</h2>
@@ -170,8 +170,8 @@ const Inventory = () => (
               <h3>{`$${node.frontmatter.price}.00`}</h3>
             </PriceWrapper>
             <a
-              href="#"
-              className="snipcart-add-item buyBtn"
+              href='#'
+              className='snipcart-add-item buyBtn'
               data-item-id={node.frontmatter.id}
               data-item-price={node.frontmatter.price}
               data-item-image={node.frontmatter.image}
@@ -180,8 +180,8 @@ const Inventory = () => (
               data-item-url={`${'https://gbbowlworks.com' + '/store'}${node.frontmatter.slug}`}
             >
               <button
-                type="button"
-                className="buy"
+                type='button'
+                className='buy'
                 disabled={checkSold(node.frontmatter.title)}
                 style={
                   checkSold(node.frontmatter.title)

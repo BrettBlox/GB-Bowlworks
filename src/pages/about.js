@@ -63,12 +63,12 @@ const About = styled.div`
 `
 
 const AboutPage = () => (
-  <Layout title="About">
+  <Layout title='About'>
     <AboutWrapper>
       <About>
         <h1>ABOUT GB BOWLWORKS</h1>
         <hr />
-        <img src={require('../images/greg/gregandjasper.jpg')} alt="Greg Bloxom" />
+        <img src={require('../images/greg/gregandjasper.jpg')} alt='Greg Bloxom' />
         <p>
           I love woodworking. I love the satisfaction I get from making things out of wood. I love the feel and smell of
           wood. I even love peeling dried glue off my fingers after I make something

@@ -75,7 +75,7 @@ const ContactLink = styled(Link)`
 `
 
 const FAQ = () => (
-  <Layout title="FAQ">
+  <Layout title='FAQ'>
     <Faq>
       <FaqBox>
         <h1>FAQ</h1>
@@ -176,7 +176,7 @@ const FAQ = () => (
           <h3>Q: More questions?</h3>
           <br />
           <p>
-            A: Send me a message through the <ContactLink to="/contact">contact page</ContactLink> here and I’ll be glad
+            A: Send me a message through the <ContactLink to='/contact'>contact page</ContactLink> here and I’ll be glad
             to answer your questions.
           </p>
         </div>

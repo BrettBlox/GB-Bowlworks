@@ -43,8 +43,9 @@ const Filters = styled.div`
 
 const FilterInactive = styled.span`
   background-color: hsl(0, 100%, 18%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   background-image: linear-gradient(#d7a150, #d7a150);
   background-position: 50% 50%;
   background-repeat: no-repeat;

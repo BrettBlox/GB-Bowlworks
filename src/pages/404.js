@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 const NotFoundPage = () => (
   <>
     <SEO
-      title="404: Not found"
+      title='404: Not found'
       keywords={[
         `about`,
         `woodworking`,

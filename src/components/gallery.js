@@ -134,9 +134,9 @@ export default function Gallery(props) {
       <Filter filters={filters} handleFilter={handleFilter} filter={filter} />
       <Masonry breakpointCols={myBreakpointsAndCols}>
         {gallery.map((image, i) => (
-          <div className="box" key={i}>
+          <div className='box' key={i}>
             <a onClick={e => openLightbox(i, e)} href={lightboxGallery[i]}>
-              <img src={image.src} alt="Hand turned wooden bowls" />
+              <img src={image.src} alt='Hand turned wooden bowls' />
             </a>
           </div>
         ))}
@@ -146,11 +146,11 @@ export default function Gallery(props) {
 
   // MOBILE VIEW USES UNSORTED GALLERY -- COLUMN LAYOUT IN ORIGINAL ORDER
   const mobileView = (
-    <div className="grid-wrapper">
+    <div className='grid-wrapper'>
       {mobileGallery.map((image, i) => (
-        <div className="zone" key={Math.random(i)}>
-          <div className="box">
-            <img src={image.src} alt="Hand Turned Wooden Bowl" />
+        <div className='zone' key={Math.random(i)}>
+          <div className='box'>
+            <img src={image.src} alt='Hand Turned Wooden Bowl' />
           </div>
         </div>
       ))}
