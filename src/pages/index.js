@@ -6,7 +6,7 @@ import Main from '../components/main'
 import Gallery from '../components/gallery'
 
 const IndexPage = () => (
-  <Layout title="Home">
+  <Layout title='Home'>
     <Main />
     {/* <Events /> */}
     <Gallery />

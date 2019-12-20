@@ -146,11 +146,11 @@ const Copyright = styled.div`
 const Footer = () => (
   <FooterWrapper>
     <FooterLogo>
-      <a href="/">
+      <a href='/'>
         <LazyLoad offset={100}>
           <img
-            src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png"
-            alt="GB Bowlworks Logo"
+            src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png'
+            alt='GB Bowlworks Logo'
           />
         </LazyLoad>
       </a>
@@ -158,39 +158,39 @@ const Footer = () => (
     <FooterContainer>
       <FootNav>
         <li>
-          <FootLink to="/">Home</FootLink>
+          <FootLink to='/'>Home</FootLink>
         </li>
         <li>
-          <FootLink to="/about">About</FootLink>
+          <FootLink to='/about'>About</FootLink>
         </li>{' '}
         <li>
-          <FootLink to="/blog">Blog</FootLink>
+          <FootLink to='/blog'>Blog</FootLink>
         </li>{' '}
         <li>
-          <FootLink to="/store">Store</FootLink>
+          <FootLink to='/store'>Store</FootLink>
         </li>
         <li>
-          <FootLink to="/contact">Contact</FootLink>
+          <FootLink to='/contact'>Contact</FootLink>
         </li>
         <li>
-          <FootLink to="/faq">FAQ</FootLink>
+          <FootLink to='/faq'>FAQ</FootLink>
         </li>
       </FootNav>
     </FooterContainer>
     <Social>
-      <Ig href="https://www.instagram.com/gbbowlworks/">
+      <Ig href='https://www.instagram.com/gbbowlworks/'>
         <LazyLoad offset={100}>
           <img
-            src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png"
-            alt="Instagram Logo"
+            src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png'
+            alt='Instagram Logo'
           />
         </LazyLoad>
       </Ig>
-      <Etsy href="https://www.etsy.com/shop/GBBowlworks">
+      <Etsy href='https://www.etsy.com/shop/GBBowlworks'>
         <LazyLoad offset={100}>
           <img
-            src="https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png"
-            alt="Etsy Logo"
+            src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png'
+            alt='Etsy Logo'
           />
         </LazyLoad>
       </Etsy>

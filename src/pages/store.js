@@ -30,7 +30,7 @@ const InventoryWrapper = styled.div`
 `
 
 const Store = () => (
-  <Layout title="Store">
+  <Layout title='Store'>
     <StoreBanner />
     <InventoryWrapper>
       <Inventory />

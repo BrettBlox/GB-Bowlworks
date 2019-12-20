@@ -101,7 +101,7 @@ const Event = () => (
                 <li>
                   <h3>{edge.node.frontmatter.date}</h3>
                   <EventTitle>
-                    <a target="_blank" href={edge.node.frontmatter.url}>
+                    <a target='_blank' rel='noopener noreferrer' href={edge.node.frontmatter.url}>
                       {edge.node.frontmatter.title}
                     </a>
                     &rarr;

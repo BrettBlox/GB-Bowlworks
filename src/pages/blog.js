@@ -19,12 +19,12 @@ const BlogWrapper = styled.div`
 `
 
 const Blog = () => (
-  <Layout title="Blog">
+  <Layout title='Blog'>
     <BlogWrapper>
       <div>
         <Listing />
       </div>
-      <div className="archiveWrapper">
+      <div className='archiveWrapper'>
         <Archive />
       </div>
     </BlogWrapper>

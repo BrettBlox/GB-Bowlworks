@@ -4,8 +4,6 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 
-// import '../styles/success.css'
-
 const SuccessWrapper = styled.div`
   margin: 0 auto;
   padding: 30px;
@@ -79,7 +77,7 @@ const BackHome = styled(Link)`
 `
 
 const SuccessPage = () => (
-  <Layout title="Success">
+  <Layout title='Success'>
     <SuccessWrapper>
       <Success>
         <h1>Success!</h1>
@@ -91,7 +89,7 @@ const SuccessPage = () => (
         </h2>
         <br />
         <SuccessLink>
-          <BackHome to="/" type="button">
+          <BackHome to='/' type='button'>
             BACK TO HOME PAGE &rarr;
           </BackHome>
         </SuccessLink>
