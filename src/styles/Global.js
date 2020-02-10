@@ -23,10 +23,10 @@ const GlobalStyles = createGlobalStyle`
     }
 
   }
-  ${vars}
-  ${header}
-  ${storeTemplate}
-  ${gallery}
+    ${vars};
+    ${header};
+    ${storeTemplate};
+    ${gallery};
 `
 
 export default GlobalStyles
