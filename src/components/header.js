@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
-import '../styles/header.css'
+import '../styles/header.js'
 
 const Header = () => (
   <div id='header'>

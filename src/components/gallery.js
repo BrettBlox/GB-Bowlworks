@@ -5,7 +5,7 @@ import Masonry from 'react-masonry-css'
 import Spinner from './spinner'
 import Filter from './filter'
 
-import '../styles/gallery.css'
+import '../styles/gallery.js'
 
 // Bowl categories for filtering gallery
 const filters = {
