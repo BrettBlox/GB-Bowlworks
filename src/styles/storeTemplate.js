@@ -43,7 +43,7 @@ const storeTemplate = css`
         margin-top: 0;
         & > h1 {
           margin: 0;
-          color: hsl(0, 100%, 18%);
+          color: var(--blood);
         }
         & > h2,
         h3,
@@ -76,7 +76,7 @@ const storeTemplate = css`
           text-decoration: none;
 
           &:hover {
-            background-color: hsl(0, 100%, 18%);
+            background-color: var(--blood);
             cursor: pointer;
             transform: translateY(-3px);
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);

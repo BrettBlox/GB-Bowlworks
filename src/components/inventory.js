@@ -54,7 +54,7 @@ const InventoryList = styled.article`
       transition: all 0.3s;
 
       &:hover {
-        background-color: hsl(0, 100%, 18%);
+        background-color: var(--blood);
         cursor: pointer;
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
@@ -67,10 +67,10 @@ const ListingLink = styled(Link)`
   h2 {
     text-align: left;
     font: 700 30px 'Cinzel', sans-serif;
-    background-color: hsl(0, 100%, 18%);
+    background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #d7a150, #d7a150 50%, hsl(0, 100%, 18%) 50%);
+    background-image: linear-gradient(to right, #d7a150, #d7a150 50%, var(--blood) 50%);
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;

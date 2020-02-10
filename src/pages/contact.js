@@ -33,7 +33,7 @@ const ContactForm = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: hsl(0, 100%, 18%);
+    color: var(--blood);
 
     @media only screen and (max-width: 650px) {
       font-size: 1.75rem;
@@ -95,7 +95,7 @@ const ContactForm = styled.div`
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 
     &:hover {
-      background-color: hsl(0, 100%, 18%);
+      background-color: var(--blood);
       transform: translateY(-3px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
     }

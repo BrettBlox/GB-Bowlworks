@@ -21,7 +21,7 @@ const Description = styled.div`
   grid-column: 1 / -1;
 
   h1 {
-    color: hsl(0, 100%, 18%);
+    color: var(--blood);
     font-size: 2.25rem;
 
     @media only screen and (max-width: 650px) {

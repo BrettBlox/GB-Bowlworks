@@ -12,7 +12,7 @@ const Cover = styled.div`
 
   h2 {
     text-align: center;
-    color: hsl(0, 100%, 18%);
+    color: var(--blood);
     font-size: 2.25rem;
     margin-bottom: 1rem;
   }
@@ -42,7 +42,7 @@ const Filters = styled.div`
 `
 
 const FilterInactive = styled.span`
-  background-color: hsl(0, 100%, 18%);
+  background-color: var(--blood);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

@@ -46,7 +46,7 @@ const About = styled.div`
 
   h1 {
     text-align: center;
-    color: hsl(0, 100%, 18%);
+    color: var(--blood);
     font-size: 2.25rem;
 
     @media only screen and (max-width: 400px) {

@@ -1,8 +1,6 @@
 import { css } from 'styled-components'
 
 const header = css`
-  /* @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap'); */
-
   #header {
     display: flex;
     justify-content: space-evenly;
@@ -42,7 +40,7 @@ const header = css`
     font-weight: 700;
     background-size: 200% 100%;
     background-position: 100%;
-    background-color: hsl(0, 100%, 18%);
+    background-color: var(--blood);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -174,7 +172,7 @@ const header = css`
 
   #header .menu a {
     font: 700 2rem 'Cinzel', sans-serif;
-    background-color: hsl(0, 100%, 18%);
+    background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

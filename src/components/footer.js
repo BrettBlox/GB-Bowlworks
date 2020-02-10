@@ -4,7 +4,7 @@ import LazyLoad from 'react-lazyload'
 import styled, { keyframes } from 'styled-components'
 
 const FooterWrapper = styled.footer`
-  background-image: linear-gradient(to bottom, #173e43, hsl(0, 100%, 18%) 70%);
+  background-image: linear-gradient(to bottom, #173e43, var(--blood) 70%);
   padding: 8rem;
   padding-bottom: 6rem;
   margin-top: 4rem;

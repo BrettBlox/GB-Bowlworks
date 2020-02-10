@@ -32,10 +32,10 @@ const ListingLink = styled(Link)`
     margin-bottom: 0;
     text-align: left;
     font: 700 35px 'Cinzel', sans-serif;
-    background-color: hsl(0, 100%, 18%);
+    background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #d7a150, #d7a150 50%, hsl(0, 100%, 18%) 50%);
+    background-image: linear-gradient(to right, #d7a150, #d7a150 50%, var(--blood) 50%);
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;
@@ -50,15 +50,15 @@ const ListingLink = styled(Link)`
 const ReadMore = styled(Link)`
   text-align: left;
   font: 700 20px 'Cinzel', sans-serif;
-  background-color: hsl(0, 100%, 18%);
+  background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #d7a150, #d7a150 50%, hsl(0, 100%, 18%) 50%);
+  background-image: linear-gradient(to right, #d7a150, #d7a150 50%, var(--blood) 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s;
   text-decoration: none;
-  text-decoration-color: hsl(0, 100%, 18%);
+  text-decoration-color: var(--blood);
   transition: all 0.2s;
 
   &:hover {

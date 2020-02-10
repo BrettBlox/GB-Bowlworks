@@ -14,7 +14,7 @@ const Faq = styled.div`
   h1 {
     text-align: center;
     font-size: 2.25rem;
-    color: hsl(0, 100%, 18%);
+    color: var(--blood);
   }
 
   @media only screen and (max-width: 550px) {
@@ -37,7 +37,7 @@ const FaqBox = styled.div`
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: hsl(0, 100%, 18%);
+    color: var(--blood);
     text-transform: uppercase;
     margin-bottom: 0;
   }
@@ -60,10 +60,10 @@ const ContactLink = styled(Link)`
   z-index: 1;
   display: inline-block;
   text-align: left;
-  background-color: hsl(0, 100%, 18%);
+  background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #d7a150, #d7a150 50%, hsl(0, 100%, 18%) 50%);
+  background-image: linear-gradient(to right, #d7a150, #d7a150 50%, var(--blood) 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s;
