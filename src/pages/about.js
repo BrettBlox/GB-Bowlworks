@@ -22,6 +22,10 @@ const About = styled.div`
   grid-column: 1 / -1;
   background-color: #dddfd4;
 
+  hr {
+    margin-block-end: 1.84em;
+  }
+
   img {
     margin-right: 20px;
     float: left;
