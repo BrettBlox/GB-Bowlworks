@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import storeTemplate from './storeTemplate'
 import gallery from './gallery'
 import header from './header'
+import vars from './vars'
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
@@ -22,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
   }
-
+  ${vars}
   ${header}
   ${storeTemplate}
   ${gallery}
