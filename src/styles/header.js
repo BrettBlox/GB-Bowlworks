@@ -3,9 +3,6 @@ import { css } from 'styled-components'
 const header = css`
   /* @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap'); */
 
-  /**********************************************************
-**MAIN HEADER CONTAINER************************************
-**********************************************************/
   #header {
     display: flex;
     justify-content: space-evenly;
@@ -47,6 +44,7 @@ const header = css`
     background-position: 100%;
     background-color: hsl(0, 100%, 18%);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(#d7a150, #d7a150);
     background-position: 50% 50%;
