@@ -6,7 +6,7 @@ const ListingWrapper = styled.article`
   margin: 1.25rem;
   padding: 1.5rem;
   background-color: var(--color-light);
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
+  box-shadow: 0px 3px 10px var(--color-shadow);
   border-radius: 4px;
   display: grid;
   grid-gap: 1rem;

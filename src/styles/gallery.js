@@ -28,14 +28,14 @@ const gallery = css`
       img {
         width: 100%;
         border-radius: 4px;
-        box-shadow: rgba(0, 0, 0, 0.5) 6px 8px 1.25rem;
+        box-shadow: var(--color-shadow) 6px 8px 1.25rem;
         transform-style: preserve-3d;
         backface-visibility: hidden;
         transform: rotate3d(0, 0, 0, 0deg) scale(1);
         transition: all 0.3s ease 0s;
 
         &:hover {
-          box-shadow: rgba(0, 0, 0, 0.7) 10px .875rem 1.25rem;
+          box-shadow: var(--color-shadow) 10px .875rem 1.25rem;
           animation: 1s ease 0s 1 normal forwards running grow;
         }
       }
@@ -68,7 +68,7 @@ const gallery = css`
     .box {
       img {
       border-radius: 4px;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 1rem 2rem var(--color-shadow);
       width: 100%;
     }
   }

@@ -7,7 +7,7 @@ const Cover = styled.section`
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   background-color: var(--color-light);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2rem var(--color-shadow);
   border-radius: 4px;
   width: ${props => (props.width ? props.width : 'auto')};
 

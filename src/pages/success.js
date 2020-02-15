@@ -15,7 +15,7 @@ const SuccessWrapper = styled.div`
 `
 
 const Success = styled.div`
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2rem var(--color-shadow);
   border-radius: 4px;
   grid-column: 1 / -1;
   background-color: var(--color-light);

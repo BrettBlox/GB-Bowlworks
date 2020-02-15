@@ -8,7 +8,7 @@ const ArchiveWrapper = styled.aside`
   padding: 1.25rem;
   font-family: 'Cinzel';
   background-color: var(--color-light);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2rem var(--color-shadow);
   border-radius: 4px;
 
   h2 {

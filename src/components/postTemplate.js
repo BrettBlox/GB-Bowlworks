@@ -57,7 +57,7 @@ const PostContent = styled.div`
 
   img {
     border-radius: 4px;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 2rem var(--color-shadow);
     width: 100%;
     height: auto;
     margin: 1rem 0;

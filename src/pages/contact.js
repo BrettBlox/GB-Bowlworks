@@ -17,7 +17,7 @@ const ContactWrapper = styled.div`
 `
 
 const ContactForm = styled.div`
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2rem var(--color-shadow);
   grid-column: 1 / -1;
   background-color: var(--color-light);
   width: auto;
@@ -79,6 +79,12 @@ const ContactForm = styled.div`
     height: 200px;
     font-size: 0.875rem;
     box-shadow: 0 2px 10px var(--color-shadow);
+    border-radius: 4px;
+    border: none;
+
+    &:focus {
+      box-shadow: 0 2px 10px var(--baby);
+    }
 
     @media only screen and (max-width: 650px) {
       height: 240px;
@@ -101,7 +107,7 @@ const ContactForm = styled.div`
     font-family: 'Cinzel', serif;
     font-size: 1.25rem;
     transition: all 0.3s;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 2rem var(--color-shadow);
 
     &:hover {
       background-color: var(--blood);

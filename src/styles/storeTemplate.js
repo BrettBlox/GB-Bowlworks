@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 const storeTemplate = css`
   .storeWrapper {
     border-radius: 4px;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 2rem var(--color-shadow);
     padding: 1.875rem;
     display: grid;
     grid-column-gap: 1.25rem;
@@ -21,7 +21,7 @@ const storeTemplate = css`
         width: 200px;
         height: auto;
         border-radius: 4px;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0 1rem 2rem var(--color-shadow);
         transition: all 0.3s;
 
         &:hover {
@@ -62,7 +62,7 @@ const storeTemplate = css`
           font-size: 1.5rem;
         }
         & > a > button {
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 2rem var(--color-shadow);
           background-color: var(--baby);
           border-radius: 5px;
           border: none;
@@ -87,7 +87,7 @@ const storeTemplate = css`
 
     .store-item-image > img {
       border-radius: 4px;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 1rem 2rem var(--color-shadow);
       width: 100%;
       max-width: 650px;
       height: auto;

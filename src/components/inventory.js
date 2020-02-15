@@ -8,7 +8,7 @@ const InventoryList = styled.article`
   padding: 1.875rem;
   padding-top: 0;
   background-color: var(--color-light);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2rem var(--color-shadow);
   border-radius: 4px;
   display: grid;
   height: 100%;
@@ -20,11 +20,11 @@ const InventoryList = styled.article`
     height: 300px;
     max-width: 100%;
     border-radius: 4px;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 2rem var(--color-shadow);
 
     @media only screen and (max-width: 800px) {
       border-radius: 4px;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 1rem 2rem var(--color-shadow);
       max-width: 100%;
       height: auto;
     }
@@ -40,7 +40,7 @@ const InventoryList = styled.article`
     text-decoration: none;
 
     button {
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 1rem 2rem var(--color-shadow);
       background-color: var(--baby);
       border-radius: 5px;
       border: none;

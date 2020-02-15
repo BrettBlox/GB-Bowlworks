@@ -13,7 +13,7 @@ const vars = css`
     --color-success-bg: #f5fffe;
     --color-error: #b71540;
     --color-error-bg: #fdeff3;
-    --color-shadow: rgba(23, 11, 41, 0.12);
+    --color-shadow: rgba(23, 11, 41, 0.25);
     --font-base-family: 'Quattrocento', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
       Cantarell, 'Helvetica Neue', sans-serif;
     --font-heading-family: 'Cinzel', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,

@@ -9,7 +9,7 @@ const About = styled.div`
     margin-right: 1.25rem;
     float: left;
     border-radius: 4px;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 2rem var(--color-shadow);
     width: 600px;
     height: auto;
 
