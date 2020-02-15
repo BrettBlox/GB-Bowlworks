@@ -21,13 +21,10 @@ const BlogPost = styled.div`
     color: var(--color-light);
     text-align: left;
     font-size: 3rem;
-    text-align: left;
     margin-top: 0;
   }
   h2 {
     color: var(--color-light);
-    text-align: left;
-    font-size: 2.25rem;
     text-align: left;
     margin-top: 1rem;
     font-weight: normal;
