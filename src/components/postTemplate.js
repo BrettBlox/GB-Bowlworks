@@ -9,7 +9,6 @@ const PostWrapper = styled.div`
   padding: 1.875rem;
   display: flex;
   justify-content: center;
-  font-family: 'Cinzel', serif;
 `
 
 const BlogPost = styled.div`
@@ -17,6 +16,22 @@ const BlogPost = styled.div`
   padding: 1.875rem;
   border-radius: 4px;
   color: var(--color-light);
+
+  h1 {
+    color: var(--color-light);
+    text-align: left;
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 0;
+  }
+  h2 {
+    color: var(--color-light);
+    text-align: left;
+    font-size: 2.25rem;
+    text-align: left;
+    margin-top: 1rem;
+    font-weight: normal;
+  }
 
   @media only screen and (max-width: 550px) {
     padding: 0px;
@@ -34,17 +49,12 @@ const PostContent = styled.div`
   text-align: left;
   font-weight: bold;
 
-  h1 {
-    font-size: 3rem;
-    text-align: left;
-    margin-top: 0;
-  }
-
   img {
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     width: 100%;
     height: auto;
+    margin: 1rem 0;
 
     @media only screen and (max-width: 950px) {
       display: block;
