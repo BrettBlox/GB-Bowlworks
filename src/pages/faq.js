@@ -6,19 +6,23 @@ import Layout from '../components/layout'
 
 const Faq = styled.div`
   margin: 0 auto;
-  padding: 30px;
+  padding: 1.875rem;
   display: flex;
   justify-content: center;
   font-family: 'Cinzel', serif;
 
-  h1 {
-    text-align: center;
-    font-size: 2.25rem;
-    color: var(--blood);
+  h1::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: var(--color-text);
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   @media only screen and (max-width: 550px) {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
   }
 `
 
@@ -31,7 +35,7 @@ const FaqBox = styled.div`
   margin: 0 auto;
   border-radius: 5px;
   text-align: left;
-  padding: 20px 50px 50px;
+  padding: 1.25rem 50px 50px;
   transition: all 0.3s;
 
   h3 {
@@ -46,12 +50,11 @@ const FaqBox = styled.div`
     margin: 0;
     color: black;
     transition: all 0.3s;
-    line-height: 1.4;
   }
 
   @media only screen and (max-width: 550px) {
     margin: 0;
-    padding: 20px;
+    padding: 1.25rem;
     width: auto;
   }
 `
@@ -79,7 +82,6 @@ const FAQ = () => (
     <Faq>
       <FaqBox>
         <h1>FAQ</h1>
-        <hr />
         <br />
         <div>
           <h3>Q: What does “segmented” mean?</h3>

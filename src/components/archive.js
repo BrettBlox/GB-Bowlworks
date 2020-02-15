@@ -3,9 +3,9 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
 const ArchiveWrapper = styled.aside`
-  margin: 30px;
+  margin: 1.875rem;
   margin-left: 0;
-  padding: 20px;
+  padding: 1.25rem;
   font-family: 'Cinzel';
   background-color: var(--color-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -19,7 +19,7 @@ const ArchiveWrapper = styled.aside`
 
     a {
       display: inline-block;
-      font: 700 1.3rem 'Cinzel', sans-serif;
+      font: 700 1.25rem 'Cinzel', sans-serif;
       background-color: var(--blood);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

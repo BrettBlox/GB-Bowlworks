@@ -6,16 +6,16 @@ import Inventory from '../components/inventory'
 import StoreBanner from '../components/storeBanner'
 
 const InventoryWrapper = styled.div`
-  margin: 20px;
+  margin: 1.25rem;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 1.875rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, auto));
   font-family: 'Cinzel', serif;
 
   @media only screen and (max-width: 800px) {
     margin: 0 auto;
     grid-gap: 15px;
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, auto));
   }
@@ -23,7 +23,7 @@ const InventoryWrapper = styled.div`
   @media only screen and (max-width: 450px) {
     margin: 0 auto;
     grid-gap: 15px;
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   }

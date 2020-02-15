@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   text-align: center;
   margin: 0 auto;
   background-image: linear-gradient(to top, var(--deep), var(--baby) 70%);
-  padding: 28px 20px;
+  padding: 28px 1.25rem;
 
   #secondLogo {
     display: none;
@@ -105,11 +105,11 @@ const StyledHeader = styled.header`
       height: 2px;
       position: fixed;
       top: 1.7rem;
-      left: 20px;
+      left: 1.25rem;
       margin: 0;
       margin-left: 0;
       transition: background 0.2s ease-out;
-      width: 30px;
+      width: 1.875rem;
 
       &::before,
       &::after {
@@ -177,7 +177,7 @@ const StyledHeader = styled.header`
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 101.25rem) {
     #mainLogo > img {
       width: 200px;
     }

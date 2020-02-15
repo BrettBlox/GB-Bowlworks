@@ -69,7 +69,7 @@ const Roller = styled.div`
     }
     &:nth-child(7):after {
       top: 50px;
-      left: 14px;
+      left: .875rem;
     }
     &:nth-child(8) {
       animation-delay: -0.288s;

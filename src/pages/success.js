@@ -6,9 +6,9 @@ import Layout from '../components/layout'
 
 const SuccessWrapper = styled.div`
   margin: 0 auto;
-  padding: 30px;
+  padding: 1.875rem;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
   grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
   font-family: 'Cinzel', serif;
   text-align: center;
@@ -23,7 +23,7 @@ const Success = styled.div`
   height: auto;
   margin: 0 auto;
   border-radius: 5px;
-  padding: 20px 50px 50px;
+  padding: 1.25rem 50px 50px;
 
   h1 {
     font-size: 2.5rem;

@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
 const InventoryList = styled.article`
-  padding: 30px;
+  padding: 1.875rem;
   padding-top: 0;
   background-color: var(--color-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -16,7 +16,7 @@ const InventoryList = styled.article`
 
   img {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     height: 300px;
     max-width: 100%;
     border-radius: 4px;
@@ -48,7 +48,7 @@ const InventoryList = styled.article`
       width: 100%;
       height: 50px;
       font-family: 'Cinzel', serif;
-      font-size: 20px;
+      font-size: 1.25rem;
       margin: 0 auto;
       color: #fff;
       transition: all 0.3s;
@@ -66,7 +66,7 @@ const InventoryList = styled.article`
 const ListingLink = styled(Link)`
   h2 {
     text-align: left;
-    font: 700 30px 'Cinzel', sans-serif;
+    font: 700 1.875rem 'Cinzel', sans-serif;
     background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

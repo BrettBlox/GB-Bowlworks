@@ -6,14 +6,13 @@ import Layout from '../components/layout'
 
 const ContactWrapper = styled.div`
   margin: 0 auto;
-  padding: 30px;
+  padding: 1.875rem;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
   grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
-  font-family: 'Cinzel', serif;
 
   @media only screen and (max-width: 550px) {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
   }
 `
 
@@ -23,7 +22,7 @@ const ContactForm = styled.div`
   background-color: var(--color-light);
   width: auto;
   height: 760px;
-  padding: 30px 50px 0;
+  padding: 1.875rem 50px 0;
   margin: 0 auto;
   border-radius: 5px;
 
@@ -31,9 +30,17 @@ const ContactForm = styled.div`
     padding-right: 0;
     float: none;
     text-align: center;
-    justify-content: center;
     align-items: center;
-    color: var(--blood);
+
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: var(--color-text);
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
 
     @media only screen and (max-width: 650px) {
       font-size: 1.75rem;
@@ -45,31 +52,31 @@ const ContactForm = styled.div`
   }
 
   label {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
   }
 
   input {
     transition: border-color 0.5s ease-out;
-    border: 1px solid #dadada;
-    border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
-    height: 30px;
-    font-size: 14px;
-    box-shadow: 0 0 10px;
+    height: 1.875rem;
+    font-size: 0.875rem;
+    box-shadow: 0 2px 10px var(--color-shadow);
+
+    &:focus {
+      outline: 1px solid var(--baby)
+    }
   }
 
   textarea {
-    border: 1px solid #dadada;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
     height: 200px;
-    font-size: 14px;
-    box-shadow: 0 0 10px;
-    border-radius: 5px;
+    font-size: 0.875rem;
+    box-shadow: 0 2px 10px var(--color-shadow);
 
     @media only screen and (max-width: 650px) {
       height: 240px;
@@ -90,7 +97,7 @@ const ContactForm = styled.div`
     width: 100%;
     height: auto;
     font-family: 'Cinzel', serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: all 0.3s;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 
@@ -108,7 +115,7 @@ const ContactForm = styled.div`
   @media only screen and (max-width: 550px) {
     width: auto;
     height: auto;
-    padding: 30px;
+    padding: 1.875rem;
   }
 `
 
@@ -163,7 +170,6 @@ export default function Contact() {
             CONTACT
             <br /> GB BOWLWORKS
           </h1>
-          <hr />
           <form
             name='contact'
             method='post'

@@ -1,32 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Cover = styled.div`
-  text-align: center;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
-
-  h2 {
-    text-align: center;
-    color: var(--blood);
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-  }
-`
-
-const FilterBody = styled.div`
-  padding: 20px;
-  text-align: center !important;
-  font-family: 'Cinzel';
-  background-color: var(--color-light);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  grid-column: 1 / -1;
-`
+import Cover from '../styles/cover'
 
 const Filters = styled.div`
   display: flex;
@@ -90,7 +65,7 @@ const FilterInactive = styled.span`
   }
   @media only screen and (max-width: 857px) {
     font-size: 1.6rem;
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
 `
 
@@ -128,25 +103,22 @@ const Filter = ({ filters, handleFilter, filter }) => {
 
   return (
     <Cover>
-      <FilterBody>
-        <h2>Gallery</h2>
-        <hr />
-        <Filters>
-          {Object.keys(filters).map(tag => {
-            const currentFilter = tag
-            const filterText = filters[tag]
-            return currentFilter === filter ? (
-              <FilterActive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
-                {filterText}
-              </FilterActive>
-            ) : (
-              <FilterInactive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
-                {filterText}
-              </FilterInactive>
-            )
-          })}
-        </Filters>
-      </FilterBody>
+      <h2>Gallery</h2>
+      <Filters>
+        {Object.keys(filters).map(tag => {
+          const currentFilter = tag
+          const filterText = filters[tag]
+          return currentFilter === filter ? (
+            <FilterActive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
+              {filterText}
+            </FilterActive>
+          ) : (
+            <FilterInactive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
+              {filterText}
+            </FilterInactive>
+          )
+        })}
+      </Filters>
     </Cover>
   )
 }

@@ -2,31 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-const Cover = styled.div`
-  text-align: center;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
-`
-
-const Description = styled.div`
-  padding: 20px;
-  text-align: center !important;
-  font-family: 'Cinzel';
-  background-color: var(--color-light);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  grid-column: 1 / -1;
-
-  h2 {
-    text-align: center;
-    color: var(--blood);
-    font-size: 2.25rem;
-  }
-`
+import Cover from '../styles/cover'
+import Description from '../styles/description'
 
 const EventList = styled.ul`
   margin: 0 auto;
@@ -43,13 +20,13 @@ const EventList = styled.ul`
     }
   }
 
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 91.25rem) {
     width: auto;
   }
 `
 
 const EventTitle = styled.h3`
-  font: 700 20px 'Cinzel', sans-serif;
+  font: 700 1.25rem 'Cinzel', sans-serif;
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -94,7 +71,6 @@ const Event = () => (
       <Cover>
         <Description>
           <h2>2019 Events</h2>
-          <hr />
           <EventList>
             {allMarkdownRemark.edges.map(edge => (
               <div key={edge.node.frontmatter.title}>

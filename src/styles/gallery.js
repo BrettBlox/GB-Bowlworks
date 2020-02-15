@@ -4,7 +4,7 @@ const gallery = css`
   .my-masonry-grid {
     background-color: var(--deep);
     display: flex;
-    margin-left: -30px;
+    margin-left: -1.875rem;
     /* gutter size offset */
     width: auto;
     margin: 0 auto;
@@ -14,7 +14,7 @@ const gallery = css`
   .my-masonry-grid_column {
     padding: 10px;
     /* gutter size */
-    padding-top: 20px;
+    padding-top: 1.25rem;
     background-clip: padding-box;
 
     & > .box {
@@ -28,14 +28,14 @@ const gallery = css`
       img {
         width: 100%;
         border-radius: 4px;
-        box-shadow: rgba(0, 0, 0, 0.5) 6px 8px 20px;
+        box-shadow: rgba(0, 0, 0, 0.5) 6px 8px 1.25rem;
         transform-style: preserve-3d;
         backface-visibility: hidden;
         transform: rotate3d(0, 0, 0, 0deg) scale(1);
         transition: all 0.3s ease 0s;
 
         &:hover {
-          box-shadow: rgba(0, 0, 0, 0.7) 10px 14px 20px;
+          box-shadow: rgba(0, 0, 0, 0.7) 10px .875rem 1.25rem;
           animation: 1s ease 0s 1 normal forwards running grow;
         }
       }
@@ -60,7 +60,7 @@ const gallery = css`
     .grid-wrapper {
       z-index: -100;
       grid-gap: 15px;
-      padding: 20px;
+      padding: 1.25rem;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
@@ -76,7 +76,7 @@ const gallery = css`
   /* Anything smaller than Iphone 6 */
   @media only screen and (max-width: 350px) {
     .box {
-      padding-right: 20px;
+      padding-right: 1.25rem;
     }
   }
 `

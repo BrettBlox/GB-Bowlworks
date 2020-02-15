@@ -4,12 +4,12 @@ const storeTemplate = css`
   .storeWrapper {
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 1.875rem;
     display: grid;
-    grid-column-gap: 20px;
+    grid-column-gap: 1.25rem;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     font-family: 'Cinzel', serif;
-    margin: 30px;
+    margin: 1.875rem;
     background-color: var(--color-light);
 
     .body {
@@ -36,7 +36,7 @@ const storeTemplate = css`
 
       .store-item {
         border-radius: 4px;
-        padding: 30px;
+        padding: 1.875rem;
         display: grid;
         padding-bottom: 0;
         padding-top: 0;
@@ -70,7 +70,7 @@ const storeTemplate = css`
           width: 100%;
           height: 50px;
           font-family: 'Cinzel', serif;
-          font-size: 20px;
+          font-size: 1.25rem;
           transition: all 0.3s;
           color: #fff;
           text-decoration: none;
@@ -97,8 +97,8 @@ const storeTemplate = css`
   @media only screen and (max-width: 550px) {
     .storeWrapper {
       grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-      margin: 30px 20px;
-      padding: 20px;
+      margin: 1.875rem 1.25rem;
+      padding: 1.25rem;
     }
     .body img {
       width: 100%;
@@ -115,7 +115,7 @@ const storeTemplate = css`
         }
         & > h1 {
           font-size: 2rem;
-          margin-top: 20px;
+          margin-top: 1.25rem;
         }
       }
     }

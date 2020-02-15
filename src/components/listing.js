@@ -3,25 +3,23 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 const ListingWrapper = styled.article`
-  margin: 30px;
-  padding: 20px;
+  margin: 1.875rem;
+  padding: 1.25rem;
   padding-top: 0;
-  font-family: 'Cinzel';
   background-color: var(--color-light);
   box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
   border-radius: 4px;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 1.875rem;
 
   p {
     text-align: left;
     margin: 0;
     padding: 0;
-    font-size: 1.3rem;
   }
 
   @media only screen and (max-width: 550px) {
-    margin: 30px 20px;
+    margin: 1.875rem 1.25rem;
   }
 `
 
@@ -49,7 +47,7 @@ const ListingLink = styled(Link)`
 
 const ReadMore = styled(Link)`
   text-align: left;
-  font: 700 20px 'Cinzel', sans-serif;
+  font: 700 1.25rem 'Cinzel', sans-serif;
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

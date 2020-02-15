@@ -6,7 +6,7 @@ import Layout from './layout'
 
 const PostWrapper = styled.div`
   margin: 0 auto;
-  padding: 30px;
+  padding: 1.875rem;
   display: flex;
   justify-content: center;
   font-family: 'Cinzel', serif;
@@ -14,7 +14,7 @@ const PostWrapper = styled.div`
 
 const BlogPost = styled.div`
   margin: 0 auto;
-  padding: 30px;
+  padding: 1.875rem;
   border-radius: 4px;
   color: var(--color-light);
 
@@ -50,7 +50,7 @@ const PostContent = styled.div`
       display: block;
       width: 100%;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       margin-left: 0;
       margin-right: 0;
     }

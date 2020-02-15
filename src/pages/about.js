@@ -2,32 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
-
-const AboutWrapper = styled.div`
-  padding: 30px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
-  font-family: 'Cinzel', serif;
-
-  @media only screen and (max-width: 550px) {
-    padding: 30px 20px;
-  }
-`
+import Cover from '../styles/cover'
 
 const About = styled.div`
-  padding: 30px;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  grid-column: 1 / -1;
-  background-color: var(--color-light);
-
-  hr {
-    margin-block-end: 1.84em;
-  }
+  text-align: left;
 
   img {
-    margin-right: 20px;
+    margin-right: 1.25rem;
     float: left;
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -40,26 +21,11 @@ const About = styled.div`
       height: auto;
       float: none;
       margin: 0 auto;
-      margin-bottom: 1.3rem;
-    }
-  }
-
-  h1 {
-    text-align: center;
-    color: var(--blood);
-    font-size: 2.25rem;
-
-    @media only screen and (max-width: 400px) {
-      font-size: 1.5rem;
-      padding: 0;
+      margin-bottom: 1.25rem;
     }
   }
 
   p {
-    line-height: 1.4;
-    font-size: 1.3rem;
-    font-family: 'Quattrocento', serif;
-
     @media only screen and (max-width: 550px) {
       line-height: 1.2;
     }
@@ -68,10 +34,9 @@ const About = styled.div`
 
 const AboutPage = () => (
   <Layout title='About'>
-    <AboutWrapper>
+    <Cover>
       <About>
         <h1>ABOUT GB BOWLWORKS</h1>
-        <hr />
         <img src={require('../images/greg/gregandjasper.jpg')} alt='Greg Bloxom' />
         <p>
           I love woodworking. I love the satisfaction I get from making things out of wood. I love the feel and smell of
@@ -118,7 +83,7 @@ const AboutPage = () => (
           Greg
         </p>
       </About>
-    </AboutWrapper>
+    </Cover>
   </Layout>
 )
 
