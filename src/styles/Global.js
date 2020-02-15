@@ -13,7 +13,6 @@ const GlobalStyles = createGlobalStyle`
   ${reset};
   ${vars};
 
-  /* GLOBAL STYLES */
   body {
     font-family: var(--font-base-family, sans-serif);
     background: var(--color-light);
