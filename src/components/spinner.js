@@ -19,7 +19,7 @@ const Roller = styled.div`
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: #3fb0ac;
+      background: var(--baby);
       margin: -3px 0 0 -3px;
     }
     &:nth-child(1) {

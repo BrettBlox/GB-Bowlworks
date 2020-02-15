@@ -1,28 +1,28 @@
-import { css } from 'styled-components'
+import styled from 'styled-components'
 
-const header = css`
-  #header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    background-image: linear-gradient(to top, #173e43, #3fb0ac 70%);
-  }
+const StyledHeader = styled.header`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, var(--deep), var(--baby) 70%);
+  padding: 28px 20px;
 
   #secondLogo {
     display: none;
   }
 
-  #mainLogo > img {
-    width: 250px;
-  }
-
-  #mainLogo:hover {
-    animation-name: spin;
-    animation-duration: 100ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  #mainLogo {
+    img {
+      width: 250px;
+    }
+    &:hover {
+      animation-name: spin;
+      animation-duration: 100ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
   }
 
   @keyframes spin {
@@ -44,150 +44,139 @@ const header = css`
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(#d7a150, #d7a150);
+    background-image: linear-gradient(var(--gold), var(--gold));
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 0% 100%;
     cursor: pointer;
     transition: all 0.5s ease;
-  }
 
-  .navLink:hover {
-    background-size: 100% 100%;
-    transform: translateY(-3px) scale(1.2);
-  }
+    &:hover {
+      background-size: 100% 100%;
+      transform: translateY(-3px) scale(1.2);
 
-  .navLink:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #d7a150;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
+      &:after {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
 
-  .navLink:hover:after {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--gold);
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
 
-  .navLink--active {
-    transform: translateY(-3px) scale(1.1);
-    background-color: #d7a150;
-  }
+    &--active {
+      transform: translateY(-3px) scale(1.1);
+      background-color: var(--gold);
 
-  .navLink--active:after {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+      &:after {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
   }
 
   /*************************************************************
 ***HAMBURGER DROPDOWN MENU ************************
 *************************************************************/
-  #header {
-    padding: 28px 20px;
-  }
-
-  #header > .menu > li {
+  & > .menu > li {
     padding: 0.7rem;
   }
 
-  #header .menu-icon {
+  .menu-icon {
     cursor: pointer;
     display: inline-block;
     position: relative;
+
+    .navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: fixed;
+      top: 1.7rem;
+      left: 20px;
+      margin: 0;
+      margin-left: 0;
+      transition: background 0.2s ease-out;
+      width: 30px;
+
+      &::before,
+      &::after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.2s ease-out;
+        width: 100%;
+      }
+
+      &::before {
+        top: 7px;
+      }
+
+      &::after {
+        top: -7px;
+      }
+    }
   }
 
-  #header .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: fixed;
-    top: 1.7rem;
-    left: 20px;
-    margin: 0;
-    margin-left: 0;
-    transition: background 0.2s ease-out;
-    width: 30px;
-  }
-
-  #header .menu-icon .navicon:before,
-  #header .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    transition: all 0.2s ease-out;
-    width: 100%;
-  }
-
-  #header .menu-icon .navicon:before {
-    top: 7px;
-  }
-
-  #header .menu-icon .navicon:after {
-    top: -7px;
-  }
-
-  #header .menu-btn {
+  .menu-btn {
     display: none;
+
+    &:checked {
+      & ~ .menu {
+        max-height: 100%;
+        display: block;
+      }
+      & ~ .menu-icon {
+        .navicon {
+          background: transparent;
+
+          &::before {
+            transform: rotate(-135deg);
+          }
+          &::after {
+            transform: rotate(135deg);
+          }
+        }
+      }
+
+      & ~ .menu-icon:not(.steps) .navicon:before,
+      & ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
+    }
+
+    & ~ .menu {
+      display: none;
+      a {
+        font: 700 2rem 'Cinzel', sans-serif;
+        background-color: var(--blood);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
 
-  #header .menu-btn:checked ~ .menu {
-    max-height: 100%;
-  }
-
-  #header .menu-btn ~ .menu {
-    display: none;
-  }
-
-  #header .menu-btn:checked ~ .menu {
-    display: block;
-  }
-
-  #header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-
-  #header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-135deg);
-  }
-
-  #header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(135deg);
-  }
-
-  #header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  #header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-
-  #header .menu a {
-    font: 700 2rem 'Cinzel', sans-serif;
-    background-color: var(--blood);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /******************************************************************
-***MEDIA QUERIES **************************************************
-******************************************************************/
-  /*************LESS THAN 1080PX DO THIS*******************/
   @media only screen and (max-width: 1180px) {
     #mainLogo > img {
       width: 250px;
     }
   }
 
-  /*************LESS THAN 1020PX DO THIS*******************/
   @media only screen and (max-width: 1020px) {
     #mainLogo > img {
       width: 200px;
@@ -198,7 +187,6 @@ const header = css`
     }
   }
 
-  /*************LESS THAN 860PX DO THIS*******************/
   @media only screen and (max-width: 860px) {
     #mainLogo > img {
       width: 150px;
@@ -209,35 +197,31 @@ const header = css`
     }
   }
 
-  /*************LESS THAN 710PX DO THIS*******************/
   @media only screen and (max-width: 710px) {
     #mainLogo > img {
       width: 100px;
     }
   }
 
-  /***********LESS THAN 610PX DO THIS*****************/
   @media only screen and (max-width: 610px) {
-    #header {
-      z-index: 100;
-      display: flex;
-      flex-direction: column;
-      background-color: #3fb0ac;
-      background-image: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-    }
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--baby);
+    background-image: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 
-    #header > .menu {
+    & > .menu {
       list-style: none;
       margin: 0;
       padding: 2rem 4rem 0 1rem;
     }
 
-    #header .navLink {
+    .navLink {
       display: none;
     }
 
@@ -256,19 +240,18 @@ const header = css`
     }
   }
 
-  /************MORE THAN 611PX DO THIS*****************/
   @media only screen and (min-width: 611px) {
-    #header > .menu {
+    & > .menu {
       display: none;
       list-style: none;
     }
 
-    #header .menu > li,
+    .menu > li,
     .resLink {
       display: none;
     }
 
-    #header .menu-icon {
+    .menu-icon {
       display: none;
     }
 
@@ -278,4 +261,4 @@ const header = css`
   }
 `
 
-export default header
+export default StyledHeader

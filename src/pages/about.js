@@ -20,7 +20,7 @@ const About = styled.div`
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   grid-column: 1 / -1;
-  background-color: #dddfd4;
+  background-color: var(--color-light);
 
   hr {
     margin-block-end: 1.84em;

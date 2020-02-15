@@ -16,7 +16,7 @@ const BlogPost = styled.div`
   margin: 0 auto;
   padding: 30px;
   border-radius: 4px;
-  color: #dddfd4;
+  color: var(--color-light);
 
   @media only screen and (max-width: 550px) {
     padding: 0px;
@@ -28,7 +28,7 @@ const PostContent = styled.div`
   padding-top: 10px;
   margin: 0 auto;
   max-width: 650px;
-  color: #dddfd4;
+  color: var(--color-light);
   font-size: 1.2rem;
   padding: 1rem 0;
   text-align: left;

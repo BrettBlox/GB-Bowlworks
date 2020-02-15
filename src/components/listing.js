@@ -7,7 +7,7 @@ const ListingWrapper = styled.article`
   padding: 20px;
   padding-top: 0;
   font-family: 'Cinzel';
-  background-color: #dddfd4;
+  background-color: var(--color-light);
   box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
   border-radius: 4px;
   display: grid;
@@ -35,7 +35,7 @@ const ListingLink = styled(Link)`
     background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #d7a150, #d7a150 50%, var(--blood) 50%);
+    background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;
@@ -53,7 +53,7 @@ const ReadMore = styled(Link)`
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #d7a150, #d7a150 50%, var(--blood) 50%);
+  background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s;

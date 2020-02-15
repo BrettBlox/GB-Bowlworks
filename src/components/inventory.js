@@ -7,7 +7,7 @@ import LazyLoad from 'react-lazyload'
 const InventoryList = styled.article`
   padding: 30px;
   padding-top: 0;
-  background-color: #dddfd4;
+  background-color: var(--color-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   display: grid;
@@ -41,7 +41,7 @@ const InventoryList = styled.article`
 
     button {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-      background-color: #3fb0ac;
+      background-color: var(--baby);
       border-radius: 5px;
       border: none;
       padding: 10px 25px;
@@ -70,7 +70,7 @@ const ListingLink = styled(Link)`
     background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #d7a150, #d7a150 50%, var(--blood) 50%);
+    background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;

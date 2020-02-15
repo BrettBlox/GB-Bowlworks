@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 
 const gallery = css`
   .my-masonry-grid {
-    background-color: #173e43;
+    background-color: var(--deep);
     display: flex;
     margin-left: -30px;
     /* gutter size offset */
@@ -18,7 +18,7 @@ const gallery = css`
     background-clip: padding-box;
 
     & > .box {
-      background-color: #173e43;
+      background-color: var(--deep);
       display: inline-block;
       margin: 0 auto;
       width: 100%;

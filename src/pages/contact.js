@@ -20,7 +20,7 @@ const ContactWrapper = styled.div`
 const ContactForm = styled.div`
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   grid-column: 1 / -1;
-  background-color: #dddfd4;
+  background-color: var(--color-light);
   width: auto;
   height: 760px;
   padding: 30px 50px 0;
@@ -81,7 +81,7 @@ const ContactForm = styled.div`
   }
 
   button {
-    background-color: #3fb0ac;
+    background-color: var(--baby);
     border-radius: 5px;
     border: none;
     padding: 10px 25px;

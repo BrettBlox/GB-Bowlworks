@@ -1,10 +1,10 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
-import '../styles/header.js'
+import StyledHeader from '../styles/header'
 
 const Header = () => (
-  <div id='header'>
+  <StyledHeader>
     <Link to='/about' className='navLink' activeClassName='navLink--active'>
       ABOUT
     </Link>
@@ -67,7 +67,7 @@ const Header = () => (
         </Link>
       </li>
     </ul>
-  </div>
+  </StyledHeader>
 )
 
 export default Header

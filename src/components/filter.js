@@ -22,7 +22,7 @@ const FilterBody = styled.div`
   padding: 20px;
   text-align: center !important;
   font-family: 'Cinzel';
-  background-color: #dddfd4;
+  background-color: var(--color-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   grid-column: 1 / -1;
@@ -46,7 +46,7 @@ const FilterInactive = styled.span`
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(#d7a150, #d7a150);
+  background-image: linear-gradient(var(--gold), var(--gold));
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -61,13 +61,13 @@ const FilterInactive = styled.span`
 
     &:after {
       width: 100%;
-      background: #d7a150;
+      background: var(--gold);
     }
 
     @media only screen and (max-width: 857px) {
       &:after {
         width: 20%;
-        background: #d7a150;
+        background: var(--gold);
       }
     }
   }
@@ -96,10 +96,10 @@ const FilterInactive = styled.span`
 
 const FilterActive = styled(FilterInactive)`
   transform: translateY(-3px) scale(1.2);
-  background-color: #d7a150;
+  background-color: var(--gold);
 
   &:after {
-    border-bottom: 1px solid #d7a150;
+    border-bottom: 1px solid var(--gold);
     content: '';
     position: absolute;
     left: 0;
@@ -109,7 +109,7 @@ const FilterActive = styled(FilterInactive)`
     margin: 0 auto;
 
     @media only screen and (max-width: 857px) {
-      border-bottom: 1px solid #d7a150;
+      border-bottom: 1px solid var(--gold);
       content: '';
       position: absolute;
       left: 0;

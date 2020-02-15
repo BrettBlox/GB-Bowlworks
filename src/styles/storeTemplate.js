@@ -10,7 +10,7 @@ const storeTemplate = css`
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     font-family: 'Cinzel', serif;
     margin: 30px;
-    background-color: #dddfd4;
+    background-color: var(--color-light);
 
     .body {
       display: flex;
@@ -63,7 +63,7 @@ const storeTemplate = css`
         }
         & > a > button {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-          background-color: #3fb0ac;
+          background-color: var(--baby);
           border-radius: 5px;
           border: none;
           padding: 10px 25px;

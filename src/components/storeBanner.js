@@ -15,7 +15,7 @@ const Description = styled.div`
   padding: 20px;
   text-align: center !important;
   font-family: 'Cinzel';
-  background-color: #dddfd4;
+  background-color: var(--color-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   grid-column: 1 / -1;
