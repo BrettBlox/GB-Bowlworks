@@ -31,6 +31,15 @@ const BlogPost = styled.div`
     text-align: left;
     margin-top: 1rem;
     font-weight: normal;
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: var(--color-light);
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   @media only screen and (max-width: 550px) {
@@ -78,7 +87,6 @@ export default function Template({
         <BlogPost>
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>
-          <hr />
           <PostContent dangerouslySetInnerHTML={{ __html: html }} />
         </BlogPost>
       </PostWrapper>
