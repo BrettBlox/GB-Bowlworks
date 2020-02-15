@@ -91,7 +91,7 @@ const StyledHeader = styled.header`
 ***HAMBURGER DROPDOWN MENU ************************
 *************************************************************/
   & > .menu > li {
-    padding: 0.7rem;
+    padding: 0.5rem;
   }
 
   .menu-icon {
@@ -139,7 +139,7 @@ const StyledHeader = styled.header`
     &:checked {
       & ~ .menu {
         max-height: 100%;
-        display: block;
+        display: flex;
       }
       & ~ .menu-icon {
         .navicon {
@@ -217,8 +217,11 @@ const StyledHeader = styled.header`
 
     & > .menu {
       list-style: none;
-      margin: 0;
-      padding: 2rem 4rem 0 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 2rem;
     }
 
     .navLink {

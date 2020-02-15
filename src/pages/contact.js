@@ -64,9 +64,11 @@ const ContactForm = styled.div`
     height: 1.875rem;
     font-size: 0.875rem;
     box-shadow: 0 2px 10px var(--color-shadow);
+    border-radius: 4px;
+    border: none;
 
     &:focus {
-      outline: 1px solid var(--baby)
+      box-shadow: 0 2px 10px var(--baby);
     }
   }
 

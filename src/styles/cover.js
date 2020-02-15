@@ -1,18 +1,15 @@
 import styled from 'styled-components'
 
 const Cover = styled.section`
-  text-align: center;
-  margin-top: 1.875rem;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  text-align: ${props => (props.text ? props.text : 'left')};
+  margin: ${props => (props.margin ? props.margin : '1.875rem 1.25rem 0 1.25rem')};
   padding: 1.5rem;
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-  display: grid;
-  text-align: center;
   background-color: var(--color-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
+  width: ${props => (props.width ? props.width : 'auto')};
 
   h1 {
     @media only screen and (max-width: 500px) {
@@ -22,9 +19,6 @@ const Cover = styled.section`
 
   h1,
   h2 {
-    color: var(--blood);
-    font-size: 2.25rem;
-
     &::after {
       content: '';
       display: block;
@@ -36,16 +30,11 @@ const Cover = styled.section`
     }
   }
 
-  p {
-    font-weight: bold;
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
-
-    @media only screen and (max-width: 650px) {
-      line-height: 1.2;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+  h3 {
+    font-size: 1.5rem;
+    color: var(--blood);
+    text-transform: uppercase;
+    margin: 2rem 0;
   }
 
   a {

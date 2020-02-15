@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Cover from '../styles/cover'
 
 const Main = () => (
-  <Cover>
+  <Cover text='center'>
     <h1>WELCOME TO GB BOWLWORKS</h1>
     <p>
       GB Bowlworks, LLC, is a woodturning business based in Oklahoma, owned and operated by me,{' '}

@@ -5,8 +5,6 @@ import Layout from '../components/layout'
 import Cover from '../styles/cover'
 
 const About = styled.div`
-  text-align: left;
-
   img {
     margin-right: 1.25rem;
     float: left;

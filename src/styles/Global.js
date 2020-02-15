@@ -34,9 +34,9 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  h1 {
+  h1, h2 {
     font-family: var(--font-heading-family, sans-serif);
-    font-weight: 900;
+    font-weight: bold;
     font-size: 2.25rem;
     color: var(--blood);
     line-height: 1.1;

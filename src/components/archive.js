@@ -3,13 +3,25 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
 const ArchiveWrapper = styled.aside`
-  margin: 1.875rem;
+  margin: 1.25rem;
   margin-left: 0;
   padding: 1.25rem;
   font-family: 'Cinzel';
   background-color: var(--color-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   border-radius: 4px;
+
+  h2 {
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: var(--color-text);
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
 
   ul {
     padding: 0;
@@ -67,7 +79,6 @@ const Archive = () => (
     render={({ allMarkdownRemark }) => (
       <ArchiveWrapper>
         <h2>Archive</h2>
-        <hr />
         <ul className='archiveList'>
           {allMarkdownRemark.edges.map(edge => (
             <li key={edge.node.frontmatter.slug}>

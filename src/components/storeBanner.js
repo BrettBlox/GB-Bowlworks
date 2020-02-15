@@ -3,7 +3,7 @@ import React from 'react'
 import Cover from '../styles/cover'
 
 const storeBanner = () => (
-  <Cover>
+  <Cover text='center'>
     <h1>CURRENT INVENTORY</h1>
     <p>
       These are the pieces that I currently have available. If you don't see what you want here, head over to the

@@ -28,12 +28,12 @@ const Footer = () => (
           <Link className='footLink' to='/about'>
             About
           </Link>
-        </li>{' '}
+        </li>
         <li className='footItem'>
           <Link className='footLink' to='/blog'>
             Blog
           </Link>
-        </li>{' '}
+        </li>
         <li className='footItem'>
           <Link className='footLink' to='/store'>
             Store

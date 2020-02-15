@@ -3,14 +3,17 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 const ListingWrapper = styled.article`
-  margin: 1.875rem;
-  padding: 1.25rem;
-  padding-top: 0;
+  margin: 1.25rem;
+  padding: 1.5rem;
   background-color: var(--color-light);
   box-shadow: 0px 3px 10px rgba(25, 17, 34, 2);
   border-radius: 4px;
   display: grid;
-  grid-gap: 1.875rem;
+  grid-gap: 1rem;
+
+  p:first-of-type {
+    font-weight: bold;
+  }
 
   p {
     text-align: left;

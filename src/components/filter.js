@@ -102,7 +102,7 @@ const Filter = ({ filters, handleFilter, filter }) => {
   }
 
   return (
-    <Cover>
+    <Cover text='center'>
       <h2>Gallery</h2>
       <Filters>
         {Object.keys(filters).map(tag => {
