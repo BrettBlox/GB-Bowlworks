@@ -79,7 +79,8 @@ const ContactForm = styled.div`
     border: none;
 
     &:focus {
-      box-shadow: 0 2px 10px var(--baby);
+      border: 3px solid var(--baby);
+      box-shadow: 0 0 10px 0 var(--baby);
     }
   }
 
@@ -94,7 +95,8 @@ const ContactForm = styled.div`
     border: none;
 
     &:focus {
-      box-shadow: 0 2px 10px var(--baby);
+      border: 3px solid var(--baby);
+      box-shadow: 0 0 10px 0 var(--baby);
     }
 
     @media only screen and (max-width: 650px) {
