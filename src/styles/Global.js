@@ -2,15 +2,16 @@ import { createGlobalStyle, css } from 'styled-components'
 
 import storeTemplate from './storeTemplate'
 import gallery from './gallery'
-import header from './header'
 import vars from './vars'
 import reset from './reset'
+import utils from './utils'
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Quattrocento:400,700&display=swap');
 
   ${reset};
   ${vars};
+  ${utils};
 
   body {
     font-family: var(--font-base-family, sans-serif);
@@ -48,10 +49,8 @@ const GlobalStyles = createGlobalStyle`
       border: 1px solid;
     }
   }
-
-  ${header};
-  ${gallery};
   ${storeTemplate};
+  ${gallery};
 `
 
 export default GlobalStyles

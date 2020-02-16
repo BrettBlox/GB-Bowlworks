@@ -34,7 +34,6 @@ const Cover = styled.section`
     font-size: 1.5rem;
     color: var(--blood);
     text-transform: uppercase;
-    margin: 2rem 0;
   }
 
   a {

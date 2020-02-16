@@ -8,7 +8,7 @@ const FAQ = () => (
   <Layout title='FAQ'>
     <Cover width='60vw' margin='1.875rem auto 0 auto'>
       <h1>FAQ</h1>
-      <div>
+      <div className='flow'>
         <h3>Q: What does “segmented” mean?</h3>
         <p>
           A: I get asked this all the time. Most of the bowls and vessels I make are segmented, meaning, rather than cut
