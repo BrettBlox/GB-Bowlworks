@@ -36,7 +36,7 @@ const StyledHeader = styled.header`
   }
 
   .navLink {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
     background-size: 200% 100%;
     background-position: 100%;
@@ -53,7 +53,7 @@ const StyledHeader = styled.header`
 
     &:hover {
       background-size: 100% 100%;
-      transform: translateY(-3px) scale(1.2);
+      transform: translateY(-3px) scale(1.05);
 
       &:after {
         visibility: visible;
@@ -76,7 +76,7 @@ const StyledHeader = styled.header`
     }
 
     &--active {
-      transform: translateY(-3px) scale(1.1);
+      transform: translateY(-3px) scale(1.05);
       background-color: var(--gold);
 
       &:after {

@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 const ListingWrapper = styled.article`
-  margin: 1.25rem;
+  margin: 1.875rem 1.25rem 0 1.25rem;
   padding: 1.5rem;
   background-color: var(--color-light);
   box-shadow: 0px 3px 10px var(--color-shadow);

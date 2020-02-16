@@ -21,7 +21,7 @@ const ContactForm = styled.div`
   grid-column: 1 / -1;
   background-color: var(--color-light);
   width: auto;
-  height: 760px;
+  height: 778px;
   padding: 1.875rem 50px 0;
   margin: 0 auto;
   border-radius: 5px;
@@ -51,7 +51,18 @@ const ContactForm = styled.div`
     }
   }
 
+  span {
+    display: inline-block;
+    color: red;
+    font-family: var(--font-base-family);
+
+    &:last-child {
+      padding-top: 0.875rem;
+    }
+  }
+
   label {
+    font-family: var(--font-base-family);
     font-size: 1.25rem;
     font-weight: bold;
   }
@@ -187,18 +198,31 @@ export default function Contact() {
             data-netlify-honeypot='bot-field'
           >
             <input type='hidden' name='bot-field' onChange={handleInputChange} />
+            <span>*</span>
             <label htmlFor='name'>
               Name:
               <br />
-              <input type='text' name='name' required onChange={handleInputChange} />
+              <input
+                type='text'
+                name='name'
+                required
+                autoComplete='off'
+                autoCapitalize='words'
+                autoCorrect='off'
+                onChange={handleInputChange}
+              />
             </label>
             <br />
+            <span>*</span>
             <label htmlFor='email'>
               Email:
               <br />
               <input
                 type='email'
                 name='email'
+                autoComplete='off'
+                autoCapitalize='none'
+                autoCorrect='off'
                 onChange={handleInputChange}
                 pattern='^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$'
                 required
@@ -210,15 +234,24 @@ export default function Contact() {
               <input type='tel' name='phone' onChange={handleInputChange} />
             </label>
             <br />
+            <span>*</span>
             <label htmlFor='message'>
               Message:
               <br />
-              <textarea name='message' onChange={handleInputChange} required />
+              <textarea
+                name='message'
+                autoComplete='off'
+                autoCapitalize='on'
+                autoCorrect='off'
+                onChange={handleInputChange}
+                required
+              />
             </label>
             <div data-netlify-recaptcha='true' />
             <br />
             <button type='submit'>Send</button>
           </form>
+          <span>* required</span>
         </ContactForm>
       </ContactWrapper>
     </Layout>

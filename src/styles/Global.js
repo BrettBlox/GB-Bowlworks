@@ -7,8 +7,7 @@ import vars from './vars'
 import reset from './reset'
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Quattrocento&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Quattrocento:400,700&display=swap');
 
   ${reset};
   ${vars};
@@ -36,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
 
   h1, h2 {
     font-family: var(--font-heading-family, sans-serif);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 2.25rem;
     color: var(--blood);
     line-height: 1.1;

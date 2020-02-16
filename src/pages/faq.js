@@ -6,7 +6,7 @@ import Cover from '../styles/cover'
 
 const FAQ = () => (
   <Layout title='FAQ'>
-    <Cover width='60vw' margin='0 auto'>
+    <Cover width='60vw' margin='1.875rem auto 0 auto'>
       <h1>FAQ</h1>
       <div>
         <h3>Q: What does “segmented” mean?</h3>

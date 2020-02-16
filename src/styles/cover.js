@@ -53,6 +53,11 @@ const Cover = styled.section`
       background-position: 0%;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    width: auto;
+    margin: 1.875rem 1.25rem 0 1.25rem;
+  }
 `
 
 export default Cover

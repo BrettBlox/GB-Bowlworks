@@ -3,8 +3,7 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
 const ArchiveWrapper = styled.aside`
-  margin: 1.25rem;
-  margin-left: 0;
+  margin: 1.875rem 1.25rem 0 0;
   padding: 1.25rem;
   font-family: 'Cinzel';
   background-color: var(--color-light);
