@@ -1,7 +1,7 @@
 ---
-title: Plaza Art Fair
+title: Kansas City Plaza Art Fair
 url: 'https://www.plazaartfair.com/'
-date: 2019-09-20T22:15:30.596Z
+date: 2020-09-25T22:15:30.596Z
 location: 'Kansas City, MO'
 ---
 
