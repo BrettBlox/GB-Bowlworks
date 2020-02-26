@@ -1,12 +1,12 @@
 # This stuff currently lives in src/cms/cms.js
-# media_library:
-#   name: cloudinary
-#   config:
-#     cloud_name: dy6lb8vna
-#     api_key: 241846326259277
-#     # mulitple: true
-# media_folder: 'src/images'
-# public_folder: 'images'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dy6lb8vna
+    api_key: 241846326259277
+    # mulitple: true
+media_folder: 'src/images'
+public_folder: 'images'
 
 backend:
   name: git-gateway
