@@ -57,8 +57,8 @@ const AboutPage = () => (
           <br />
           <br />
           In 1976, as a high school freshman, I enrolled in what ended up being the best class in the world for
-          me...shop class. I made several pieces of furniture over the four years I was there, most of which are
-          scattered around my mother’s home.
+          me...shop class, thanks to my shop teacher, J. D. Newland,. I made several pieces of furniture over the four
+          years I was there, most of which are scattered around my mother’s home.
           <br />
           <br />
           Over the years I started accumulating woodworking equipment and made a lot of things. My first real lathe was
