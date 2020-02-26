@@ -6,12 +6,13 @@ import Cover from '../styles/cover'
 
 const EventList = styled.ul`
   margin: 0 auto;
-  width: 50vw;
+  width: 60vw;
   padding: 1rem;
 
   li {
     margin: 1rem 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     @media only screen and (max-width: 650px) {
@@ -25,6 +26,7 @@ const EventList = styled.ul`
 `
 
 const EventTitle = styled.h3`
+  /* font-weight: 400; */
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,7 +69,7 @@ const Event = () => (
     query={EVENTS_QUERY}
     render={({ allMarkdownRemark }) => (
       <Cover>
-        <h2>Recent and Upcoming Events</h2>
+        <h2>Upcoming Events</h2>
         <EventList>
           {allMarkdownRemark.edges.map(edge => (
             <div key={edge.node.frontmatter.title}>
@@ -75,9 +77,8 @@ const Event = () => (
                 <p>{edge.node.frontmatter.date}</p>
                 <EventTitle>
                   <a target='_blank' rel='noopener noreferrer' href={edge.node.frontmatter.url}>
-                    {edge.node.frontmatter.title}
+                    {edge.node.frontmatter.title}&nbsp;&rarr;
                   </a>
-                  &rarr;
                 </EventTitle>
                 <p>{edge.node.frontmatter.location}</p>
               </li>
