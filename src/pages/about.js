@@ -38,7 +38,7 @@ const AboutPage = () => (
         <img src={require('../images/greg/gregandjasper.jpg')} alt='Greg Bloxom' />
         <p>
           I love woodworking. I love the satisfaction I get from making things out of wood. I love the feel and smell of
-          wood. I even love peeling dried glue off my fingers after I make something
+          wood. I even love peeling dried glue off my fingers after I make something.
           <br />
           <br />
           I’m a woodworker, have been since as far back as I can remember. I come by it naturally...got it from my dad.
