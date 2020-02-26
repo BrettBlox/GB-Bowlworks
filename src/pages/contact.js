@@ -21,7 +21,7 @@ const ContactForm = styled.div`
   grid-column: 1 / -1;
   background-color: var(--color-light);
   width: auto;
-  height: 778px;
+  height: auto;
   padding: 1.875rem 50px 0;
   margin: 0 auto;
   border-radius: 5px;
@@ -58,6 +58,7 @@ const ContactForm = styled.div`
 
     &:last-child {
       padding-top: 0.875rem;
+      padding-bottom: 0.875rem;
     }
   }
 

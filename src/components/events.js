@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Cover from '../styles/cover'
-import Description from '../styles/description'
 
 const EventList = styled.ul`
   margin: 0 auto;
@@ -26,7 +25,6 @@ const EventList = styled.ul`
 `
 
 const EventTitle = styled.h3`
-  font: 700 1.25rem 'Cinzel', sans-serif;
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,26 +67,24 @@ const Event = () => (
     query={EVENTS_QUERY}
     render={({ allMarkdownRemark }) => (
       <Cover>
-        <Description>
-          <h2>2019 Events</h2>
-          <EventList>
-            {allMarkdownRemark.edges.map(edge => (
-              <div key={edge.node.frontmatter.title}>
-                <li>
-                  <h3>{edge.node.frontmatter.date}</h3>
-                  <EventTitle>
-                    <a target='_blank' rel='noopener noreferrer' href={edge.node.frontmatter.url}>
-                      {edge.node.frontmatter.title}
-                    </a>
-                    &rarr;
-                  </EventTitle>
-                  <h3>{edge.node.frontmatter.location}</h3>
-                </li>
-                <hr />
-              </div>
-            ))}
-          </EventList>
-        </Description>
+        <h2>Recent and Upcoming Events</h2>
+        <EventList>
+          {allMarkdownRemark.edges.map(edge => (
+            <div key={edge.node.frontmatter.title}>
+              <li>
+                <p>{edge.node.frontmatter.date}</p>
+                <EventTitle>
+                  <a target='_blank' rel='noopener noreferrer' href={edge.node.frontmatter.url}>
+                    {edge.node.frontmatter.title}
+                  </a>
+                  &rarr;
+                </EventTitle>
+                <p>{edge.node.frontmatter.location}</p>
+              </li>
+              <hr />
+            </div>
+          ))}
+        </EventList>
       </Cover>
     )}
   />

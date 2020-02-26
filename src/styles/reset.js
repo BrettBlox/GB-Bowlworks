@@ -15,7 +15,7 @@ const reset = css`
   }
 
   /* Remove default margin */
-  body,
+  /* body,
   h1,
   h2,
   h3,
@@ -28,7 +28,7 @@ const reset = css`
   dl,
   dd {
     margin: 0;
-  }
+  } */
 
   /* Set core body defaults */
   body {
