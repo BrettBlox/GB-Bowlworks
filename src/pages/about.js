@@ -50,7 +50,9 @@ const AboutPage = () => (
       render={({ allMarkdownRemark }) => (
         <Cover>
           <h1>ABOUT GB BOWLWORKS</h1>
-          <About dangerouslySetInnerHTML={{ __html: allMarkdownRemark.edges.node.html }} />
+          {allMarkdownRemark.edges.map(edge => (
+            <About dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+          ))}
         </Cover>
       )}
     />

@@ -54,4 +54,5 @@ collections:
     folder: 'src/about'
     create: true
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'About Page Text', name: 'body', widget: 'markdown' }
