@@ -1,31 +1,32 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
 import Cover from '../styles/cover'
 
+const WELCOME_QUERY = graphql`
+  query welcomequery {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/welcoe/welcome.md" } }) {
+      edges {
+        node {
+          html
+        }
+      }
+    }
+  }
+`
+
 const Main = () => (
-  <Cover text='center'>
-    <h1>WELCOME TO GB BOWLWORKS</h1>
-    <p>
-      GB Bowlworks, LLC, is a woodturning business based in Oklahoma, owned and operated by me,{' '}
-      <Link to='/about'>Greg Bloxom</Link>. Most of the bowls and vessels that I make are segmented, meaning, rather
-      than turned from one large piece of wood, mine are made from many "segments." These individual segments are then
-      glued together to form rings with varying diameters which are then stacked and glued together to form a segmented
-      turning blank, ready to be mounted on the lathe and finished. The beauty of segmented turning is the ability to
-      use various species of hardwood, combining them into intricate patterns and shapes, resulting in a piece that will
-      complement your home or business. I use no stains, dyes, paint or coloring of any kind; the color you see is the
-      natural color of each species of hardwood used. The gallery below has a few of the past and present pieces out of
-      my studio. Current inventory is available for purchase on the Store page. Questions? Feel free to send a message
-      on the Contact page. I'm also on&nbsp;
-      <a href='https://www.instagram.com/gbbowlworks/'>Instagram</a>.
-      <br />
-      <br />
-      Thanks for stopping by!
-      <br />
-      <br />
-      -Greg
-    </p>
-  </Cover>
+  <StaticQuery
+    query={WELCOME_QUERY}
+    render={({ allMarkdownRemark }) => (
+      <Cover text='center'>
+        <h1>WELCOME TO GB BOWLWORKS</h1>
+        {allMarkdownRemark.edges.map(edge => (
+          <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+        ))}
+      </Cover>
+    )}
+  />
 )
 
 export default Main
