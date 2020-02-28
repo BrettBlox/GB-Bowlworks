@@ -49,3 +49,9 @@ collections:
       - { label: 'Event URL', name: 'url' }
       - { label: 'Date', name: 'date', widget: 'date' }
       - { label: 'Location', name: 'location', widget: 'string' }
+  - name: 'about'
+    label: 'About Page'
+    folder: 'src/about'
+    create: true
+    fields:
+      - { label: 'About Page Text', name: 'body', widget: 'markdown' }
