@@ -56,7 +56,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'About Page Text', name: 'body', widget: 'markdown' }
-  - name: 'about'
+  - name: 'welcome'
     label: 'Home Page Welcome Message'
     folder: 'src/welcome'
     create: true
