@@ -235,7 +235,7 @@ const StyledHeader = styled.header`
     #mainLogo2 {
       position: absolute;
       top: 0.25rem;
-      right: 3rem;
+      right: 1.25rem;
     }
 
     #logo2 {
