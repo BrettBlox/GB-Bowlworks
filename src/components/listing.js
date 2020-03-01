@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+import FadeLink from './fadeLink'
+
 const ListingWrapper = styled.article`
   margin: 1.875rem 1.25rem 0 1.25rem;
   padding: 1.5rem;
@@ -26,7 +28,7 @@ const ListingWrapper = styled.article`
   }
 `
 
-const ListingLink = styled(Link)`
+const ListingLink = styled(FadeLink)`
   text-decoration: none;
 
   h2 {

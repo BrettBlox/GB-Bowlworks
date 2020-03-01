@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
+
+import FadeLink from './fadeLink'
 
 const InventoryList = styled.article`
   padding: 1.875rem;
@@ -63,7 +65,7 @@ const InventoryList = styled.article`
   }
 `
 
-const ListingLink = styled(Link)`
+const ListingLink = styled(FadeLink)`
   h2 {
     text-align: left;
     font: 700 1.875rem 'Cinzel', sans-serif;

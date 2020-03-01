@@ -2,6 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
+import FadeLink from './fadeLink'
+
 const ArchiveWrapper = styled.aside`
   margin: 1.875rem 1.25rem 0 0;
   padding: 1.25rem;
@@ -81,7 +83,7 @@ const Archive = () => (
         <ul className='archiveList'>
           {allMarkdownRemark.edges.map(edge => (
             <li key={edge.node.frontmatter.slug}>
-              <Link to={`/posts${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</Link>
+              <FadeLink to={`/posts${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</FadeLink>
             </li>
           ))}
         </ul>

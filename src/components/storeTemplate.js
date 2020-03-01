@@ -21,7 +21,6 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <FadeWrapper>
-      {' '}
       <Layout title={frontmatter.title}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
