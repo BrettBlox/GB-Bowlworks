@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
+import FadeWrapper from '../components/fadeWrapper'
 import Layout from '../components/layout'
 
 const SuccessWrapper = styled.div`
@@ -77,25 +78,27 @@ const BackHome = styled(Link)`
 `
 
 const SuccessPage = () => (
-  <Layout title='Success'>
-    <SuccessWrapper>
-      <Success>
-        <h1>Success!</h1>
-        <hr />
-        <h2>
-          Thank you for your message!
+  <FadeWrapper>
+    <Layout title='Success'>
+      <SuccessWrapper>
+        <Success>
+          <h1>Success!</h1>
+          <hr />
+          <h2>
+            Thank you for your message!
+            <br />
+            <br /> I will get back to you as soon as possible.
+          </h2>
           <br />
-          <br /> I will get back to you as soon as possible.
-        </h2>
-        <br />
-        <SuccessLink>
-          <BackHome to='/' type='button'>
-            BACK TO HOME PAGE &rarr;
-          </BackHome>
-        </SuccessLink>
-      </Success>
-    </SuccessWrapper>
-  </Layout>
+          <SuccessLink>
+            <BackHome to='/' type='button'>
+              BACK TO HOME PAGE &rarr;
+            </BackHome>
+          </SuccessLink>
+        </Success>
+      </SuccessWrapper>
+    </Layout>
+  </FadeWrapper>
 )
 
 export default SuccessPage

@@ -2,6 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+import FadeWrapper from '../components/fadeWrapper'
+
 import Layout from '../components/layout'
 import Cover from '../styles/cover'
 
@@ -44,19 +46,21 @@ const ABOUT_QUERY = graphql`
 `
 
 const AboutPage = () => (
-  <Layout title='About'>
-    <StaticQuery
-      query={ABOUT_QUERY}
-      render={({ allMarkdownRemark }) => (
-        <Cover>
-          <h1>ABOUT GB BOWLWORKS</h1>
-          {allMarkdownRemark.edges.map(edge => (
-            <About dangerouslySetInnerHTML={{ __html: edge.node.html }} />
-          ))}
-        </Cover>
-      )}
-    />
-  </Layout>
+  <FadeWrapper>
+    <Layout title='About'>
+      <StaticQuery
+        query={ABOUT_QUERY}
+        render={({ allMarkdownRemark }) => (
+          <Cover>
+            <h1>ABOUT GB BOWLWORKS</h1>
+            {allMarkdownRemark.edges.map(edge => (
+              <About dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+            ))}
+          </Cover>
+        )}
+      />
+    </Layout>
+  </FadeWrapper>
 )
 
 export default AboutPage

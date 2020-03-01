@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import FadeWrapper from '../components/fadeWrapper'
 import Layout from '../components/layout'
 import Inventory from '../components/inventory'
 import StoreBanner from '../components/storeBanner'
@@ -30,12 +31,14 @@ const InventoryWrapper = styled.div`
 `
 
 const Store = () => (
-  <Layout title='Store'>
-    <StoreBanner />
-    <InventoryWrapper>
-      <Inventory />
-    </InventoryWrapper>
-  </Layout>
+  <FadeWrapper>
+    <Layout title='Store'>
+      <StoreBanner />
+      <InventoryWrapper>
+        <Inventory />
+      </InventoryWrapper>
+    </Layout>
+  </FadeWrapper>
 )
 
 export default Store

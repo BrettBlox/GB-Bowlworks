@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import FadeWrapper from '../components/fadeWrapper'
 import Layout from '../components/layout'
 import Archive from '../components/archive'
 import Listing from '../components/listing'
@@ -19,16 +20,18 @@ const BlogWrapper = styled.div`
 `
 
 const Blog = () => (
-  <Layout title='Blog'>
-    <BlogWrapper>
-      <div>
-        <Listing />
-      </div>
-      <div className='archiveWrapper'>
-        <Archive />
-      </div>
-    </BlogWrapper>
-  </Layout>
+  <FadeWrapper>
+    <Layout title='Blog'>
+      <BlogWrapper>
+        <div>
+          <Listing />
+        </div>
+        <div className='archiveWrapper'>
+          <Archive />
+        </div>
+      </BlogWrapper>
+    </Layout>
+  </FadeWrapper>
 )
 
 export default Blog

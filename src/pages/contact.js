@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { navigateTo } from 'gatsby-link'
 import styled from 'styled-components'
 
+import FadeWrapper from '../components/fadeWrapper'
 import Layout from '../components/layout'
 
 const ContactWrapper = styled.div`
@@ -185,78 +186,80 @@ export default function Contact() {
   const { inputs, handleInputChange, handleSubmit } = useForm()
 
   return (
-    <Layout title='Contact'>
-      <ContactWrapper>
-        <ContactForm>
-          <h1>
-            CONTACT
-            <br /> GB BOWLWORKS
-          </h1>
-          <form
-            name='contact'
-            method='post'
-            action='/success'
-            onSubmit={handleSubmit}
-            data-netlify='true'
-            data-netlify-honeypot='bot-field'
-          >
-            <input type='hidden' name='bot-field' onChange={handleInputChange} />
-            <span>*</span>
-            <label htmlFor='name'>
-              Name:
+    <FadeWrapper>
+      <Layout title='Contact'>
+        <ContactWrapper>
+          <ContactForm>
+            <h1>
+              CONTACT
+              <br /> GB BOWLWORKS
+            </h1>
+            <form
+              name='contact'
+              method='post'
+              action='/success'
+              onSubmit={handleSubmit}
+              data-netlify='true'
+              data-netlify-honeypot='bot-field'
+            >
+              <input type='hidden' name='bot-field' onChange={handleInputChange} />
+              <span>*</span>
+              <label htmlFor='name'>
+                Name:
+                <br />
+                <input
+                  type='text'
+                  name='name'
+                  required
+                  autoComplete='off'
+                  autoCapitalize='words'
+                  autoCorrect='off'
+                  onChange={handleInputChange}
+                />
+              </label>
               <br />
-              <input
-                type='text'
-                name='name'
-                required
-                autoComplete='off'
-                autoCapitalize='words'
-                autoCorrect='off'
-                onChange={handleInputChange}
-              />
-            </label>
-            <br />
-            <span>*</span>
-            <label htmlFor='email'>
-              Email:
+              <span>*</span>
+              <label htmlFor='email'>
+                Email:
+                <br />
+                <input
+                  type='email'
+                  name='email'
+                  autoComplete='off'
+                  autoCapitalize='none'
+                  autoCorrect='off'
+                  onChange={handleInputChange}
+                  pattern='^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$'
+                  required
+                />
+              </label>
+              <label htmlFor='tel'>
+                Phone Number:
+                <br />
+                <input type='tel' name='phone' onChange={handleInputChange} />
+              </label>
               <br />
-              <input
-                type='email'
-                name='email'
-                autoComplete='off'
-                autoCapitalize='none'
-                autoCorrect='off'
-                onChange={handleInputChange}
-                pattern='^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$'
-                required
-              />
-            </label>
-            <label htmlFor='tel'>
-              Phone Number:
+              <span>*</span>
+              <label htmlFor='message'>
+                Message:
+                <br />
+                <textarea
+                  name='message'
+                  autoComplete='off'
+                  autoCapitalize='on'
+                  autoCorrect='off'
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+              <div data-netlify-recaptcha='true' />
               <br />
-              <input type='tel' name='phone' onChange={handleInputChange} />
-            </label>
-            <br />
-            <span>*</span>
-            <label htmlFor='message'>
-              Message:
-              <br />
-              <textarea
-                name='message'
-                autoComplete='off'
-                autoCapitalize='on'
-                autoCorrect='off'
-                onChange={handleInputChange}
-                required
-              />
-            </label>
-            <div data-netlify-recaptcha='true' />
-            <br />
-            <button type='submit'>Send</button>
-          </form>
-          <span>* required</span>
-        </ContactForm>
-      </ContactWrapper>
-    </Layout>
+              <button type='submit'>Send</button>
+            </form>
+            <span>* required</span>
+          </ContactForm>
+        </ContactWrapper>
+      </Layout>
+    </FadeWrapper>
   )
 }

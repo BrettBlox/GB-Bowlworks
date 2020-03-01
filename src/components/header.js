@@ -3,11 +3,13 @@ import React from 'react'
 
 import StyledHeader from '../styles/header'
 
+import FadeLink from './fadeLink'
+
 const Header = () => (
   <StyledHeader>
-    <Link to='/about' className='navLink' activeClassName='navLink--active'>
+    <FadeLink to='/about' className='navLink' activeClassName='navLink--active'>
       ABOUT
-    </Link>
+    </FadeLink>
     <Link className='navLink' to='/blog' activeClassName='navLink--active'>
       BLOG
     </Link>
