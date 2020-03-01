@@ -10,63 +10,63 @@ const Header = () => (
     <FadeLink to='/about' className='navLink' activeClassName='navLink--active'>
       ABOUT
     </FadeLink>
-    <Link className='navLink' to='/blog' activeClassName='navLink--active'>
+    <FadeLink to='/blog' className='navLink' activeClassName='navLink--active'>
       BLOG
-    </Link>
-    <Link id='mainLogo' to='/'>
+    </FadeLink>
+    <FadeLink to='/' id='mainLogo'>
       <img
         id='logo'
         src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png'
         alt='GB Bowlworks Logo'
       />
-    </Link>
-    <Link className='navLink' to='/store' activeClassName='navLink--active'>
+    </FadeLink>
+    <FadeLink to='/store' className='navLink' activeClassName='navLink--active'>
       STORE
-    </Link>
-    <Link className='navLink' to='/contact' activeClassName='navLink--active'>
+    </FadeLink>
+    <FadeLink to='/contact' className='navLink' activeClassName='navLink--active'>
       CONTACT
-    </Link>
+    </FadeLink>
     <input className='menu-btn' type='checkbox' id='menu-btn' />
     <label className='menu-icon' htmlFor='menu-btn'>
       <span className='navicon' />
     </label>
-    <Link id='mainLogo2' to='/'>
+    <FadeLink to='/' id='mainLogo2'>
       <img
         id='logo2'
         src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png'
         alt='GB Bowlworks Logo'
       />
-    </Link>
+    </FadeLink>
     <ul className='menu'>
       <li>
-        <Link className='resLink' to='/'>
+        <FadeLink to='/' className='resLink'>
           HOME
-        </Link>
+        </FadeLink>
       </li>
       <li>
-        <Link className='resLink' to='/about'>
+        <FadeLink to='/about' className='resLink'>
           ABOUT
-        </Link>
+        </FadeLink>
       </li>
       <li>
-        <Link className='resLink' to='/blog'>
+        <FadeLink to='/blog' className='resLink'>
           BLOG
-        </Link>
+        </FadeLink>
       </li>
       <li>
-        <Link className='resLink' to='/store'>
+        <FadeLink to='/store' className='resLink'>
           STORE
-        </Link>
+        </FadeLink>
       </li>
       <li>
-        <Link className='resLink' to='/contact'>
+        <FadeLink to='/contact' className='resLink'>
           CONTACT
-        </Link>
+        </FadeLink>
       </li>
       <li>
-        <Link className='resLink' to='/faq'>
+        <FadeLink to='/faq' className='resLink'>
           FAQ
-        </Link>
+        </FadeLink>
       </li>
     </ul>
   </StyledHeader>

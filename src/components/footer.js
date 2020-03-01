@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LazyLoad from 'react-lazyload'
 
+import FadeLink from './fadeLink'
 import StyledFooter from '../styles/footer'
 
 const Footer = () => (
@@ -20,34 +21,34 @@ const Footer = () => (
     <div className='footer__container'>
       <ul className='foot-nav'>
         <li className='footItem'>
-          <Link className='footLink' to='/'>
+          <FadeLink className='footLink' to='/'>
             Home
-          </Link>
+          </FadeLink>
         </li>
         <li className='footItem'>
-          <Link className='footLink' to='/about'>
+          <FadeLink className='footLink' to='/about'>
             About
-          </Link>
+          </FadeLink>
         </li>
         <li className='footItem'>
-          <Link className='footLink' to='/blog'>
+          <FadeLink className='footLink' to='/blog'>
             Blog
-          </Link>
+          </FadeLink>
         </li>
         <li className='footItem'>
-          <Link className='footLink' to='/store'>
+          <FadeLink className='footLink' to='/store'>
             Store
-          </Link>
+          </FadeLink>
         </li>
         <li className='footItem'>
-          <Link className='footLink' to='/contact'>
+          <FadeLink className='footLink' to='/contact'>
             Contact
-          </Link>
+          </FadeLink>
         </li>
         <li className='footItem'>
-          <Link className='footLink' to='/faq'>
+          <FadeLink className='footLink' to='/faq'>
             FAQ
-          </Link>
+          </FadeLink>
         </li>
       </ul>
     </div>

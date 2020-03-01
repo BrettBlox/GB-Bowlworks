@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
+import FadeWrapper from './fadeWrapper'
 import Layout from './layout'
 
 const PostWrapper = styled.div`
@@ -79,15 +80,17 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
-      <PostWrapper>
-        <BlogPost>
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
-          <PostContent dangerouslySetInnerHTML={{ __html: html }} />
-        </BlogPost>
-      </PostWrapper>
-    </Layout>
+    <FadeWrapper>
+      <Layout>
+        <PostWrapper>
+          <BlogPost>
+            <h1>{frontmatter.title}</h1>
+            <h2>{frontmatter.date}</h2>
+            <PostContent dangerouslySetInnerHTML={{ __html: html }} />
+          </BlogPost>
+        </PostWrapper>
+      </Layout>
+    </FadeWrapper>
   )
 }
 
