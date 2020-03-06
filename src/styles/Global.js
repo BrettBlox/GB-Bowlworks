@@ -7,7 +7,7 @@ import reset from './reset'
 import utils from './utils'
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Quattrocento:400,700&display=fallback');
+  @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Quattrocento:400,700&display=swap');
 
   ${reset};
   ${vars};
