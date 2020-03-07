@@ -10,6 +10,10 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-remark-copy-linked-files`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,29 +36,26 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/about`,
         name: 'images',
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/welcome`,
         name: 'images',
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
         name: 'images',
       },
     },
-    `gatsby-remark-copy-linked-files`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-remark-images`,
       options: {
@@ -83,13 +84,12 @@ module.exports = {
         tags: `true`,
       },
     },
-    `gatsby-transformer-remark`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    `gatsby-plugin-netlify`, // make sure to keep it last in the array
   ],
 }
