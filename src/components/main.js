@@ -21,8 +21,8 @@ const Main = () => (
     render={({ allMarkdownRemark }) => (
       <Cover text='center'>
         <h1>WELCOME TO GB BOWLWORKS</h1>
-        {allMarkdownRemark.edges.map(edge => (
-          <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+        {allMarkdownRemark.edges.map((edge, i) => (
+          <div key={`welcome__${i}`} dangerouslySetInnerHTML={{ __html: edge.node.html }} />
         ))}
       </Cover>
     )}

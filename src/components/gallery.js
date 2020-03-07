@@ -132,7 +132,11 @@ export default function Gallery(props) {
   const wideView = (
     <>
       <Filter filters={filters} handleFilter={handleFilter} filter={filter} />
-      <Masonry breakpointCols={myBreakpointsAndCols}>
+      <Masonry
+        breakpointCols={myBreakpointsAndCols}
+        className='my-masonry-grid'
+        columnClassName='my-masonry-grid_column'
+      >
         {gallery.map((image, i) => (
           <div className='box' key={i}>
             <a onClick={e => openLightbox(i, e)} href={lightboxGallery[i]}>
