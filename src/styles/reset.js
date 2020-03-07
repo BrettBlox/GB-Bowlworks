@@ -14,22 +14,6 @@ const reset = css`
     padding: 0;
   }
 
-  /* Remove default margin */
-  /* body,
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  ul[class],
-  ol[class],
-  figure,
-  blockquote,
-  dl,
-  dd {
-    margin: 0;
-  } */
-
   /* Set core body defaults */
   body {
     min-height: 100vh;
@@ -48,12 +32,6 @@ const reset = css`
   a:not([class]) {
     text-decoration-skip-ink: auto;
   }
-
-  /* Make images easier to work with */
-  /* img {
-    max-width: 100%;
-    display: block;
-  } */
 
   /* Natural flow and rhythm in articles by default */
   article > * + * {

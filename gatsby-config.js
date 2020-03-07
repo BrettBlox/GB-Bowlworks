@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: `GB Bowlworks`,
@@ -77,9 +79,9 @@ module.exports = {
     {
       resolve: `gatsby-source-cloudinary`,
       options: {
-        cloudName: 'dy6lb8vna',
-        apiKey: '241846326259277',
-        apiSecret: 'H5IWOSEuoO7E7MU669zatAs4Kb4',
+        cloudName: process.env.CLOUDINARY_CLOUDNAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: 'image',
         tags: `true`,
       },
