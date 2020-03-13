@@ -72,8 +72,8 @@ const Event = () => (
         <h2>Upcoming Events</h2>
         <EventList>
           {allMarkdownRemark.edges.map(edge => (
-            <div key={edge.node.frontmatter.title}>
-              <li>
+            <>
+              <li key={edge.node.frontmatter.title}>
                 <p>{edge.node.frontmatter.date}</p>
                 <EventTitle>
                   <a target='_blank' rel='noopener noreferrer' href={edge.node.frontmatter.url}>
@@ -83,7 +83,7 @@ const Event = () => (
                 <p>{edge.node.frontmatter.location}</p>
               </li>
               <hr />
-            </div>
+            </>
           ))}
         </EventList>
       </Cover>
