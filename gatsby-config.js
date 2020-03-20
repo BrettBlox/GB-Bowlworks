@@ -20,41 +20,41 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/cms/posts`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `store`,
-        path: `${__dirname}/src/store`,
+        path: `${__dirname}/src/cms/store`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `events`,
-        path: `${__dirname}/src/events`,
+        path: `${__dirname}/src/cms/events`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/about`,
+        path: `${__dirname}/src/cms/about`,
         name: 'about',
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/welcome`,
+        path: `${__dirname}/src/cms/welcome`,
         name: 'welcome',
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/faq`,
+        path: `${__dirname}/src/cms/faq`,
         name: 'faq',
       },
     },

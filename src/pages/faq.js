@@ -19,7 +19,7 @@ const FAQWrapper = styled.div`
 
 const FAQ_QUERY = graphql`
   query faqquery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/faq/faq.md" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/faq/faq.md" } }) {
       edges {
         node {
           frontmatter {

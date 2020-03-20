@@ -5,7 +5,7 @@ import Cover from '../styles/cover'
 
 const WELCOME_QUERY = graphql`
   query welcomequery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/welcome/welcome.md" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/welcome/welcome.md" } }) {
       edges {
         node {
           html

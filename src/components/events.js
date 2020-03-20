@@ -50,7 +50,7 @@ const EventTitle = styled.h3`
 const EVENTS_QUERY = graphql`
   query upcomingEvents {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/src/events/*.md" } }
+      filter: { fileAbsolutePath: { glob: "**/src/cms/events/*.md" } }
       sort: { order: ASC, fields: [frontmatter___date] }
     ) {
       edges {

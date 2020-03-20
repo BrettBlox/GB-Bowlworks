@@ -61,7 +61,7 @@ const ArchiveWrapper = styled.div`
 const POST_ARCHIVE_QUERY = graphql`
   query BlogPostArchive {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/src/posts/*.md" } }
+      filter: { fileAbsolutePath: { glob: "**/src/cms/posts/*.md" } }
       limit: 5
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {

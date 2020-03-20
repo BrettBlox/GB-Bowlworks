@@ -73,7 +73,7 @@ const ReadMore = styled(Link)`
 const LISTING_QUERY = graphql`
   query BlogPostListing {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/src/posts/*.md" } }
+      filter: { fileAbsolutePath: { glob: "**/src/cms/posts/*.md" } }
       limit: 10
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {

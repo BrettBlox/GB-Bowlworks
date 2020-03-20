@@ -4,7 +4,6 @@ media_library:
   config:
     cloud_name: dy6lb8vna
     api_key: 241846326259277
-    # mulitple: true
 media_folder: 'src/images'
 public_folder: 'images'
 
@@ -15,7 +14,7 @@ backend:
 collections:
   - name: 'posts'
     label: 'Post'
-    folder: 'src/posts'
+    folder: 'src/cms/posts'
     create: true
     slug: '{{slug}}'
     fields:
@@ -25,15 +24,11 @@ collections:
       - { label: 'Content', name: 'body', widget: 'markdown' }
   - name: 'inventory'
     label: 'Current Inventory'
-    folder: 'src/store'
+    folder: 'src/cms/store'
     slug: '{{slug}}'
     create: true
     fields:
-      - {
-          label: 'URL Path example: /productName',
-          name: 'slug',
-          widget: 'string',
-        }
+      - { label: 'URL Path example: /productName', name: 'slug', widget: 'string' }
       - { label: 'ID', name: 'id', widget: 'string' }
       - { label: 'Price', name: 'price', widget: 'number', valueType: 'int' }
       - { label: 'Image', name: 'image', widget: 'image' }
@@ -42,7 +37,7 @@ collections:
       - { label: 'Description', name: 'body', widget: 'markdown' }
   - name: 'events'
     label: 'Upcoming Event'
-    folder: 'src/events'
+    folder: 'src/cms/events'
     create: true
     fields:
       - { label: 'Event Title', name: 'title', widget: 'string' }
@@ -51,21 +46,21 @@ collections:
       - { label: 'Location', name: 'location', widget: 'string' }
   - name: 'about'
     label: 'About Page'
-    folder: 'src/about'
+    folder: 'src/cms/about'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'About Page Text', name: 'body', widget: 'markdown' }
   - name: 'welcome'
     label: 'Home Page Welcome Message'
-    folder: 'src/welcome'
+    folder: 'src/cms/welcome'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Welcome Message', name: 'body', widget: 'markdown' }
   - name: 'faq'
     label: 'FAQ'
-    folder: 'src/faq'
+    folder: 'src/cms/faq'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }

@@ -35,7 +35,7 @@ const About = styled.div`
 
 const ABOUT_QUERY = graphql`
   query aboutquery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/about/about-page.md" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/about/about-page.md" } }) {
       edges {
         node {
           html

@@ -7,7 +7,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        posts: allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/posts/*.md" } }) {
+        posts: allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/posts/*.md" } }) {
           edges {
             node {
               frontmatter {
@@ -16,7 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        store: allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/store/*.md" } }) {
+        store: allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/store/*.md" } }) {
           edges {
             node {
               frontmatter {

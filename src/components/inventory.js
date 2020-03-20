@@ -100,7 +100,7 @@ const PriceWrapper = styled.div`
 const STORE_QUERY = graphql`
   query StoreInventory {
     store: allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/src/store/*.md" } }
+      filter: { fileAbsolutePath: { glob: "**/src/cms/store/*.md" } }
       limit: 30
       sort: { order: DESC, fields: [frontmatter___id] }
     ) {
