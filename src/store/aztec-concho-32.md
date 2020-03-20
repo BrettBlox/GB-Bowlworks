@@ -1,7 +1,7 @@
 ---
 slug: /2003
 id: '2003'
-price: 695
+price: 495
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1584672881/GB%20Bowlworks%20Gallery/2003a.jpg
 title: 'Aztec Concho 32 (#2003)'
