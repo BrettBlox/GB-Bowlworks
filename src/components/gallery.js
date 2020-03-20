@@ -14,6 +14,7 @@ const filters = {
   closed: `closed form`,
   lidded: `lidded`,
   salad: `salad`,
+  misc: `misc`,
 }
 
 // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
