@@ -1,6 +1,6 @@
 ---
-slug: 2001SP
-id: /2001SP
+slug: /2001SP
+id: 2001SP
 price: 125
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1584721765/GB%20Bowlworks%20Gallery/SP2001a.jpg
