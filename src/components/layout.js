@@ -40,7 +40,7 @@ const Layout = ({ children, title }) => (
     />
     <GlobalStyles />
     <Header />
-    {children}
+    <main>{children}</main>
     <Footer />
   </Site>
 )

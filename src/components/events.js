@@ -15,6 +15,10 @@ const EventList = styled.ul`
     align-items: center;
     justify-content: space-between;
 
+    &:not(:last-child) {
+      border-bottom: 1px solid;
+    }
+
     @media only screen and (max-width: 650px) {
       display: list-item;
     }
@@ -26,7 +30,6 @@ const EventList = styled.ul`
 `
 
 const EventTitle = styled.h3`
-  /* font-weight: 400; */
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,7 +85,6 @@ const Event = () => (
                 </EventTitle>
                 <p>{edge.node.frontmatter.location}</p>
               </li>
-              <hr />
             </>
           ))}
         </EventList>

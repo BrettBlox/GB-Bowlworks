@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import FadeLink from './fadeLink'
 
-const ArchiveWrapper = styled.aside`
+const ArchiveWrapper = styled.div`
   margin: 1.875rem 1.25rem 0 0;
   padding: 1.25rem;
   font-family: 'Cinzel';
@@ -53,6 +53,9 @@ const ArchiveWrapper = styled.aside`
       }
     }
   }
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 const POST_ARCHIVE_QUERY = graphql`
@@ -75,21 +78,23 @@ const POST_ARCHIVE_QUERY = graphql`
 `
 
 const Archive = () => (
-  <StaticQuery
-    query={POST_ARCHIVE_QUERY}
-    render={({ allMarkdownRemark }) => (
-      <ArchiveWrapper>
-        <h2>Archive</h2>
-        <ul className='archiveList'>
-          {allMarkdownRemark.edges.map(edge => (
-            <li key={edge.node.frontmatter.slug}>
-              <FadeLink to={`/posts${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</FadeLink>
-            </li>
-          ))}
-        </ul>
-      </ArchiveWrapper>
-    )}
-  />
+  <div>
+    <StaticQuery
+      query={POST_ARCHIVE_QUERY}
+      render={({ allMarkdownRemark }) => (
+        <ArchiveWrapper>
+          <h2>Archive</h2>
+          <ul className='archiveList'>
+            {allMarkdownRemark.edges.map(edge => (
+              <li key={edge.node.frontmatter.slug}>
+                <FadeLink to={`/posts${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</FadeLink>
+              </li>
+            ))}
+          </ul>
+        </ArchiveWrapper>
+      )}
+    />
+  </div>
 )
 
 export default Archive

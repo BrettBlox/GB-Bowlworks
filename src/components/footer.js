@@ -8,7 +8,7 @@ import StyledFooter from '../styles/footer'
 const Footer = () => (
   <StyledFooter className='footer'>
     <div className='footer__logo'>
-      <a href='/'>
+      <a href='/' aria-label='GB Bowlworks Logo'>
         <LazyLoad offset={100}>
           <img
             id='footLogo'
@@ -53,7 +53,7 @@ const Footer = () => (
       </ul>
     </div>
     <div className='social'>
-      <a id='instagramColorLink' href='https://www.instagram.com/gbbowlworks/'>
+      <a id='instagramColorLink' href='https://www.instagram.com/gbbowlworks/' aria-label='GB Bowlworks Instagram Page'>
         <LazyLoad offset={100}>
           <img
             id='igImageColor'
@@ -62,7 +62,7 @@ const Footer = () => (
           />
         </LazyLoad>
       </a>
-      <a className='etsy' href='https://www.etsy.com/shop/GBBowlworks'>
+      <a className='etsy' href='https://www.etsy.com/shop/GBBowlworks' aria-label='GB Bowlworks on Etsy'>
         <LazyLoad offset={100}>
           <img
             className='etsyLogo'

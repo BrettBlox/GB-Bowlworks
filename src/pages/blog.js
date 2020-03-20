@@ -6,29 +6,32 @@ import Layout from '../components/layout'
 import Archive from '../components/archive'
 import Listing from '../components/listing'
 
+import Cover from '../styles/cover'
+
 const BlogWrapper = styled.div`
   display: grid;
   grid-template-columns: 3fr 1fr;
 
   @media only screen and (max-width: 768px) {
     grid-template-columns: auto;
-
-    .archiveWrapper {
-      display: none;
-    }
   }
 `
 
 const Blog = () => (
   <FadeWrapper>
     <Layout title='Blog'>
+      <Cover>
+        <h1
+          css={`
+            width: 100vw;
+          `}
+        >
+          GB Bowlworks Blog
+        </h1>
+      </Cover>
       <BlogWrapper>
-        <div>
-          <Listing />
-        </div>
-        <div className='archiveWrapper'>
-          <Archive />
-        </div>
+        <Listing />
+        <Archive />
       </BlogWrapper>
     </Layout>
   </FadeWrapper>
