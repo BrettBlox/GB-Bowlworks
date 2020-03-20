@@ -36,7 +36,7 @@ const StyledHeader = styled.header`
   }
 
   .navLink {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     background-size: 200% 100%;
     background-position: 100%;
@@ -177,13 +177,13 @@ const StyledHeader = styled.header`
     }
   }
 
-  @media only screen and (max-width: 101.25rem) {
+  @media only screen and (max-width: 1100px) {
     #mainLogo > img {
       width: 200px;
     }
 
     .navLink {
-      font: 300 2rem 'Cinzel', sans-serif;
+      font-size: 1.7rem;
     }
   }
 
@@ -193,17 +193,17 @@ const StyledHeader = styled.header`
     }
 
     .navLink {
-      font: 300 1.7rem 'Cinzel', sans-serif;
+      font-size: 1.5rem;
     }
   }
 
-  @media only screen and (max-width: 710px) {
+  /* @media only screen and (max-width: 710px) {
     #mainLogo > img {
       width: 100px;
     }
-  }
+  } */
 
-  @media only screen and (max-width: 610px) {
+  @media only screen and (max-width: 710px) {
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -243,7 +243,7 @@ const StyledHeader = styled.header`
     }
   }
 
-  @media only screen and (min-width: 611px) {
+  @media only screen and (min-width: 711px) {
     & > .menu {
       display: none;
       list-style: none;

@@ -11,7 +11,7 @@ import Footer from './footer'
 const Site = styled.div`
   min-height: 100vh;
 
-  @media only screen and (max-width: 610px) {
+  @media only screen and (max-width: 710px) {
     padding-top: 50px;
   }
 `

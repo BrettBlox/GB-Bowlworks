@@ -7,6 +7,9 @@ import FadeLink from './fadeLink'
 
 const Header = () => (
   <StyledHeader>
+    <FadeLink to='/' className='navLink' activeClassName='navLink--active'>
+      HOME
+    </FadeLink>
     <FadeLink to='/about' className='navLink' activeClassName='navLink--active'>
       ABOUT
     </FadeLink>
@@ -25,6 +28,9 @@ const Header = () => (
     </FadeLink>
     <FadeLink to='/contact' className='navLink' activeClassName='navLink--active'>
       CONTACT
+    </FadeLink>
+    <FadeLink to='/faq' className='navLink' activeClassName='navLink--active'>
+      FAQ
     </FadeLink>
     <input className='menu-btn' type='checkbox' id='menu-btn' />
     <label className='menu-icon' htmlFor='menu-btn'>
