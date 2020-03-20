@@ -63,3 +63,10 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Welcome Message', name: 'body', widget: 'markdown' }
+  - name: 'faq'
+    label: 'FAQ'
+    folder: 'src/faq'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'FAQ Page', name: 'body', widget: 'markdown' }
