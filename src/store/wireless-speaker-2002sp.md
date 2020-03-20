@@ -1,6 +1,6 @@
 ---
-slug: 2002SP
-id: /2002SP
+slug: /2002SP
+id: 2002SP
 price: 125
 image: 'https://res.cloudinary.com/dy6lb8vna/image/upload/v1584723470/SP2002.jpg'
 title: 'Wireless Speaker (#2002SP)'
