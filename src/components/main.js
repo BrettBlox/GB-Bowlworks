@@ -8,6 +8,9 @@ const WELCOME_QUERY = graphql`
     allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/welcome/welcome.md" } }) {
       edges {
         node {
+          frontmatter {
+            title
+          }
           html
         }
       }
@@ -18,14 +21,14 @@ const WELCOME_QUERY = graphql`
 const Main = () => (
   <StaticQuery
     query={WELCOME_QUERY}
-    render={({ allMarkdownRemark }) => (
-      <Cover text='center'>
-        <h1>WELCOME TO GB BOWLWORKS</h1>
-        {allMarkdownRemark.edges.map((edge, i) => (
+    render={({ allMarkdownRemark }) =>
+      allMarkdownRemark.edges.map((edge, i) => (
+        <Cover text='center'>
+          <h1>{edge.node.frontmatter.title}</h1>
           <div key={`welcome__${i}`} dangerouslySetInnerHTML={{ __html: edge.node.html }} />
-        ))}
-      </Cover>
-    )}
+        </Cover>
+      ))
+    }
   />
 )
 

@@ -1,5 +1,5 @@
 ---
-title: About
+title: About GB Bowlworks
 ---
 ![Greg and his dog Jasper in the shop](https://res.cloudinary.com/dy6lb8vna/image/upload/v1582853540/gregandjasper.jpg "Greg and Jasper")
 
