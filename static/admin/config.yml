@@ -46,22 +46,25 @@ collections:
       - { label: 'Location', name: 'location', widget: 'string' }
   - name: 'about'
     label: 'About Page'
-    folder: 'src/cms/about'
-    create: true
+    file: 'src/cms/about/about.md'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'About Page Text', name: 'body', widget: 'markdown' }
   - name: 'welcome'
     label: 'Home Page Welcome Message'
-    folder: 'src/cms/welcome'
-    create: true
+    file: 'src/cms/welcome/welcome.md'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Welcome Message', name: 'body', widget: 'markdown' }
   - name: 'faq'
     label: 'FAQ'
-    folder: 'src/cms/faq'
-    create: true
+    file: 'src/cms/faq/faq.md'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'FAQ Page', name: 'body', widget: 'markdown' }
+  - name: 'store banner'
+    label: 'Store Banner'
+    file: 'src/cms/store-banner/store-banner.md'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Store Banner', name: 'body', widget: 'markdown' }

@@ -1,16 +1,37 @@
 import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 
 import Cover from '../styles/cover'
 
-const storeBanner = () => (
-  <Cover text='center'>
-    <h1>CURRENT INVENTORY</h1>
-    <p>
-      These are the pieces that I currently have available. If you don't see what you want here, head over to the
-      contact page and shoot me a message about commissioning a custom piece and I would be happy to make something just
-      for you.
-    </p>
-  </Cover>
+const STORE_BANNER_QUERY = graphql`
+  query storebannerquery {
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/store-banner/store-banner.md" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          html
+        }
+      }
+    }
+  }
+`
+
+const StoreBanner = () => (
+  <StaticQuery
+    query={STORE_BANNER_QUERY}
+    render={({ allMarkdownRemark }) => (
+      <Cover text='center'>
+        {allMarkdownRemark.edges.map((edge, i) => (
+          <>
+            <h1>{edge.node.frontmatter.title}</h1>
+            <div key={`store__${i}`} dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+          </>
+        ))}
+      </Cover>
+    )}
+  />
 )
 
-export default storeBanner
+export default StoreBanner
