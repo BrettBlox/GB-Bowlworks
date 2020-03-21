@@ -2,7 +2,8 @@
 slug: /2002SP
 id: 2002SP
 price: 125
-image: 'https://res.cloudinary.com/dy6lb8vna/image/upload/v1584723470/SP2002.jpg'
+image: >-
+    https://res.cloudinary.com/dy6lb8vna/image/upload/v1584723470/SP2002.jpg
 title: 'Wireless Speaker (#2002SP)'
 date: 2020-03-20T16:57:05.190Z
 ---
