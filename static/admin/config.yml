@@ -13,7 +13,7 @@ backend:
 
 collections:
   - name: 'posts'
-    label: 'Post'
+    label: 'Blog Post'
     folder: 'src/cms/posts'
     create: true
     slug: '{{slug}}'
@@ -23,7 +23,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Content', name: 'body', widget: 'markdown' }
   - name: 'inventory'
-    label: 'Current Inventory'
+    label: 'Inventory Item'
     folder: 'src/cms/store'
     slug: '{{slug}}'
     create: true
@@ -45,29 +45,29 @@ collections:
       - { label: 'Date', name: 'date', widget: 'date' }
       - { label: 'Location', name: 'location', widget: 'string' }
   - name: 'pages'
-    label: 'Page Content'
+    label: 'Custom Page Content'
     files:
     - name: 'about'
       label: 'About Page'
-      file: 'src/cms/about/about.md'
+      file: 'src/cms/about/about-page.md'
       fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Page Title', name: 'title', widget: 'string' }
         - { label: 'About Page Text', name: 'body', widget: 'markdown' }
     - name: 'welcome'
       label: 'Home Page Welcome Message'
       file: 'src/cms/welcome/welcome.md'
       fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Page Title', name: 'title', widget: 'string' }
         - { label: 'Welcome Message', name: 'body', widget: 'markdown' }
     - name: 'faq'
-      label: 'FAQ'
+      label: 'FAQ Page'
       file: 'src/cms/faq/faq.md'
       fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Page Title', name: 'title', widget: 'string' }
         - { label: 'FAQ Page', name: 'body', widget: 'markdown' }
     - name: 'store banner'
-      label: 'Store Banner'
+      label: 'Store Page Banner'
       file: 'src/cms/store-banner/store-banner.md'
       fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Store Banner', name: 'body', widget: 'markdown' }
+        - { label: 'Page Title', name: 'title', widget: 'string' }
+        - { label: 'Store Page Banner', name: 'body', widget: 'markdown' }
