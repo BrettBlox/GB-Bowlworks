@@ -44,27 +44,30 @@ collections:
       - { label: 'Event URL', name: 'url' }
       - { label: 'Date', name: 'date', widget: 'date' }
       - { label: 'Location', name: 'location', widget: 'string' }
-  - name: 'about'
-    label: 'About Page'
-    file: 'src/cms/about/about.md'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'About Page Text', name: 'body', widget: 'markdown' }
-  - name: 'welcome'
-    label: 'Home Page Welcome Message'
-    file: 'src/cms/welcome/welcome.md'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Welcome Message', name: 'body', widget: 'markdown' }
-  - name: 'faq'
-    label: 'FAQ'
-    file: 'src/cms/faq/faq.md'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'FAQ Page', name: 'body', widget: 'markdown' }
-  - name: 'store banner'
-    label: 'Store Banner'
-    file: 'src/cms/store-banner/store-banner.md'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Store Banner', name: 'body', widget: 'markdown' }
+   - name: 'pages'
+     label: 'Page Content'
+     files:
+      - name: 'about'
+        label: 'About Page'
+        file: 'src/cms/about/about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'About Page Text', name: 'body', widget: 'markdown' }
+      - name: 'welcome'
+        label: 'Home Page Welcome Message'
+        file: 'src/cms/welcome/welcome.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Welcome Message', name: 'body', widget: 'markdown' }
+      - name: 'faq'
+        label: 'FAQ'
+        file: 'src/cms/faq/faq.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'FAQ Page', name: 'body', widget: 'markdown' }
+      - name: 'store banner'
+        label: 'Store Banner'
+        file: 'src/cms/store-banner/store-banner.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Store Banner', name: 'body', widget: 'markdown' }
