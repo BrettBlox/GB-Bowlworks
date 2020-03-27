@@ -23,7 +23,7 @@ const Blog = () => (
       <Cover>
         <h1
           css={`
-            width: 100vw;
+            max-width: 100vw;
           `}
         >
           GB Bowlworks Blog
