@@ -1,7 +1,7 @@
 ---
 slug: /2004
 id: '2004'
-price: 375
+price: 325
 image: 'https://res.cloudinary.com/dy6lb8vna/image/upload/v1585082918/2004a_2.jpg'
 title: Wave DNA Vase
 date: 2020-03-24T20:49:19.605Z
