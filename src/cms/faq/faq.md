@@ -11,8 +11,7 @@ A: Depending on the complexity of the design and number of segments involved, th
 
 ## Q: What are the advantages of doing segmented bowls over traditional one-piece bowls?
 
-A: Doing segmented work is unique in that I use dimensional hardwood lumber that I buy from any number of sources, and then immediately cut into segments, glue up, and start turning right away. In contrast to segmented turning, wet turning is taking a downed tree (or taking down a tree!) and then chainsawing into blanks, which requires a little more muscle and time. Solid wood from a stump is not kiln dried, therefore it is wet. Wet turning requires turning it to a rough shape and then, if you’re lucky enough to have access to a kiln, kiln-drying it for 30 days or so and then final turning on the lathe and finishing. If you don’t have the pleasure of having a kiln, then you need time…time for the wet
-rough-turned piece to adequately dry before final turning and finishing. The old rule of thumb is 1 year of drying for
+A: Doing segmented work is unique in that I use dimensional hardwood lumber that I buy from any number of sources, and then immediately cut into segments, glue up, and start turning right away. In contrast to segmented turning, wet turning is taking a downed tree (or taking down a tree!) and then chainsawing into blanks, which requires a little more muscle and time. Solid wood from a stump is not kiln dried, therefore it is wet. Wet turning requires turning it to a rough shape and then, if you’re lucky enough to have access to a kiln, kiln-drying it for 30 days or so and then final turning on the lathe and finishing. If you don’t have the pleasure of having a kiln, then you need time…time for the wet rough-turned piece to adequately dry before final turning and finishing. The old rule of thumb is 1 year of drying for
 every 1 inch of bowl thickness.
 
 ## Q: What’s my favorite wood?
@@ -21,8 +20,7 @@ A: That’s a tough question! I can’t pick just one wood, so I’ll pick two. 
 
 ## Q: How do I design my bowls and vessels?
 
-A: For several years I’ve used computer software as an aid in designing the pieces I produce. It’s nice because the math is done for me. Before using the computer and software to design with, I did it the old fashioned way, with grid paper and a ruler, and a little pie…Pi, rather, 3.14159!! To calculate each segment’s edge length, you multiple the diameter of each ring of segments you plan to make times Pi, divided by the number of segments. As an example, for a simple ring of 24 segments with a 12” diameter, the formula to determine the edge length of each of those segments would look like this: 12 (diameter) X 3.14159 (Pi) divided by 24 (number of segments). The segment edge length would be 1.57."  I would then head to the shop and begin cutting segments. Time consuming? Yes. I love computers and software, so it was a no-brainer to go digital for bowl
-construction.  If you have questions regarding the specific software programs I use, their availability and cost, feel free to contact me and I'll steer you in the right direction.
+A: For several years I’ve used computer software as an aid in designing the pieces I produce. It’s nice because the math is done for me. Before using the computer and software to design with, I did it the old fashioned way, with grid paper and a ruler, and a little pie…Pi, rather, 3.14159!! To calculate each segment’s edge length, you multiple the diameter of each ring of segments you plan to make times Pi, divided by the number of segments. As an example, for a simple ring of 24 segments with a 12” diameter, the formula to determine the edge length of each of those segments would look like this: 12 (diameter) X 3.14159 (Pi) divided by 24 (number of segments). The segment edge length would be 1.57."  I would then head to the shop and begin cutting segments. Time consuming? Yes. I love computers and software, so it was a no-brainer to go digital for bowl construction.  If you have questions regarding the specific software programs I use, their availability and cost, feel free to contact me and I'll steer you in the right direction.
 
 ## Q: What is the best part of segmenting?
 
@@ -38,4 +36,4 @@ A: Decorative bowls look great as a table centerpiece, on your fireplace mantel 
 
 ## Q: More questions?
 
-A: Send me a message through the [contact page](/contact) here and I’ll be glad to answer your questions.
+A: Send me a message through the [Contact page](/contact) and I’ll be glad to answer your questions.
