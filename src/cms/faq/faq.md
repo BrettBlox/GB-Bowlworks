@@ -16,7 +16,7 @@ on the lathe and finishing. If you don’t have the pleasure of having a kiln, t
 rough-turned piece to adequately dry before final turning and finishing. The old rule of thumb is 1 year of drying for
 every 1 inch of bowl thickness.
 
-## Q: What’s my favorite wood to work with?
+## Q: What’s my favorite wood?
 
 A: That’s a tough question! I can’t pick just one wood, so I’ll pick two. I’d say my favorite two woods for turning are domestic Walnut and Cherry. They are readily available where I live, they are soft enough yet stable enough and pretty forgiving, and they turn very nicely on the lathe . They are both really warm-toned woods and finish beautifully. A close second to Cherry and Walnut would be Maple.
 
@@ -30,13 +30,13 @@ construction.  If you have questions regarding the specific software programs I 
 
 A: No question, the best part of segmenting is the ability to use different and contrasting species of wood and coordinate them into a design that makes most people say “WOW, how’d you do that?!” Mixing Wenge (an almost black wood) with Padauk (a dark reddish-orange wood) with Yellow Heart (obviously a yellow toned wood) and Maple (an off-white color) produces a real eye-popping piece!
 
-## Q: What finish do I use on my pieces?
+## Q: What types of finish do I use?
 
 A: I make two types of vessels, a decorative style and a food-safe style (salad bowls, pasta, etc.) Each type is finished differently. For the decorative vessels, I use a shellac-based high build friction polish which produces a beautiful, smooth sheen that compliments the natural beauty of the wood. For food-safe vessels, after starting out using Walnut oil, I switched to simple mineral oil, which is readily available at any pharmacy and can be reapplied for the life of the bowl.  Customers with nut allergies have no worries now!
 
 ## Q: What are the use and care suggestions for decorative and food-safe vessels?
 
-A: Decorative bowls look great as a table centerpiece, on your fireplace mantel or on a bookshelf. Decorative vessels and bowls are suitable to hold dry foods like whole fruits, nuts, or packaged candies, etc. Food-safe bowls are suitable for such things as salad, pasta or popcorn. Avoid wet foods. I have a great story about a friend’s salad bowl in the Blog section. To clean your bowl, wipe out with a damp cloth and dry immediately, FOR ANY WOODEN BOWL/VESSEL, DO NOT EVER LEAVE SUBMERGED IN WATER OR PLACE IN A DISHWASHER!!
+A: Decorative bowls look great as a table centerpiece, on your fireplace mantel or on a bookshelf. Decorative vessels and bowls are suitable to hold dry foods like whole fruits, nuts, or packaged candies, etc. Food-safe bowls are suitable for such things as salad, pasta or popcorn. Avoid wet foods. I have a great story about a friend’s salad bowl in the Blog section. To clean your bowl, wipe out with a damp cloth and dry immediately, FOR ANY WOODEN BOWL/VESSEL, REMEMBER:  **DO NOT SUBMERGE IN WATER OR PLACE IN A DISHWASHER!!**
 
 ## Q: More questions?
 
