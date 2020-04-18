@@ -1,7 +1,7 @@
 ---
 slug: /2005
 id: '2005'
-price: 275
+price: 325
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1585697400/GB%20Bowlworks%20Gallery/2005c.jpg
 title: 'Crisscross Open (#2005)'
