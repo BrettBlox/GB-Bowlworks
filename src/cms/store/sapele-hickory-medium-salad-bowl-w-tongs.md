@@ -1,7 +1,7 @@
 ---
 slug: /2008
 id: '2008'
-price: 145
+price: 150
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1587408962/GB%20Bowlworks%20Gallery/2008a.jpg
 title: 'Sapele & Hickory Medium Salad Bowl w/Tongs (#2008)'
