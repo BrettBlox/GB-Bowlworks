@@ -1,7 +1,7 @@
 ---
 slug: /2009
 id: '2009'
-price: 145
+price: 150
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1587408991/GB%20Bowlworks%20Gallery/2009a.jpg
 title: 'Hickory & Walnut Medium Salad Bowl w/Tongs (#2009)'
