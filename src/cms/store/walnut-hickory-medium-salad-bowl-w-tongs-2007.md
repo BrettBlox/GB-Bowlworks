@@ -1,7 +1,7 @@
 ---
 slug: /2007
 id: '2007'
-price: 145
+price: 150
 image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1587408912/GB%20Bowlworks%20Gallery/2007a.jpg
 title: 'Walnut & Hickory Medium Salad Bowl w/Tongs (#2007)'
