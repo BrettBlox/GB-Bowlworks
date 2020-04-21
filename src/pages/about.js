@@ -55,7 +55,7 @@ const AboutPage = () => (
         query={ABOUT_QUERY}
         render={({ allMarkdownRemark }) =>
           allMarkdownRemark.edges.map(edge => (
-            <Cover text='center'>
+            <Cover text='left'>
               <h1>{edge.node.frontmatter.title}</h1>
               <About dangerouslySetInnerHTML={{ __html: edge.node.html }} />
             </Cover>
