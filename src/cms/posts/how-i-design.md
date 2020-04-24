@@ -17,4 +17,6 @@ The combination of WoodTurnerPro software and the Wedgie Sled completely changed
 
 Since WoodTurnerPro, Lloyd Johnson has built SegmentPro.  I use them both.  Each has its own unique features.  While WTP is going on 20 years old, it is a powerful software and allows me to create designs very easily.  SP is a new-and-improved 3D software that is very user friendly...and just plain fun!  
 
-I would encourage anyone to check out WoodTurnerPro and SegmentPro.  They are game-changers for segmenters.  They are relatively inexpensive and very user-friendly.  WoodTurnerPro.com offers a forum for users to comment and share ideas and tips.  Check it out!
+I would encourage anyone to look into using software as a design tool in bowl building, no matter what program you end up using.  It was a game-changer for me and really reinvigorated me as a turner.  
+
+If I can assist you in any way, or if you have questions, please contact me.
