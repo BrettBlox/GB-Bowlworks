@@ -1,7 +1,7 @@
 ---
-slug: /How I Design
+slug: /Design Tools
 date: 2020-04-24T10:45:08.574Z
-title: How I Design
+title: Design Tools
 ---
 The most common question I'm asked as a segmenter is, "Do you use software to design your bowls?"  The answer is a resounding, "YES!"  There is a learning curve, but once you spend some time learning the ins and outs of the program, the sky is the limit!
 
