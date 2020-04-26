@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import { navigateTo } from 'gatsby-link'
+import React from 'react'
 import styled from 'styled-components'
+
+import useForm from '../hooks/use-form'
 
 import FadeWrapper from '../components/fadeWrapper'
 import Layout from '../components/layout'
@@ -142,48 +143,8 @@ const ContactForm = styled.div`
   }
 `
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&')
-}
-
-const useForm = () => {
-  const [inputs, setInputs] = useState({})
-
-  const handleSubmit = e => {
-    if (e) {
-      e.preventDefault()
-      const form = e.target
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({
-          'form-name': form.getAttribute('name'),
-          ...inputs,
-        }),
-      })
-        .then(() => navigateTo(form.getAttribute('action')))
-        .catch(error => alert(error))
-    }
-  }
-
-  const handleInputChange = e => {
-    e.persist()
-    setInputs(inputs => ({
-      ...inputs,
-      [e.target.name]: e.target.value,
-    }))
-  }
-  return {
-    handleSubmit,
-    handleInputChange,
-    inputs,
-  }
-}
-
 export default function Contact() {
-  const { inputs, handleInputChange, handleSubmit } = useForm()
+  const { handleSubmit, handleInputChange, state } = useForm()
 
   return (
     <FadeWrapper>
@@ -216,6 +177,7 @@ export default function Contact() {
                   autoCapitalize='words'
                   autoCorrect='off'
                   onChange={handleInputChange}
+                  value={state.name}
                 />
               </label>
               <br />
@@ -232,6 +194,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                   pattern='^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$'
                   required
+                  value={state.email}
                 />
               </label>
               <label htmlFor='tel'>
@@ -251,6 +214,7 @@ export default function Contact() {
                   autoCorrect='off'
                   onChange={handleInputChange}
                   required
+                  value={state.message}
                 />
               </label>
               <div data-netlify-recaptcha='true' />
