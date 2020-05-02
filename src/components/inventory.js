@@ -37,30 +37,27 @@ const InventoryList = styled.article`
     padding-bottom: 2rem;
   }
 
-  a {
+  button {
     align-self: flex-end;
     text-decoration: none;
+    box-shadow: 0 1rem 2rem var(--color-shadow);
+    background-color: var(--baby);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    color: #fff;
+    transition: all 0.3s;
 
-    button {
-      box-shadow: 0 1rem 2rem var(--color-shadow);
-      background-color: var(--baby);
-      border-radius: 5px;
-      border: none;
-      padding: 10px 25px;
-      width: 100%;
-      height: 50px;
-      font-family: 'Cinzel', serif;
-      font-size: 1.25rem;
-      margin: 0 auto;
-      color: #fff;
-      transition: all 0.3s;
-
-      &:hover {
-        background-color: var(--blood);
-        cursor: pointer;
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
-      }
+    &:hover {
+      background-color: var(--blood);
+      cursor: pointer;
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
     }
   }
 `
@@ -171,8 +168,8 @@ const Inventory = () => (
             <PriceWrapper>
               <h3>{`$${node.frontmatter.price}.00`}</h3>
             </PriceWrapper>
-            <a
-              href='#'
+            <button
+              type='button'
               className='snipcart-add-item buyBtn'
               data-item-id={node.frontmatter.id}
               data-item-price={node.frontmatter.price}
@@ -180,26 +177,21 @@ const Inventory = () => (
               data-item-name={node.frontmatter.title}
               data-item-description={node.frontmatter.body}
               data-item-url={`${'https://gbbowlworks.com' + '/store'}${node.frontmatter.slug}`}
+              disabled={checkSold(node.frontmatter.title)}
+              style={
+                checkSold(node.frontmatter.title)
+                  ? {
+                      backgroundColor: 'slategrey',
+                      transition: 'none',
+                      transform: 'none',
+                      boxShadow: 'none',
+                      cursor: 'auto',
+                    }
+                  : null
+              }
             >
-              <button
-                type='button'
-                className='buy'
-                disabled={checkSold(node.frontmatter.title)}
-                style={
-                  checkSold(node.frontmatter.title)
-                    ? {
-                        backgroundColor: 'slategrey',
-                        transition: 'none',
-                        transform: 'none',
-                        boxShadow: 'none',
-                        cursor: 'auto',
-                      }
-                    : null
-                }
-              >
-                {checkSold(node.frontmatter.title) ? 'SOLD' : 'BUY NOW'}
-              </button>
-            </a>
+              {checkSold(node.frontmatter.title) ? 'SOLD' : 'BUY NOW'}
+            </button>
           </InventoryList>
         </div>
       ))
