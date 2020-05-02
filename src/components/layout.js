@@ -1,12 +1,12 @@
 import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import '../styles/font.css'
 import GlobalStyles from '../styles/Global'
 import SEO from './seo'
 import Header from './header'
 import Footer from './footer'
+import ShoppingCart from './shoppingCart'
 
 const Site = styled.div`
   min-height: 100vh;
@@ -39,6 +39,7 @@ const Layout = ({ children, title }) => (
       ]}
     />
     <GlobalStyles />
+    <ShoppingCart />
     <Header />
     <main>{children}</main>
     <Footer />

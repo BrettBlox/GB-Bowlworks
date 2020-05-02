@@ -20,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: var(--deep);
+    position: relative;
 
     p {
       font-family: var(--font-base-family);
