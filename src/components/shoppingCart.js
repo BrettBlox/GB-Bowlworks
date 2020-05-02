@@ -32,6 +32,17 @@ const Cart = styled.div`
       box-shadow: 0 0 35px var(--gold);
     }
   }
+
+  @media screen and (max-width: 710px) {
+    top: unset;
+    bottom: 20px;
+    right: 20px;
+    width: 53px;
+    height: 53px;
+    button {
+      padding: 0.75rem;
+    }
+  }
 `
 
 const ShoppingCart = () => (
