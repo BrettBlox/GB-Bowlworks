@@ -149,7 +149,11 @@ const Inventory = () => (
             <PriceWrapper>
               <p>{`$${node.frontmatter.price}.00`}</p>
             </PriceWrapper>
-            <p>
+            <p
+              css={`
+                text-transform: uppercase;
+              `}
+            >
               Category:{' '}
               <Link
                 css={`
