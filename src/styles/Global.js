@@ -50,6 +50,10 @@ const GlobalStyles = createGlobalStyle`
   }
   ${storeTemplate};
   ${gallery};
+  #snipcart-header {
+	background-color: var(--deep);
+}
+
 `
 
 export default GlobalStyles

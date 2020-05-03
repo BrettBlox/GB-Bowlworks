@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import '../styles/font.css'
+import '../styles/snipcart.css'
+
 import GlobalStyles from '../styles/Global'
 import SEO from './seo'
 import Header from './header'
