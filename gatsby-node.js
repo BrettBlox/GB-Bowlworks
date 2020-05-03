@@ -46,7 +46,7 @@ exports.createPages = ({ graphql, actions }) => {
           path: node.frontmatter.slug,
           component: postPage,
           context: {
-            slug: slugify(node.frontmatter.slug, { replacement: '-', lower: true }),
+            slug: node.frontmatter.slug,
           },
         })
       })
@@ -57,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
           path: node.frontmatter.slug,
           component: storePage,
           context: {
-            slug: slugify(node.frontmatter.slug, { replacement: '-', lower: true }),
+            slug: node.frontmatter.slug,
           },
         })
       })
