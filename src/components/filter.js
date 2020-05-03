@@ -28,7 +28,6 @@ const Filters = styled.div`
 
 const FilterInactive = styled.span`
   background-color: var(--blood);
-  color: var(--blood);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

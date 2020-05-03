@@ -64,7 +64,7 @@ const Store = () => (
     <SEO title='Store' />
     <ShoppingCart />
     <StoreBanner />
-    <Filter title='Filter Items' filter='bowlworks' />
+    {window.innerWidth > 501 && <Filter title='Filter Items' filter='bowlworks' />}
     <InventoryWrapper>
       <Inventory />
     </InventoryWrapper>
