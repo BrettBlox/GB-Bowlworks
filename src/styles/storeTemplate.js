@@ -25,7 +25,7 @@ const storeTemplate = css`
         transition: all 0.3s;
 
         &:hover {
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
           transform: translateY(-15px) scale(1.5);
         }
       }
@@ -79,7 +79,7 @@ const storeTemplate = css`
             background-color: var(--blood);
             cursor: pointer;
             transform: translateY(-3px);
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
           }
         }
       }

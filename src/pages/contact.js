@@ -128,7 +128,7 @@ const ContactForm = styled.div`
     &:hover {
       background-color: var(--blood);
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
     }
   }
 

@@ -25,7 +25,7 @@
 	-webkit-transform: translateY(-3px);
 	-ms-transform: translateY(-3px);
 	transform: translateY(-3px);
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width: 872px) {

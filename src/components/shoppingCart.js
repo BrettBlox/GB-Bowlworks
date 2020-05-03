@@ -12,6 +12,11 @@ const Cart = styled.div`
   border: 3px solid var(--gold);
   background: var(--deep);
   box-shadow: 0 0 35px var(--deep);
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.6);
+  }
 
   button {
     cursor: pointer;
