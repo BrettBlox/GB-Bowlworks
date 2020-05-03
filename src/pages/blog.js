@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import FadeWrapper from '../components/fadeWrapper'
-import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Archive from '../components/archive'
 import Listing from '../components/listing'
 
@@ -19,21 +19,20 @@ const BlogWrapper = styled.div`
 
 const Blog = () => (
   <FadeWrapper>
-    <Layout title='Blog'>
-      <Cover>
-        <h1
-          css={`
-            max-width: 100vw;
-          `}
-        >
-          GB Bowlworks Blog
-        </h1>
-      </Cover>
-      <BlogWrapper>
-        <Listing />
-        <Archive />
-      </BlogWrapper>
-    </Layout>
+    <SEO title='Blog' />
+    <Cover>
+      <h1
+        css={`
+          max-width: 100vw;
+        `}
+      >
+        GB Bowlworks Blog
+      </h1>
+    </Cover>
+    <BlogWrapper>
+      <Listing />
+      <Archive />
+    </BlogWrapper>
   </FadeWrapper>
 )
 

@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import FadeWrapper from '../components/fadeWrapper'
-import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const SuccessWrapper = styled.div`
   margin: 0 auto;
@@ -79,25 +79,24 @@ const BackHome = styled(Link)`
 
 const SuccessPage = () => (
   <FadeWrapper>
-    <Layout title='Success'>
-      <SuccessWrapper>
-        <Success>
-          <h1>Success!</h1>
-          <hr />
-          <h2>
-            Thank you for your message!
-            <br />
-            <br /> I will get back to you as soon as possible.
-          </h2>
+    <SEO title='Success' />
+    <SuccessWrapper>
+      <Success>
+        <h1>Success!</h1>
+        <hr />
+        <h2>
+          Thank you for your message!
           <br />
-          <SuccessLink>
-            <BackHome to='/' type='button'>
-              BACK TO HOME PAGE &rarr;
-            </BackHome>
-          </SuccessLink>
-        </Success>
-      </SuccessWrapper>
-    </Layout>
+          <br /> I will get back to you as soon as possible.
+        </h2>
+        <br />
+        <SuccessLink>
+          <BackHome to='/' type='button'>
+            BACK TO HOME PAGE &rarr;
+          </BackHome>
+        </SuccessLink>
+      </Success>
+    </SuccessWrapper>
   </FadeWrapper>
 )
 

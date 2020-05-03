@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
 import FadeWrapper from '../fadeWrapper'
-import Layout from '../layout'
+import SEO from '../seo'
 import ShoppingCart from '../shoppingCart'
 
 const checkSold = title => {
@@ -22,74 +22,73 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <FadeWrapper>
-      <Layout title={frontmatter.title}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          link={[
-            {
-              href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-              rel: 'stylesheet',
-              type: 'text/css',
-            },
-          ]}
-          script={[
-            {
-              type: 'text/javascript',
-              url: '',
-              id: 'snipcart',
-              'data-api-key': 'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
-              src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
-              async: true,
-              defer: true,
-            },
-            {
-              type: 'text/javascript',
-              src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-              async: true,
-              defer: true,
-            },
-          ]}
-        />
-        <ShoppingCart />
-        <div className='storeWrapper'>
-          <div className='store-item-image'>
-            <LazyLoad offset={100}>
-              <img src={frontmatter.image} alt='store-item' />
-            </LazyLoad>
-          </div>
-          <div className='store-item-content'>
-            <div className='store-item'>
-              <h1>{frontmatter.title}</h1>
-              <h2>{`$${frontmatter.price}.00`}</h2>
-              <div className='body' dangerouslySetInnerHTML={{ __html: html }} />
-              <button
-                type='button'
-                className='snipcart-add-item buyBtn'
-                data-item-id={frontmatter.id}
-                data-item-price={frontmatter.price}
-                data-item-image={frontmatter.image}
-                data-item-name={frontmatter.title}
-                data-item-description={frontmatter.body}
-                data-item-url={`https://gbbowlworks.com/store${frontmatter.slug}`}
-                disabled={checkSold(frontmatter.title)}
-                style={
-                  checkSold(frontmatter.title)
-                    ? {
-                        backgroundColor: 'slategray',
-                        transition: 'none',
-                        transform: 'none',
-                        boxShadow: 'none',
-                        cursor: 'auto',
-                      }
-                    : null
-                }
-              >
-                {checkSold(frontmatter.title) ? 'SOLD' : 'BUY NOW'}
-              </button>
-            </div>
+      <SEO title={frontmatter.title} />
+      <Helmet
+        htmlAttributes={{ lang: 'en' }}
+        link={[
+          {
+            href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
+            rel: 'stylesheet',
+            type: 'text/css',
+          },
+        ]}
+        script={[
+          {
+            type: 'text/javascript',
+            url: '',
+            id: 'snipcart',
+            'data-api-key': 'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
+            src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
+            async: true,
+            defer: true,
+          },
+          {
+            type: 'text/javascript',
+            src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+            async: true,
+            defer: true,
+          },
+        ]}
+      />
+      <ShoppingCart />
+      <div className='storeWrapper'>
+        <div className='store-item-image'>
+          <LazyLoad offset={100}>
+            <img src={frontmatter.image} alt='store-item' />
+          </LazyLoad>
+        </div>
+        <div className='store-item-content'>
+          <div className='store-item'>
+            <h1>{frontmatter.title}</h1>
+            <h2>{`$${frontmatter.price}.00`}</h2>
+            <div className='body' dangerouslySetInnerHTML={{ __html: html }} />
+            <button
+              type='button'
+              className='snipcart-add-item buyBtn'
+              data-item-id={frontmatter.id}
+              data-item-price={frontmatter.price}
+              data-item-image={frontmatter.image}
+              data-item-name={frontmatter.title}
+              data-item-description={frontmatter.body}
+              data-item-url={`https://gbbowlworks.com/store${frontmatter.slug}`}
+              disabled={checkSold(frontmatter.title)}
+              style={
+                checkSold(frontmatter.title)
+                  ? {
+                      backgroundColor: 'slategray',
+                      transition: 'none',
+                      transform: 'none',
+                      boxShadow: 'none',
+                      cursor: 'auto',
+                    }
+                  : null
+              }
+            >
+              {checkSold(frontmatter.title) ? 'SOLD' : 'BUY NOW'}
+            </button>
           </div>
         </div>
-      </Layout>
+      </div>
     </FadeWrapper>
   )
 }

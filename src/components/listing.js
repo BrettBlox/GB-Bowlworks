@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import slugify from 'slugify'
 
 import FadeLink from './fadeLink'
 
@@ -98,12 +99,15 @@ const Listing = () => (
       render={({ allMarkdownRemark }) =>
         allMarkdownRemark.edges.map(({ node }) => (
           <ListingWrapper key={node.frontmatter.slug}>
-            <ListingLink to={`/posts${node.frontmatter.slug}`}>
+            <ListingLink to={`/blog/${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`}>
               <h2>{node.frontmatter.title}</h2>
             </ListingLink>
             <p>{node.frontmatter.date}</p>
             <p>{node.excerpt}</p>
-            <ReadMore to={`/posts${node.frontmatter.slug}`} aria-label={`Read more about ${node.frontmatter.title}`}>
+            <ReadMore
+              to={`/blog/${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`}
+              aria-label={`Read more about ${node.frontmatter.title}`}
+            >
               Read More &rarr;
             </ReadMore>
           </ListingWrapper>

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
 import FadeWrapper from '../components/fadeWrapper'
-import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Inventory from '../components/inventory'
 import StoreBanner from '../components/storeBanner'
 import ShoppingCart from '../components/shoppingCart'
@@ -61,14 +61,13 @@ const Store = () => (
         },
       ]}
     />
-    <Layout title='Store'>
-      <ShoppingCart />
-      <StoreBanner />
-      <Filter title='Filter Items' filter='bowlworks' />
-      <InventoryWrapper>
-        <Inventory />
-      </InventoryWrapper>
-    </Layout>
+    <SEO title='Store' />
+    <ShoppingCart />
+    <StoreBanner />
+    <Filter title='Filter Items' filter='bowlworks' />
+    <InventoryWrapper>
+      <Inventory />
+    </InventoryWrapper>
   </FadeWrapper>
 )
 

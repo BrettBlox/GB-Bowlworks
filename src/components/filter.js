@@ -133,8 +133,11 @@ const handleFilterDefault = currentFilter => {
 
 const Filter = ({ handleFilter, filter, title }) => {
   function handleClick(e) {
-    if (handleFilter) handleFilter(e.target.dataset.filter)
-    handleFilterDefault(e.target.dataset.filter)
+    if (handleFilter) {
+      handleFilter(e.target.dataset.filter)
+    } else {
+      handleFilterDefault(e.target.dataset.filter)
+    }
   }
 
   return (

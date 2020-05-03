@@ -5,7 +5,6 @@ import '../styles/font.css'
 import '../styles/snipcart.css'
 
 import GlobalStyles from '../styles/Global'
-import SEO from './seo'
 import Header from './header'
 import Footer from './footer'
 
@@ -17,9 +16,8 @@ const Site = styled.div`
   }
 `
 
-const Layout = ({ children, title }) => (
+const Layout = ({ children }) => (
   <Site>
-    <SEO title={title} />
     <GlobalStyles />
     <Header />
     <main>{children}</main>

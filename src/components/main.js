@@ -23,9 +23,9 @@ const Main = () => (
     query={WELCOME_QUERY}
     render={({ allMarkdownRemark }) =>
       allMarkdownRemark.edges.map((edge, i) => (
-        <Cover text='center'>
+        <Cover text='center' key={`welcome__${i}`}>
           <h1>{edge.node.frontmatter.title}</h1>
-          <div key={`welcome__${i}`} dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+          <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
         </Cover>
       ))
     }

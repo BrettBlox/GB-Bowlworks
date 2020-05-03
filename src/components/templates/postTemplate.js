@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import FadeWrapper from '../fadeWrapper'
-import Layout from '../layout'
+import SEO from '../seo'
 
 const PostWrapper = styled.div`
   margin: 0 auto;
@@ -81,15 +81,14 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <FadeWrapper>
-      <Layout>
-        <PostWrapper>
-          <BlogPost>
-            <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
-            <PostContent dangerouslySetInnerHTML={{ __html: html }} />
-          </BlogPost>
-        </PostWrapper>
-      </Layout>
+      <SEO title={frontmatter.slug} />
+      <PostWrapper>
+        <BlogPost>
+          <h1>{frontmatter.title}</h1>
+          <h2>{frontmatter.date}</h2>
+          <PostContent dangerouslySetInnerHTML={{ __html: html }} />
+        </BlogPost>
+      </PostWrapper>
     </FadeWrapper>
   )
 }

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import FadeWrapper from '../components/fadeWrapper'
 
-import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Cover from '../styles/cover'
 
 const About = styled.div`
@@ -50,19 +50,18 @@ const ABOUT_QUERY = graphql`
 
 const AboutPage = () => (
   <FadeWrapper>
-    <Layout title='About'>
-      <StaticQuery
-        query={ABOUT_QUERY}
-        render={({ allMarkdownRemark }) =>
-          allMarkdownRemark.edges.map(edge => (
-            <Cover text='left'>
-              <h1>{edge.node.frontmatter.title}</h1>
-              <About dangerouslySetInnerHTML={{ __html: edge.node.html }} />
-            </Cover>
-          ))
-        }
-      />
-    </Layout>
+    <SEO title='About' />
+    <StaticQuery
+      query={ABOUT_QUERY}
+      render={({ allMarkdownRemark }) =>
+        allMarkdownRemark.edges.map(edge => (
+          <Cover text='left' key={edge.node.frontmatter.title}>
+            <h1>{edge.node.frontmatter.title}</h1>
+            <About dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+          </Cover>
+        ))
+      }
+    />
   </FadeWrapper>
 )
 

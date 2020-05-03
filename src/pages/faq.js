@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import FadeWrapper from '../components/fadeWrapper'
-import Layout from '../components/layout'
+import SEO from '../components/seo'
 import Cover from '../styles/cover'
 
 const FAQWrapper = styled.div`
@@ -34,23 +34,22 @@ const FAQ_QUERY = graphql`
 
 const FAQ = () => (
   <FadeWrapper>
-    <Layout title='FAQ'>
-      <StaticQuery
-        query={FAQ_QUERY}
-        render={({ allMarkdownRemark }) => (
-          <Cover width='60vw' margin='1.875rem auto 0 auto'>
-            <FAQWrapper>
-              {allMarkdownRemark.edges.map((edge, i) => (
-                <>
-                  <h1>{edge.node.frontmatter.title}</h1>
-                  <div className='flow' key={`faq__${i}`} dangerouslySetInnerHTML={{ __html: edge.node.html }} />
-                </>
-              ))}
-            </FAQWrapper>
-          </Cover>
-        )}
-      />
-    </Layout>
+    <SEO title='FAQ' />
+    <StaticQuery
+      query={FAQ_QUERY}
+      render={({ allMarkdownRemark }) => (
+        <Cover width='60vw' margin='1.875rem auto 0 auto'>
+          <FAQWrapper>
+            {allMarkdownRemark.edges.map((edge, i) => (
+              <div key={`faq__${i}`}>
+                <h1>{edge.node.frontmatter.title}</h1>
+                <div className='flow' dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+              </div>
+            ))}
+          </FAQWrapper>
+        </Cover>
+      )}
+    />
   </FadeWrapper>
 )
 

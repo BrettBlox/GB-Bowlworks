@@ -24,10 +24,10 @@ const StoreBanner = () => (
     render={({ allMarkdownRemark }) => (
       <Cover text='center'>
         {allMarkdownRemark.edges.map((edge, i) => (
-          <>
+          <div key={`store__${i}`}>
             <h1>{edge.node.frontmatter.title}</h1>
-            <div key={`store__${i}`} dangerouslySetInnerHTML={{ __html: edge.node.html }} />
-          </>
+            <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+          </div>
         ))}
       </Cover>
     )}

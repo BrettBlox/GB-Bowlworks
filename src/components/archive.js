@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
+import slugify from 'slugify'
 
 import FadeLink from './fadeLink'
 
@@ -87,7 +88,9 @@ const Archive = () => (
           <ul className='archiveList'>
             {allMarkdownRemark.edges.map(edge => (
               <li key={edge.node.frontmatter.slug}>
-                <FadeLink to={`/posts${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</FadeLink>
+                <FadeLink to={`/blog/${slugify(edge.node.frontmatter.slug, { replacement: '-', lower: true })}`}>
+                  {edge.node.frontmatter.title}
+                </FadeLink>
               </li>
             ))}
           </ul>

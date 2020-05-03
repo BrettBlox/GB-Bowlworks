@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
       const posts = results.data.posts.edges
       posts.forEach(({ node }) => {
         createPage({
-          path: `/posts${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`,
+          path: `/blog/${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`,
           component: postPage,
           context: {
             slug: node.frontmatter.slug,
