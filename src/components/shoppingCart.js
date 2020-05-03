@@ -6,8 +6,8 @@ const Cart = styled.div`
   position: fixed;
   top: 30px;
   right: 30px;
-  width: 73px;
-  height: 73px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   border: 3px solid var(--gold);
   background: var(--deep);
@@ -18,7 +18,7 @@ const Cart = styled.div`
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 0.75rem;
     background: transparent;
     border: 0;
     text-align: center;
@@ -37,8 +37,8 @@ const Cart = styled.div`
     top: unset;
     bottom: 20px;
     right: 20px;
-    width: 53px;
-    height: 53px;
+    width: 55px;
+    height: 55px;
     button {
       padding: 0.75rem;
     }
