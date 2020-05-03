@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
       const posts = results.data.posts.edges
       posts.forEach(({ node }) => {
         createPage({
-          path: node.frontmatter.slug,
+          path: `/posts${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`,
           component: postPage,
           context: {
             slug: node.frontmatter.slug,
@@ -54,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
       const store = results.data.store.edges
       store.forEach(({ node }) => {
         createPage({
-          path: node.frontmatter.slug,
+          path: `/store${node.frontmatter.slug}`,
           component: storePage,
           context: {
             slug: node.frontmatter.slug,
