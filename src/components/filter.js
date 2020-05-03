@@ -1,7 +1,17 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 import styled from 'styled-components'
 
 import Cover from '../styles/cover'
+
+const filters = {
+  bowlworks: `all`,
+  open: `open form`,
+  closed: `closed form`,
+  lidded: `lidded`,
+  salad: `salad`,
+  misc: `misc`,
+}
 
 const Filters = styled.div`
   display: flex;
@@ -96,14 +106,40 @@ const FilterActive = styled(FilterInactive)`
   }
 `
 
-const Filter = ({ filters, handleFilter, filter }) => {
+const handleFilterDefault = currentFilter => {
+  switch (currentFilter) {
+    case 'bowlworks':
+      navigate('/store')
+      break
+    case 'closed':
+      navigate('/store/closed-form')
+      break
+    case 'open':
+      navigate('/store/open-form')
+      break
+    case 'salad':
+      navigate('/store/salad')
+      break
+    case 'misc':
+      navigate('/store/misc')
+      break
+    case 'lidded':
+      navigate('/store/lidded')
+      break
+    default:
+      return null
+  }
+}
+
+const Filter = ({ handleFilter, filter, title }) => {
   function handleClick(e) {
-    handleFilter(e.target.dataset.filter)
+    if (handleFilter) handleFilter(e.target.dataset.filter)
+    handleFilterDefault(e.target.dataset.filter)
   }
 
   return (
     <Cover text='center'>
-      <h2>Gallery</h2>
+      <h2>{title}</h2>
       <Filters>
         {Object.keys(filters).map(tag => {
           const currentFilter = tag

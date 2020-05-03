@@ -3,9 +3,9 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
-import FadeWrapper from './fadeWrapper'
-import Layout from './layout'
-import ShoppingCart from './shoppingCart'
+import FadeWrapper from '../fadeWrapper'
+import Layout from '../layout'
+import ShoppingCart from '../shoppingCart'
 
 const checkSold = title => {
   const checkedTitle = title
@@ -105,6 +105,7 @@ export const inventoryQuery = graphql`
         image
         slug
         price
+        tag
       }
     }
   }

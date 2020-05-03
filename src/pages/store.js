@@ -7,8 +7,9 @@ import Layout from '../components/layout'
 import Inventory from '../components/inventory'
 import StoreBanner from '../components/storeBanner'
 import ShoppingCart from '../components/shoppingCart'
+import Filter from '../components/filter'
 
-const InventoryWrapper = styled.div`
+export const InventoryWrapper = styled.div`
   margin: 1.25rem;
   display: grid;
   grid-gap: 1.875rem;
@@ -63,6 +64,7 @@ const Store = () => (
     <Layout title='Store'>
       <ShoppingCart />
       <StoreBanner />
+      <Filter title='Filter Items' filter='bowlworks' />
       <InventoryWrapper>
         <Inventory />
       </InventoryWrapper>

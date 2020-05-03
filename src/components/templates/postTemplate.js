@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import FadeWrapper from './fadeWrapper'
-import Layout from './layout'
+import FadeWrapper from '../fadeWrapper'
+import Layout from '../layout'
 
 const PostWrapper = styled.div`
   margin: 0 auto;

@@ -1,11 +1,12 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link, navigate } from 'gatsby'
 import styled from 'styled-components'
 import LazyLoad from 'react-lazyload'
 
 import FadeLink from './fadeLink'
+import Filter from './filter'
 
-const InventoryList = styled.article`
+export const InventoryList = styled.article`
   padding: 1.875rem;
   padding-top: 0;
   background-color: var(--color-light);
@@ -14,6 +15,11 @@ const InventoryList = styled.article`
   display: grid;
   height: 100%;
   box-sizing: border-box;
+
+  a {
+    color: var(--blood);
+    cursor: pointer;
+  }
 
   img {
     margin: 0 auto;
@@ -31,9 +37,11 @@ const InventoryList = styled.article`
     }
   }
 
-  h3 {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+  p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0;
+    color: var(--blood);
   }
 
   button {
@@ -61,7 +69,7 @@ const InventoryList = styled.article`
   }
 `
 
-const ListingLink = styled(FadeLink)`
+export const ListingLink = styled(FadeLink)`
   h2 {
     text-align: left;
     font: 700 1.875rem 'Cinzel', sans-serif;
@@ -81,15 +89,16 @@ const ListingLink = styled(FadeLink)`
   }
 `
 
-const PriceWrapper = styled.div`
-  @media only screen and (max-width: 800px) {
-    margin-bottom: 0;
-    padding: 0;
+export const PriceWrapper = styled.div`
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: black;
   }
 
   @media only screen and (max-width: 450px) {
     margin-bottom: 5px;
-    padding: 0;
   }
 `
 
@@ -109,6 +118,7 @@ const STORE_QUERY = graphql`
             image
             title
             date(formatString: "MMMM DD, YYYY")
+            tag
           }
         }
       }
@@ -138,8 +148,11 @@ const Inventory = () => (
               <h2>{node.frontmatter.title}</h2>
             </ListingLink>
             <PriceWrapper>
-              <h3>{`$${node.frontmatter.price}.00`}</h3>
+              <p>{`$${node.frontmatter.price}.00`}</p>
             </PriceWrapper>
+            <p>
+              Tag: <Link to={`/store/${node.frontmatter.tag}`}>{node.frontmatter.tag}</Link>
+            </p>
             <button
               type='button'
               className='snipcart-add-item buyBtn'

@@ -7,16 +7,6 @@ import Filter from './filter'
 
 import '../styles/gallery.js'
 
-// Bowl categories for filtering gallery
-const filters = {
-  bowlworks: `all`,
-  open: `open form`,
-  closed: `closed form`,
-  lidded: `lidded`,
-  salad: `salad`,
-  misc: `misc`,
-}
-
 // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
 const addSrc = (data, main, mobile, lightbox) => {
   const gallerySrc = data.map(obj => ({
@@ -132,7 +122,7 @@ export default function Gallery(props) {
   // WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
   const wideView = (
     <>
-      <Filter filters={filters} handleFilter={handleFilter} filter={filter} />
+      <Filter title='Gallery' handleFilter={handleFilter} filter={filter} />
       <Masonry
         breakpointCols={myBreakpointsAndCols}
         className='my-masonry-grid'
