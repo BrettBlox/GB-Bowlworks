@@ -28,6 +28,7 @@ const Filters = styled.div`
 
 const FilterInactive = styled.span`
   background-color: var(--blood);
+  color: var(--blood);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -82,6 +83,7 @@ const FilterInactive = styled.span`
 const FilterActive = styled(FilterInactive)`
   transform: translateY(-3px) scale(1.2);
   background-color: var(--gold);
+  color: var(--gold);
 
   &:after {
     border-bottom: 1px solid var(--gold);
