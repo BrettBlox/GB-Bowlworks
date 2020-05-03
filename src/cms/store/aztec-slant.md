@@ -6,6 +6,7 @@ image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1550150608/GB%20Bowlworks%20Gallery/1903a.jpg
 title: 'Aztec Slant (#1903)'
 date: 2019-02-14T13:27:27.017Z
+tag: closed form
 ---
 This decorative piece has a slanted symmetrical design using six different specie of hardwood:  Wenge, Maple, Purpleheart, Padauk, Cherry and Walnut.  It has 528 individual segments of wood.  It's 5.5 inches in height and 12 inches in diameter.
 

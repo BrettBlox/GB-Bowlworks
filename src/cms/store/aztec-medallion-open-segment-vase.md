@@ -6,6 +6,7 @@ image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1552008963/GB%20Bowlworks%20Gallery/1905a.jpg
 title: Aztec Medallion Open Segment Vase (SOLD)
 date: 2019-03-08T01:29:54.298Z
+tag: open form
 ---
 This piece is a 384-piece open segment vase standing 7.5" in height and 11" in diameter, composed of Wenge, Maple, Yellowheart and Purpleheart, with a delicate rim.
 

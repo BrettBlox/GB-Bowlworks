@@ -5,6 +5,7 @@ price: 325
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1585697656/GB%20Bowlworks%20Gallery/2005a.jpg
 title: Crisscross Open (#2005)
 date: 2020-03-31T23:30:49.205Z
+tag: open form
 ---
 This design pattern is one of my favorites; I've made it in several different shapes and configurations.  It's a 456-segment open segment vase.  Its height is 8.5", diameter is 11".  I used Cherry, Wenge, Padauk and Maple.  The wall thickness is 1/4".
 

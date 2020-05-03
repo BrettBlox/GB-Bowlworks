@@ -5,6 +5,7 @@ price: 125
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1584723470/SP2002.jpg
 title: Wireless Speaker (SOLD)
 date: 2020-03-20T16:57:05.190Z
+tag: misc
 ---
 
 A new product I'm making, a segmented wireless Bluetooth speaker. The enclosure has my Aztec Star pattern and is turned

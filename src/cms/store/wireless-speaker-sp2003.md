@@ -6,6 +6,7 @@ image: >-
   https://res.cloudinary.com/dy6lb8vna/image/upload/v1584744314/GB%20Bowlworks%20Gallery/SP2003a.jpg
 title: 'Wireless Speaker (#SP2003)'
 date: 2020-03-20T22:29:52.012Z
+tag: misc
 ---
 
 A new product I'm making, a segmented wireless Bluetooth speaker. The enclosure's pattern is the Aztec Star using
