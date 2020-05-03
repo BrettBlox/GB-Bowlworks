@@ -38,10 +38,12 @@ exports.createPages = ({ graphql, actions }) => {
       if (results.errors) {
         Promise.reject(results.errors)
       }
+
       // create blog post pages
-      results.data.posts.edges.forEach(({ node }) => {
+      const posts = results.data.posts.edges
+      posts.forEach(({ node }) => {
         createPage({
-          path: `/posts${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`,
+          path: node.frontmatter.slug,
           component: postPage,
           context: {
             slug: slugify(node.frontmatter.slug, { replacement: '-', lower: true }),
@@ -49,9 +51,10 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
 
-      results.data.store.edges.forEach(({ node }) => {
+      const store = results.data.store.edges
+      store.forEach(({ node }) => {
         createPage({
-          path: `/store${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`,
+          path: node.frontmatter.slug,
           component: storePage,
           context: {
             slug: slugify(node.frontmatter.slug, { replacement: '-', lower: true }),
