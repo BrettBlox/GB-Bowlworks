@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
 import FadeLink from './fadeLink'
@@ -131,33 +130,6 @@ const Inventory = () => (
     render={({ store }) =>
       store.edges.map(({ node }) => (
         <div key={node.frontmatter.id}>
-          <Helmet
-            htmlAttributes={{ lang: 'en' }}
-            link={[
-              {
-                href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-                rel: 'stylesheet',
-                type: 'text/css',
-              },
-            ]}
-            script={[
-              {
-                type: 'text/javascript',
-                url: '',
-                id: 'snipcart',
-                'data-api-key': 'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
-                src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
-                async: true,
-                defer: true,
-              },
-              {
-                type: 'text/javascript',
-                src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-                async: true,
-                defer: true,
-              },
-            ]}
-          />
           <InventoryList>
             <LazyLoad offset={100}>
               <img src={node.frontmatter.image} alt='bowl' />

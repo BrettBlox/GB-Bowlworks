@@ -18,26 +18,7 @@ const Site = styled.div`
 
 const Layout = ({ children, title }) => (
   <Site>
-    <SEO
-      title={title}
-      keywords={[
-        `about`,
-        `woodworking`,
-        `jenks`,
-        `oklahoma`,
-        `fine woodworking`,
-        `woodturning`,
-        `woodworker`,
-        `craftsmanship`,
-        `art`,
-        `semengted`,
-        `wood`,
-        `art`,
-        `craft`,
-        `handmade`,
-        `etsy`,
-      ]}
-    />
+    <SEO title={title} />
     <GlobalStyles />
     <ShoppingCart />
     <Header />
