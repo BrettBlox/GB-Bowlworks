@@ -81,7 +81,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <FadeWrapper>
-      <SEO title={frontmatter.slug} />
+      <SEO title={frontmatter.title} />
       <PostWrapper>
         <BlogPost>
           <h1>{frontmatter.title}</h1>
