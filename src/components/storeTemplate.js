@@ -5,6 +5,7 @@ import LazyLoad from 'react-lazyload'
 
 import FadeWrapper from './fadeWrapper'
 import Layout from './layout'
+import ShoppingCart from './shoppingCart'
 
 const checkSold = title => {
   const checkedTitle = title
@@ -49,6 +50,7 @@ export default function Template({
             },
           ]}
         />
+        <ShoppingCart />
         <div className='storeWrapper'>
           <div className='store-item-image'>
             <LazyLoad offset={100}>
@@ -60,35 +62,30 @@ export default function Template({
               <h1>{frontmatter.title}</h1>
               <h2>{`$${frontmatter.price}.00`}</h2>
               <div className='body' dangerouslySetInnerHTML={{ __html: html }} />
-              <a
-                href='#'
+              <button
+                type='button'
                 className='snipcart-add-item buyBtn'
                 data-item-id={frontmatter.id}
                 data-item-price={frontmatter.price}
                 data-item-image={frontmatter.image}
                 data-item-name={frontmatter.title}
                 data-item-description={frontmatter.body}
-                data-item-url={`${'https://gbbowlworks.com' + '/store'}${frontmatter.slug}`}
+                data-item-url={`https://gbbowlworks.com/store${frontmatter.slug}`}
+                disabled={checkSold(frontmatter.title)}
+                style={
+                  checkSold(frontmatter.title)
+                    ? {
+                        backgroundColor: 'slategray',
+                        transition: 'none',
+                        transform: 'none',
+                        boxShadow: 'none',
+                        cursor: 'auto',
+                      }
+                    : null
+                }
               >
-                <button
-                  type='button'
-                  className='buy'
-                  disabled={checkSold(frontmatter.title)}
-                  style={
-                    checkSold(frontmatter.title)
-                      ? {
-                          backgroundColor: 'slategray',
-                          transition: 'none',
-                          transform: 'none',
-                          boxShadow: 'none',
-                          cursor: 'auto',
-                        }
-                      : null
-                  }
-                >
-                  {checkSold(frontmatter.title) ? 'SOLD' : 'BUY NOW'}
-                </button>
-              </a>
+                {checkSold(frontmatter.title) ? 'SOLD' : 'BUY NOW'}
+              </button>
             </div>
           </div>
         </div>

@@ -148,7 +148,7 @@ const Inventory = () => (
               data-item-image={node.frontmatter.image}
               data-item-name={node.frontmatter.title}
               data-item-description={node.frontmatter.body}
-              data-item-url={`${'https://gbbowlworks.com' + '/store'}${node.frontmatter.slug}`}
+              data-item-url={`https://gbbowlworks.com/store${node.frontmatter.slug}`}
               disabled={checkSold(node.frontmatter.title)}
               style={
                 checkSold(node.frontmatter.title)

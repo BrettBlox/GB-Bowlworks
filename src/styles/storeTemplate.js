@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import { css } from 'styled-components'
 
 const storeTemplate = css`
   .storeWrapper {
@@ -17,7 +17,7 @@ const storeTemplate = css`
       flex-direction: row;
       flex-wrap: wrap;
       img {
-        margin: 0 1rem;
+        margin: 1rem;
         width: 200px;
         height: auto;
         border-radius: 4px;
@@ -37,15 +37,17 @@ const storeTemplate = css`
       .store-item {
         border-radius: 4px;
         padding: 1.875rem;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding-bottom: 0;
         padding-top: 0;
         margin-top: 0;
-        & > h1 {
+        > h1 {
           margin: 0;
           color: var(--blood);
         }
-        & > h2,
+        > h2,
         h3,
         h4,
         h5,
@@ -58,10 +60,10 @@ const storeTemplate = css`
           justify-content: space-between;
           margin: 0;
         }
-        & > h2 {
+        > h2 {
           font-size: 1.5rem;
         }
-        & > a > button {
+        > button {
           box-shadow: 0 1rem 2rem var(--color-shadow);
           background-color: var(--baby);
           border-radius: 5px;
