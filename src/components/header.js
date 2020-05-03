@@ -22,7 +22,7 @@ const Header = () => (
         alt='GB Bowlworks Logo'
       />
     </FadeLink>
-    <FadeLink to='/store/' partiallyActive='true' className='navLink' activeClassName='navLink--active'>
+    <FadeLink to='/store' partiallyActive='true' className='navLink' activeClassName='navLink--active'>
       STORE
     </FadeLink>
     <FadeLink to='/contact' className='navLink' activeClassName='navLink--active'>
