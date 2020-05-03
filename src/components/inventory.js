@@ -41,7 +41,6 @@ export const InventoryList = styled.article`
     font-size: 1.25rem;
     font-weight: bold;
     padding: 0;
-    color: var(--blood);
   }
 
   button {
@@ -151,7 +150,17 @@ const Inventory = () => (
               <p>{`$${node.frontmatter.price}.00`}</p>
             </PriceWrapper>
             <p>
-              Tag: <Link to={`/store/${node.frontmatter.tag}`}>{node.frontmatter.tag}</Link>
+              Category:{' '}
+              <Link
+                css={`
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                `}
+                to={`/store/${node.frontmatter.tag}`}
+              >
+                {node.frontmatter.tag}
+              </Link>
             </p>
             <button
               type='button'
