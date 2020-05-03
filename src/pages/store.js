@@ -1,10 +1,12 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
 import FadeWrapper from '../components/fadeWrapper'
 import Layout from '../components/layout'
 import Inventory from '../components/inventory'
 import StoreBanner from '../components/storeBanner'
+import ShoppingCart from '../components/shoppingCart'
 
 const InventoryWrapper = styled.div`
   margin: 1.25rem;
@@ -32,7 +34,34 @@ const InventoryWrapper = styled.div`
 
 const Store = () => (
   <FadeWrapper>
+    <Helmet
+      link={[
+        {
+          href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
+          rel: 'stylesheet',
+          type: 'text/css',
+        },
+      ]}
+      script={[
+        {
+          type: 'text/javascript',
+          url: '',
+          id: 'snipcart',
+          'data-api-key': 'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
+          src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
+          async: true,
+          defer: true,
+        },
+        {
+          type: 'text/javascript',
+          src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+          async: true,
+          defer: true,
+        },
+      ]}
+    />
     <Layout title='Store'>
+      <ShoppingCart />
       <StoreBanner />
       <InventoryWrapper>
         <Inventory />

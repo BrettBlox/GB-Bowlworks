@@ -14,30 +14,6 @@ function SEO({ description, lang, meta, keywords, title, siteUrl }) {
             htmlAttributes={{
               lang,
             }}
-            link={[
-              {
-                href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-                rel: 'stylesheet',
-                type: 'text/css',
-              },
-            ]}
-            script={[
-              {
-                type: 'text/javascript',
-                url: '',
-                id: 'snipcart',
-                'data-api-key': 'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
-                src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
-                async: true,
-                defer: true,
-              },
-              {
-                type: 'text/javascript',
-                src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-                async: true,
-                defer: true,
-              },
-            ]}
             title={title}
             url={siteUrl}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
