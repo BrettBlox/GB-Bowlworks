@@ -20,7 +20,7 @@ const Filters = styled.div`
   text-align: center;
   padding-bottom: 10px;
 
-  @media only screen and (max-width: 857px) {
+  @media only screen and (max-width: 1000px) {
     flex-direction: column;
     padding: 0;
   }
@@ -67,20 +67,14 @@ const FilterInactive = styled.span`
     transition: width 0.3s ease, background-color 0.5s ease;
   }
 
-  @media only screen and (max-width: 981px) {
-    font-size: 1.6rem;
-  }
-  @media only screen and (max-width: 919px) {
+  @media only screen and (max-width: 1139px) {
     font-size: 1.4rem;
   }
   @media only screen and (max-width: 857px) {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding-top: 1.25rem;
-  }
-  @media screen and (max-width: 501px) {
-    color: var(--blood);
-    font-size: 1.25rem;
     padding: 0.2rem 0;
+    color: var(--blood);
   }
 `
 
@@ -98,8 +92,12 @@ const FilterActive = styled(FilterInactive)`
     width: 100%;
     bottom: 0;
     margin: 0 auto;
+  }
+  @media only screen and (max-width: 1000px) {
+    padding: 0.3rem 0;
+    color: var(--gold);
 
-    @media only screen and (max-width: 857px) {
+    &:after {
       border-bottom: 1px solid var(--gold);
       content: '';
       position: absolute;
@@ -110,13 +108,10 @@ const FilterActive = styled(FilterInactive)`
       margin: 0 auto;
     }
   }
-  @media screen and (max-width: 501px) {
-    color: var(--gold);
-    padding: 0;
-    padding: 0.2rem 0;
 
+  @media screen and (max-width: 501px) {
     &:after {
-      width: 70%;
+      width: 50%;
     }
   }
 `

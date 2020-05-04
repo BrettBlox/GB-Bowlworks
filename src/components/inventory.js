@@ -71,7 +71,7 @@ export const InventoryList = styled.article`
 export const ListingLink = styled(FadeLink)`
   h2 {
     text-align: left;
-    font: 700 1.875rem 'Cinzel', sans-serif;
+    font: 700 1.5rem 'Cinzel', sans-serif;
     background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,6 +85,10 @@ export const ListingLink = styled(FadeLink)`
       transform: translateY(-3px);
       cursor: pointer;
     }
+
+    @media screen and (max-width: 501px) {
+      font-size: 1.25rem;
+    }
   }
 `
 
@@ -96,8 +100,11 @@ export const PriceWrapper = styled.div`
     color: black;
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 501px) {
     margin-bottom: 5px;
+    p {
+      font-size: 1.25rem;
+    }
   }
 `
 
