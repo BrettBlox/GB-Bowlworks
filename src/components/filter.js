@@ -77,6 +77,11 @@ const FilterInactive = styled.span`
     font-size: 1.6rem;
     padding-top: 1.25rem;
   }
+  @media screen and (max-width: 501px) {
+    color: var(--blood);
+    font-size: 1.25rem;
+    padding: 0.2rem 0;
+  }
 `
 
 const FilterActive = styled(FilterInactive)`
@@ -103,6 +108,15 @@ const FilterActive = styled(FilterInactive)`
       width: 20%;
       bottom: 0;
       margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 501px) {
+    color: var(--gold);
+    padding: 0;
+    padding: 0.2rem 0;
+
+    &:after {
+      width: 70%;
     }
   }
 `
