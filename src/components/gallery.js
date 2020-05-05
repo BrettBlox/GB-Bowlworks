@@ -4,7 +4,7 @@ import Masonry from 'react-masonry-css'
 
 import Spinner from './spinner'
 import Filter from './filter'
-
+import Cover from '../styles/cover'
 import '../styles/gallery.js'
 
 // ADD SRC PROPERTY TO EACH OBJECT IN GALLERY
@@ -122,7 +122,9 @@ export default function Gallery(props) {
   // WIDE VIEW USES SORTED GALLERY -- MASONRY LAYOUT
   const wideView = (
     <>
-      <Filter title='Gallery' handleFilter={handleFilter} filter={filter} />
+      <Cover>
+        <Filter title='Gallery' handleFilter={handleFilter} filter={filter} />
+      </Cover>
       <Masonry
         breakpointCols={myBreakpointsAndCols}
         className='my-masonry-grid'

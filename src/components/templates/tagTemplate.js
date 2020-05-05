@@ -71,8 +71,7 @@ const Tags = ({ data, pageContext }) => {
         ]}
       />
       <ShoppingCart />
-      <StoreBanner />
-      <Filter title='Filter Items' filter={filter} />
+      <StoreBanner filter={filter} />
       <InventoryWrapper>
         {allMarkdownRemark.edges.map(edge => (
           <div key={edge.node.frontmatter.id}>

@@ -2,8 +2,6 @@ import React from 'react'
 import { navigate } from 'gatsby'
 import styled from 'styled-components'
 
-import Cover from '../styles/cover'
-
 const filters = {
   bowlworks: `all`,
   open: `open form`,
@@ -141,7 +139,7 @@ const handleFilterDefault = currentFilter => {
   }
 }
 
-const Filter = ({ handleFilter, filter, title }) => {
+const Filter = ({ handleFilter, filter, title, showTitle }) => {
   function handleClick(e) {
     if (handleFilter) {
       handleFilter(e.target.dataset.filter)
@@ -151,8 +149,8 @@ const Filter = ({ handleFilter, filter, title }) => {
   }
 
   return (
-    <Cover text='center'>
-      <h2>{title}</h2>
+    <>
+      {title && <h2>{title}</h2>}
       <Filters>
         {Object.keys(filters).map(tag => {
           const currentFilter = tag
@@ -168,7 +166,7 @@ const Filter = ({ handleFilter, filter, title }) => {
           )
         })}
       </Filters>
-    </Cover>
+    </>
   )
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 
 import Cover from '../styles/cover'
+import Filter from './filter'
 
 const STORE_BANNER_QUERY = graphql`
   query storebannerquery {
@@ -18,7 +19,7 @@ const STORE_BANNER_QUERY = graphql`
   }
 `
 
-const StoreBanner = () => (
+const StoreBanner = ({ filter }) => (
   <StaticQuery
     query={STORE_BANNER_QUERY}
     render={({ allMarkdownRemark }) => (
@@ -29,6 +30,7 @@ const StoreBanner = () => (
             <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
           </div>
         ))}
+        <Filter filter={filter} />
       </Cover>
     )}
   />

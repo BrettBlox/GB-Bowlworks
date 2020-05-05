@@ -63,8 +63,7 @@ const Store = () => (
     />
     <SEO title='Store' />
     <ShoppingCart />
-    <StoreBanner />
-    <Filter title='Filter Items' filter='bowlworks' />
+    <StoreBanner filter='bowlworks' />
     <InventoryWrapper>
       <Inventory />
     </InventoryWrapper>
