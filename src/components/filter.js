@@ -77,7 +77,7 @@ const FilterInactive = styled.span`
 `
 
 const FilterActive = styled(FilterInactive)`
-  transform: translateY(-3px) scale(1.2);
+  transform: translateY(-3px) scale(1.1);
   background-color: var(--gold);
   color: var(--gold);
 
