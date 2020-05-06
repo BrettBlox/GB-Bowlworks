@@ -21,4 +21,4 @@ I still consider myself a student of the art; there’s so much room for improve
 
 Greg
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1588771702/IMG_7878.jpg)
+![]()
