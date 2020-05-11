@@ -13,6 +13,8 @@ I’m a woodworker, have been since as far back as I can remember. I come by it 
 
 In 1976, as a high school freshman, I enrolled in what ended up being the best class in the world for me...shop class.  Thanks to my shop teacher, J. D. Newland, who taught me the right way, I still have all my fingers! I made several pieces of furniture over the four years I was there, most of which are scattered around my mother’s home.
 
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1588771702/IMG_7878.jpg)
+
 Over the years I started accumulating woodworking equipment and made a lot of things. My first real lathe was a Jet 12-36. I took a class at a local woodworking store and made my first bowl. I still have it; it sits on my dresser and I put each day’s pocket change in it. I then stumbled onto segmented turning and made a few little bowls...and a spark was lit. I told myself that one of these days I would focus more on getting better at segmented turning.
 
 ​Fast-forward a few years. My wife and I became empty-nesters and suddenly had a little more time on our hands. I discovered I had time to get more invested in segmented turning and began focusing most of my time on it. The little Jet 12-36 had served its purpose but it was time to upgrade to a more capable machine, one that would allow for larger vessels. After upgrading to a more substantial lathe, I’m now able to turn bowls up to 18” in diameter, which seems to be (at least for now) just right.
