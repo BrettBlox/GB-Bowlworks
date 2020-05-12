@@ -7,6 +7,6 @@ title: Shazam (#2017)
 date: 2020-05-12T19:31:07.373Z
 tag: OPEN FORM
 ---
-A cool name for a stunning pattern and design in this 480-segment open segment vase using Padauk, Wenge and Maple.  This piece really pops with its design and stands out from across the room!  Ideal for a mantel or display in your home.  It stand in at 8" in height, with a max diameter of 10.5".
+A cool name for a stunning pattern and design in this 480-segment open segment vase using Padauk, Wenge and Maple.  This piece really pops with its design and stands out from across the room!  Ideal for a mantel or display in your home.  It stands in at 8" in height, with a max diameter of 10.5".
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1589312108/GB%20Bowlworks%20Gallery/2017c.jpg)
