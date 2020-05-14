@@ -2,9 +2,8 @@
 slug: /PR2002
 id: /PR2002
 price: 65
-image: >-
-  https://res.cloudinary.com/dy6lb8vna/image/upload/v1584998409/GB%20Bowlworks%20Gallery/PR2002.jpg
-title: 'Palm Rest for Keyboard (Small) (#PR2002)'
+image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1584998409/GB%20Bowlworks%20Gallery/PR2002.jpg
+title: Palm Rest for Keyboard (Small) (SOLD)
 date: 2020-03-23T21:29:31.273Z
 tag: misc
 ---
