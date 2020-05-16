@@ -1,10 +1,9 @@
 ---
 slug: /1915
-id: '1915'
+id: "1915"
 price: 395
-image: >-
-  https://res.cloudinary.com/dy6lb8vna/image/upload/v1565267453/GB%20Bowlworks%20Gallery/1915a.jpg
-title: 'Walnut Memorial Urn (#1915)'
+image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1565267453/GB%20Bowlworks%20Gallery/1915a.jpg
+title: Walnut Memorial Urn (SOLD)
 date: 2019-08-08T12:31:39.308Z
 tag: lidded
 ---
