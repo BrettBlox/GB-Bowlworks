@@ -19,6 +19,8 @@ Over the years I started accumulating woodworking equipment and made a lot of th
 
 ​Fast-forward a few years. My wife and I became empty-nesters and suddenly had a little more time on our hands. I discovered I had time to get more invested in segmented turning and began focusing most of my time on it. The little Jet 12-36 had served its purpose but it was time to upgrade to a more capable machine, one that would allow for larger vessels. After upgrading to a more substantial lathe, I’m now able to turn bowls up to 18” in diameter, which seems to be (at least for now) just right.
 
+I am a member of the Segmented Woodturners Association which is a great segmenting resource and profiles some amazing turners and their creations. (segmentedwoodturners.org) 
+
 I still consider myself a student of the art; there’s so much room for improvement in what I do, but even if I don’t get better, I’m having a great time doing what I’m doing. Thanks for reading my ramblings, and stay tuned for more GB Bowlworks masterpieces in the near future!
 
 Greg
