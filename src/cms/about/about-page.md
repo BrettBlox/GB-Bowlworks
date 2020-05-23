@@ -3,8 +3,6 @@ title: About GB Bowlworks
 ---
 ![Greg and his dog Jasper in the shop](https://res.cloudinary.com/dy6lb8vna/image/upload/v1582853540/gregandjasper.jpg "Greg and Jasper")
 
-![]()
-
 I love woodworking. I love the satisfaction I get from making things out of wood. I love the feel and smell of wood. I even love peeling dried glue off my fingers after I make something!
 
 I’m a woodworker, have been since as far back as I can remember. I come by it naturally...got it from my dad. Dad was a shade-tree mechanic, woodworker, electrician, plumber, etc., and I was his shadow. I took my dad’s interest in woodworking and refined it a little. I’ve zeroed in on bowl turning. To take a piece of gnarly, cracked, warped wood and bring out the inner beauty by recycling it into something useful is just the neatest thing ever. 
@@ -13,7 +11,7 @@ I’m a woodworker, have been since as far back as I can remember. I come by it 
 
 In 1976, as a high school freshman, I enrolled in what ended up being the best class in the world for me...shop class.  Thanks to my shop teacher, J. D. Newland, who taught me the right way, I still have all my fingers! I made several pieces of furniture over the four years I was there, most of which are scattered around my mother’s home.
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_1160/v1588771702/IMG_7878.jpg)
+![Greg Bloxom](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_1160/v1588771702/IMG_7878.jpg "Greg Bloxom")
 
 Over the years I started accumulating woodworking equipment and made a lot of things. My first real lathe was a Jet 12-36. I took a class at a local woodworking store and made my first bowl. I still have it; it sits on my dresser and I put each day’s pocket change in it. I then stumbled onto segmented turning and made a few little bowls...and a spark was lit. I told myself that one of these days I would focus more on getting better at segmented turning.
 
@@ -24,5 +22,3 @@ I am a member of the Segmented Woodturners Association which is a great segmenti
 I still consider myself a student of the art; there’s so much room for improvement in what I do, but even if I don’t get better, I’m having a great time doing what I’m doing. Thanks for reading my ramblings, and stay tuned for more GB Bowlworks masterpieces in the near future!
 
 Greg
-
-![]()
