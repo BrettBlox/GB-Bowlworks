@@ -31,6 +31,12 @@ const About = styled.div`
       line-height: 1.2;
     }
   }
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 `
 
 const ABOUT_QUERY = graphql`
