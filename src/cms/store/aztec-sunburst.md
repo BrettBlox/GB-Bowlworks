@@ -1,9 +1,9 @@
 ---
 slug: /2001
-id: '2001'
-price: 1395
-image: 'https://res.cloudinary.com/dy6lb8vna/image/upload/v1581370561/1933a.jpg'
-title: 'Aztec Sunburst (#2001)'
+id: "2001"
+price: 1195
+image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1581370561/1933a.jpg
+title: Aztec Sunburst (#2001)
 date: 2020-02-11T03:10:01.355Z
 tag: closed form
 ---
