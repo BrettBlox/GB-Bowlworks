@@ -1,10 +1,9 @@
 ---
 slug: /1912
 id: Yellow Zag
-price: 695
-image: >-
-  https://res.cloudinary.com/dy6lb8vna/image/upload/v1564695858/GB%20Bowlworks%20Gallery/1912b.jpg
-title: 'Aztec Yellow Zag (#1912)'
+price: 575
+image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1564695858/GB%20Bowlworks%20Gallery/1912b.jpg
+title: Aztec Yellow Zag (#1912)
 date: 2019-08-01T21:44:54.955Z
 tag: closed form
 ---
