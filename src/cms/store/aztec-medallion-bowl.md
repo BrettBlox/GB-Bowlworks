@@ -1,10 +1,9 @@
 ---
 slug: /1902
-id: '1902'
-price: 795
-image: >-
-  https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1548905382/GB%20Bowlworks%20Gallery/1902d.jpg
-title: 'Aztec Medallion Bowl (#1902)'
+id: "1902"
+price: 525
+image: https://res.cloudinary.com/dy6lb8vna/image/upload/w_650,c_fit,f_auto/v1548905382/GB%20Bowlworks%20Gallery/1902d.jpg
+title: Aztec Medallion Bowl (#1902)
 date: 2019-01-31T03:33:26.790Z
 tag: closed form
 ---
