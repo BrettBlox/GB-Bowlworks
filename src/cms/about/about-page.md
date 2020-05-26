@@ -1,6 +1,8 @@
 ---
 title: About GB Bowlworks
 ---
+
+
 ![Greg and his dog Jasper in the shop](https://res.cloudinary.com/dy6lb8vna/image/upload/v1590498432/GB%20Bowlworks%20Gallery/About_Page_Collage.jpg "Greg and Jasper")
 
 I love woodworking. I love the satisfaction I get from making things out of wood. I love the feel and smell of wood. I even love peeling dried glue off my fingers after I make something!
