@@ -1,7 +1,7 @@
 ---
 title: About GB Bowlworks
 ---
-![GB Bowlworks Collage](https://res.cloudinary.com/dy6lb8vna/image/upload/v1590498432/GB%20Bowlworks%20Gallery/About_Page_Collage.jpg "GB Bowlworks Collage")
+![GB Bowlworks About Page Collage](https://res.cloudinary.com/dy6lb8vna/image/upload/v1590498432/GB%20Bowlworks%20Gallery/About_Page_Collage.jpg "GB Bowlworks About Page Collage")
 
 I love woodworking. I love the satisfaction I get from making things out of wood. I love the feel and smell of wood. I even love peeling dried glue off my fingers after I make something!
 
