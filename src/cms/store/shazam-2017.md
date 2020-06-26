@@ -2,7 +2,7 @@
 slug: /2017
 id: "2017"
 price: 395
-image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1589311937/GB%20Bowlworks%20Gallery/2017a.jpg
+image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1593172495/GB%20Bowlworks%20Gallery/2017a.jpg
 title: Shazam (#2017)
 date: 2020-05-12T19:31:07.373Z
 tag: open form
