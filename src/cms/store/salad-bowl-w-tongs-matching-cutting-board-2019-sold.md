@@ -3,7 +3,8 @@ slug: /2019
 id: "2019"
 price: 275
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/a_090/v1593135149/GB%20Bowlworks%20Gallery/2019a.jpg
-title: Salad Bowl w/Tongs & Matching Cutting Board (#2019) (Sold)
+title: Salad Bowl w/Tongs & Matching Cutting Board (#2019) (Sold) (Custom Orders
+  Accepted)
 date: 2020-06-26T01:33:38.518Z
 tag: Misc
 ---
