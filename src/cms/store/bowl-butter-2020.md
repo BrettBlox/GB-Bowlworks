@@ -2,7 +2,7 @@
 slug: /2020
 id: "2020"
 price: 15
-image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1593137783/IMG_8193_2.jpg
+image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1593170789/GB%20Bowlworks%20Gallery/IMG_8193_2.jpg
 title: Bowl Butter (#2020)
 date: 2020-06-26T02:05:07.258Z
 tag: misc
