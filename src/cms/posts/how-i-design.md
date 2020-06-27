@@ -17,4 +17,6 @@ The combination of software and the Wedgie Sled completely changed the way I app
 
 I would encourage anyone to look into using software as a design tool in bowl building.  It simplified and enhanced my ability to produce a quality product, and it opened doors as to design possibilities. 
 
-If I can assist you in any way, maybe direct you to the particular software programs I use, or where to find plans for the Wedgie Sled, I'm glad to help.  If you have questions, please contact me.
+Regarding the specific software I use, I alternate between Segment Pro and Woodturner Pro.  They each have unique features that I find helpful in different situations.  They aren't free, but they aren't expensive.  If you are interested in either or both of these programs, please visit woodturnerpro.com for a complete rundown on these two programs as well as a few others.  Lloyd Johnson is the creator of the site and the software and has always been very helpful in assisting me.  
+
+Jerry Bennett is the creator of the Wedgie Sled and has a site dedicated to his products, segeasy.com.
