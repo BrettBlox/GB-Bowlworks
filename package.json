@@ -27,7 +27,7 @@
 		"react-dom": "^16.9.0",
 		"react-helmet": "^6.1.0",
 		"react-images": "^0.5.19",
-		"react-lazyload": "^3.0.0",
+		"react-lazyload": "^2.6.2",
 		"react-masonry-css": "^1.0.12",
 		"react-pose": "^4.0.10",
 		"slugify": "^1.4.0",
