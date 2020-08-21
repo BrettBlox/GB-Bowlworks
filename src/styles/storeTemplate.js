@@ -90,9 +90,9 @@ const storeTemplate = css`
     .store-item-image > img {
       border-radius: 4px;
       box-shadow: 0 1rem 2rem var(--color-shadow);
-      width: 100%;
-      max-width: 650px;
+      max-width: 100%;
       height: auto;
+      max-height: 500px;
     }
   }
 
