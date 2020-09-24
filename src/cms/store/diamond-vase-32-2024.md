@@ -1,7 +1,7 @@
 ---
 slug: /2024
 id: "2024"
-price: 475
+price: 325
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1598912926/2024a.jpg
 title: Diamond Vase 32 (#2024)
 date: 2020-08-31T22:28:17.547Z
