@@ -35,7 +35,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Date Added', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'body', widget: 'markdown' }
-      - { label: 'Tag', name: 'tag', widget: 'string' }
+      - { label: 'Tag (must be lower case)', name: 'tag', widget: 'string' }
   - name: 'events'
     label: 'Upcoming Event'
     folder: 'src/cms/events'
