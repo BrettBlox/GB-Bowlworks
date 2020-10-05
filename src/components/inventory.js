@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql, Link, navigate } from 'gatsby'
 import styled from 'styled-components'
 import LazyLoad from 'react-lazyload'
+import slugify from 'slugify'
 
 import FadeLink from './fadeLink'
 import Filter from './filter'
@@ -75,7 +76,12 @@ export const ListingLink = styled(FadeLink)`
     background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
+    background-image: linear-gradient(
+      to right,
+      var(--gold),
+      var(--gold) 50%,
+      var(--blood) 50%
+    );
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;
@@ -132,11 +138,8 @@ const STORE_QUERY = graphql`
   }
 `
 
-const checkSold = title => {
-  const checkedTitle = title
-    .toLowerCase()
-    .split(' ')
-    .includes('(sold)')
+const checkSold = (title) => {
+  const checkedTitle = title.toLowerCase().split(' ').includes('(sold)')
   return checkedTitle
 }
 
@@ -159,8 +162,7 @@ const Inventory = () => (
             <p
               css={`
                 text-transform: uppercase;
-              `}
-            >
+              `}>
               Category:{' '}
               <Link
                 css={`
@@ -168,8 +170,10 @@ const Inventory = () => (
                     text-decoration: underline;
                   }
                 `}
-                to={`/store/${node.frontmatter.tag}`}
-              >
+                to={`/store/${slugify(node.frontmatter.tag, {
+                  replacement: '-',
+                  lower: true,
+                })}`}>
                 {node.frontmatter.tag}
               </Link>
             </p>
@@ -193,8 +197,7 @@ const Inventory = () => (
                       cursor: 'auto',
                     }
                   : null
-              }
-            >
+              }>
               {checkSold(node.frontmatter.title) ? 'SOLD' : 'BUY NOW'}
             </button>
           </InventoryList>
