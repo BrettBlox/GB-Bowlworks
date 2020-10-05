@@ -12,11 +12,8 @@ import { InventoryWrapper } from '../../pages/store'
 import { InventoryList, ListingLink, PriceWrapper } from '../inventory'
 import Filter from '../filter'
 
-const checkSold = title => {
-  const checkedTitle = title
-    .toLowerCase()
-    .split(' ')
-    .includes('(sold)')
+const checkSold = (title) => {
+  const checkedTitle = title.toLowerCase().split(' ').includes('(sold)')
   return checkedTitle
 }
 
@@ -57,14 +54,16 @@ const Tags = ({ data, pageContext }) => {
             type: 'text/javascript',
             url: '',
             id: 'snipcart',
-            'data-api-key': 'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
+            'data-api-key':
+              'NzZhZGMxMGEtMjZkMS00MzQ4LWE3YmMtNzY1MmE0NmRmYzI4NjM2ODQwNTIzODg1MTYwNjg4',
             src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
             async: true,
             defer: true,
           },
           {
             type: 'text/javascript',
-            src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+            src:
+              'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
             async: true,
             defer: true,
           },
@@ -73,7 +72,7 @@ const Tags = ({ data, pageContext }) => {
       <ShoppingCart />
       <StoreBanner filter={filter} />
       <InventoryWrapper>
-        {allMarkdownRemark.edges.map(edge => (
+        {allMarkdownRemark.edges.map((edge) => (
           <div key={edge.node.frontmatter.id}>
             <InventoryList>
               <LazyLoad offset={100}>
@@ -85,9 +84,17 @@ const Tags = ({ data, pageContext }) => {
               <PriceWrapper>
                 <p>{`$${edge.node.frontmatter.price}.00`}</p>
               </PriceWrapper>
-              <p>
-                Tag:{' '}
-                <Link to={`/store/${slugify(edge.node.frontmatter.tag, { replacement: '-', lower: true })}`}>
+              <p
+                css={`
+                  text-transform: uppercase;
+                `}>
+                {' '}
+                Category:{' '}
+                <Link
+                  to={`/store/${slugify(edge.node.frontmatter.tag, {
+                    replacement: '-',
+                    lower: true,
+                  })}`}>
                   {edge.node.frontmatter.tag}
                 </Link>
               </p>
@@ -111,8 +118,7 @@ const Tags = ({ data, pageContext }) => {
                         cursor: 'auto',
                       }
                     : null
-                }
-              >
+                }>
                 {checkSold(edge.node.frontmatter.title) ? 'SOLD' : 'BUY NOW'}
               </button>
             </InventoryList>
