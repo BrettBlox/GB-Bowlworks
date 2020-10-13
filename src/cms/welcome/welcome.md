@@ -5,4 +5,4 @@ GB Bowlworks, LLC, is a woodturning business based in Oklahoma, owned and operat
 
 Thanks for stopping by!
 
-*Greg*
+***Greg***
