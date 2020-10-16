@@ -3,7 +3,7 @@ slug: /second-post
 date: 2018-02-01T06:00:00.000Z
 title: Drum Sander
 ---
-One of the many challenges in segmented turning is finding an efficient way to sand the individual rings flat before stacking and gluing them together. At first, I used a large sanding disk for the lathe and I would simply hold the ring up to the disk and sand it to get it ready to glue to the next ring. This method, for me, was not ideal.  It created a massive amount of dust in the shop, no matter how I positioned a dust collection hose, and it was just dangerous for obvious reasons. Time to come up with a better way. I began looking into drum sanders by Jet and a few others. I stumbled onto a video about a machine called FlatMaster and found what I thought would be the best design. On YouTube I found a three-video series entitled "V-Drum Sander Build" about a homemade benchtop drum sander that gave me some good ideas.
+One of the many challenges in segmented turning is finding an efficient way to sand the individual rings flat before stacking and gluing them together. At first, I used a large sanding disk for the lathe and I would simply hold the ring up to the disk and sand it to get it ready to glue to the next ring. This method, for me, was not ideal.  It created a massive amount of dust in the shop, no matter how I positioned a dust collection hose, and it was just dangerous for obvious reasons. Time to come up with a better way. I began looking into drum sanders by Jet and a few others. I stumbled onto a video about a machine called FlatMaster and found what I thought would be the best design. After a few days of head scratching on how to build one, I came up with a few ideas and thought I'd give it a try.
 
 I started with a 5/8 steel shaft 36" long, then cut a series of MDF disks and glued them together on the shaft.
 
@@ -25,6 +25,6 @@ After I was happy with the layout of everything, I then carefully sanded the dru
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1/other/E9881D6B-8B80-4D54-8718-A060CE20F376.jpg)
 
-I've been using this machine for over a year now on probably 20 different projects. It has worked like a charm. I've replaced the sandpaper about four times in the year and have switched to 100 grit instead of 120. Thanks to the attached dust collection, there is NO dust in my shop from this machine. I'm able to sand a segmented ring in just a few passes. For efficient production of a segmented vessel, this machine has simplified one very big step in the process.
+I've been using this machine for about three years now (Oct 2020) on probably 40 different projects. It has worked like a charm. I started out with 120 grit paper but have switched to 80 grit.  The paper lasts probably two months or so between changing, and it's cheap, about $15 for a roll that allows for three changes.  Thanks to the attached dust collection, there is NO dust in my shop from this machine. I'm able to sand a segmented ring in just a few passes. For efficient production of a segmented vessel, this machine has simplified one very big step in the process.
 
 If you've got any questions about this project, feel free to contact me and I can give you a few more details.
