@@ -27,4 +27,6 @@ After I was happy with the layout of everything, I then carefully sanded the dru
 
 I've been using this machine for about three years now (Oct 2020) on probably 40 different projects. It has worked like a charm. I started out with 120 grit paper but have switched to 80 grit.  The paper lasts probably two months or so between changing, and it's cheap, about $15 for a roll that allows for three changes.  Thanks to the attached dust collection, there is NO dust in my shop from this machine. I'm able to sand a segmented ring in just a few passes. For efficient production of a segmented vessel, this machine has simplified one very big step in the process.
 
+I've added a removable top that allows me to use the platform as a work surface when not needing the sander.  
+
 If you've got any questions about this project, feel free to contact me and I can give you a few more details.
