@@ -1,7 +1,7 @@
 ---
 slug: /2011
 id: "2011"
-price: 147
+price: 150
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/a_180/v1587501713/GB%20Bowlworks%20Gallery/2011a.jpg
 title: Red Oak & Cherry Large Salad Bowl w/Tongs (#2011)
 date: 2020-04-21T20:40:33.155Z
