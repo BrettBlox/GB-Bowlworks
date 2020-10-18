@@ -1,7 +1,7 @@
 ---
 slug: /2014
 id: "2014"
-price: 148
+price: 150
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1587502983/GB%20Bowlworks%20Gallery/2014a.jpg
 title: Red Oak & Bubinga Large Salad Bowl w/Tongs (#2014)
 date: 2020-04-21T21:02:17.420Z
