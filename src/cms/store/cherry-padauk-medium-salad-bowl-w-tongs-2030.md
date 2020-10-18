@@ -1,7 +1,7 @@
 ---
 slug: /2030
 id: "2030"
-price: 150
+price: 130
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1602980949/GB%20Bowlworks%20Gallery/2030a.jpg
 title: Cherry & Padauk Medium Salad Bowl w/Tongs (#2030)
 date: 2020-10-18T00:29:31.497Z
