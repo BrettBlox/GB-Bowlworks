@@ -1,7 +1,7 @@
 ---
 slug: /2034
 id: "2034"
-price: 235
+price: 245
 image: https://res.cloudinary.com/dy6lb8vna/image/upload/v1604783072/GB%20Bowlworks%20Gallery/2034a.jpg
 title: Aztec Crest 36 (Lidded) (#2034)
 date: 2020-11-07T21:28:01.324Z
