@@ -1,8 +1,6 @@
 ---
 title: Welcome to GB Bowlworks
 ---
-
-
 # 2020 HOLIDAY SPECIAL!
 
 ## 10% OFF ALL IN-STOCK ITEMS!
