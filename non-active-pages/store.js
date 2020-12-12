@@ -2,12 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-import FadeWrapper from '../components/fadeWrapper'
-import SEO from '../components/seo'
-import Inventory from '../components/inventory'
-import StoreBanner from '../components/storeBanner'
-import ShoppingCart from '../components/shoppingCart'
-import Filter from '../components/filter'
+import FadeWrapper from '../src/components/fadeWrapper'
+import SEO from '../src/components/seo'
+import Inventory from '../src/components/inventory'
+import StoreBanner from '../src/components/storeBanner'
+import ShoppingCart from '../src/components/shoppingCart'
+import Filter from '../src/components/filter'
 
 export const InventoryWrapper = styled.div`
   margin: 1.25rem;
