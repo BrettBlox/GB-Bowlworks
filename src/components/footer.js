@@ -36,9 +36,9 @@ const Footer = () => (
           </FadeLink>
         </li>
         <li className='footItem'>
-          <FadeLink className='footLink' to='/store'>
-            Store
-          </FadeLink>
+          <a href='https://www.etsy.com/shop/GBBowlworks' target='_blank' rel="noopener noreferrer" className='footLink'>
+            STORE
+          </a>
         </li>
         <li className='footItem'>
           <FadeLink className='footLink' to='/contact'>

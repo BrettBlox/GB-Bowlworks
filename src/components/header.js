@@ -22,9 +22,9 @@ const Header = () => (
         alt='GB Bowlworks Logo'
       />
     </FadeLink>
-    <FadeLink to='/store' partiallyActive={true} className='navLink' activeClassName='navLink--active'>
+    <a href='https://www.etsy.com/shop/GBBowlworks' target='_blank' rel="noopener noreferrer" className='navLink'>
       STORE
-    </FadeLink>
+    </a>
     <FadeLink to='/contact' className='navLink' activeClassName='navLink--active'>
       CONTACT
     </FadeLink>
