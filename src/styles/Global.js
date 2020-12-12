@@ -1,6 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components'
 
-import storeTemplate from './storeTemplate'
 import gallery from './gallery'
 import vars from './vars'
 import reset from './reset'
@@ -48,12 +47,7 @@ const GlobalStyles = createGlobalStyle`
       border: 1px solid;
     }
   }
-  ${storeTemplate};
   ${gallery};
-  #snipcart-header {
-	background-color: var(--deep);
-}
-
 `
 
 export default GlobalStyles

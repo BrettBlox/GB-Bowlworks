@@ -59,9 +59,9 @@ const Header = () => (
         </FadeLink>
       </li>
       <li>
-        <FadeLink to='/store' className='resLink'>
+        <a to='https://www.etsy.com/shop/GBBowlworks' target='_blank' rel='noopener noreferrer' className='resLink'>
           STORE
-        </FadeLink>
+        </a>
       </li>
       <li>
         <FadeLink to='/contact' className='resLink'>
