@@ -40,7 +40,12 @@ const ListingLink = styled(FadeLink)`
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
+    background-image: linear-gradient(
+      to right,
+      var(--gold),
+      var(--gold) 50%,
+      var(--blood) 50%
+    );
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;
@@ -59,7 +64,12 @@ const ReadMore = styled(Link)`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--gold),
+    var(--gold) 50%,
+    var(--blood) 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s;
@@ -101,13 +111,21 @@ const Listing = () => (
       render={({ allMarkdownRemark }) =>
         allMarkdownRemark.edges.map(({ node }) => (
           <ListingWrapper key={node.frontmatter.slug}>
-            <ListingLink to={`/blog/${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`}>
+            <ListingLink
+              to={`/blog/${slugify(node.frontmatter.slug, {
+                replacement: '-',
+                lower: true,
+              })}`}
+            >
               <h2>{node.frontmatter.title}</h2>
             </ListingLink>
             <p>{node.frontmatter.date}</p>
             <p>{node.excerpt}</p>
             <ReadMore
-              to={`/blog/${slugify(node.frontmatter.slug, { replacement: '-', lower: true })}`}
+              to={`/blog/${slugify(node.frontmatter.slug, {
+                replacement: '-',
+                lower: true,
+              })}`}
               aria-label={`Read more about ${node.frontmatter.title}`}
             >
               Read More &rarr;

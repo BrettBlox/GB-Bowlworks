@@ -22,10 +22,19 @@ const Header = () => (
         alt='GB Bowlworks Logo'
       />
     </FadeLink>
-    <a href='https://www.etsy.com/shop/GBBowlworks' target='_blank' rel="noopener noreferrer" className='navLink'>
+    <a
+      href='https://www.etsy.com/shop/GBBowlworks'
+      target='_blank'
+      rel='noopener noreferrer'
+      className='navLink'
+    >
       STORE
     </a>
-    <FadeLink to='/contact' className='navLink' activeClassName='navLink--active'>
+    <FadeLink
+      to='/contact'
+      className='navLink'
+      activeClassName='navLink--active'
+    >
       CONTACT
     </FadeLink>
     <FadeLink to='/faq' className='navLink' activeClassName='navLink--active'>
@@ -59,7 +68,12 @@ const Header = () => (
         </FadeLink>
       </li>
       <li>
-        <a href='https://www.etsy.com/shop/GBBowlworks' target='_blank' rel='noopener noreferrer' className='resLink'>
+        <a
+          href='https://www.etsy.com/shop/GBBowlworks'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='resLink'
+        >
           STORE
         </a>
       </li>

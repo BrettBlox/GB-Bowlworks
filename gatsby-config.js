@@ -17,6 +17,18 @@ module.exports = {
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        prefix: `GB Bowlworks Gallery/`,
+        tags: true,
+        maxResults: 1000,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,

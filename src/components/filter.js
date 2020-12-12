@@ -124,15 +124,23 @@ const Filter = ({ handleFilter, filter, title, showTitle }) => {
     <>
       {title && <h2>{title}</h2>}
       <Filters>
-        {Object.keys(filters).map(tag => {
+        {Object.keys(filters).map((tag) => {
           const currentFilter = tag
           const filterText = filters[tag]
           return currentFilter === filter ? (
-            <FilterActive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
+            <FilterActive
+              key={`filter-${currentFilter}`}
+              data-filter={currentFilter}
+              onClick={handleClick}
+            >
               {filterText}
             </FilterActive>
           ) : (
-            <FilterInactive key={`filter-${currentFilter}`} data-filter={currentFilter} onClick={handleClick}>
+            <FilterInactive
+              key={`filter-${currentFilter}`}
+              data-filter={currentFilter}
+              onClick={handleClick}
+            >
               {filterText}
             </FilterInactive>
           )
