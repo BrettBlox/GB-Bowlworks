@@ -22,20 +22,6 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Content', name: 'body', widget: 'markdown' }
-  - name: 'inventory'
-    label: 'Inventory Item'
-    folder: 'src/cms/store'
-    slug: '{{slug}}'
-    create: true
-    fields:
-      - { label: 'URL Path example: /productName', name: 'slug', widget: 'string' }
-      - { label: 'ID', name: 'id', widget: 'string' }
-      - { label: 'Price', name: 'price', widget: 'number', valueType: 'int' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Date Added', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'body', widget: 'markdown' }
-      - { label: 'Tag (must be lower case)', name: 'tag', widget: 'string' }
   - name: 'events'
     label: 'Upcoming Event'
     folder: 'src/cms/events'
@@ -66,9 +52,4 @@ collections:
       fields:
         - { label: 'Page Title', name: 'title', widget: 'string' }
         - { label: 'FAQ Page', name: 'body', widget: 'markdown' }
-    - name: 'store banner'
-      label: 'Store Page Banner'
-      file: 'src/cms/store-banner/store-banner.md'
-      fields:
-        - { label: 'Page Title', name: 'title', widget: 'string' }
-        - { label: 'Store Page Banner', name: 'body', widget: 'markdown' }
+

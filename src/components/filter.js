@@ -1,5 +1,4 @@
 import React from 'react'
-import { navigate } from 'gatsby'
 import styled from 'styled-components'
 
 const filters = {
@@ -114,37 +113,10 @@ const FilterActive = styled(FilterInactive)`
   }
 `
 
-const handleFilterDefault = currentFilter => {
-  switch (currentFilter) {
-    case 'bowlworks':
-      navigate('/store')
-      break
-    case 'closed':
-      navigate('/store/closed-form')
-      break
-    case 'open':
-      navigate('/store/open-form')
-      break
-    case 'salad':
-      navigate('/store/salad')
-      break
-    case 'misc':
-      navigate('/store/misc')
-      break
-    case 'lidded':
-      navigate('/store/lidded')
-      break
-    default:
-      return null
-  }
-}
-
 const Filter = ({ handleFilter, filter, title, showTitle }) => {
   function handleClick(e) {
     if (handleFilter) {
       handleFilter(e.target.dataset.filter)
-    } else {
-      handleFilterDefault(e.target.dataset.filter)
     }
   }
 

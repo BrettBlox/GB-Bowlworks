@@ -26,20 +26,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `store`,
-        path: `${__dirname}/src/cms/store`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `store-banner`,
-        path: `${__dirname}/src/cms/store-banner`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `events`,
         path: `${__dirname}/src/cms/events`,
       },
