@@ -17,4 +17,6 @@ I preach the mantra of slowing down, taking your time, but when it comes to appl
 
 Lastly, I've come up with a product to send out with each food-safe piece I make.  It's my own GB Bowlworks Wood Butter.  It's a combination of mineral oil and organic beeswax with a hint of lemon.  It's a paste that you apply occasionally to your salad bowl or cutting board that keeps your product looking good for years.  
 
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1593137783/IMG_8193_2.jpg)
+
 I've arrived at the methods discussed above after many years of attempts, failed and successful, that I'm happy with.  Maybe I've given you an idea to assist you in your finishing process.
