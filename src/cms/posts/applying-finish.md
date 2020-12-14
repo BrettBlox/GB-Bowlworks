@@ -5,13 +5,13 @@ title: Applying Finish
 ---
 I work every day at finding ways to simplify and perfect all aspects of my shop work.  Over time, I have figured out way that work for me, that I'm completely happy with, and that don't come back to bite me down the road!!  
 
-When it comes to applying finish, I follow that old analogy of "KISS" or "KEEP IT SIMPLE, STUPID!"  I have two types of finish I apply, one for decorative pieces and one for pieces that need a food-safe finish.  I'll discuss each type here.
+When it comes to applying finish, I follow that old analogy of "KISS" or "Keep It Simple Stupid."  I have two types of finish I apply, one for decorative pieces and one for pieces that need a food-safe finish.  I'll discuss each type here.
 
 For food-safe finishes, I use a simple mineral oil that I purchase from a few local stores like Walmart and Target.  I buy it in the pharmacy area and keep several bottles in my shop.  It comes in 16oz bottles and lasts a long time.  Mineral oil is completely safe, can be used as a laxative (don't ask me anything about that) and assures me that when I sell a salad bowl or cutting board, NO ONE should have any allergic reactions ever.  There are customers that have nut allergies; therefore using a walnut oil based product could be a problem.  
 
-I'll run several coats of mineral oil on the piece, let it soak in, and then reapply until it won't soak in anymore.  Period.  I'm done.  It's ready to ship or hand off to the customer.
+I'll apply several coats of mineral oil to the piece, let it soak in, and then reapply until it won't soak in anymore.  Period.  I'm done.  It's ready to ship or hand off to the customer.
 
-Now, onto the finish I use for decorative pieces.  I've experimented over the years, probably like you, with various types of finish on decorative pieces.  I decided, after several of these efforts failed, to find a good product and stick with it.  As I've talked about before, I use the "KISS" - "KEEP IT SIMPLE, STUPID" method in most areas of my shop.  
+Now, onto the finish I use for decorative pieces.  I've experimented over the years, probably like you, with various types of finish on decorative pieces.  I decided, after several of these efforts failed, to find a good product and stick with it.  Remember, keep it simple...and effective.  
 
 I preach the mantra of slowing down, taking your time, but when it comes to applying my finish to decorative pieces, it doesn't take me long with the product I use -- Myland's Friction Polish.  I can apply three coats to the interior and exterior of a piece in less than 20 minutes and know that I've got a finish that will last for years.  How do I know this?  I've got pieces around the house that I finished 15 years ago with Myland's and they look like they did the day I finished them.
 
