@@ -7,7 +7,7 @@ I work every day at finding ways to simplify and perfect all aspects of my shop 
 
 When it comes to applying finish, I follow that old analogy of "KISS" or "Keep It Simple Stupid."  I have two types of finish I apply, one for decorative pieces and one for pieces that need a food-safe finish.  I'll discuss each type here.
 
-For food-safe finishes, I use a simple mineral oil that I purchase from a few local stores like Walmart and Target.  I buy it in the pharmacy area and keep several bottles in my shop.  It comes in 16oz bottles and lasts a long time.  Mineral oil is completely safe, can be used as a laxative (don't ask me anything about that) and assures me that when I sell a salad bowl or cutting board, NO ONE should have any allergic reactions ever.  There are customers that have nut allergies; therefore using a walnut oil based product could be a problem.  
+For food-safe finishes, I use a simple mineral oil that I purchase from a few local stores like Walmart and Target.  I buy it in the pharmacy area and keep several bottles in my shop.  It comes in 16oz bottles and lasts a long time.  Mineral oil is completely safe, can be used as a laxative (don't ask me anything about that) and assures me that when I sell a salad bowl or cutting board, NO ONE should have any allergic reactions ever.  There are customers that have nut allergies and using an oil-based product (like Walnut oil) could be a problem.  
 
 I'll apply several coats of mineral oil to the piece, let it soak in, and then reapply until it won't soak in anymore.  Period.  I'm done.  It's ready to ship or hand off to the customer.
 
