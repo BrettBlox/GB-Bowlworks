@@ -3,7 +3,7 @@ slug: /finishing
 date: 2020-12-13T15:35:02.343Z
 title: Applying Finish
 ---
-I work every day at finding ways to simplify and perfect all aspects of my shop work.  Over time, I have figured out way that work for me, that I'm completely happy with, and that don't come back to bite me down the road!!  
+I work every day at finding ways to simplify and perfect all aspects of my shop work.  Over time, I have figured out ways that work for me, that I'm completely happy with, and that don't come back to bite me down the road!!  
 
 When it comes to applying finish, I follow that old analogy of "KISS" or "Keep It Simple Stupid."  I have two types of finish I apply, one for decorative pieces and one for pieces that need a food-safe finish.  I'll discuss each type here.
 
