@@ -3,6 +3,8 @@ title: About GB Bowlworks
 ---
 ![GB Bowlworks About Page Collage](https://res.cloudinary.com/dy6lb8vna/image/upload/v1590498432/GB%20Bowlworks%20Gallery/About_Page_Collage.jpg "GB Bowlworks About Page Collage")
 
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1610221385/GB%20Bowlworks%20Gallery/IMG_9788.jpg)
+
 I have a passion for wood, what lies beneath the bark.  I love its color, its smell, its texture, but most of all its potential.  
 
 I’m a woodworker, have been since as far back as I can remember. I come by it naturally...got it from my dad. Dad was a shade-tree mechanic, woodworker, electrician, plumber, etc., and I was his shadow. I took my dad’s interest in woodworking and refined it a little. I’ve zeroed in on bowl turning. To take a piece of gnarly, cracked, warped wood and bring out the inner beauty by recycling it into something useful is just the neatest thing ever. 
