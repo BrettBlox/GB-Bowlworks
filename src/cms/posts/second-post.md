@@ -13,11 +13,11 @@ I started with a 5/8 steel shaft 36" long, then cut a series of MDF disks and gl
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416224/other/IMG_9575.jpg)
 
-Next, I needed to mount the drum into an enclosure. I was still thinking it would be a benchtop machine at this point, so I mounted the 1/2 HP/1800 RPM motor to the box...
+Next, I needed to mount the drum into an enclosure. I was still thinking it would be a benchtop machine at this point, so I mounted the 1/2 HP/1800 RPM motor to the box with pillow block bearings on each end...
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416864/other/IMG_9592.jpg)
 
-...and soon realized this thing was HEAVY and would be too much machine as a benchtop, so I gave it some legs, moved the motor underneath and out of the way, and made it a stationary machine.  I attached the drum to the motor via an adjustable link v-belt on 2" pulleys.
+...and soon realized this thing was HEAVY and would be too much machine as a as a portable benchtop sander, so I gave it some legs, moved the motor underneath and out of the way, and made it a stationary machine.  I attached the drum to the motor via an adjustable link v-belt on 2" pulleys.
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1548416866/other/IMG_9603.jpg)
 
@@ -25,8 +25,8 @@ After I was happy with the layout of everything, I then carefully sanded the dru
 
 ![](https://res.cloudinary.com/dy6lb8vna/image/upload/w_800,c_fit/v1/other/E9881D6B-8B80-4D54-8718-A060CE20F376.jpg)
 
-I've been using this machine for about three years now (Oct 2020) on probably 40 different projects. It has worked like a charm. I started out with 120 grit paper but have switched to 80 grit.  The paper lasts probably two months or so between changing, and it's cheap, about $15 for a roll that allows for three changes.  Thanks to the attached dust collection, there is NO dust in my shop from this machine. I'm able to sand a segmented ring in just a few passes. For efficient production of a segmented vessel, this machine has simplified one very big step in the process.
+I've been using this machine for more than three years now on upwards of 100 different projects. It has worked like a charm. I started out with 120 grit paper but have switched to 80 grit.  The paper lasts probably two months or so between changing, and it's cheap, about $15 for a roll that allows for three changes.  Thanks to the attached dust collection, there is NO dust in my shop from this machine. I'm able to sand a segmented ring in just a few passes. For efficient production of a segmented vessel, this machine has simplified one very big step in the process.
 
 I've added a removable top that allows me to use the platform as a work surface when not needing the sander.  
 
-If you've got any questions about this project, feel free to contact me and I can give you a few more details.
+Back when I built this machine, I invested probably around $400 in it.  Money well spent.  While not extremely complex in its design, it performs well for its intended purpose.
