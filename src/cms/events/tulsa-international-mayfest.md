@@ -1,7 +1,6 @@
 ---
 title: Tulsa International Mayfest
-url: 'https://www.tulsamayfest.org'
-date: 2020-05-09T02:48:06.734Z
-location: 'Tulsa, Oklahoma'
+url: https://www.tulsamayfest.org
+date: 2021-05-07T05:00:00.000Z
+location: Tulsa, Oklahoma
 ---
-
