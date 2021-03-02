@@ -10,7 +10,7 @@ const IndexPage = () => (
   <FadeWrapper>
     <SEO title='Home' />
     <Main />
-    {/* <Events /> */}
+    <Events />
     <Gallery />
   </FadeWrapper>
 )
