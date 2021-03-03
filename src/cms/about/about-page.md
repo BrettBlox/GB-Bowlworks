@@ -1,7 +1,7 @@
 ---
 title: About GB Bowlworks
 ---
-![GB Bowlworks About Page Collage](https://res.cloudinary.com/dy6lb8vna/image/upload/v1610221385/GB%20Bowlworks%20Gallery/IMG_9788.jpg "GB Bowlworks About Page Collage")
+![GB Bowlworks About Page Collage](https://res.cloudinary.com/dy6lb8vna/image/upload/v1614788605/GB%20Bowlworks%20Gallery/IMG_9782.jpg "GB Bowlworks About Page Collage")
 
 ![]()
 
