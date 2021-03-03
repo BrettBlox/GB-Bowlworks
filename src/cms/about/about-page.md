@@ -7,7 +7,7 @@ title: About GB Bowlworks
 
 I have a passion for wood, what lies beneath the bark.  I love its color, its smell, its texture, but most of all its potential.  
 
-I’m a woodworker, have been since as far back as I can remember. I come by it naturally...got it from my dad. Dad was a shade-tree mechanic, woodworker, electrician, plumber, etc., and I was his shadow. I took my dad’s interest in woodworking and refined it a little. I’ve zeroed in on bowl turning. To take a piece of gnarly, cracked, warped wood and bring out the inner beauty by recycling it into something useful is just the neatest thing ever. 
+I’m a woodworker, have been since as far back as I can remember. I come by it naturally...got it from my dad. Dad was a shade-tree mechanic, woodworker, electrician, plumber, etc., and I was his shadow. I took my dad’s interest in woodworking and refined it a little. I’ve zeroed in on bowl turning. 
 
 ​In 1972 my dad bought a Shopsmith woodworking machine...you know, one of those do-it-all machines. It was a table saw, a lathe, a boring machine, a drill press, a disk sander, etc. I was 11 and really wanted to try the lathe out, so I mounted a 2x4 on it, spun it up, barely touched a gouge to the spinning wood...and promptly threw it off the lathe halfway across the garage! No one ever knew I did that, until now. I quickly realized I needed a little help figuring that machine out.
 
