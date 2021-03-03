@@ -1,7 +1,9 @@
 ---
 title: About GB Bowlworks
 ---
-![GB Bowlworks About Page Collage](https://res.cloudinary.com/dy6lb8vna/image/upload/v1614788605/GB%20Bowlworks%20Gallery/IMG_9782.jpg "GB Bowlworks About Page Collage")
+![GB Bowlworks About Page Collage](https://res.cloudinary.com/dy6lb8vna/image/upload/v1610221385/GB%20Bowlworks%20Gallery/IMG_9788.jpg "GB Bowlworks About Page Collage")
+
+![]()
 
 ![]()
 
@@ -22,3 +24,5 @@ I am a member of the [Segmented Woodturners Association](https://segmentedwoodtu
 I still consider myself a student of the art; there’s so much room for improvement in what I do, but even if I don’t get better, I’m having a great time doing what I’m doing. Thanks for reading my ramblings, and stay tuned for more GB Bowlworks masterpieces in the near future!
 
 Greg
+
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1590498432/GB%20Bowlworks%20Gallery/About_Page_Collage.jpg)
