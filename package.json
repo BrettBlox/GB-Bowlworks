@@ -31,7 +31,7 @@
 		"react-masonry-css": "^1.0.12",
 		"react-pose": "^4.0.10",
 		"slugify": "^1.4.0",
-		"styled-components": "^5.1.1"
+		"styled-components": "^5.3.0"
 	},
 	"keywords": [
 		"gatsby"
