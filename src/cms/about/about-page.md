@@ -25,4 +25,4 @@ I still consider myself a student of the art; there’s so much room for improve
 
 Greg
 
-![](https://res.cloudinary.com/dy6lb8vna/image/upload/v1590498432/GB%20Bowlworks%20Gallery/About_Page_Collage.jpg)
+![](https://res.cloudinary.com/dy6lb8vna/image/upload/c_scale,w_600/v1590498432/GB%20Bowlworks%20Gallery/About_Page_Collage.jpg)
