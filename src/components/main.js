@@ -5,7 +5,9 @@ import Cover from '../styles/cover'
 
 const WELCOME_QUERY = graphql`
   query welcomequery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/welcome/welcome.md" } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/src/cms/welcome/welcome.md" } }
+    ) {
       edges {
         node {
           frontmatter {
@@ -25,6 +27,7 @@ const Main = () => (
       allMarkdownRemark.edges.map((edge, i) => (
         <Cover text='center' key={`welcome__${i}`}>
           <h1>{edge.node.frontmatter.title}</h1>
+          {/* eslint-disable-next-line react/no-danger */}
           <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
         </Cover>
       ))

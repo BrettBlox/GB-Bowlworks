@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
 const Cover = styled.section`
-  text-align: ${props => (props.text ? props.text : 'left')};
-  margin: ${props => (props.margin ? props.margin : '1.875rem 1.25rem 0 1.25rem')};
+  text-align: ${(props) => (props.text ? props.text : 'left')};
+  margin: ${(props) =>
+    props.margin ? props.margin : '1.875rem 1.25rem 0 1.25rem'};
   padding: 1.5rem;
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   background-color: var(--color-light);
   box-shadow: 0 1rem 2rem var(--color-shadow);
   border-radius: 4px;
-  width: ${props => (props.width ? props.width : 'auto')};
+  width: ${(props) => (props.width ? props.width : 'auto')};
 
   h1 {
     @media only screen and (max-width: 500px) {
@@ -42,7 +43,12 @@ const Cover = styled.section`
     background-color: var(--blood);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
+    background-image: linear-gradient(
+      to right,
+      var(--gold),
+      var(--gold) 50%,
+      var(--blood) 50%
+    );
     background-size: 200% 100%;
     background-position: 100%;
     transition: all 0.3s;

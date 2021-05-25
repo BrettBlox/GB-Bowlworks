@@ -13,7 +13,15 @@ const FadeWrapper = ({ children }) => (
   // We're using the TransitionState component here to provide the current transition status to our pose
   <TransitionState>
     {({ transitionStatus }) => (
-      <Fade pose={['entering', 'entered'].includes(transitionStatus) ? 'visible' : 'hidden'}>{children}</Fade>
+      <Fade
+        pose={
+          ['entering', 'entered'].includes(transitionStatus)
+            ? 'visible'
+            : 'hidden'
+        }
+      >
+        {children}
+      </Fade>
     )}
   </TransitionState>
 )

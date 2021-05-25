@@ -65,7 +65,12 @@ const BackHome = styled(Link)`
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--gold),
+    var(--gold) 50%,
+    var(--blood) 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   text-decoration: none;

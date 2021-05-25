@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import LazyLoad from 'react-lazyload'
 
 import FadeLink from './fadeLink'
 import StyledFooter from '../styles/footer'
@@ -9,13 +7,12 @@ const Footer = () => (
   <StyledFooter className='footer'>
     <div className='footer__logo'>
       <a href='/' aria-label='GB Bowlworks Logo'>
-        <LazyLoad offset={100}>
-          <img
-            id='footLogo'
-            src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png'
-            alt='GB Bowlworks Logo'
-          />
-        </LazyLoad>
+        <img
+          id='footLogo'
+          src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/white-logo.png'
+          alt='GB Bowlworks Logo'
+          loading='lazy'
+        />
       </a>
     </div>
     <div className='footer__container'>
@@ -36,7 +33,12 @@ const Footer = () => (
           </FadeLink>
         </li>
         <li className='footItem'>
-          <a href='https://www.etsy.com/shop/GBBowlworks' target='_blank' rel="noopener noreferrer" className='footLink'>
+          <a
+            href='https://www.etsy.com/shop/GBBowlworks'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='footLink'
+          >
             STORE
           </a>
         </li>
@@ -53,29 +55,36 @@ const Footer = () => (
       </ul>
     </div>
     <div className='social'>
-      <a id='instagramColorLink' href='https://www.instagram.com/gbbowlworks/' aria-label='GB Bowlworks Instagram Page'>
-        <LazyLoad offset={100}>
-          <img
-            id='igImageColor'
-            src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png'
-            alt='Instagram Logo'
-          />
-        </LazyLoad>
+      <a
+        id='instagramColorLink'
+        href='https://www.instagram.com/gbbowlworks/'
+        aria-label='GB Bowlworks Instagram Page'
+      >
+        <img
+          id='igImageColor'
+          src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/ig-colorful.png'
+          alt='Instagram Logo'
+          loading='lazy'
+        />
       </a>
-      <a className='etsy' href='https://www.etsy.com/shop/GBBowlworks' aria-label='GB Bowlworks on Etsy'>
-        <LazyLoad offset={100}>
-          <img
-            className='etsyLogo'
-            src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png'
-            alt='Etsy Logo'
-          />
-        </LazyLoad>
+      <a
+        className='etsy'
+        href='https://www.etsy.com/shop/GBBowlworks'
+        aria-label='GB Bowlworks on Etsy'
+      >
+        <img
+          className='etsyLogo'
+          src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330949/Logos/Etsy_logo_lg_rgb.png'
+          alt='Etsy Logo'
+          loading='lazy'
+        />
       </a>
     </div>
     <div className='copyright'>
       <p className='footer__copyright'>
-        &copy;2019 GB Bowlworks, LLC. The material on this site may not be reproduced, distributed, transmitted, cached
-        or otherwise used, except with prior written permission of GB Bowlworks, LLC.
+        &copy;2019 GB Bowlworks, LLC. The material on this site may not be
+        reproduced, distributed, transmitted, cached or otherwise used, except
+        with prior written permission of GB Bowlworks, LLC.
       </p>
     </div>
   </StyledFooter>

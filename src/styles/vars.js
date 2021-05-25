@@ -14,10 +14,12 @@ const vars = css`
     --color-error: #b71540;
     --color-error-bg: #fdeff3;
     --color-shadow: rgba(23, 11, 41, 0.25);
-    --font-base-family: 'Quattrocento', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
-      Cantarell, 'Helvetica Neue', sans-serif;
-    --font-heading-family: 'Cinzel', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
-      Cantarell, 'Helvetica Neue', sans-serif;
+    --font-base-family: 'Quattrocento', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+      sans-serif;
+    --font-heading-family: 'Cinzel', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+      sans-serif;
     --metric-rhythm: 2rem;
     --metric-gutter: 2rem;
     --metric-box-padding: 1rem 1rem;

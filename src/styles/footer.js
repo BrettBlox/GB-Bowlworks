@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
   background-image: linear-gradient(to bottom, #173e43, hsl(0, 100%, 18%) 70%);
@@ -50,7 +50,12 @@ const StyledFooter = styled.footer`
       background-color: #3fb0ac;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, #d7a150 50%, #d7a150 50%, #3fb0ac 50%);
+      background-image: linear-gradient(
+        to right,
+        #d7a150 50%,
+        #d7a150 50%,
+        #3fb0ac 50%
+      );
       background-size: 200% 100%;
       background-position: 100%;
       display: inline-block;

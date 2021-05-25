@@ -1,7 +1,14 @@
 import React from 'react'
 import TransitionLink from 'gatsby-plugin-transition-link'
 
-const FadeLink = ({ to, children, id, className, activeClassName, partiallyActive }) => (
+const FadeLink = ({
+  to,
+  children,
+  id,
+  className,
+  activeClassName,
+  partiallyActive,
+}) => (
   <TransitionLink
     id={id}
     className={className}

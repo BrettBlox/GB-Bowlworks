@@ -41,7 +41,9 @@ const About = styled.div`
 
 const ABOUT_QUERY = graphql`
   query aboutquery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/about/about-page.md" } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/src/cms/about/about-page.md" } }
+    ) {
       edges {
         node {
           frontmatter {
@@ -60,7 +62,7 @@ const AboutPage = () => (
     <StaticQuery
       query={ABOUT_QUERY}
       render={({ allMarkdownRemark }) =>
-        allMarkdownRemark.edges.map(edge => (
+        allMarkdownRemark.edges.map((edge) => (
           <Cover text='left' key={edge.node.frontmatter.title}>
             <h1>{edge.node.frontmatter.title}</h1>
             <About dangerouslySetInnerHTML={{ __html: edge.node.html }} />

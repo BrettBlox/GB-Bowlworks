@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import FadeWrapper from '../components/fadeWrapper'
@@ -19,7 +19,9 @@ const FAQWrapper = styled.div`
 
 const FAQ_QUERY = graphql`
   query faqquery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/src/cms/faq/faq.md" } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { glob: "**/src/cms/faq/faq.md" } }
+    ) {
       edges {
         node {
           frontmatter {
@@ -43,7 +45,11 @@ const FAQ = () => (
             {allMarkdownRemark.edges.map((edge, i) => (
               <div key={`faq__${i}`}>
                 <h1>{edge.node.frontmatter.title}</h1>
-                <div className='flow' dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+                <div
+                  className='flow'
+                  // eslint-disable-next-line react/no-danger
+                  dangerouslySetInnerHTML={{ __html: edge.node.html }}
+                />
               </div>
             ))}
           </FAQWrapper>

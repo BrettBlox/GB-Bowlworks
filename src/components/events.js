@@ -33,7 +33,12 @@ const EventTitle = styled.h3`
   background-color: var(--blood);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--gold),
+    var(--gold) 50%,
+    var(--blood) 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.3s;
@@ -74,11 +79,15 @@ const Event = () => (
       <Cover>
         <h2>Upcoming Events</h2>
         <EventList>
-          {allMarkdownRemark.edges.map(edge => (
+          {allMarkdownRemark.edges.map((edge) => (
             <li key={edge.node.frontmatter.title}>
               <p>{edge.node.frontmatter.date}</p>
               <EventTitle>
-                <a target='_blank' rel='noopener noreferrer' href={edge.node.frontmatter.url}>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href={edge.node.frontmatter.url}
+                >
                   {edge.node.frontmatter.title}&nbsp;&rarr;
                 </a>
               </EventTitle>

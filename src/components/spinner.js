@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 const Roller = styled.div`
   margin: 50px auto;
@@ -69,7 +69,7 @@ const Roller = styled.div`
     }
     &:nth-child(7):after {
       top: 50px;
-      left: .875rem;
+      left: 0.875rem;
     }
     &:nth-child(8) {
       animation-delay: -0.288s;

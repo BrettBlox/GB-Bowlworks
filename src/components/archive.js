@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import slugify from 'slugify'
 
@@ -37,7 +37,12 @@ const ArchiveWrapper = styled.div`
       background-color: var(--blood);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(to right, var(--gold), var(--gold) 50%, var(--blood) 50%);
+      background-image: linear-gradient(
+        to right,
+        var(--gold),
+        var(--gold) 50%,
+        var(--blood) 50%
+      );
       background-size: 200% 100%;
       background-position: 100%;
       padding: 0.8rem;
@@ -86,9 +91,14 @@ const Archive = () => (
         <ArchiveWrapper>
           <h2>Archive</h2>
           <ul className='archiveList'>
-            {allMarkdownRemark.edges.map(edge => (
+            {allMarkdownRemark.edges.map((edge) => (
               <li key={edge.node.frontmatter.slug}>
-                <FadeLink to={`/blog/${slugify(edge.node.frontmatter.slug, { replacement: '-', lower: true })}`}>
+                <FadeLink
+                  to={`/blog/${slugify(edge.node.frontmatter.slug, {
+                    replacement: '-',
+                    lower: true,
+                  })}`}
+                >
                   {edge.node.frontmatter.title}
                 </FadeLink>
               </li>

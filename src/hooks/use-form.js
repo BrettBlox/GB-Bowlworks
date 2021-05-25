@@ -4,12 +4,14 @@ import { navigate } from 'gatsby'
 const useForm = () => {
   const [state, setState] = useState({})
 
-  const encode = data =>
+  const encode = (data) =>
     Object.keys(data)
-      .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+      .map(
+        (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+      )
       .join('&')
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     if (e) {
       e.preventDefault()
       const form = e.target
@@ -22,13 +24,13 @@ const useForm = () => {
         }),
       })
         .then(() => navigate(form.getAttribute('action')))
-        .catch(error => alert(error))
+        .catch((error) => alert(error))
     }
   }
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     e.persist()
-    setState(inputs => ({
+    setState((inputs) => ({
       ...inputs,
       [e.target.name]: e.target.value,
     }))
