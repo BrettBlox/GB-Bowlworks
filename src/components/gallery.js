@@ -137,7 +137,11 @@ export default function Gallery(props) {
         {gallery.map((image, i) => (
           <div className='box' key={i}>
             <a onClick={(e) => openLightbox(i, e)} href={lightboxGallery[i]}>
-              <img src={image.src} alt='Hand turned wooden bowls' />
+              <img
+                src={image.src}
+                alt='Hand turned wooden bowls'
+                loading='lazy'
+              />
             </a>
           </div>
         ))}
@@ -151,7 +155,7 @@ export default function Gallery(props) {
       {mobileGallery.map((image, i) => (
         <div className='zone' key={Math.random(i)}>
           <div className='box'>
-            <img src={image.src} alt='Hand Turned Wooden Bowl' />
+            <img src={image.src} alt='Hand Turned Wooden Bowl' loading='lazy' />
           </div>
         </div>
       ))}
