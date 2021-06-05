@@ -1,7 +1,7 @@
 ---
 title: Welcome to GB Bowlworks
 ---
-GB Bowlworks, LLC, is a woodturning business based in Oklahoma, owned and operated by me, [Greg Bloxom](/about). I make segmented bowls and vessels.  The photo gallery below has a few of the past and present pieces out of my shop.  Most sales are done at art shows, so be sure to check out my upcoming events section of this website.  If you're in the Tulsa area, I'd be glad for your to stop by and see what I've got in stock in my shop gallery.  Use the [Contact](https://www.gbbowlworks.com/contact) page if you'd like to commission a specific piece...or just have a question.  I'm also on [Instagram](https://www.instagram.com/gbbowlworks/) where I post photos and videos of current work.
+GB Bowlworks, LLC, is a woodturning business based in Oklahoma, owned and operated by me, [Greg Bloxom](/about). I make segmented bowls and vessels.  The photo gallery below has a few of the past and present pieces out of my shop.  Most sales are done at art shows, so be sure to check out my upcoming events section of this website.  If you're in the Tulsa area, I'd be glad for you to stop by and see what I've got in stock.  Use the [Contact](https://www.gbbowlworks.com/contact) page if you'd like to commission a specific piece...or just have a question.  I'm also on [Instagram](https://www.instagram.com/gbbowlworks/) where I post photos and videos of current work.
 
 "Thanks for stopping by!"
 
