@@ -6,6 +6,13 @@ import FadeLink from './fadeLink'
 
 const Header = () => (
   <StyledHeader>
+    <FadeLink to='/' id='mainLogo'>
+      <img
+        id='logo'
+        src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png'
+        alt='GB Bowlworks Logo'
+      />
+    </FadeLink>
     <FadeLink to='/' className='navLink' activeClassName='navLink--active'>
       HOME
     </FadeLink>
@@ -15,21 +22,6 @@ const Header = () => (
     <FadeLink to='/blog' className='navLink' activeClassName='navLink--active'>
       BLOG
     </FadeLink>
-    <FadeLink to='/' id='mainLogo'>
-      <img
-        id='logo'
-        src='https://res.cloudinary.com/dy6lb8vna/image/upload/f_auto/v1563330950/Logos/main_logo.png'
-        alt='GB Bowlworks Logo'
-      />
-    </FadeLink>
-    <a
-      href='https://www.etsy.com/shop/GBBowlworks'
-      target='_blank'
-      rel='noopener noreferrer'
-      className='navLink'
-    >
-      STORE
-    </a>
     <FadeLink
       to='/contact'
       className='navLink'
@@ -66,16 +58,6 @@ const Header = () => (
         <FadeLink to='/blog' className='resLink'>
           BLOG
         </FadeLink>
-      </li>
-      <li>
-        <a
-          href='https://www.etsy.com/shop/GBBowlworks'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='resLink'
-        >
-          STORE
-        </a>
       </li>
       <li>
         <FadeLink to='/contact' className='resLink'>
